@@ -1,0 +1,16 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int b = 3;
+  int a = 6;
+
+    int b = 3;
+    int a = 6;
+  b = (((a + 5) * 4) / (a * 3 + 2) + -4) + b;
+  return 0;
+}
+return 0;
+

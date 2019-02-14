@@ -1,0 +1,46 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2247, cgraph_uid=0, symbol_order=0)
+
+main ()
+{
+  int a;
+  int D.2257;
+  unsigned int a.0_1;
+  unsigned int _2;
+  int _5;
+
+  <bb 2> [0.00%]:
+  a_4 = 0;
+  goto <bb 6>; [0.00%]
+
+  <bb 3> [0.00%]:
+  a.0_1 = (unsigned int) a_3;
+  _2 = a.0_1 & 1;
+  if (_2 == 0)
+    goto <bb 4>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
+
+  <bb 4> [0.00%]:
+  a_8 = a_3 + 1;
+  goto <bb 6>; [0.00%]
+
+  <bb 5> [0.00%]:
+  a_7 = a_3 + 2;
+
+  <bb 6> [0.00%]:
+  # a_3 = PHI <a_4(2), a_8(4), a_7(5)>
+  if (a_3 <= 999)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 7>; [0.00%]
+
+  <bb 7> [0.00%]:
+  _5 = 0;
+
+<L6> [0.00%]:
+  return _5;
+
+}
+
+

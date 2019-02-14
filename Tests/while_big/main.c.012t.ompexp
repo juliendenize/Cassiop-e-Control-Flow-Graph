@@ -1,0 +1,42 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2247, cgraph_uid=0, symbol_order=0)
+
+main ()
+{
+  int a;
+  int D.2257;
+
+  <bb 2> [0.00%]:
+  a = 0;
+  goto <bb 6>; [0.00%]
+
+  <bb 3> [0.00%]:
+  a.0_1 = (unsigned int) a;
+  _2 = a.0_1 & 1;
+  if (_2 == 0)
+    goto <bb 4>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
+
+  <bb 4> [0.00%]:
+  a = a + 1;
+  goto <bb 6>; [0.00%]
+
+  <bb 5> [0.00%]:
+  a = a + 2;
+
+  <bb 6> [0.00%]:
+  if (a <= 999)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 7>; [0.00%]
+
+  <bb 7> [0.00%]:
+  D.2257 = 0;
+
+<L6> [0.00%]:
+  return D.2257;
+
+}
+
+

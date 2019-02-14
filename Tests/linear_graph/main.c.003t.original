@@ -1,0 +1,15 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a = 0;
+
+    int a = 0;
+  a++ ;
+  printf ((const char * restrict) "%d", a);
+  return 0;
+}
+return 0;
+

@@ -1,0 +1,18 @@
+main ()
+{
+  int D.2251;
+
+  {
+    int a;
+
+    a = 0;
+    a = a + 1;
+    printf ("%d", a);
+    D.2251 = 0;
+    return D.2251;
+  }
+  D.2251 = 0;
+  return D.2251;
+}
+
+

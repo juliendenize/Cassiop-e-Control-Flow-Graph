@@ -1,0 +1,47 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2247, cgraph_uid=0, symbol_order=0)
+
+
+Analyzing function body size: main
+
+Inline summary for main/0
+  self time:       5
+  global time:     0
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:5.000000, predicate:(true)
+    size:2.000000, time:0.000000, predicate:(not inlined)
+  calls:
+
+main ()
+{
+  int a;
+  int D.2254;
+  int _3;
+
+  <bb 2> [0.00%]:
+  a_2 = 0;
+  goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  a_5 = a_1 + 1;
+
+  <bb 4> [0.00%]:
+  # a_1 = PHI <a_2(2), a_5(3)>
+  if (a_1 <= 999)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
+
+  <bb 5> [0.00%]:
+  _3 = 0;
+
+<L3> [0.00%]:
+  return _3;
+
+}
+
+

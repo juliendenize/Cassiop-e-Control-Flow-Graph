@@ -1,0 +1,38 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2247, cgraph_uid=0, symbol_order=0)
+
+
+Analyzing function body size: main
+
+Inline summary for main/0
+  self time:       15
+  global time:     0
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:3.000000, predicate:(true)
+    size:2.000000, time:0.000000, predicate:(not inlined)
+  calls:
+    printf/1 function body not available
+      loop depth: 0 freq:1000 size: 3 time: 12 callee size: 0 stack: 0
+
+main ()
+{
+  int a;
+  int D.2251;
+  int _5;
+
+  <bb 2> [0.00%]:
+  a_1 = 0;
+  a_2 = a_1 + 1;
+  printf ("%d", a_2);
+  _5 = 0;
+
+<L0> [0.00%]:
+  return _5;
+
+}
+
+

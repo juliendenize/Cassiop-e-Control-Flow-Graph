@@ -1,0 +1,58 @@
+
+;; Function foo (foo, funcdef_no=0, decl_uid=2248, cgraph_uid=0, symbol_order=0)
+
+foo (int a)
+{
+  int D.2258;
+
+  <bb 2> [0.00%]:
+  if (a > 0)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  D.2258 = -a;
+  goto <bb 5> (<L2>); [0.00%]
+
+  <bb 4> [0.00%]:
+  D.2258 = a;
+
+<L2> [0.00%]:
+  return D.2258;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1, decl_uid=2252, cgraph_uid=1, symbol_order=1)
+
+main (int argc, char * * argv)
+{
+  int b;
+  int D.2263;
+
+  <bb 2> [0.00%]:
+  b = 3;
+  _1 = foo (b);
+  if (_1 > 3)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 4>; [0.00%]
+
+  <bb 3> [0.00%]:
+  __builtin_puts (&"Large"[0]);
+  goto <bb 5>; [0.00%]
+
+  <bb 4> [0.00%]:
+  __builtin_puts (&"Small"[0]);
+
+  <bb 5> [0.00%]:
+  D.2263 = 0;
+
+<L3> [0.00%]:
+  return D.2263;
+
+}
+
+
