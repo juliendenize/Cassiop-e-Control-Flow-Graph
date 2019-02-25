@@ -13,3 +13,8 @@ Maintenant nous allons devoir parser les labels des nodes pour trouver où sont 
 ### Création du script
 
 On a commencé à créer le script python pour faire des liens entre les fonctions, c'est le deuxième notebook. On continuera le 25/02/2019.
+
+# 25/02/2019
+
+## Récapitualtif
+On a continué le script python en faisant beaucoup de regex pour parser les labels, on poursuit le 28/02 ou 01/03.
