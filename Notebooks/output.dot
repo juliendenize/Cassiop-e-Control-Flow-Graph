@@ -1,17 +1,5 @@
 digraph "test.c.011t.cfg" {
-	graph [bb="0,0,762,1552",
-		overlap=false
-	];
-	node [label="\N"];
 	subgraph cluster_foo {
-		graph [bb="8,8,328,867",
-			color=black,
-			label="foo ()",
-			lheight=0.21,
-			lp="168,855.5",
-			lwidth=0.43,
-			style=dashed
-		];
 		fn_0_basic_block_0		 [fillcolor=white,
 			height=0.5,
 			label=ENTRY,
@@ -105,14 +93,6 @@ digraph "test.c.011t.cfg" {
 			weight=10];
 	}
 	subgraph cluster_main {
-		graph [bb="336,437,754,1544",
-			color=black,
-			label="main ()",
-			lheight=0.21,
-			lp="545,1532.5",
-			lwidth=0.57,
-			style=solid
-		];
 		fn_1_basic_block_0		 [fillcolor=white,
 			height=0.5,
 			label=ENTRY,
