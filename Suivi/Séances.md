@@ -68,3 +68,9 @@ On a continué le script python en faisant beaucoup de regex pour parser les lab
 
 ## Récapitulatif
 On a encore continué le script, on a presque fini de créer le nouveau noeud, ensuite il faudra faire les edges quand on aura terminé.
+
+# 3/03/2019
+
+## Récapitulatif
+
+On a fini le script et testé sur différents cas. On merge la branch script et master afin de marquer le coup.
