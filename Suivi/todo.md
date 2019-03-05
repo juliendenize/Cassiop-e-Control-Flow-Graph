@@ -5,4 +5,4 @@
 - [x] faire en sorte qu'on puisse exporter le graphe (apprement il y a un problème de syntaxe)
 
 ## Edges
-- [] ajouter les edges
+- [x] ajouter les edges
