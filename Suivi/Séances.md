@@ -74,3 +74,25 @@ On a encore continué le script, on a presque fini de créer le nouveau noeud, e
 ## Récapitulatif
 
 On a fini le script et testé sur différents cas. On merge la branch script et master afin de marquer le coup.
+
+# 11/03/2019
+
+## Récapitualtif
+On a cherché comment utiliser networkx pour analyser les graphes: cycle, betweeness, ...
+
+On n'a pas trouvé et décidé de chercher chacun de son côté comment le faire.
+
+# 18/03/2019
+
+## Récapitulatif
+On a réussi à construire un graphe networkx à partir d'un graph pydot.
+
+On a aussi extrait deux informations du graphe: les degrés entrants pour chaque noeud ainsi que la betweeness de chaque noeud.
+
+On a évoqué l'idée qu'il faudrait peut-être analyser chaque fonction dans le fichier généré de base par GCC ainsi que le fichier modifié pour pouvoir analyser le programme dans son ensemble ainsi que pour chaque fonction.
+
+## Todo
+
+- [] Trouver des informations à tirer du graph transformé par notre premier script.
+- [] Implémenter ces idées.
+- [] Noter les idées qui seraient spécifiques à des fonctions.
