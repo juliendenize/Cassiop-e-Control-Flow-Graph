@@ -93,6 +93,24 @@ On a évoqué l'idée qu'il faudrait peut-être analyser chaque fonction dans le
 
 ## Todo
 
-- [] Trouver des informations à tirer du graph transformé par notre premier script.
-- [] Implémenter ces idées.
-- [] Noter les idées qui seraient spécifiques à des fonctions.
+- [x] Trouver des informations à tirer du graph transformé par notre premier script.
+- [x] Implémenter ces idées.
+- [x] Noter les idées qui seraient spécifiques à des fonctions.
+
+# 1/04/2019
+
+## Récapitulatif
+On a pu constater que l'analyse de graphe ne menait pas à grand chose si on regarde les propriétés basiques. On va juste regarder si le graphe est complet en plus de ce qui a été fait.
+
+Certaines petites propriétés plus liées au code peuvent être intéressantes à chercher: partial dead code, conditions imbriquées inutiles.
+
+
+## Todo
+- [x] Voir si graphe complet
+- [] Recherche partial dead code
+- [] Etudier fonctionnement compilateur (étapes)
+
+## Roadmap
+- Une semaine de recherches
+- Lundi 8: mise en commun de 14h à 16h-18h
+- Jeudi 11: développement
