@@ -114,3 +114,9 @@ Certaines petites propriétés plus liées au code peuvent être intéressantes 
 - Une semaine de recherches
 - Lundi 8: mise en commun de 14h à 16h-18h
 - Jeudi 11: développement
+
+#1 11/04/2019
+
+## Récapitulatif
+Le compilateur travaille automatiquement sur les conditions true sans variables
+et supprime les conditions vides.

@@ -1,0 +1,47 @@
+
+;; Function f (null)
+;; enabled by -tree-original
+
+
+{
+  return a;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a = 0;
+
+    int a = 0;
+  if (a == 0)
+    {
+      if (a == 1)
+        {
+          if (a == 2)
+            {
+              a = 3;
+            }
+        }
+      a = 4;
+    }
+  if (a == 0)
+    {
+      if ((a == 1 && a == 2) != 0)
+        {
+          a = 3;
+        }
+      a = 4;
+    }
+  if (1)
+    {
+      a = 3;
+    }
+  return 1;
+  a++ ;
+  return 0;
+}
+return 0;
+

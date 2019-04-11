@@ -38,7 +38,7 @@ goto\ \<bb\ 5\>\ (\<L2\>);\ [0.00%]\l\
 	fn_0_basic_block_0:s -> fn_0_basic_block_1:n [style="invis",constraint=true];
 }
 subgraph "cluster_main" {
-	style="solid";
+	style="dashed";
 	color="black";
 	label="main ()";
 	fn_1_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];

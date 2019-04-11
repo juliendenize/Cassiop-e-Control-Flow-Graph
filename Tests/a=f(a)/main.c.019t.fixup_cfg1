@@ -1,0 +1,82 @@
+
+;; Function f (f, funcdef_no=0, decl_uid=2248, cgraph_uid=0, symbol_order=0)
+
+f (int a)
+{
+  int D.2254;
+
+  <bb 2> [0.00%]:
+  D.2254 = a;
+
+<L0> [0.00%]:
+  return D.2254;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1, decl_uid=2250, cgraph_uid=1, symbol_order=1)
+
+main ()
+{
+  int a;
+  int D.2268;
+
+  <bb 2> [0.00%]:
+  a = 0;
+  if (a == 0)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 7>; [0.00%]
+
+  <bb 3> [0.00%]:
+  if (a == 1)
+    goto <bb 4>; [0.00%]
+  else
+    goto <bb 6>; [0.00%]
+
+  <bb 4> [0.00%]:
+  if (a == 2)
+    goto <bb 5>; [0.00%]
+  else
+    goto <bb 6>; [0.00%]
+
+  <bb 5> [0.00%]:
+  a = 3;
+
+  <bb 6> [0.00%]:
+  a = 4;
+
+  <bb 7> [0.00%]:
+  if (a == 0)
+    goto <bb 8>; [0.00%]
+  else
+    goto <bb 11>; [0.00%]
+
+  <bb 8> [0.00%]:
+  _1 = a == 1;
+  _2 = a == 2;
+  _3 = _1 & _2;
+  if (_3 != 0)
+    goto <bb 9>; [0.00%]
+  else
+    goto <bb 10>; [0.00%]
+
+  <bb 9> [0.00%]:
+  a = 3;
+
+  <bb 10> [0.00%]:
+  a = 4;
+
+  <bb 11> [0.00%]:
+
+  <bb 12> [0.00%]:
+  a = 3;
+  D.2268 = 1;
+
+<L12> [0.00%]:
+  return D.2268;
+
+}
+
+
