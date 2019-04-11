@@ -120,3 +120,4 @@ Certaines petites propriétés plus liées au code peuvent être intéressantes 
 ## Récapitulatif
 Le compilateur travaille automatiquement sur les conditions true sans variables
 et supprime les conditions vides.
+On va se pencher plus sur le côté compilateur. Voir si on décide de se pencher vers la compilation ou parser.
