@@ -6320,4384 +6320,4423 @@
                          srcp: test.c:9                init: @2148   
                          size: @5       algn: 32       used: 1       
 @3244   statement_list   0   : @3255    1   : @3256    2   : @3257   
-@3245   modify_expr      type: @3       op 0: @3258    op 1: @2098   
+                         3   : @3258    4   : @3259    5   : @3260   
+                         6   : @3261    7   : @3262    8   : @3263   
+                         9   : @3264    10  : @3265   
+@3245   modify_expr      type: @3       op 0: @3266    op 1: @2098   
 @3246   gt_expr          type: @3       op 0: @3219    op 1: @2098   
-@3247   return_expr      type: @151     expr: @3259   
-@3248   modify_expr      type: @3       op 0: @3260    op 1: @3219   
+@3247   return_expr      type: @151     expr: @3267   
+@3248   modify_expr      type: @3       op 0: @3268    op 1: @3219   
 @3249   tree_list        valu: @26      chan: @188    
 @3250   identifier_node  strg: __builtin_free          lngt: 14      
 @3251   identifier_node  strg: free     lngt: 4       
 @3252   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3261   
+                         prms: @3269   
 @3253   function_decl    name: @3251    type: @3252    srcp: <built-in>:0      
-                         chain: @3262    body: undefined 
+                         chain: @3270    body: undefined 
                          link: extern  
 @3254   identifier_node  strg: b        lngt: 1       
 @3255   decl_expr        type: @151    
-@3256   cond_expr        type: @151     op 0: @3263    op 1: @3264   
-                         op 2: @3265   
-@3257   return_expr      type: @151     expr: @3266   
-@3258   result_decl      type: @3       scpe: @3218    srcp: test.c:8      
+@3256   goto_expr        type: @151     labl: @3271   
+@3257   label_expr       type: @151     name: @3272   
+@3258   cond_expr        type: @151     op 0: @3273    op 1: @3274   
+@3259   cond_expr        type: @151     op 0: @3275    op 1: @3276   
+@3260   modify_expr      type: @3       op 0: @3243    op 1: @3277   
+@3261   label_expr       type: @151     name: @3271   
+@3262   cond_expr        type: @151     op 0: @3278    op 1: @3279   
+                         op 2: @3280   
+@3263   label_expr       type: @151     name: @3281   
+@3264   cond_expr        type: @151     op 0: @3282    op 1: @3283   
+                         op 2: @3284   
+@3265   return_expr      type: @151     expr: @3285   
+@3266   result_decl      type: @3       scpe: @3218    srcp: test.c:8      
                          note: artificial              size: @5      
                          algn: 32      
-@3259   modify_expr      type: @3       op 0: @3260    op 1: @3267   
-@3260   result_decl      type: @3       scpe: @3215    srcp: test.c:3      
+@3267   modify_expr      type: @3       op 0: @3268    op 1: @3286   
+@3268   result_decl      type: @3       scpe: @3215    srcp: test.c:3      
                          note: artificial              size: @5      
                          algn: 32      
-@3261   tree_list        valu: @186     chan: @188    
-@3262   function_decl    name: @3268    type: @3177    scpe: @176    
-                         srcp: <built-in>:0            chain: @3269   
+@3269   tree_list        valu: @186     chan: @188    
+@3270   function_decl    name: @3287    type: @3177    scpe: @176    
+                         srcp: <built-in>:0            chain: @3288   
                          body: undefined               link: extern  
-@3263   gt_expr          type: @3       op 0: @3270    op 1: @2148   
-@3264   call_expr        type: @3       fn  : @3271    0   : @3272   
-@3265   call_expr        type: @3       fn  : @3273    0   : @3274   
-@3266   modify_expr      type: @3       op 0: @3258    op 1: @2098   
-@3267   negate_expr      type: @3       op 0: @3219   
-@3268   identifier_node  strg: __builtin_frob_return_addr 
+@3271   label_decl       type: @151     scpe: @3218    srcp: test.c:12     
+                         note: artificial 
+@3272   label_decl       type: @151     scpe: @3218    note: artificial 
+@3273   eq_expr          type: @3       op 0: @3243    op 1: @2148   
+@3274   statement_list   0   : @3289    1   : @3290   
+@3275   eq_expr          type: @3       op 0: @3243    op 1: @3291   
+@3276   call_expr        type: @3       fn  : @3292    0   : @3293   
+@3277   integer_cst      type: @3      int: 6
+@3278   eq_expr          type: @3       op 0: @3243    op 1: @2148   
+@3279   goto_expr        type: @151     labl: @3272   
+@3280   goto_expr        type: @151     labl: @3281   
+@3281   label_decl       type: @151     scpe: @3218    note: artificial 
+@3282   gt_expr          type: @3       op 0: @3294    op 1: @2148   
+@3283   call_expr        type: @3       fn  : @3295    0   : @3296   
+@3284   call_expr        type: @3       fn  : @3297    0   : @3298   
+@3285   modify_expr      type: @3       op 0: @3266    op 1: @2098   
+@3286   negate_expr      type: @3       op 0: @3219   
+@3287   identifier_node  strg: __builtin_frob_return_addr 
                          lngt: 26      
-@3269   function_decl    name: @3275    mngl: @3276    type: @3277   
+@3288   function_decl    name: @3299    mngl: @3300    type: @3301   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3278    body: undefined 
+                         chain: @3302    body: undefined 
                          link: extern  
-@3270   call_expr        type: @3       fn  : @3279    0   : @3243   
-@3271   addr_expr        type: @3280    op 0: @2159   
-@3272   nop_expr         type: @1932    op 0: @3281   
-@3273   addr_expr        type: @3280    op 0: @2159   
-@3274   nop_expr         type: @1932    op 0: @3282   
-@3275   identifier_node  strg: __builtin_gettext       lngt: 17      
-@3276   identifier_node  strg: gettext  lngt: 7       
-@3277   function_type    size: @12      algn: 8        retn: @1764   
+@3289   predict_expr     type: @151    
+@3290   goto_expr        type: @151     labl: @3271   
+@3291   integer_cst      type: @3      int: 4
+@3292   addr_expr        type: @3303    op 0: @2159   
+@3293   nop_expr         type: @1932    op 0: @3304   
+@3294   call_expr        type: @3       fn  : @3305    0   : @3243   
+@3295   addr_expr        type: @3303    op 0: @2159   
+@3296   nop_expr         type: @1932    op 0: @3306   
+@3297   addr_expr        type: @3303    op 0: @2159   
+@3298   nop_expr         type: @1932    op 0: @3307   
+@3299   identifier_node  strg: __builtin_gettext       lngt: 17      
+@3300   identifier_node  strg: gettext  lngt: 7       
+@3301   function_type    size: @12      algn: 8        retn: @1764   
                          prms: @1860   
-@3278   function_decl    name: @3276    type: @3277    srcp: <built-in>:0      
-                         chain: @3283    body: undefined 
-                         link: extern  
-@3279   addr_expr        type: @3284    op 0: @3215   
-@3280   pointer_type     size: @22      algn: 64       ptd : @3285   
-@3281   addr_expr        type: @3286    op 0: @3287   
-@3282   addr_expr        type: @3286    op 0: @3288   
-@3283   function_decl    name: @3289    mngl: @3290    type: @3291   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3292    body: undefined 
-                         link: extern  
-@3284   pointer_type     size: @22      algn: 64       ptd : @2221   
-@3285   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3293   
-@3286   pointer_type     size: @22      algn: 64       ptd : @3294   
-@3287   string_cst       type: @3294   strg: Large
-   lngt: 7       
-@3288   string_cst       type: @3294   strg: Small
-   lngt: 7       
-@3289   identifier_node  strg: __builtin_imaxabs       lngt: 17      
-@3290   identifier_node  strg: imaxabs  lngt: 7       
-@3291   function_type    size: @12      algn: 8        retn: @16     
-                         prms: @3295   
-@3292   function_decl    name: @3290    type: @3291    srcp: <built-in>:0      
-                         chain: @3296    body: undefined 
-                         link: extern  
-@3293   tree_list        valu: @1932   
-@3294   array_type       size: @3297    algn: 8        elts: @9      
-                         domn: @3298   
-@3295   tree_list        valu: @16      chan: @188    
-@3296   function_decl    name: @3299    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @3300   
-                         body: undefined               link: extern  
-@3297   integer_cst      type: @11     int: 56
-@3298   integer_type     size: @22      algn: 64       prec: 64      
-                         sign: signed   min : @165     max : @3301   
-@3299   identifier_node  strg: __builtin_init_dwarf_reg_size_table 
-                         lngt: 35      
-@3300   function_decl    name: @3302    mngl: @3303    type: @670    
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3304    body: undefined 
-                         link: extern  
-@3301   integer_cst      type: @172    int: 6
-@3302   identifier_node  strg: __builtin_finite        lngt: 16      
-@3303   identifier_node  strg: finite   lngt: 6       
-@3304   function_decl    name: @3303    type: @670     srcp: <built-in>:0      
-                         chain: @3305    body: undefined 
-                         link: extern  
-@3305   function_decl    name: @3306    mngl: @3307    type: @674    
-                         scpe: @176     srcp: <built-in>:0      
+@3302   function_decl    name: @3300    type: @3301    srcp: <built-in>:0      
                          chain: @3308    body: undefined 
                          link: extern  
-@3306   identifier_node  strg: __builtin_finitef       lngt: 17      
-@3307   identifier_node  strg: finitef  lngt: 7       
-@3308   function_decl    name: @3307    type: @674     srcp: <built-in>:0      
-                         chain: @3309    body: undefined 
-                         link: extern  
-@3309   function_decl    name: @3310    mngl: @3311    type: @678    
+@3303   pointer_type     size: @22      algn: 64       ptd : @3309   
+@3304   addr_expr        type: @3310    op 0: @3311   
+@3305   addr_expr        type: @3312    op 0: @3215   
+@3306   addr_expr        type: @3313    op 0: @3314   
+@3307   addr_expr        type: @3313    op 0: @3315   
+@3308   function_decl    name: @3316    mngl: @3317    type: @3318   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3312    body: undefined 
+                         chain: @3319    body: undefined 
                          link: extern  
-@3310   identifier_node  strg: __builtin_finitel       lngt: 17      
-@3311   identifier_node  strg: finitel  lngt: 7       
-@3312   function_decl    name: @3311    type: @678     srcp: <built-in>:0      
-                         chain: @3313    body: undefined 
-                         link: extern  
-@3313   function_decl    name: @3314    mngl: @3315    type: @1254   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3316    body: undefined 
-                         link: extern  
-@3314   identifier_node  strg: __builtin_finited32     lngt: 19      
-@3315   identifier_node  strg: finited32               lngt: 9       
-@3316   function_decl    name: @3315    type: @1254    srcp: <built-in>:0      
-                         chain: @3317    body: undefined 
-                         link: extern  
-@3317   function_decl    name: @3318    mngl: @3319    type: @1260   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3320    body: undefined 
-                         link: extern  
-@3318   identifier_node  strg: __builtin_finited64     lngt: 19      
-@3319   identifier_node  strg: finited64               lngt: 9       
-@3320   function_decl    name: @3319    type: @1260    srcp: <built-in>:0      
-                         chain: @3321    body: undefined 
-                         link: extern  
-@3321   function_decl    name: @3322    mngl: @3323    type: @1266   
-                         scpe: @176     srcp: <built-in>:0      
+@3309   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3320   
+@3310   pointer_type     size: @22      algn: 64       ptd : @3321   
+@3311   string_cst       type: @3321   strg: hey
+     lngt: 5       
+@3312   pointer_type     size: @22      algn: 64       ptd : @2221   
+@3313   pointer_type     size: @22      algn: 64       ptd : @3322   
+@3314   string_cst       type: @3322   strg: Large
+   lngt: 7       
+@3315   string_cst       type: @3322   strg: Small
+   lngt: 7       
+@3316   identifier_node  strg: __builtin_imaxabs       lngt: 17      
+@3317   identifier_node  strg: imaxabs  lngt: 7       
+@3318   function_type    size: @12      algn: 8        retn: @16     
+                         prms: @3323   
+@3319   function_decl    name: @3317    type: @3318    srcp: <built-in>:0      
                          chain: @3324    body: undefined 
                          link: extern  
-@3322   identifier_node  strg: __builtin_finited128    lngt: 20      
-@3323   identifier_node  strg: finited128              lngt: 10      
-@3324   function_decl    name: @3323    type: @1266    srcp: <built-in>:0      
-                         chain: @3325    body: undefined 
-                         link: extern  
-@3325   function_decl    name: @3326    type: @3327    scpe: @176    
-                         srcp: <built-in>:0            chain: @3328   
+@3320   tree_list        valu: @1932   
+@3321   array_type       size: @3325    algn: 8        elts: @9      
+                         domn: @3326   
+@3322   array_type       size: @3327    algn: 8        elts: @9      
+                         domn: @3328   
+@3323   tree_list        valu: @16      chan: @188    
+@3324   function_decl    name: @3329    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @3330   
                          body: undefined               link: extern  
-@3326   identifier_node  strg: __builtin_fpclassify    lngt: 20      
-@3327   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3329   
-@3328   function_decl    name: @3330    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3331   
-                         body: undefined               link: extern  
-@3329   tree_list        valu: @3       chan: @3332   
-@3330   identifier_node  strg: __builtin_isfinite      lngt: 18      
-@3331   function_decl    name: @3333    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3334   
-                         body: undefined               link: extern  
-@3332   tree_list        valu: @3       chan: @3335   
-@3333   identifier_node  strg: __builtin_isinf_sign    lngt: 20      
-@3334   function_decl    name: @3336    mngl: @3337    type: @1241   
+@3325   integer_cst      type: @11     int: 40
+@3326   integer_type     size: @22      algn: 64       prec: 64      
+                         sign: signed   min : @165     max : @3331   
+@3327   integer_cst      type: @11     int: 56
+@3328   integer_type     size: @22      algn: 64       prec: 64      
+                         sign: signed   min : @165     max : @3332   
+@3329   identifier_node  strg: __builtin_init_dwarf_reg_size_table 
+                         lngt: 35      
+@3330   function_decl    name: @3333    mngl: @3334    type: @670    
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3338    body: undefined 
+                         chain: @3335    body: undefined 
                          link: extern  
-@3335   tree_list        valu: @3       chan: @3339   
-@3336   identifier_node  strg: __builtin_isinf         lngt: 15      
-@3337   identifier_node  strg: isinf    lngt: 5       
-@3338   function_decl    name: @3337    type: @1241    srcp: <built-in>:0      
+@3331   integer_cst      type: @172    int: 4
+@3332   integer_cst      type: @172    int: 6
+@3333   identifier_node  strg: __builtin_finite        lngt: 16      
+@3334   identifier_node  strg: finite   lngt: 6       
+@3335   function_decl    name: @3334    type: @670     srcp: <built-in>:0      
+                         chain: @3336    body: undefined 
+                         link: extern  
+@3336   function_decl    name: @3337    mngl: @3338    type: @674    
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3339    body: undefined 
+                         link: extern  
+@3337   identifier_node  strg: __builtin_finitef       lngt: 17      
+@3338   identifier_node  strg: finitef  lngt: 7       
+@3339   function_decl    name: @3338    type: @674     srcp: <built-in>:0      
                          chain: @3340    body: undefined 
                          link: extern  
-@3339   tree_list        valu: @3       chan: @3341   
-@3340   function_decl    name: @3342    mngl: @3343    type: @674    
+@3340   function_decl    name: @3341    mngl: @3342    type: @678    
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3343    body: undefined 
+                         link: extern  
+@3341   identifier_node  strg: __builtin_finitel       lngt: 17      
+@3342   identifier_node  strg: finitel  lngt: 7       
+@3343   function_decl    name: @3342    type: @678     srcp: <built-in>:0      
                          chain: @3344    body: undefined 
                          link: extern  
-@3341   tree_list        valu: @3      
-@3342   identifier_node  strg: __builtin_isinff        lngt: 16      
-@3343   identifier_node  strg: isinff   lngt: 6       
-@3344   function_decl    name: @3343    type: @674     srcp: <built-in>:0      
-                         chain: @3345    body: undefined 
-                         link: extern  
-@3345   function_decl    name: @3346    mngl: @3347    type: @678    
+@3344   function_decl    name: @3345    mngl: @3346    type: @1254   
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3347    body: undefined 
+                         link: extern  
+@3345   identifier_node  strg: __builtin_finited32     lngt: 19      
+@3346   identifier_node  strg: finited32               lngt: 9       
+@3347   function_decl    name: @3346    type: @1254    srcp: <built-in>:0      
                          chain: @3348    body: undefined 
                          link: extern  
-@3346   identifier_node  strg: __builtin_isinfl        lngt: 16      
-@3347   identifier_node  strg: isinfl   lngt: 6       
-@3348   function_decl    name: @3347    type: @678     srcp: <built-in>:0      
-                         chain: @3349    body: undefined 
-                         link: extern  
-@3349   function_decl    name: @3350    mngl: @3351    type: @1254   
+@3348   function_decl    name: @3349    mngl: @3350    type: @1260   
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3351    body: undefined 
+                         link: extern  
+@3349   identifier_node  strg: __builtin_finited64     lngt: 19      
+@3350   identifier_node  strg: finited64               lngt: 9       
+@3351   function_decl    name: @3350    type: @1260    srcp: <built-in>:0      
                          chain: @3352    body: undefined 
                          link: extern  
-@3350   identifier_node  strg: __builtin_isinfd32      lngt: 18      
-@3351   identifier_node  strg: isinfd32 lngt: 8       
-@3352   function_decl    name: @3351    type: @1254    srcp: <built-in>:0      
-                         chain: @3353    body: undefined 
-                         link: extern  
-@3353   function_decl    name: @3354    mngl: @3355    type: @1260   
+@3352   function_decl    name: @3353    mngl: @3354    type: @1266   
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3355    body: undefined 
+                         link: extern  
+@3353   identifier_node  strg: __builtin_finited128    lngt: 20      
+@3354   identifier_node  strg: finited128              lngt: 10      
+@3355   function_decl    name: @3354    type: @1266    srcp: <built-in>:0      
                          chain: @3356    body: undefined 
                          link: extern  
-@3354   identifier_node  strg: __builtin_isinfd64      lngt: 18      
-@3355   identifier_node  strg: isinfd64 lngt: 8       
-@3356   function_decl    name: @3355    type: @1260    srcp: <built-in>:0      
-                         chain: @3357    body: undefined 
-                         link: extern  
-@3357   function_decl    name: @3358    mngl: @3359    type: @1266   
+@3356   function_decl    name: @3357    type: @3358    scpe: @176    
+                         srcp: <built-in>:0            chain: @3359   
+                         body: undefined               link: extern  
+@3357   identifier_node  strg: __builtin_fpclassify    lngt: 20      
+@3358   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3360   
+@3359   function_decl    name: @3361    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3362   
+                         body: undefined               link: extern  
+@3360   tree_list        valu: @3       chan: @3363   
+@3361   identifier_node  strg: __builtin_isfinite      lngt: 18      
+@3362   function_decl    name: @3364    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3365   
+                         body: undefined               link: extern  
+@3363   tree_list        valu: @3       chan: @3366   
+@3364   identifier_node  strg: __builtin_isinf_sign    lngt: 20      
+@3365   function_decl    name: @3367    mngl: @3368    type: @1241   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3360    body: undefined 
-                         link: extern  
-@3358   identifier_node  strg: __builtin_isinfd128     lngt: 19      
-@3359   identifier_node  strg: isinfd128               lngt: 9       
-@3360   function_decl    name: @3359    type: @1266    srcp: <built-in>:0      
-                         chain: @3361    body: undefined 
-                         link: extern  
-@3361   function_decl    name: @3362    mngl: @3363    type: @1241   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3364    body: undefined 
-                         link: extern  
-@3362   identifier_node  strg: __builtin_isnan         lngt: 15      
-@3363   identifier_node  strg: isnan    lngt: 5       
-@3364   function_decl    name: @3363    type: @1241    srcp: <built-in>:0      
-                         chain: @3365    body: undefined 
-                         link: extern  
-@3365   function_decl    name: @3366    mngl: @3367    type: @674    
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3368    body: undefined 
-                         link: extern  
-@3366   identifier_node  strg: __builtin_isnanf        lngt: 16      
-@3367   identifier_node  strg: isnanf   lngt: 6       
-@3368   function_decl    name: @3367    type: @674     srcp: <built-in>:0      
                          chain: @3369    body: undefined 
                          link: extern  
-@3369   function_decl    name: @3370    mngl: @3371    type: @678    
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3372    body: undefined 
+@3366   tree_list        valu: @3       chan: @3370   
+@3367   identifier_node  strg: __builtin_isinf         lngt: 15      
+@3368   identifier_node  strg: isinf    lngt: 5       
+@3369   function_decl    name: @3368    type: @1241    srcp: <built-in>:0      
+                         chain: @3371    body: undefined 
                          link: extern  
-@3370   identifier_node  strg: __builtin_isnanl        lngt: 16      
-@3371   identifier_node  strg: isnanl   lngt: 6       
-@3372   function_decl    name: @3371    type: @678     srcp: <built-in>:0      
-                         chain: @3373    body: undefined 
-                         link: extern  
-@3373   function_decl    name: @3374    mngl: @3375    type: @1254   
+@3370   tree_list        valu: @3       chan: @3372   
+@3371   function_decl    name: @3373    mngl: @3374    type: @674    
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3375    body: undefined 
+                         link: extern  
+@3372   tree_list        valu: @3      
+@3373   identifier_node  strg: __builtin_isinff        lngt: 16      
+@3374   identifier_node  strg: isinff   lngt: 6       
+@3375   function_decl    name: @3374    type: @674     srcp: <built-in>:0      
                          chain: @3376    body: undefined 
                          link: extern  
-@3374   identifier_node  strg: __builtin_isnand32      lngt: 18      
-@3375   identifier_node  strg: isnand32 lngt: 8       
-@3376   function_decl    name: @3375    type: @1254    srcp: <built-in>:0      
-                         chain: @3377    body: undefined 
-                         link: extern  
-@3377   function_decl    name: @3378    mngl: @3379    type: @1260   
+@3376   function_decl    name: @3377    mngl: @3378    type: @678    
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3379    body: undefined 
+                         link: extern  
+@3377   identifier_node  strg: __builtin_isinfl        lngt: 16      
+@3378   identifier_node  strg: isinfl   lngt: 6       
+@3379   function_decl    name: @3378    type: @678     srcp: <built-in>:0      
                          chain: @3380    body: undefined 
                          link: extern  
-@3378   identifier_node  strg: __builtin_isnand64      lngt: 18      
-@3379   identifier_node  strg: isnand64 lngt: 8       
-@3380   function_decl    name: @3379    type: @1260    srcp: <built-in>:0      
-                         chain: @3381    body: undefined 
-                         link: extern  
-@3381   function_decl    name: @3382    mngl: @3383    type: @1266   
+@3380   function_decl    name: @3381    mngl: @3382    type: @1254   
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3383    body: undefined 
+                         link: extern  
+@3381   identifier_node  strg: __builtin_isinfd32      lngt: 18      
+@3382   identifier_node  strg: isinfd32 lngt: 8       
+@3383   function_decl    name: @3382    type: @1254    srcp: <built-in>:0      
                          chain: @3384    body: undefined 
                          link: extern  
-@3382   identifier_node  strg: __builtin_isnand128     lngt: 19      
-@3383   identifier_node  strg: isnand128               lngt: 9       
-@3384   function_decl    name: @3383    type: @1266    srcp: <built-in>:0      
-                         chain: @3385    body: undefined 
-                         link: extern  
-@3385   function_decl    name: @3386    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3387   
-                         body: undefined               link: extern  
-@3386   identifier_node  strg: __builtin_isnormal      lngt: 18      
-@3387   function_decl    name: @3388    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3389   
-                         body: undefined               link: extern  
-@3388   identifier_node  strg: __builtin_isgreater     lngt: 19      
-@3389   function_decl    name: @3390    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3391   
-                         body: undefined               link: extern  
-@3390   identifier_node  strg: __builtin_isgreaterequal 
-                         lngt: 24      
-@3391   function_decl    name: @3392    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3393   
-                         body: undefined               link: extern  
-@3392   identifier_node  strg: __builtin_isless        lngt: 16      
-@3393   function_decl    name: @3394    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3395   
-                         body: undefined               link: extern  
-@3394   identifier_node  strg: __builtin_islessequal   lngt: 21      
-@3395   function_decl    name: @3396    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3397   
-                         body: undefined               link: extern  
-@3396   identifier_node  strg: __builtin_islessgreater lngt: 23      
-@3397   function_decl    name: @3398    type: @1241    scpe: @176    
-                         srcp: <built-in>:0            chain: @3399   
-                         body: undefined               link: extern  
-@3398   identifier_node  strg: __builtin_isunordered   lngt: 21      
-@3399   function_decl    name: @3400    mngl: @3401    type: @3291   
+@3384   function_decl    name: @3385    mngl: @3386    type: @1260   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3402    body: undefined 
+                         chain: @3387    body: undefined 
                          link: extern  
-@3400   identifier_node  strg: __builtin_labs          lngt: 14      
-@3401   identifier_node  strg: labs     lngt: 4       
-@3402   function_decl    name: @3401    type: @3291    srcp: <built-in>:0      
+@3385   identifier_node  strg: __builtin_isinfd64      lngt: 18      
+@3386   identifier_node  strg: isinfd64 lngt: 8       
+@3387   function_decl    name: @3386    type: @1260    srcp: <built-in>:0      
+                         chain: @3388    body: undefined 
+                         link: extern  
+@3388   function_decl    name: @3389    mngl: @3390    type: @1266   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3391    body: undefined 
+                         link: extern  
+@3389   identifier_node  strg: __builtin_isinfd128     lngt: 19      
+@3390   identifier_node  strg: isinfd128               lngt: 9       
+@3391   function_decl    name: @3390    type: @1266    srcp: <built-in>:0      
+                         chain: @3392    body: undefined 
+                         link: extern  
+@3392   function_decl    name: @3393    mngl: @3394    type: @1241   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3395    body: undefined 
+                         link: extern  
+@3393   identifier_node  strg: __builtin_isnan         lngt: 15      
+@3394   identifier_node  strg: isnan    lngt: 5       
+@3395   function_decl    name: @3394    type: @1241    srcp: <built-in>:0      
+                         chain: @3396    body: undefined 
+                         link: extern  
+@3396   function_decl    name: @3397    mngl: @3398    type: @674    
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3399    body: undefined 
+                         link: extern  
+@3397   identifier_node  strg: __builtin_isnanf        lngt: 16      
+@3398   identifier_node  strg: isnanf   lngt: 6       
+@3399   function_decl    name: @3398    type: @674     srcp: <built-in>:0      
+                         chain: @3400    body: undefined 
+                         link: extern  
+@3400   function_decl    name: @3401    mngl: @3402    type: @678    
+                         scpe: @176     srcp: <built-in>:0      
                          chain: @3403    body: undefined 
                          link: extern  
-@3403   function_decl    name: @3404    mngl: @3405    type: @3406   
+@3401   identifier_node  strg: __builtin_isnanl        lngt: 16      
+@3402   identifier_node  strg: isnanl   lngt: 6       
+@3403   function_decl    name: @3402    type: @678     srcp: <built-in>:0      
+                         chain: @3404    body: undefined 
+                         link: extern  
+@3404   function_decl    name: @3405    mngl: @3406    type: @1254   
                          scpe: @176     srcp: <built-in>:0      
                          chain: @3407    body: undefined 
                          link: extern  
-@3404   identifier_node  strg: __builtin_llabs         lngt: 15      
-@3405   identifier_node  strg: llabs    lngt: 5       
-@3406   function_type    size: @12      algn: 8        retn: @46     
-                         prms: @3408   
-@3407   function_decl    name: @3405    type: @3406    srcp: <built-in>:0      
-                         chain: @3409    body: undefined 
+@3405   identifier_node  strg: __builtin_isnand32      lngt: 18      
+@3406   identifier_node  strg: isnand32 lngt: 8       
+@3407   function_decl    name: @3406    type: @1254    srcp: <built-in>:0      
+                         chain: @3408    body: undefined 
                          link: extern  
-@3408   tree_list        valu: @46      chan: @188    
-@3409   function_decl    name: @3410    type: @3411    scpe: @176    
-                         srcp: <built-in>:0            chain: @3412   
-                         body: undefined               link: extern  
-@3410   identifier_node  strg: __builtin_longjmp       lngt: 17      
-@3411   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3413   
-@3412   function_decl    name: @3414    mngl: @3415    type: @3416   
+@3408   function_decl    name: @3409    mngl: @3410    type: @1260   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3417    body: undefined 
+                         chain: @3411    body: undefined 
                          link: extern  
-@3413   tree_list        valu: @186     chan: @3418   
-@3414   identifier_node  strg: __builtin_malloc        lngt: 16      
-@3415   identifier_node  strg: malloc   lngt: 6       
-@3416   function_type    size: @12      algn: 8        retn: @186    
+@3409   identifier_node  strg: __builtin_isnand64      lngt: 18      
+@3410   identifier_node  strg: isnand64 lngt: 8       
+@3411   function_decl    name: @3410    type: @1260    srcp: <built-in>:0      
+                         chain: @3412    body: undefined 
+                         link: extern  
+@3412   function_decl    name: @3413    mngl: @3414    type: @1266   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3415    body: undefined 
+                         link: extern  
+@3413   identifier_node  strg: __builtin_isnand128     lngt: 19      
+@3414   identifier_node  strg: isnand128               lngt: 9       
+@3415   function_decl    name: @3414    type: @1266    srcp: <built-in>:0      
+                         chain: @3416    body: undefined 
+                         link: extern  
+@3416   function_decl    name: @3417    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3418   
+                         body: undefined               link: extern  
+@3417   identifier_node  strg: __builtin_isnormal      lngt: 18      
+@3418   function_decl    name: @3419    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3420   
+                         body: undefined               link: extern  
+@3419   identifier_node  strg: __builtin_isgreater     lngt: 19      
+@3420   function_decl    name: @3421    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3422   
+                         body: undefined               link: extern  
+@3421   identifier_node  strg: __builtin_isgreaterequal 
+                         lngt: 24      
+@3422   function_decl    name: @3423    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3424   
+                         body: undefined               link: extern  
+@3423   identifier_node  strg: __builtin_isless        lngt: 16      
+@3424   function_decl    name: @3425    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3426   
+                         body: undefined               link: extern  
+@3425   identifier_node  strg: __builtin_islessequal   lngt: 21      
+@3426   function_decl    name: @3427    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3428   
+                         body: undefined               link: extern  
+@3427   identifier_node  strg: __builtin_islessgreater lngt: 23      
+@3428   function_decl    name: @3429    type: @1241    scpe: @176    
+                         srcp: <built-in>:0            chain: @3430   
+                         body: undefined               link: extern  
+@3429   identifier_node  strg: __builtin_isunordered   lngt: 21      
+@3430   function_decl    name: @3431    mngl: @3432    type: @3318   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3433    body: undefined 
+                         link: extern  
+@3431   identifier_node  strg: __builtin_labs          lngt: 14      
+@3432   identifier_node  strg: labs     lngt: 4       
+@3433   function_decl    name: @3432    type: @3318    srcp: <built-in>:0      
+                         chain: @3434    body: undefined 
+                         link: extern  
+@3434   function_decl    name: @3435    mngl: @3436    type: @3437   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3438    body: undefined 
+                         link: extern  
+@3435   identifier_node  strg: __builtin_llabs         lngt: 15      
+@3436   identifier_node  strg: llabs    lngt: 5       
+@3437   function_type    size: @12      algn: 8        retn: @46     
+                         prms: @3439   
+@3438   function_decl    name: @3436    type: @3437    srcp: <built-in>:0      
+                         chain: @3440    body: undefined 
+                         link: extern  
+@3439   tree_list        valu: @46      chan: @188    
+@3440   function_decl    name: @3441    type: @3442    scpe: @176    
+                         srcp: <built-in>:0            chain: @3443   
+                         body: undefined               link: extern  
+@3441   identifier_node  strg: __builtin_longjmp       lngt: 17      
+@3442   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3444   
+@3443   function_decl    name: @3445    mngl: @3446    type: @3447   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3448    body: undefined 
+                         link: extern  
+@3444   tree_list        valu: @186     chan: @3449   
+@3445   identifier_node  strg: __builtin_malloc        lngt: 16      
+@3446   identifier_node  strg: malloc   lngt: 6       
+@3447   function_type    size: @12      algn: 8        retn: @186    
                          prms: @2827   
-@3417   function_decl    name: @3415    type: @3416    srcp: <built-in>:0      
-                         chain: @3419    body: undefined 
+@3448   function_decl    name: @3446    type: @3447    srcp: <built-in>:0      
+                         chain: @3450    body: undefined 
                          link: extern  
-@3418   tree_list        valu: @3       chan: @188    
-@3419   function_decl    name: @3420    type: @2815    scpe: @176    
-                         srcp: <built-in>:0            chain: @3421   
+@3449   tree_list        valu: @3       chan: @188    
+@3450   function_decl    name: @3451    type: @2815    scpe: @176    
+                         srcp: <built-in>:0            chain: @3452   
                          body: undefined               link: extern  
-@3420   identifier_node  strg: __builtin_next_arg      lngt: 18      
-@3421   function_decl    name: @3422    type: @2574    scpe: @176    
-                         srcp: <built-in>:0            chain: @3423   
+@3451   identifier_node  strg: __builtin_next_arg      lngt: 18      
+@3452   function_decl    name: @3453    type: @2574    scpe: @176    
+                         srcp: <built-in>:0            chain: @3454   
                          body: undefined               link: extern  
-@3422   identifier_node  strg: __builtin_parity        lngt: 16      
-@3423   function_decl    name: @3424    type: @2914    scpe: @176    
-                         srcp: <built-in>:0            chain: @3425   
+@3453   identifier_node  strg: __builtin_parity        lngt: 16      
+@3454   function_decl    name: @3455    type: @2914    scpe: @176    
+                         srcp: <built-in>:0            chain: @3456   
                          body: undefined               link: extern  
-@3424   identifier_node  strg: __builtin_parityimax    lngt: 20      
-@3425   function_decl    name: @3426    type: @2914    scpe: @176    
-                         srcp: <built-in>:0            chain: @3427   
+@3455   identifier_node  strg: __builtin_parityimax    lngt: 20      
+@3456   function_decl    name: @3457    type: @2914    scpe: @176    
+                         srcp: <built-in>:0            chain: @3458   
                          body: undefined               link: extern  
-@3426   identifier_node  strg: __builtin_parityl       lngt: 17      
-@3427   function_decl    name: @3428    type: @2932    scpe: @176    
-                         srcp: <built-in>:0            chain: @3429   
+@3457   identifier_node  strg: __builtin_parityl       lngt: 17      
+@3458   function_decl    name: @3459    type: @2932    scpe: @176    
+                         srcp: <built-in>:0            chain: @3460   
                          body: undefined               link: extern  
-@3428   identifier_node  strg: __builtin_parityll      lngt: 18      
-@3429   function_decl    name: @3430    type: @2574    scpe: @176    
-                         srcp: <built-in>:0            chain: @3431   
+@3459   identifier_node  strg: __builtin_parityll      lngt: 18      
+@3460   function_decl    name: @3461    type: @2574    scpe: @176    
+                         srcp: <built-in>:0            chain: @3462   
                          body: undefined               link: extern  
-@3430   identifier_node  strg: __builtin_popcount      lngt: 18      
-@3431   function_decl    name: @3432    type: @2914    scpe: @176    
-                         srcp: <built-in>:0            chain: @3433   
+@3461   identifier_node  strg: __builtin_popcount      lngt: 18      
+@3462   function_decl    name: @3463    type: @2914    scpe: @176    
+                         srcp: <built-in>:0            chain: @3464   
                          body: undefined               link: extern  
-@3432   identifier_node  strg: __builtin_popcountimax  lngt: 22      
-@3433   function_decl    name: @3434    type: @2914    scpe: @176    
-                         srcp: <built-in>:0            chain: @3435   
+@3463   identifier_node  strg: __builtin_popcountimax  lngt: 22      
+@3464   function_decl    name: @3465    type: @2914    scpe: @176    
+                         srcp: <built-in>:0            chain: @3466   
                          body: undefined               link: extern  
-@3434   identifier_node  strg: __builtin_popcountl     lngt: 19      
-@3435   function_decl    name: @3436    type: @2932    scpe: @176    
-                         srcp: <built-in>:0            chain: @3437   
+@3465   identifier_node  strg: __builtin_popcountl     lngt: 19      
+@3466   function_decl    name: @3467    type: @2932    scpe: @176    
+                         srcp: <built-in>:0            chain: @3468   
                          body: undefined               link: extern  
-@3436   identifier_node  strg: __builtin_popcountll    lngt: 20      
-@3437   function_decl    name: @3438    mngl: @3439    type: @3440   
+@3467   identifier_node  strg: __builtin_popcountll    lngt: 20      
+@3468   function_decl    name: @3469    mngl: @3470    type: @3471   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3441    body: undefined 
+                         chain: @3472    body: undefined 
                          link: extern  
-@3438   identifier_node  strg: __builtin_posix_memalign 
+@3469   identifier_node  strg: __builtin_posix_memalign 
                          lngt: 24      
-@3439   identifier_node  strg: posix_memalign          lngt: 14      
-@3440   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3442   
-@3441   function_decl    name: @3439    type: @3440    srcp: <built-in>:0      
-                         chain: @3443    body: undefined 
+@3470   identifier_node  strg: posix_memalign          lngt: 14      
+@3471   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3473   
+@3472   function_decl    name: @3470    type: @3471    srcp: <built-in>:0      
+                         chain: @3474    body: undefined 
                          link: extern  
-@3442   tree_list        valu: @3444    chan: @3445   
-@3443   function_decl    name: @3446    type: @3447    scpe: @176    
-                         srcp: <built-in>:0            chain: @3448   
+@3473   tree_list        valu: @3475    chan: @3476   
+@3474   function_decl    name: @3477    type: @3478    scpe: @176    
+                         srcp: <built-in>:0            chain: @3479   
                          body: undefined               link: extern  
-@3444   pointer_type     size: @22      algn: 64       ptd : @186    
-@3445   tree_list        valu: @31      chan: @3449   
-@3446   identifier_node  strg: __builtin_prefetch      lngt: 18      
-@3447   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3450   
-@3448   function_decl    name: @3451    mngl: @3452    type: @3453   
+@3475   pointer_type     size: @22      algn: 64       ptd : @186    
+@3476   tree_list        valu: @31      chan: @3480   
+@3477   identifier_node  strg: __builtin_prefetch      lngt: 18      
+@3478   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3481   
+@3479   function_decl    name: @3482    mngl: @3483    type: @3484   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3454    body: undefined 
+                         chain: @3485    body: undefined 
                          link: extern  
-@3449   tree_list        valu: @31      chan: @188    
-@3450   tree_list        valu: @1741   
-@3451   identifier_node  strg: __builtin_realloc       lngt: 17      
-@3452   identifier_node  strg: realloc  lngt: 7       
-@3453   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @3455   
-@3454   function_decl    name: @3452    type: @3453    srcp: <built-in>:0      
-                         chain: @3456    body: undefined 
+@3480   tree_list        valu: @31      chan: @188    
+@3481   tree_list        valu: @1741   
+@3482   identifier_node  strg: __builtin_realloc       lngt: 17      
+@3483   identifier_node  strg: realloc  lngt: 7       
+@3484   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @3486   
+@3485   function_decl    name: @3483    type: @3484    srcp: <built-in>:0      
+                         chain: @3487    body: undefined 
                          link: extern  
-@3455   tree_list        valu: @186     chan: @3457   
-@3456   function_decl    name: @3458    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @3459   
+@3486   tree_list        valu: @186     chan: @3488   
+@3487   function_decl    name: @3489    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @3490   
                          body: undefined               link: extern  
-@3457   tree_list        valu: @31      chan: @188    
-@3458   identifier_node  strg: __builtin_return        lngt: 16      
-@3459   function_decl    name: @3460    type: @3239    scpe: @176    
-                         srcp: <built-in>:0            chain: @3461   
+@3488   tree_list        valu: @31      chan: @188    
+@3489   identifier_node  strg: __builtin_return        lngt: 16      
+@3490   function_decl    name: @3491    type: @3239    scpe: @176    
+                         srcp: <built-in>:0            chain: @3492   
                          body: undefined               link: extern  
-@3460   identifier_node  strg: __builtin_return_address 
+@3491   identifier_node  strg: __builtin_return_address 
                          lngt: 24      
-@3461   function_decl    name: @3462    type: @2815    scpe: @176    
-                         srcp: <built-in>:0            chain: @3463   
-                         body: undefined               link: extern  
-@3462   identifier_node  strg: __builtin_saveregs      lngt: 18      
-@3463   function_decl    name: @3464    type: @2270    scpe: @176    
-                         srcp: <built-in>:0            chain: @3465   
-                         body: undefined               link: extern  
-@3464   identifier_node  strg: __builtin_setjmp        lngt: 16      
-@3465   function_decl    name: @3466    mngl: @3467    type: @3468   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3469    body: undefined 
-                         link: extern  
-@3466   identifier_node  strg: __builtin_strfmon       lngt: 17      
-@3467   identifier_node  strg: strfmon  lngt: 7       
-@3468   function_type    size: @12      algn: 8        retn: @16     
-                         prms: @3470   
-@3469   function_decl    name: @3467    type: @3468    srcp: <built-in>:0      
-                         chain: @3471    body: undefined 
-                         link: extern  
-@3470   tree_list        valu: @1764    chan: @3472   
-@3471   function_decl    name: @3473    mngl: @3474    type: @3475   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3476    body: undefined 
-                         link: extern  
-@3472   tree_list        valu: @31      chan: @3477   
-@3473   identifier_node  strg: __builtin_strftime      lngt: 18      
-@3474   identifier_node  strg: strftime lngt: 8       
-@3475   function_type    size: @12      algn: 8        retn: @31     
-                         prms: @3478   
-@3476   function_decl    name: @3474    type: @3475    srcp: <built-in>:0      
-                         chain: @3479    body: undefined 
-                         link: extern  
-@3477   tree_list        valu: @1000   
-@3478   tree_list        valu: @1764    chan: @3480   
-@3479   function_decl    name: @3481    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @3483   
-                         body: undefined               link: extern  
-@3480   tree_list        valu: @31      chan: @3484   
-@3481   identifier_node  strg: __builtin_trap          lngt: 14      
-@3482   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @188    
-@3483   function_decl    name: @3485    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @3486   
-                         body: undefined               link: extern  
-@3484   tree_list        valu: @1000    chan: @3487   
-@3485   identifier_node  strg: __builtin_unreachable   lngt: 21      
-@3486   function_decl    name: @3488    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @3489   
-                         body: undefined               link: extern  
-@3487   tree_list        valu: @1741    chan: @188    
-@3488   identifier_node  strg: __builtin_unwind_init   lngt: 21      
-@3489   function_decl    name: @3490    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @3491   
-                         body: undefined               link: extern  
-@3490   identifier_node  strg: __builtin_update_setjmp_buf 
-                         lngt: 27      
-@3491   function_decl    name: @3492    type: @3493    scpe: @176    
+@3492   function_decl    name: @3493    type: @2815    scpe: @176    
                          srcp: <built-in>:0            chain: @3494   
                          body: undefined               link: extern  
-@3492   identifier_node  strg: __builtin_va_copy       lngt: 17      
-@3493   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3495   
-@3494   function_decl    name: @3496    type: @3497    scpe: @176    
-                         srcp: <built-in>:0            chain: @3498   
+@3493   identifier_node  strg: __builtin_saveregs      lngt: 18      
+@3494   function_decl    name: @3495    type: @2270    scpe: @176    
+                         srcp: <built-in>:0            chain: @3496   
                          body: undefined               link: extern  
-@3495   tree_list        valu: @2462    chan: @3499   
-@3496   identifier_node  strg: __builtin_va_end        lngt: 16      
-@3497   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3500   
-@3498   function_decl    name: @3501    type: @3502    scpe: @176    
-                         srcp: <built-in>:0            chain: @3503   
-                         body: undefined               link: extern  
-@3499   tree_list        valu: @2462    chan: @188    
-@3500   tree_list        valu: @2462    chan: @188    
-@3501   identifier_node  strg: __builtin_va_start      lngt: 18      
-@3502   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3504   
-@3503   function_decl    name: @3505    type: @2980    scpe: @176    
-                         srcp: <built-in>:0            chain: @3506   
-                         body: undefined               link: extern  
-@3504   tree_list        valu: @2462   
-@3505   identifier_node  strg: __builtin_va_arg_pack   lngt: 21      
-@3506   function_decl    name: @3507    type: @2980    scpe: @176    
-                         srcp: <built-in>:0            chain: @3508   
-                         body: undefined               link: extern  
-@3507   identifier_node  strg: __builtin_va_arg_pack_len 
-                         lngt: 25      
-@3508   function_decl    name: @3509    mngl: @3510    type: @3144   
+@3495   identifier_node  strg: __builtin_setjmp        lngt: 16      
+@3496   function_decl    name: @3497    mngl: @3498    type: @3499   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3511    body: undefined 
+                         chain: @3500    body: undefined 
                          link: extern  
-@3509   identifier_node  strg: __builtin__exit         lngt: 15      
-@3510   identifier_node  strg: _exit    lngt: 5       
-@3511   function_decl    name: @3510    type: @3144    srcp: <built-in>:0      
-                         chain: @3512    body: undefined 
+@3497   identifier_node  strg: __builtin_strfmon       lngt: 17      
+@3498   identifier_node  strg: strfmon  lngt: 7       
+@3499   function_type    size: @12      algn: 8        retn: @16     
+                         prms: @3501   
+@3500   function_decl    name: @3498    type: @3499    srcp: <built-in>:0      
+                         chain: @3502    body: undefined 
                          link: extern  
-@3512   function_decl    name: @3513    mngl: @3514    type: @3144   
+@3501   tree_list        valu: @1764    chan: @3503   
+@3502   function_decl    name: @3504    mngl: @3505    type: @3506   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3515    body: undefined 
+                         chain: @3507    body: undefined 
                          link: extern  
-@3513   identifier_node  strg: __builtin__Exit         lngt: 15      
-@3514   identifier_node  strg: _Exit    lngt: 5       
-@3515   function_decl    name: @3514    type: @3144    scpe: @176    
-                         srcp: <built-in>:0            chain: @3516   
-                         body: undefined               link: extern  
-@3516   function_decl    name: @3517    type: @3518    scpe: @176    
-                         srcp: <built-in>:0            chain: @3519   
-                         body: undefined               link: extern  
-@3517   identifier_node  strg: __builtin_object_size   lngt: 21      
-@3518   function_type    size: @12      algn: 8        retn: @31     
-                         prms: @3520   
-@3519   function_decl    name: @3521    mngl: @3522    type: @3523   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3524    body: undefined 
+@3503   tree_list        valu: @31      chan: @3508   
+@3504   identifier_node  strg: __builtin_strftime      lngt: 18      
+@3505   identifier_node  strg: strftime lngt: 8       
+@3506   function_type    size: @12      algn: 8        retn: @31     
+                         prms: @3509   
+@3507   function_decl    name: @3505    type: @3506    srcp: <built-in>:0      
+                         chain: @3510    body: undefined 
                          link: extern  
-@3520   tree_list        valu: @1741    chan: @3525   
-@3521   identifier_node  strg: __builtin___memcpy_chk  lngt: 22      
-@3522   identifier_node  strg: __memcpy_chk            lngt: 12      
-@3523   function_type    size: @12      algn: 8        retn: @186    
+@3508   tree_list        valu: @1000   
+@3509   tree_list        valu: @1764    chan: @3511   
+@3510   function_decl    name: @3512    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @3514   
+                         body: undefined               link: extern  
+@3511   tree_list        valu: @31      chan: @3515   
+@3512   identifier_node  strg: __builtin_trap          lngt: 14      
+@3513   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @188    
+@3514   function_decl    name: @3516    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @3517   
+                         body: undefined               link: extern  
+@3515   tree_list        valu: @1000    chan: @3518   
+@3516   identifier_node  strg: __builtin_unreachable   lngt: 21      
+@3517   function_decl    name: @3519    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @3520   
+                         body: undefined               link: extern  
+@3518   tree_list        valu: @1741    chan: @188    
+@3519   identifier_node  strg: __builtin_unwind_init   lngt: 21      
+@3520   function_decl    name: @3521    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @3522   
+                         body: undefined               link: extern  
+@3521   identifier_node  strg: __builtin_update_setjmp_buf 
+                         lngt: 27      
+@3522   function_decl    name: @3523    type: @3524    scpe: @176    
+                         srcp: <built-in>:0            chain: @3525   
+                         body: undefined               link: extern  
+@3523   identifier_node  strg: __builtin_va_copy       lngt: 17      
+@3524   function_type    size: @12      algn: 8        retn: @151    
                          prms: @3526   
-@3524   function_decl    name: @3522    type: @3523    scpe: @176    
-                         srcp: <built-in>:0            chain: @3527   
+@3525   function_decl    name: @3527    type: @3528    scpe: @176    
+                         srcp: <built-in>:0            chain: @3529   
                          body: undefined               link: extern  
-@3525   tree_list        valu: @3       chan: @188    
-@3526   tree_list        valu: @186     chan: @3528   
-@3527   function_decl    name: @3529    mngl: @3530    type: @3523   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3531    body: undefined 
-                         link: extern  
-@3528   tree_list        valu: @1741    chan: @3532   
-@3529   identifier_node  strg: __builtin___memmove_chk lngt: 23      
-@3530   identifier_node  strg: __memmove_chk           lngt: 13      
-@3531   function_decl    name: @3530    type: @3523    scpe: @176    
-                         srcp: <built-in>:0            chain: @3533   
+@3526   tree_list        valu: @2462    chan: @3530   
+@3527   identifier_node  strg: __builtin_va_end        lngt: 16      
+@3528   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3531   
+@3529   function_decl    name: @3532    type: @3533    scpe: @176    
+                         srcp: <built-in>:0            chain: @3534   
                          body: undefined               link: extern  
-@3532   tree_list        valu: @31      chan: @3534   
-@3533   function_decl    name: @3535    mngl: @3536    type: @3537   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3538    body: undefined 
-                         link: extern  
-@3534   tree_list        valu: @31      chan: @188    
-@3535   identifier_node  strg: __builtin___mempcpy_chk lngt: 23      
-@3536   identifier_node  strg: __mempcpy_chk           lngt: 13      
-@3537   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @3526   
-@3538   function_decl    name: @3536    type: @3537    scpe: @176    
+@3530   tree_list        valu: @2462    chan: @188    
+@3531   tree_list        valu: @2462    chan: @188    
+@3532   identifier_node  strg: __builtin_va_start      lngt: 18      
+@3533   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3535   
+@3534   function_decl    name: @3536    type: @2980    scpe: @176    
+                         srcp: <built-in>:0            chain: @3537   
+                         body: undefined               link: extern  
+@3535   tree_list        valu: @2462   
+@3536   identifier_node  strg: __builtin_va_arg_pack   lngt: 21      
+@3537   function_decl    name: @3538    type: @2980    scpe: @176    
                          srcp: <built-in>:0            chain: @3539   
                          body: undefined               link: extern  
-@3539   function_decl    name: @3540    mngl: @3541    type: @3542   
+@3538   identifier_node  strg: __builtin_va_arg_pack_len 
+                         lngt: 25      
+@3539   function_decl    name: @3540    mngl: @3541    type: @3144   
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @3542    body: undefined 
+                         link: extern  
+@3540   identifier_node  strg: __builtin__exit         lngt: 15      
+@3541   identifier_node  strg: _exit    lngt: 5       
+@3542   function_decl    name: @3541    type: @3144    srcp: <built-in>:0      
                          chain: @3543    body: undefined 
                          link: extern  
-@3540   identifier_node  strg: __builtin___memset_chk  lngt: 22      
-@3541   identifier_node  strg: __memset_chk            lngt: 12      
-@3542   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @3544   
-@3543   function_decl    name: @3541    type: @3542    scpe: @176    
-                         srcp: <built-in>:0            chain: @3545   
-                         body: undefined               link: extern  
-@3544   tree_list        valu: @186     chan: @3546   
-@3545   function_decl    name: @3547    mngl: @3548    type: @1819   
+@3543   function_decl    name: @3544    mngl: @3545    type: @3144   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3549    body: undefined 
+                         chain: @3546    body: undefined 
                          link: extern  
-@3546   tree_list        valu: @3       chan: @3550   
-@3547   identifier_node  strg: __builtin___stpcpy_chk  lngt: 22      
-@3548   identifier_node  strg: __stpcpy_chk            lngt: 12      
-@3549   function_decl    name: @3548    type: @1819    scpe: @176    
-                         srcp: <built-in>:0            chain: @3551   
+@3544   identifier_node  strg: __builtin__Exit         lngt: 15      
+@3545   identifier_node  strg: _Exit    lngt: 5       
+@3546   function_decl    name: @3545    type: @3144    scpe: @176    
+                         srcp: <built-in>:0            chain: @3547   
                          body: undefined               link: extern  
-@3550   tree_list        valu: @31      chan: @3552   
-@3551   function_decl    name: @3553    mngl: @3554    type: @3555   
+@3547   function_decl    name: @3548    type: @3549    scpe: @176    
+                         srcp: <built-in>:0            chain: @3550   
+                         body: undefined               link: extern  
+@3548   identifier_node  strg: __builtin_object_size   lngt: 21      
+@3549   function_type    size: @12      algn: 8        retn: @31     
+                         prms: @3551   
+@3550   function_decl    name: @3552    mngl: @3553    type: @3554   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3556    body: undefined 
+                         chain: @3555    body: undefined 
                          link: extern  
-@3552   tree_list        valu: @31      chan: @188    
-@3553   identifier_node  strg: __builtin___stpncpy_chk lngt: 23      
-@3554   identifier_node  strg: __stpncpy_chk           lngt: 13      
-@3555   function_type    size: @12      algn: 8        retn: @1764   
+@3551   tree_list        valu: @1741    chan: @3556   
+@3552   identifier_node  strg: __builtin___memcpy_chk  lngt: 22      
+@3553   identifier_node  strg: __memcpy_chk            lngt: 12      
+@3554   function_type    size: @12      algn: 8        retn: @186    
                          prms: @3557   
-@3556   function_decl    name: @3554    type: @3555    scpe: @176    
+@3555   function_decl    name: @3553    type: @3554    scpe: @176    
                          srcp: <built-in>:0            chain: @3558   
                          body: undefined               link: extern  
-@3557   tree_list        valu: @1764    chan: @3559   
-@3558   function_decl    name: @3560    mngl: @3561    type: @1884   
+@3556   tree_list        valu: @3       chan: @188    
+@3557   tree_list        valu: @186     chan: @3559   
+@3558   function_decl    name: @3560    mngl: @3561    type: @3554   
                          scpe: @176     srcp: <built-in>:0      
                          chain: @3562    body: undefined 
                          link: extern  
-@3559   tree_list        valu: @1000    chan: @3563   
-@3560   identifier_node  strg: __builtin___strcat_chk  lngt: 22      
-@3561   identifier_node  strg: __strcat_chk            lngt: 12      
-@3562   function_decl    name: @3561    type: @1884    scpe: @176    
+@3559   tree_list        valu: @1741    chan: @3563   
+@3560   identifier_node  strg: __builtin___memmove_chk lngt: 23      
+@3561   identifier_node  strg: __memmove_chk           lngt: 13      
+@3562   function_decl    name: @3561    type: @3554    scpe: @176    
                          srcp: <built-in>:0            chain: @3564   
                          body: undefined               link: extern  
 @3563   tree_list        valu: @31      chan: @3565   
-@3564   function_decl    name: @3566    mngl: @3567    type: @1884   
+@3564   function_decl    name: @3566    mngl: @3567    type: @3568   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3568    body: undefined 
+                         chain: @3569    body: undefined 
                          link: extern  
 @3565   tree_list        valu: @31      chan: @188    
-@3566   identifier_node  strg: __builtin___strcpy_chk  lngt: 22      
-@3567   identifier_node  strg: __strcpy_chk            lngt: 12      
-@3568   function_decl    name: @3567    type: @1884    scpe: @176    
-                         srcp: <built-in>:0            chain: @3569   
-                         body: undefined               link: extern  
-@3569   function_decl    name: @3570    mngl: @3571    type: @3572   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @3573    body: undefined 
-                         link: extern  
-@3570   identifier_node  strg: __builtin___strncat_chk lngt: 23      
-@3571   identifier_node  strg: __strncat_chk           lngt: 13      
-@3572   function_type    size: @12      algn: 8        retn: @1764   
+@3566   identifier_node  strg: __builtin___mempcpy_chk lngt: 23      
+@3567   identifier_node  strg: __mempcpy_chk           lngt: 13      
+@3568   function_type    size: @12      algn: 8        retn: @186    
                          prms: @3557   
-@3573   function_decl    name: @3571    type: @3572    scpe: @176    
-                         srcp: <built-in>:0            chain: @3574   
+@3569   function_decl    name: @3567    type: @3568    scpe: @176    
+                         srcp: <built-in>:0            chain: @3570   
                          body: undefined               link: extern  
-@3574   function_decl    name: @3575    mngl: @3576    type: @3572   
+@3570   function_decl    name: @3571    mngl: @3572    type: @3573   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3577    body: undefined 
+                         chain: @3574    body: undefined 
                          link: extern  
-@3575   identifier_node  strg: __builtin___strncpy_chk lngt: 23      
-@3576   identifier_node  strg: __strncpy_chk           lngt: 13      
-@3577   function_decl    name: @3576    type: @3572    scpe: @176    
-                         srcp: <built-in>:0            chain: @3578   
+@3571   identifier_node  strg: __builtin___memset_chk  lngt: 22      
+@3572   identifier_node  strg: __memset_chk            lngt: 12      
+@3573   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @3575   
+@3574   function_decl    name: @3572    type: @3573    scpe: @176    
+                         srcp: <built-in>:0            chain: @3576   
                          body: undefined               link: extern  
-@3578   function_decl    name: @3579    mngl: @3580    type: @3581   
+@3575   tree_list        valu: @186     chan: @3577   
+@3576   function_decl    name: @3578    mngl: @3579    type: @1819   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3582    body: undefined 
+                         chain: @3580    body: undefined 
                          link: extern  
-@3579   identifier_node  strg: __builtin___snprintf_chk 
-                         lngt: 24      
-@3580   identifier_node  strg: __snprintf_chk          lngt: 14      
-@3581   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3583   
-@3582   function_decl    name: @3580    type: @3581    scpe: @176    
-                         srcp: <built-in>:0            chain: @3584   
+@3577   tree_list        valu: @3       chan: @3581   
+@3578   identifier_node  strg: __builtin___stpcpy_chk  lngt: 22      
+@3579   identifier_node  strg: __stpcpy_chk            lngt: 12      
+@3580   function_decl    name: @3579    type: @1819    scpe: @176    
+                         srcp: <built-in>:0            chain: @3582   
                          body: undefined               link: extern  
-@3583   tree_list        valu: @1764    chan: @3585   
-@3584   function_decl    name: @3586    mngl: @3587    type: @3588   
+@3581   tree_list        valu: @31      chan: @3583   
+@3582   function_decl    name: @3584    mngl: @3585    type: @3586   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3589    body: undefined 
+                         chain: @3587    body: undefined 
                          link: extern  
-@3585   tree_list        valu: @31      chan: @3590   
-@3586   identifier_node  strg: __builtin___sprintf_chk lngt: 23      
-@3587   identifier_node  strg: __sprintf_chk           lngt: 13      
-@3588   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3591   
-@3589   function_decl    name: @3587    type: @3588    scpe: @176    
-                         srcp: <built-in>:0            chain: @3592   
+@3583   tree_list        valu: @31      chan: @188    
+@3584   identifier_node  strg: __builtin___stpncpy_chk lngt: 23      
+@3585   identifier_node  strg: __stpncpy_chk           lngt: 13      
+@3586   function_type    size: @12      algn: 8        retn: @1764   
+                         prms: @3588   
+@3587   function_decl    name: @3585    type: @3586    scpe: @176    
+                         srcp: <built-in>:0            chain: @3589   
                          body: undefined               link: extern  
-@3590   tree_list        valu: @3       chan: @3593   
-@3591   tree_list        valu: @1764    chan: @3594   
-@3592   function_decl    name: @3595    mngl: @3596    type: @3597   
+@3588   tree_list        valu: @1764    chan: @3590   
+@3589   function_decl    name: @3591    mngl: @3592    type: @1884   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3598    body: undefined 
+                         chain: @3593    body: undefined 
                          link: extern  
-@3593   tree_list        valu: @31      chan: @3599   
-@3594   tree_list        valu: @3       chan: @3600   
-@3595   identifier_node  strg: __builtin___vsnprintf_chk 
-                         lngt: 25      
-@3596   identifier_node  strg: __vsnprintf_chk         lngt: 15      
-@3597   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3601   
-@3598   function_decl    name: @3596    type: @3597    scpe: @176    
-                         srcp: <built-in>:0            chain: @3602   
+@3590   tree_list        valu: @1000    chan: @3594   
+@3591   identifier_node  strg: __builtin___strcat_chk  lngt: 22      
+@3592   identifier_node  strg: __strcat_chk            lngt: 12      
+@3593   function_decl    name: @3592    type: @1884    scpe: @176    
+                         srcp: <built-in>:0            chain: @3595   
                          body: undefined               link: extern  
-@3599   tree_list        valu: @1000   
-@3600   tree_list        valu: @31      chan: @3603   
-@3601   tree_list        valu: @1764    chan: @3604   
-@3602   function_decl    name: @3605    mngl: @3606    type: @3607   
+@3594   tree_list        valu: @31      chan: @3596   
+@3595   function_decl    name: @3597    mngl: @3598    type: @1884   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3599    body: undefined 
+                         link: extern  
+@3596   tree_list        valu: @31      chan: @188    
+@3597   identifier_node  strg: __builtin___strcpy_chk  lngt: 22      
+@3598   identifier_node  strg: __strcpy_chk            lngt: 12      
+@3599   function_decl    name: @3598    type: @1884    scpe: @176    
+                         srcp: <built-in>:0            chain: @3600   
+                         body: undefined               link: extern  
+@3600   function_decl    name: @3601    mngl: @3602    type: @3603   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3604    body: undefined 
+                         link: extern  
+@3601   identifier_node  strg: __builtin___strncat_chk lngt: 23      
+@3602   identifier_node  strg: __strncat_chk           lngt: 13      
+@3603   function_type    size: @12      algn: 8        retn: @1764   
+                         prms: @3588   
+@3604   function_decl    name: @3602    type: @3603    scpe: @176    
+                         srcp: <built-in>:0            chain: @3605   
+                         body: undefined               link: extern  
+@3605   function_decl    name: @3606    mngl: @3607    type: @3603   
                          scpe: @176     srcp: <built-in>:0      
                          chain: @3608    body: undefined 
                          link: extern  
-@3603   tree_list        valu: @1000   
-@3604   tree_list        valu: @31      chan: @3609   
-@3605   identifier_node  strg: __builtin___vsprintf_chk 
+@3606   identifier_node  strg: __builtin___strncpy_chk lngt: 23      
+@3607   identifier_node  strg: __strncpy_chk           lngt: 13      
+@3608   function_decl    name: @3607    type: @3603    scpe: @176    
+                         srcp: <built-in>:0            chain: @3609   
+                         body: undefined               link: extern  
+@3609   function_decl    name: @3610    mngl: @3611    type: @3612   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3613    body: undefined 
+                         link: extern  
+@3610   identifier_node  strg: __builtin___snprintf_chk 
                          lngt: 24      
-@3606   identifier_node  strg: __vsprintf_chk          lngt: 14      
-@3607   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3610   
-@3608   function_decl    name: @3606    type: @3607    scpe: @176    
-                         srcp: <built-in>:0            chain: @3611   
+@3611   identifier_node  strg: __snprintf_chk          lngt: 14      
+@3612   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3614   
+@3613   function_decl    name: @3611    type: @3612    scpe: @176    
+                         srcp: <built-in>:0            chain: @3615   
                          body: undefined               link: extern  
-@3609   tree_list        valu: @3       chan: @3612   
-@3610   tree_list        valu: @1764    chan: @3613   
-@3611   function_decl    name: @3614    mngl: @3615    type: @3616   
+@3614   tree_list        valu: @1764    chan: @3616   
+@3615   function_decl    name: @3617    mngl: @3618    type: @3619   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3617    body: undefined 
+                         chain: @3620    body: undefined 
                          link: extern  
-@3612   tree_list        valu: @31      chan: @3618   
-@3613   tree_list        valu: @3       chan: @3619   
-@3614   identifier_node  strg: __builtin___fprintf_chk lngt: 23      
-@3615   identifier_node  strg: __fprintf_chk           lngt: 13      
-@3616   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3620   
-@3617   function_decl    name: @3615    type: @3616    scpe: @176    
-                         srcp: <built-in>:0            chain: @3621   
+@3616   tree_list        valu: @31      chan: @3621   
+@3617   identifier_node  strg: __builtin___sprintf_chk lngt: 23      
+@3618   identifier_node  strg: __sprintf_chk           lngt: 13      
+@3619   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3622   
+@3620   function_decl    name: @3618    type: @3619    scpe: @176    
+                         srcp: <built-in>:0            chain: @3623   
                          body: undefined               link: extern  
-@3618   tree_list        valu: @1000    chan: @3622   
-@3619   tree_list        valu: @31      chan: @3623   
-@3620   tree_list        valu: @186     chan: @3624   
-@3621   function_decl    name: @3625    mngl: @3626    type: @3627   
+@3621   tree_list        valu: @3       chan: @3624   
+@3622   tree_list        valu: @1764    chan: @3625   
+@3623   function_decl    name: @3626    mngl: @3627    type: @3628   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3628    body: undefined 
+                         chain: @3629    body: undefined 
                          link: extern  
-@3622   tree_list        valu: @2462    chan: @188    
-@3623   tree_list        valu: @1000    chan: @3629   
-@3624   tree_list        valu: @3       chan: @3630   
-@3625   identifier_node  strg: __builtin___printf_chk  lngt: 22      
-@3626   identifier_node  strg: __printf_chk            lngt: 12      
-@3627   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3631   
-@3628   function_decl    name: @3626    type: @3627    scpe: @176    
-                         srcp: <built-in>:0            chain: @3632   
+@3624   tree_list        valu: @31      chan: @3630   
+@3625   tree_list        valu: @3       chan: @3631   
+@3626   identifier_node  strg: __builtin___vsnprintf_chk 
+                         lngt: 25      
+@3627   identifier_node  strg: __vsnprintf_chk         lngt: 15      
+@3628   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3632   
+@3629   function_decl    name: @3627    type: @3628    scpe: @176    
+                         srcp: <built-in>:0            chain: @3633   
                          body: undefined               link: extern  
-@3629   tree_list        valu: @2462    chan: @188    
 @3630   tree_list        valu: @1000   
-@3631   tree_list        valu: @3       chan: @3633   
-@3632   function_decl    name: @3634    mngl: @3635    type: @3636   
+@3631   tree_list        valu: @31      chan: @3634   
+@3632   tree_list        valu: @1764    chan: @3635   
+@3633   function_decl    name: @3636    mngl: @3637    type: @3638   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3637    body: undefined 
+                         chain: @3639    body: undefined 
                          link: extern  
-@3633   tree_list        valu: @1000   
-@3634   identifier_node  strg: __builtin___vfprintf_chk 
+@3634   tree_list        valu: @1000   
+@3635   tree_list        valu: @31      chan: @3640   
+@3636   identifier_node  strg: __builtin___vsprintf_chk 
                          lngt: 24      
-@3635   identifier_node  strg: __vfprintf_chk          lngt: 14      
-@3636   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3638   
-@3637   function_decl    name: @3635    type: @3636    scpe: @176    
-                         srcp: <built-in>:0            chain: @3639   
+@3637   identifier_node  strg: __vsprintf_chk          lngt: 14      
+@3638   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3641   
+@3639   function_decl    name: @3637    type: @3638    scpe: @176    
+                         srcp: <built-in>:0            chain: @3642   
                          body: undefined               link: extern  
-@3638   tree_list        valu: @186     chan: @3640   
-@3639   function_decl    name: @3641    mngl: @3642    type: @3643   
+@3640   tree_list        valu: @3       chan: @3643   
+@3641   tree_list        valu: @1764    chan: @3644   
+@3642   function_decl    name: @3645    mngl: @3646    type: @3647   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @3644    body: undefined 
+                         chain: @3648    body: undefined 
                          link: extern  
-@3640   tree_list        valu: @3       chan: @3645   
-@3641   identifier_node  strg: __builtin___vprintf_chk lngt: 23      
-@3642   identifier_node  strg: __vprintf_chk           lngt: 13      
-@3643   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @3646   
-@3644   function_decl    name: @3642    type: @3643    scpe: @176    
-                         srcp: <built-in>:0            chain: @3647   
+@3643   tree_list        valu: @31      chan: @3649   
+@3644   tree_list        valu: @3       chan: @3650   
+@3645   identifier_node  strg: __builtin___fprintf_chk lngt: 23      
+@3646   identifier_node  strg: __fprintf_chk           lngt: 13      
+@3647   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3651   
+@3648   function_decl    name: @3646    type: @3647    scpe: @176    
+                         srcp: <built-in>:0            chain: @3652   
                          body: undefined               link: extern  
-@3645   tree_list        valu: @1000    chan: @3648   
-@3646   tree_list        valu: @3       chan: @3649   
-@3647   function_decl    name: @3650    type: @2873    scpe: @176    
-                         srcp: <built-in>:0            chain: @3651   
-                         body: undefined               link: extern  
-@3648   tree_list        valu: @2462    chan: @188    
-@3649   tree_list        valu: @1000    chan: @3652   
-@3650   identifier_node  strg: __cyg_profile_func_enter 
-                         lngt: 24      
-@3651   function_decl    name: @3653    type: @2873    scpe: @176    
-                         srcp: <built-in>:0            chain: @3654   
-                         body: undefined               link: extern  
-@3652   tree_list        valu: @2462    chan: @188    
-@3653   identifier_node  strg: __cyg_profile_func_exit lngt: 23      
-@3654   function_decl    name: @3655    type: @3024    scpe: @176    
-                         srcp: <built-in>:0            chain: @3656   
-                         body: undefined               link: extern  
-@3655   identifier_node  strg: __builtin_thread_pointer 
-                         lngt: 24      
-@3656   function_decl    name: @3657    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @3658   
-                         body: undefined               link: extern  
-@3657   identifier_node  strg: __builtin_set_thread_pointer 
-                         lngt: 28      
-@3658   function_decl    name: @3659    type: @3660    scpe: @176    
-                         srcp: <built-in>:0            chain: @3661   
-                         body: undefined               link: extern  
-@3659   identifier_node  strg: __builtin_FILE          lngt: 14      
-@3660   function_type    size: @12      algn: 8        retn: @1000   
-                         prms: @188    
-@3661   function_decl    name: @3662    type: @3660    scpe: @176    
+@3649   tree_list        valu: @1000    chan: @3653   
+@3650   tree_list        valu: @31      chan: @3654   
+@3651   tree_list        valu: @186     chan: @3655   
+@3652   function_decl    name: @3656    mngl: @3657    type: @3658   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3659    body: undefined 
+                         link: extern  
+@3653   tree_list        valu: @2462    chan: @188    
+@3654   tree_list        valu: @1000    chan: @3660   
+@3655   tree_list        valu: @3       chan: @3661   
+@3656   identifier_node  strg: __builtin___printf_chk  lngt: 22      
+@3657   identifier_node  strg: __printf_chk            lngt: 12      
+@3658   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3662   
+@3659   function_decl    name: @3657    type: @3658    scpe: @176    
                          srcp: <built-in>:0            chain: @3663   
                          body: undefined               link: extern  
-@3662   identifier_node  strg: __builtin_FUNCTION      lngt: 18      
-@3663   function_decl    name: @3664    type: @2980    scpe: @176    
-                         srcp: <built-in>:0            chain: @3665   
-                         body: undefined               link: extern  
-@3664   identifier_node  strg: __builtin_LINE          lngt: 14      
-@3665   function_decl    name: @3666    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3667   
-                         body: undefined               link: extern  
-@3666   identifier_node  strg: __sync_fetch_and_add    lngt: 20      
-@3667   function_decl    name: @3668    type: @3669    scpe: @176    
+@3660   tree_list        valu: @2462    chan: @188    
+@3661   tree_list        valu: @1000   
+@3662   tree_list        valu: @3       chan: @3664   
+@3663   function_decl    name: @3665    mngl: @3666    type: @3667   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3668    body: undefined 
+                         link: extern  
+@3664   tree_list        valu: @1000   
+@3665   identifier_node  strg: __builtin___vfprintf_chk 
+                         lngt: 24      
+@3666   identifier_node  strg: __vfprintf_chk          lngt: 14      
+@3667   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @3669   
+@3668   function_decl    name: @3666    type: @3667    scpe: @176    
                          srcp: <built-in>:0            chain: @3670   
                          body: undefined               link: extern  
-@3668   identifier_node  strg: __sync_fetch_and_add_1  lngt: 22      
-@3669   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @3671   
-@3670   function_decl    name: @3672    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3674   
-                         body: undefined               link: extern  
-@3671   tree_list        valu: @3675    chan: @3676   
-@3672   identifier_node  strg: __sync_fetch_and_add_2  lngt: 22      
-@3673   function_type    size: @12      algn: 8        retn: @62     
+@3669   tree_list        valu: @186     chan: @3671   
+@3670   function_decl    name: @3672    mngl: @3673    type: @3674   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @3675    body: undefined 
+                         link: extern  
+@3671   tree_list        valu: @3       chan: @3676   
+@3672   identifier_node  strg: __builtin___vprintf_chk lngt: 23      
+@3673   identifier_node  strg: __vprintf_chk           lngt: 13      
+@3674   function_type    size: @12      algn: 8        retn: @3      
                          prms: @3677   
-@3674   function_decl    name: @3678    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3680   
+@3675   function_decl    name: @3673    type: @3674    scpe: @176    
+                         srcp: <built-in>:0            chain: @3678   
                          body: undefined               link: extern  
-@3675   pointer_type     size: @22      algn: 64       ptd : @3681   
-@3676   tree_list        valu: @72      chan: @188    
-@3677   tree_list        valu: @3675    chan: @3682   
-@3678   identifier_node  strg: __sync_fetch_and_add_4  lngt: 22      
-@3679   function_type    size: @12      algn: 8        retn: @26     
-                         prms: @3683   
-@3680   function_decl    name: @3684    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3686   
+@3676   tree_list        valu: @1000    chan: @3679   
+@3677   tree_list        valu: @3       chan: @3680   
+@3678   function_decl    name: @3681    type: @2873    scpe: @176    
+                         srcp: <built-in>:0            chain: @3682   
                          body: undefined               link: extern  
-@3681   void_type        qual:  v       name: @149     unql: @151    
-                         algn: 8       
-@3682   tree_list        valu: @62      chan: @188    
-@3683   tree_list        valu: @3675    chan: @3687   
-@3684   identifier_node  strg: __sync_fetch_and_add_8  lngt: 22      
-@3685   function_type    size: @12      algn: 8        retn: @31     
-                         prms: @3688   
-@3686   function_decl    name: @3689    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3691   
+@3679   tree_list        valu: @2462    chan: @188    
+@3680   tree_list        valu: @1000    chan: @3683   
+@3681   identifier_node  strg: __cyg_profile_func_enter 
+                         lngt: 24      
+@3682   function_decl    name: @3684    type: @2873    scpe: @176    
+                         srcp: <built-in>:0            chain: @3685   
                          body: undefined               link: extern  
-@3687   tree_list        valu: @26      chan: @188    
-@3688   tree_list        valu: @3675    chan: @3692   
-@3689   identifier_node  strg: __sync_fetch_and_add_16 lngt: 23      
-@3690   function_type    size: @12      algn: 8        retn: @41     
-                         prms: @3693   
-@3691   function_decl    name: @3694    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3695   
+@3683   tree_list        valu: @2462    chan: @188    
+@3684   identifier_node  strg: __cyg_profile_func_exit lngt: 23      
+@3685   function_decl    name: @3686    type: @3024    scpe: @176    
+                         srcp: <built-in>:0            chain: @3687   
                          body: undefined               link: extern  
-@3692   tree_list        valu: @31      chan: @188    
-@3693   tree_list        valu: @3675    chan: @3696   
-@3694   identifier_node  strg: __sync_fetch_and_sub    lngt: 20      
-@3695   function_decl    name: @3697    type: @3669    scpe: @176    
+@3686   identifier_node  strg: __builtin_thread_pointer 
+                         lngt: 24      
+@3687   function_decl    name: @3688    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @3689   
+                         body: undefined               link: extern  
+@3688   identifier_node  strg: __builtin_set_thread_pointer 
+                         lngt: 28      
+@3689   function_decl    name: @3690    type: @3691    scpe: @176    
+                         srcp: <built-in>:0            chain: @3692   
+                         body: undefined               link: extern  
+@3690   identifier_node  strg: __builtin_FILE          lngt: 14      
+@3691   function_type    size: @12      algn: 8        retn: @1000   
+                         prms: @188    
+@3692   function_decl    name: @3693    type: @3691    scpe: @176    
+                         srcp: <built-in>:0            chain: @3694   
+                         body: undefined               link: extern  
+@3693   identifier_node  strg: __builtin_FUNCTION      lngt: 18      
+@3694   function_decl    name: @3695    type: @2980    scpe: @176    
+                         srcp: <built-in>:0            chain: @3696   
+                         body: undefined               link: extern  
+@3695   identifier_node  strg: __builtin_LINE          lngt: 14      
+@3696   function_decl    name: @3697    type: @2856    scpe: @176    
                          srcp: <built-in>:0            chain: @3698   
                          body: undefined               link: extern  
-@3696   tree_list        valu: @41      chan: @188    
-@3697   identifier_node  strg: __sync_fetch_and_sub_1  lngt: 22      
-@3698   function_decl    name: @3699    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3700   
+@3697   identifier_node  strg: __sync_fetch_and_add    lngt: 20      
+@3698   function_decl    name: @3699    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3701   
                          body: undefined               link: extern  
-@3699   identifier_node  strg: __sync_fetch_and_sub_2  lngt: 22      
-@3700   function_decl    name: @3701    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3702   
+@3699   identifier_node  strg: __sync_fetch_and_add_1  lngt: 22      
+@3700   function_type    size: @12      algn: 8        retn: @72     
+                         prms: @3702   
+@3701   function_decl    name: @3703    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3705   
                          body: undefined               link: extern  
-@3701   identifier_node  strg: __sync_fetch_and_sub_4  lngt: 22      
-@3702   function_decl    name: @3703    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3704   
+@3702   tree_list        valu: @3706    chan: @3707   
+@3703   identifier_node  strg: __sync_fetch_and_add_2  lngt: 22      
+@3704   function_type    size: @12      algn: 8        retn: @62     
+                         prms: @3708   
+@3705   function_decl    name: @3709    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3711   
                          body: undefined               link: extern  
-@3703   identifier_node  strg: __sync_fetch_and_sub_8  lngt: 22      
-@3704   function_decl    name: @3705    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3706   
+@3706   pointer_type     size: @22      algn: 64       ptd : @3712   
+@3707   tree_list        valu: @72      chan: @188    
+@3708   tree_list        valu: @3706    chan: @3713   
+@3709   identifier_node  strg: __sync_fetch_and_add_4  lngt: 22      
+@3710   function_type    size: @12      algn: 8        retn: @26     
+                         prms: @3714   
+@3711   function_decl    name: @3715    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3717   
                          body: undefined               link: extern  
-@3705   identifier_node  strg: __sync_fetch_and_sub_16 lngt: 23      
-@3706   function_decl    name: @3707    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3708   
-                         body: undefined               link: extern  
-@3707   identifier_node  strg: __sync_fetch_and_or     lngt: 19      
-@3708   function_decl    name: @3709    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3710   
-                         body: undefined               link: extern  
-@3709   identifier_node  strg: __sync_fetch_and_or_1   lngt: 21      
-@3710   function_decl    name: @3711    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3712   
-                         body: undefined               link: extern  
-@3711   identifier_node  strg: __sync_fetch_and_or_2   lngt: 21      
-@3712   function_decl    name: @3713    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3714   
-                         body: undefined               link: extern  
-@3713   identifier_node  strg: __sync_fetch_and_or_4   lngt: 21      
-@3714   function_decl    name: @3715    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3716   
-                         body: undefined               link: extern  
-@3715   identifier_node  strg: __sync_fetch_and_or_8   lngt: 21      
-@3716   function_decl    name: @3717    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3718   
-                         body: undefined               link: extern  
-@3717   identifier_node  strg: __sync_fetch_and_or_16  lngt: 22      
-@3718   function_decl    name: @3719    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3720   
-                         body: undefined               link: extern  
-@3719   identifier_node  strg: __sync_fetch_and_and    lngt: 20      
-@3720   function_decl    name: @3721    type: @3669    scpe: @176    
+@3712   void_type        qual:  v       name: @149     unql: @151    
+                         algn: 8       
+@3713   tree_list        valu: @62      chan: @188    
+@3714   tree_list        valu: @3706    chan: @3718   
+@3715   identifier_node  strg: __sync_fetch_and_add_8  lngt: 22      
+@3716   function_type    size: @12      algn: 8        retn: @31     
+                         prms: @3719   
+@3717   function_decl    name: @3720    type: @3721    scpe: @176    
                          srcp: <built-in>:0            chain: @3722   
                          body: undefined               link: extern  
-@3721   identifier_node  strg: __sync_fetch_and_and_1  lngt: 22      
-@3722   function_decl    name: @3723    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3724   
-                         body: undefined               link: extern  
-@3723   identifier_node  strg: __sync_fetch_and_and_2  lngt: 22      
-@3724   function_decl    name: @3725    type: @3679    scpe: @176    
+@3718   tree_list        valu: @26      chan: @188    
+@3719   tree_list        valu: @3706    chan: @3723   
+@3720   identifier_node  strg: __sync_fetch_and_add_16 lngt: 23      
+@3721   function_type    size: @12      algn: 8        retn: @41     
+                         prms: @3724   
+@3722   function_decl    name: @3725    type: @2856    scpe: @176    
                          srcp: <built-in>:0            chain: @3726   
                          body: undefined               link: extern  
-@3725   identifier_node  strg: __sync_fetch_and_and_4  lngt: 22      
-@3726   function_decl    name: @3727    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3728   
+@3723   tree_list        valu: @31      chan: @188    
+@3724   tree_list        valu: @3706    chan: @3727   
+@3725   identifier_node  strg: __sync_fetch_and_sub    lngt: 20      
+@3726   function_decl    name: @3728    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3729   
                          body: undefined               link: extern  
-@3727   identifier_node  strg: __sync_fetch_and_and_8  lngt: 22      
-@3728   function_decl    name: @3729    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3730   
+@3727   tree_list        valu: @41      chan: @188    
+@3728   identifier_node  strg: __sync_fetch_and_sub_1  lngt: 22      
+@3729   function_decl    name: @3730    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3731   
                          body: undefined               link: extern  
-@3729   identifier_node  strg: __sync_fetch_and_and_16 lngt: 23      
-@3730   function_decl    name: @3731    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3732   
+@3730   identifier_node  strg: __sync_fetch_and_sub_2  lngt: 22      
+@3731   function_decl    name: @3732    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3733   
                          body: undefined               link: extern  
-@3731   identifier_node  strg: __sync_fetch_and_xor    lngt: 20      
-@3732   function_decl    name: @3733    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3734   
+@3732   identifier_node  strg: __sync_fetch_and_sub_4  lngt: 22      
+@3733   function_decl    name: @3734    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3735   
                          body: undefined               link: extern  
-@3733   identifier_node  strg: __sync_fetch_and_xor_1  lngt: 22      
-@3734   function_decl    name: @3735    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3736   
+@3734   identifier_node  strg: __sync_fetch_and_sub_8  lngt: 22      
+@3735   function_decl    name: @3736    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3737   
                          body: undefined               link: extern  
-@3735   identifier_node  strg: __sync_fetch_and_xor_2  lngt: 22      
-@3736   function_decl    name: @3737    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3738   
+@3736   identifier_node  strg: __sync_fetch_and_sub_16 lngt: 23      
+@3737   function_decl    name: @3738    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3739   
                          body: undefined               link: extern  
-@3737   identifier_node  strg: __sync_fetch_and_xor_4  lngt: 22      
-@3738   function_decl    name: @3739    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3740   
+@3738   identifier_node  strg: __sync_fetch_and_or     lngt: 19      
+@3739   function_decl    name: @3740    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3741   
                          body: undefined               link: extern  
-@3739   identifier_node  strg: __sync_fetch_and_xor_8  lngt: 22      
-@3740   function_decl    name: @3741    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3742   
+@3740   identifier_node  strg: __sync_fetch_and_or_1   lngt: 21      
+@3741   function_decl    name: @3742    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3743   
                          body: undefined               link: extern  
-@3741   identifier_node  strg: __sync_fetch_and_xor_16 lngt: 23      
-@3742   function_decl    name: @3743    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3744   
+@3742   identifier_node  strg: __sync_fetch_and_or_2   lngt: 21      
+@3743   function_decl    name: @3744    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3745   
                          body: undefined               link: extern  
-@3743   identifier_node  strg: __sync_fetch_and_nand   lngt: 21      
-@3744   function_decl    name: @3745    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3746   
+@3744   identifier_node  strg: __sync_fetch_and_or_4   lngt: 21      
+@3745   function_decl    name: @3746    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3747   
                          body: undefined               link: extern  
-@3745   identifier_node  strg: __sync_fetch_and_nand_1 lngt: 23      
-@3746   function_decl    name: @3747    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3748   
+@3746   identifier_node  strg: __sync_fetch_and_or_8   lngt: 21      
+@3747   function_decl    name: @3748    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3749   
                          body: undefined               link: extern  
-@3747   identifier_node  strg: __sync_fetch_and_nand_2 lngt: 23      
-@3748   function_decl    name: @3749    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3750   
+@3748   identifier_node  strg: __sync_fetch_and_or_16  lngt: 22      
+@3749   function_decl    name: @3750    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3751   
                          body: undefined               link: extern  
-@3749   identifier_node  strg: __sync_fetch_and_nand_4 lngt: 23      
-@3750   function_decl    name: @3751    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3752   
+@3750   identifier_node  strg: __sync_fetch_and_and    lngt: 20      
+@3751   function_decl    name: @3752    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3753   
                          body: undefined               link: extern  
-@3751   identifier_node  strg: __sync_fetch_and_nand_8 lngt: 23      
-@3752   function_decl    name: @3753    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3754   
+@3752   identifier_node  strg: __sync_fetch_and_and_1  lngt: 22      
+@3753   function_decl    name: @3754    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3755   
                          body: undefined               link: extern  
-@3753   identifier_node  strg: __sync_fetch_and_nand_16 
+@3754   identifier_node  strg: __sync_fetch_and_and_2  lngt: 22      
+@3755   function_decl    name: @3756    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3757   
+                         body: undefined               link: extern  
+@3756   identifier_node  strg: __sync_fetch_and_and_4  lngt: 22      
+@3757   function_decl    name: @3758    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3759   
+                         body: undefined               link: extern  
+@3758   identifier_node  strg: __sync_fetch_and_and_8  lngt: 22      
+@3759   function_decl    name: @3760    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3761   
+                         body: undefined               link: extern  
+@3760   identifier_node  strg: __sync_fetch_and_and_16 lngt: 23      
+@3761   function_decl    name: @3762    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3763   
+                         body: undefined               link: extern  
+@3762   identifier_node  strg: __sync_fetch_and_xor    lngt: 20      
+@3763   function_decl    name: @3764    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3765   
+                         body: undefined               link: extern  
+@3764   identifier_node  strg: __sync_fetch_and_xor_1  lngt: 22      
+@3765   function_decl    name: @3766    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3767   
+                         body: undefined               link: extern  
+@3766   identifier_node  strg: __sync_fetch_and_xor_2  lngt: 22      
+@3767   function_decl    name: @3768    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3769   
+                         body: undefined               link: extern  
+@3768   identifier_node  strg: __sync_fetch_and_xor_4  lngt: 22      
+@3769   function_decl    name: @3770    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3771   
+                         body: undefined               link: extern  
+@3770   identifier_node  strg: __sync_fetch_and_xor_8  lngt: 22      
+@3771   function_decl    name: @3772    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3773   
+                         body: undefined               link: extern  
+@3772   identifier_node  strg: __sync_fetch_and_xor_16 lngt: 23      
+@3773   function_decl    name: @3774    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3775   
+                         body: undefined               link: extern  
+@3774   identifier_node  strg: __sync_fetch_and_nand   lngt: 21      
+@3775   function_decl    name: @3776    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3777   
+                         body: undefined               link: extern  
+@3776   identifier_node  strg: __sync_fetch_and_nand_1 lngt: 23      
+@3777   function_decl    name: @3778    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3779   
+                         body: undefined               link: extern  
+@3778   identifier_node  strg: __sync_fetch_and_nand_2 lngt: 23      
+@3779   function_decl    name: @3780    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3781   
+                         body: undefined               link: extern  
+@3780   identifier_node  strg: __sync_fetch_and_nand_4 lngt: 23      
+@3781   function_decl    name: @3782    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3783   
+                         body: undefined               link: extern  
+@3782   identifier_node  strg: __sync_fetch_and_nand_8 lngt: 23      
+@3783   function_decl    name: @3784    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3785   
+                         body: undefined               link: extern  
+@3784   identifier_node  strg: __sync_fetch_and_nand_16 
                          lngt: 24      
-@3754   function_decl    name: @3755    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3756   
+@3785   function_decl    name: @3786    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3787   
                          body: undefined               link: extern  
-@3755   identifier_node  strg: __sync_add_and_fetch    lngt: 20      
-@3756   function_decl    name: @3757    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3758   
+@3786   identifier_node  strg: __sync_add_and_fetch    lngt: 20      
+@3787   function_decl    name: @3788    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3789   
                          body: undefined               link: extern  
-@3757   identifier_node  strg: __sync_add_and_fetch_1  lngt: 22      
-@3758   function_decl    name: @3759    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3760   
+@3788   identifier_node  strg: __sync_add_and_fetch_1  lngt: 22      
+@3789   function_decl    name: @3790    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3791   
                          body: undefined               link: extern  
-@3759   identifier_node  strg: __sync_add_and_fetch_2  lngt: 22      
-@3760   function_decl    name: @3761    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3762   
+@3790   identifier_node  strg: __sync_add_and_fetch_2  lngt: 22      
+@3791   function_decl    name: @3792    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3793   
                          body: undefined               link: extern  
-@3761   identifier_node  strg: __sync_add_and_fetch_4  lngt: 22      
-@3762   function_decl    name: @3763    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3764   
+@3792   identifier_node  strg: __sync_add_and_fetch_4  lngt: 22      
+@3793   function_decl    name: @3794    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3795   
                          body: undefined               link: extern  
-@3763   identifier_node  strg: __sync_add_and_fetch_8  lngt: 22      
-@3764   function_decl    name: @3765    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3766   
+@3794   identifier_node  strg: __sync_add_and_fetch_8  lngt: 22      
+@3795   function_decl    name: @3796    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3797   
                          body: undefined               link: extern  
-@3765   identifier_node  strg: __sync_add_and_fetch_16 lngt: 23      
-@3766   function_decl    name: @3767    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3768   
+@3796   identifier_node  strg: __sync_add_and_fetch_16 lngt: 23      
+@3797   function_decl    name: @3798    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3799   
                          body: undefined               link: extern  
-@3767   identifier_node  strg: __sync_sub_and_fetch    lngt: 20      
-@3768   function_decl    name: @3769    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3770   
+@3798   identifier_node  strg: __sync_sub_and_fetch    lngt: 20      
+@3799   function_decl    name: @3800    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3801   
                          body: undefined               link: extern  
-@3769   identifier_node  strg: __sync_sub_and_fetch_1  lngt: 22      
-@3770   function_decl    name: @3771    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3772   
+@3800   identifier_node  strg: __sync_sub_and_fetch_1  lngt: 22      
+@3801   function_decl    name: @3802    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3803   
                          body: undefined               link: extern  
-@3771   identifier_node  strg: __sync_sub_and_fetch_2  lngt: 22      
-@3772   function_decl    name: @3773    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3774   
+@3802   identifier_node  strg: __sync_sub_and_fetch_2  lngt: 22      
+@3803   function_decl    name: @3804    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3805   
                          body: undefined               link: extern  
-@3773   identifier_node  strg: __sync_sub_and_fetch_4  lngt: 22      
-@3774   function_decl    name: @3775    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3776   
+@3804   identifier_node  strg: __sync_sub_and_fetch_4  lngt: 22      
+@3805   function_decl    name: @3806    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3807   
                          body: undefined               link: extern  
-@3775   identifier_node  strg: __sync_sub_and_fetch_8  lngt: 22      
-@3776   function_decl    name: @3777    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3778   
+@3806   identifier_node  strg: __sync_sub_and_fetch_8  lngt: 22      
+@3807   function_decl    name: @3808    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3809   
                          body: undefined               link: extern  
-@3777   identifier_node  strg: __sync_sub_and_fetch_16 lngt: 23      
-@3778   function_decl    name: @3779    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3780   
+@3808   identifier_node  strg: __sync_sub_and_fetch_16 lngt: 23      
+@3809   function_decl    name: @3810    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3811   
                          body: undefined               link: extern  
-@3779   identifier_node  strg: __sync_or_and_fetch     lngt: 19      
-@3780   function_decl    name: @3781    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3782   
+@3810   identifier_node  strg: __sync_or_and_fetch     lngt: 19      
+@3811   function_decl    name: @3812    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3813   
                          body: undefined               link: extern  
-@3781   identifier_node  strg: __sync_or_and_fetch_1   lngt: 21      
-@3782   function_decl    name: @3783    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3784   
+@3812   identifier_node  strg: __sync_or_and_fetch_1   lngt: 21      
+@3813   function_decl    name: @3814    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3815   
                          body: undefined               link: extern  
-@3783   identifier_node  strg: __sync_or_and_fetch_2   lngt: 21      
-@3784   function_decl    name: @3785    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3786   
+@3814   identifier_node  strg: __sync_or_and_fetch_2   lngt: 21      
+@3815   function_decl    name: @3816    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3817   
                          body: undefined               link: extern  
-@3785   identifier_node  strg: __sync_or_and_fetch_4   lngt: 21      
-@3786   function_decl    name: @3787    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3788   
+@3816   identifier_node  strg: __sync_or_and_fetch_4   lngt: 21      
+@3817   function_decl    name: @3818    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3819   
                          body: undefined               link: extern  
-@3787   identifier_node  strg: __sync_or_and_fetch_8   lngt: 21      
-@3788   function_decl    name: @3789    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3790   
+@3818   identifier_node  strg: __sync_or_and_fetch_8   lngt: 21      
+@3819   function_decl    name: @3820    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3821   
                          body: undefined               link: extern  
-@3789   identifier_node  strg: __sync_or_and_fetch_16  lngt: 22      
-@3790   function_decl    name: @3791    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3792   
+@3820   identifier_node  strg: __sync_or_and_fetch_16  lngt: 22      
+@3821   function_decl    name: @3822    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3823   
                          body: undefined               link: extern  
-@3791   identifier_node  strg: __sync_and_and_fetch    lngt: 20      
-@3792   function_decl    name: @3793    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3794   
+@3822   identifier_node  strg: __sync_and_and_fetch    lngt: 20      
+@3823   function_decl    name: @3824    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3825   
                          body: undefined               link: extern  
-@3793   identifier_node  strg: __sync_and_and_fetch_1  lngt: 22      
-@3794   function_decl    name: @3795    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3796   
+@3824   identifier_node  strg: __sync_and_and_fetch_1  lngt: 22      
+@3825   function_decl    name: @3826    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3827   
                          body: undefined               link: extern  
-@3795   identifier_node  strg: __sync_and_and_fetch_2  lngt: 22      
-@3796   function_decl    name: @3797    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3798   
+@3826   identifier_node  strg: __sync_and_and_fetch_2  lngt: 22      
+@3827   function_decl    name: @3828    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3829   
                          body: undefined               link: extern  
-@3797   identifier_node  strg: __sync_and_and_fetch_4  lngt: 22      
-@3798   function_decl    name: @3799    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3800   
-                         body: undefined               link: extern  
-@3799   identifier_node  strg: __sync_and_and_fetch_8  lngt: 22      
-@3800   function_decl    name: @3801    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3802   
-                         body: undefined               link: extern  
-@3801   identifier_node  strg: __sync_and_and_fetch_16 lngt: 23      
-@3802   function_decl    name: @3803    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3804   
-                         body: undefined               link: extern  
-@3803   identifier_node  strg: __sync_xor_and_fetch    lngt: 20      
-@3804   function_decl    name: @3805    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3806   
-                         body: undefined               link: extern  
-@3805   identifier_node  strg: __sync_xor_and_fetch_1  lngt: 22      
-@3806   function_decl    name: @3807    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3808   
-                         body: undefined               link: extern  
-@3807   identifier_node  strg: __sync_xor_and_fetch_2  lngt: 22      
-@3808   function_decl    name: @3809    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3810   
-                         body: undefined               link: extern  
-@3809   identifier_node  strg: __sync_xor_and_fetch_4  lngt: 22      
-@3810   function_decl    name: @3811    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3812   
-                         body: undefined               link: extern  
-@3811   identifier_node  strg: __sync_xor_and_fetch_8  lngt: 22      
-@3812   function_decl    name: @3813    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3814   
-                         body: undefined               link: extern  
-@3813   identifier_node  strg: __sync_xor_and_fetch_16 lngt: 23      
-@3814   function_decl    name: @3815    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3816   
-                         body: undefined               link: extern  
-@3815   identifier_node  strg: __sync_nand_and_fetch   lngt: 21      
-@3816   function_decl    name: @3817    type: @3669    scpe: @176    
-                         srcp: <built-in>:0            chain: @3818   
-                         body: undefined               link: extern  
-@3817   identifier_node  strg: __sync_nand_and_fetch_1 lngt: 23      
-@3818   function_decl    name: @3819    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3820   
-                         body: undefined               link: extern  
-@3819   identifier_node  strg: __sync_nand_and_fetch_2 lngt: 23      
-@3820   function_decl    name: @3821    type: @3679    scpe: @176    
-                         srcp: <built-in>:0            chain: @3822   
-                         body: undefined               link: extern  
-@3821   identifier_node  strg: __sync_nand_and_fetch_4 lngt: 23      
-@3822   function_decl    name: @3823    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3824   
-                         body: undefined               link: extern  
-@3823   identifier_node  strg: __sync_nand_and_fetch_8 lngt: 23      
-@3824   function_decl    name: @3825    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3826   
-                         body: undefined               link: extern  
-@3825   identifier_node  strg: __sync_nand_and_fetch_16 
-                         lngt: 24      
-@3826   function_decl    name: @3827    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3828   
-                         body: undefined               link: extern  
-@3827   identifier_node  strg: __sync_bool_compare_and_swap 
-                         lngt: 28      
-@3828   function_decl    name: @3829    type: @3830    scpe: @176    
+@3828   identifier_node  strg: __sync_and_and_fetch_4  lngt: 22      
+@3829   function_decl    name: @3830    type: @3716    scpe: @176    
                          srcp: <built-in>:0            chain: @3831   
                          body: undefined               link: extern  
-@3829   identifier_node  strg: __sync_bool_compare_and_swap_1 
-                         lngt: 30      
-@3830   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @3832   
-@3831   function_decl    name: @3833    type: @3834    scpe: @176    
+@3830   identifier_node  strg: __sync_and_and_fetch_8  lngt: 22      
+@3831   function_decl    name: @3832    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3833   
+                         body: undefined               link: extern  
+@3832   identifier_node  strg: __sync_and_and_fetch_16 lngt: 23      
+@3833   function_decl    name: @3834    type: @2856    scpe: @176    
                          srcp: <built-in>:0            chain: @3835   
                          body: undefined               link: extern  
-@3832   tree_list        valu: @3675    chan: @3836   
-@3833   identifier_node  strg: __sync_bool_compare_and_swap_2 
-                         lngt: 30      
-@3834   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @3837   
-@3835   function_decl    name: @3838    type: @3839    scpe: @176    
-                         srcp: <built-in>:0            chain: @3840   
+@3834   identifier_node  strg: __sync_xor_and_fetch    lngt: 20      
+@3835   function_decl    name: @3836    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3837   
                          body: undefined               link: extern  
-@3836   tree_list        valu: @72      chan: @3841   
-@3837   tree_list        valu: @3675    chan: @3842   
-@3838   identifier_node  strg: __sync_bool_compare_and_swap_4 
-                         lngt: 30      
-@3839   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @3843   
-@3840   function_decl    name: @3844    type: @3845    scpe: @176    
-                         srcp: <built-in>:0            chain: @3846   
+@3836   identifier_node  strg: __sync_xor_and_fetch_1  lngt: 22      
+@3837   function_decl    name: @3838    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3839   
                          body: undefined               link: extern  
-@3841   tree_list        valu: @72      chan: @188    
-@3842   tree_list        valu: @62      chan: @3847   
-@3843   tree_list        valu: @3675    chan: @3848   
-@3844   identifier_node  strg: __sync_bool_compare_and_swap_8 
-                         lngt: 30      
-@3845   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @3849   
-@3846   function_decl    name: @3850    type: @3851    scpe: @176    
-                         srcp: <built-in>:0            chain: @3852   
+@3838   identifier_node  strg: __sync_xor_and_fetch_2  lngt: 22      
+@3839   function_decl    name: @3840    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3841   
                          body: undefined               link: extern  
-@3847   tree_list        valu: @62      chan: @188    
-@3848   tree_list        valu: @26      chan: @3853   
-@3849   tree_list        valu: @3675    chan: @3854   
-@3850   identifier_node  strg: __sync_bool_compare_and_swap_16 
-                         lngt: 31      
-@3851   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @3855   
-@3852   function_decl    name: @3856    type: @2856    scpe: @176    
+@3840   identifier_node  strg: __sync_xor_and_fetch_4  lngt: 22      
+@3841   function_decl    name: @3842    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3843   
+                         body: undefined               link: extern  
+@3842   identifier_node  strg: __sync_xor_and_fetch_8  lngt: 22      
+@3843   function_decl    name: @3844    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3845   
+                         body: undefined               link: extern  
+@3844   identifier_node  strg: __sync_xor_and_fetch_16 lngt: 23      
+@3845   function_decl    name: @3846    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3847   
+                         body: undefined               link: extern  
+@3846   identifier_node  strg: __sync_nand_and_fetch   lngt: 21      
+@3847   function_decl    name: @3848    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3849   
+                         body: undefined               link: extern  
+@3848   identifier_node  strg: __sync_nand_and_fetch_1 lngt: 23      
+@3849   function_decl    name: @3850    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3851   
+                         body: undefined               link: extern  
+@3850   identifier_node  strg: __sync_nand_and_fetch_2 lngt: 23      
+@3851   function_decl    name: @3852    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3853   
+                         body: undefined               link: extern  
+@3852   identifier_node  strg: __sync_nand_and_fetch_4 lngt: 23      
+@3853   function_decl    name: @3854    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3855   
+                         body: undefined               link: extern  
+@3854   identifier_node  strg: __sync_nand_and_fetch_8 lngt: 23      
+@3855   function_decl    name: @3856    type: @3721    scpe: @176    
                          srcp: <built-in>:0            chain: @3857   
                          body: undefined               link: extern  
-@3853   tree_list        valu: @26      chan: @188    
-@3854   tree_list        valu: @31      chan: @3858   
-@3855   tree_list        valu: @3675    chan: @3859   
-@3856   identifier_node  strg: __sync_val_compare_and_swap 
-                         lngt: 27      
-@3857   function_decl    name: @3860    type: @3861    scpe: @176    
+@3856   identifier_node  strg: __sync_nand_and_fetch_16 
+                         lngt: 24      
+@3857   function_decl    name: @3858    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3859   
+                         body: undefined               link: extern  
+@3858   identifier_node  strg: __sync_bool_compare_and_swap 
+                         lngt: 28      
+@3859   function_decl    name: @3860    type: @3861    scpe: @176    
                          srcp: <built-in>:0            chain: @3862   
                          body: undefined               link: extern  
-@3858   tree_list        valu: @31      chan: @188    
-@3859   tree_list        valu: @41      chan: @3863   
-@3860   identifier_node  strg: __sync_val_compare_and_swap_1 
-                         lngt: 29      
-@3861   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @3864   
-@3862   function_decl    name: @3865    type: @3866    scpe: @176    
-                         srcp: <built-in>:0            chain: @3867   
-                         body: undefined               link: extern  
-@3863   tree_list        valu: @41      chan: @188    
-@3864   tree_list        valu: @3675    chan: @3868   
-@3865   identifier_node  strg: __sync_val_compare_and_swap_2 
-                         lngt: 29      
-@3866   function_type    size: @12      algn: 8        retn: @62     
-                         prms: @3869   
-@3867   function_decl    name: @3870    type: @3871    scpe: @176    
-                         srcp: <built-in>:0            chain: @3872   
-                         body: undefined               link: extern  
-@3868   tree_list        valu: @72      chan: @3873   
-@3869   tree_list        valu: @3675    chan: @3874   
-@3870   identifier_node  strg: __sync_val_compare_and_swap_4 
-                         lngt: 29      
-@3871   function_type    size: @12      algn: 8        retn: @26     
-                         prms: @3875   
-@3872   function_decl    name: @3876    type: @3877    scpe: @176    
-                         srcp: <built-in>:0            chain: @3878   
-                         body: undefined               link: extern  
-@3873   tree_list        valu: @72      chan: @188    
-@3874   tree_list        valu: @62      chan: @3879   
-@3875   tree_list        valu: @3675    chan: @3880   
-@3876   identifier_node  strg: __sync_val_compare_and_swap_8 
-                         lngt: 29      
-@3877   function_type    size: @12      algn: 8        retn: @31     
-                         prms: @3881   
-@3878   function_decl    name: @3882    type: @3883    scpe: @176    
-                         srcp: <built-in>:0            chain: @3884   
-                         body: undefined               link: extern  
-@3879   tree_list        valu: @62      chan: @188    
-@3880   tree_list        valu: @26      chan: @3885   
-@3881   tree_list        valu: @3675    chan: @3886   
-@3882   identifier_node  strg: __sync_val_compare_and_swap_16 
+@3860   identifier_node  strg: __sync_bool_compare_and_swap_1 
                          lngt: 30      
-@3883   function_type    size: @12      algn: 8        retn: @41     
-                         prms: @3887   
-@3884   function_decl    name: @3888    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3889   
+@3861   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @3863   
+@3862   function_decl    name: @3864    type: @3865    scpe: @176    
+                         srcp: <built-in>:0            chain: @3866   
                          body: undefined               link: extern  
-@3885   tree_list        valu: @26      chan: @188    
-@3886   tree_list        valu: @31      chan: @3890   
-@3887   tree_list        valu: @3675    chan: @3891   
-@3888   identifier_node  strg: __sync_lock_test_and_set 
-                         lngt: 24      
-@3889   function_decl    name: @3892    type: @3669    scpe: @176    
+@3863   tree_list        valu: @3706    chan: @3867   
+@3864   identifier_node  strg: __sync_bool_compare_and_swap_2 
+                         lngt: 30      
+@3865   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @3868   
+@3866   function_decl    name: @3869    type: @3870    scpe: @176    
+                         srcp: <built-in>:0            chain: @3871   
+                         body: undefined               link: extern  
+@3867   tree_list        valu: @72      chan: @3872   
+@3868   tree_list        valu: @3706    chan: @3873   
+@3869   identifier_node  strg: __sync_bool_compare_and_swap_4 
+                         lngt: 30      
+@3870   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @3874   
+@3871   function_decl    name: @3875    type: @3876    scpe: @176    
+                         srcp: <built-in>:0            chain: @3877   
+                         body: undefined               link: extern  
+@3872   tree_list        valu: @72      chan: @188    
+@3873   tree_list        valu: @62      chan: @3878   
+@3874   tree_list        valu: @3706    chan: @3879   
+@3875   identifier_node  strg: __sync_bool_compare_and_swap_8 
+                         lngt: 30      
+@3876   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @3880   
+@3877   function_decl    name: @3881    type: @3882    scpe: @176    
+                         srcp: <built-in>:0            chain: @3883   
+                         body: undefined               link: extern  
+@3878   tree_list        valu: @62      chan: @188    
+@3879   tree_list        valu: @26      chan: @3884   
+@3880   tree_list        valu: @3706    chan: @3885   
+@3881   identifier_node  strg: __sync_bool_compare_and_swap_16 
+                         lngt: 31      
+@3882   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @3886   
+@3883   function_decl    name: @3887    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3888   
+                         body: undefined               link: extern  
+@3884   tree_list        valu: @26      chan: @188    
+@3885   tree_list        valu: @31      chan: @3889   
+@3886   tree_list        valu: @3706    chan: @3890   
+@3887   identifier_node  strg: __sync_val_compare_and_swap 
+                         lngt: 27      
+@3888   function_decl    name: @3891    type: @3892    scpe: @176    
                          srcp: <built-in>:0            chain: @3893   
                          body: undefined               link: extern  
-@3890   tree_list        valu: @31      chan: @188    
-@3891   tree_list        valu: @41      chan: @3894   
-@3892   identifier_node  strg: __sync_lock_test_and_set_1 
-                         lngt: 26      
-@3893   function_decl    name: @3895    type: @3673    scpe: @176    
-                         srcp: <built-in>:0            chain: @3896   
-                         body: undefined               link: extern  
-@3894   tree_list        valu: @41      chan: @188    
-@3895   identifier_node  strg: __sync_lock_test_and_set_2 
-                         lngt: 26      
-@3896   function_decl    name: @3897    type: @3679    scpe: @176    
+@3889   tree_list        valu: @31      chan: @188    
+@3890   tree_list        valu: @41      chan: @3894   
+@3891   identifier_node  strg: __sync_val_compare_and_swap_1 
+                         lngt: 29      
+@3892   function_type    size: @12      algn: 8        retn: @72     
+                         prms: @3895   
+@3893   function_decl    name: @3896    type: @3897    scpe: @176    
                          srcp: <built-in>:0            chain: @3898   
                          body: undefined               link: extern  
-@3897   identifier_node  strg: __sync_lock_test_and_set_4 
-                         lngt: 26      
-@3898   function_decl    name: @3899    type: @3685    scpe: @176    
-                         srcp: <built-in>:0            chain: @3900   
+@3894   tree_list        valu: @41      chan: @188    
+@3895   tree_list        valu: @3706    chan: @3899   
+@3896   identifier_node  strg: __sync_val_compare_and_swap_2 
+                         lngt: 29      
+@3897   function_type    size: @12      algn: 8        retn: @62     
+                         prms: @3900   
+@3898   function_decl    name: @3901    type: @3902    scpe: @176    
+                         srcp: <built-in>:0            chain: @3903   
                          body: undefined               link: extern  
-@3899   identifier_node  strg: __sync_lock_test_and_set_8 
-                         lngt: 26      
-@3900   function_decl    name: @3901    type: @3690    scpe: @176    
-                         srcp: <built-in>:0            chain: @3902   
+@3899   tree_list        valu: @72      chan: @3904   
+@3900   tree_list        valu: @3706    chan: @3905   
+@3901   identifier_node  strg: __sync_val_compare_and_swap_4 
+                         lngt: 29      
+@3902   function_type    size: @12      algn: 8        retn: @26     
+                         prms: @3906   
+@3903   function_decl    name: @3907    type: @3908    scpe: @176    
+                         srcp: <built-in>:0            chain: @3909   
                          body: undefined               link: extern  
-@3901   identifier_node  strg: __sync_lock_test_and_set_16 
+@3904   tree_list        valu: @72      chan: @188    
+@3905   tree_list        valu: @62      chan: @3910   
+@3906   tree_list        valu: @3706    chan: @3911   
+@3907   identifier_node  strg: __sync_val_compare_and_swap_8 
+                         lngt: 29      
+@3908   function_type    size: @12      algn: 8        retn: @31     
+                         prms: @3912   
+@3909   function_decl    name: @3913    type: @3914    scpe: @176    
+                         srcp: <built-in>:0            chain: @3915   
+                         body: undefined               link: extern  
+@3910   tree_list        valu: @62      chan: @188    
+@3911   tree_list        valu: @26      chan: @3916   
+@3912   tree_list        valu: @3706    chan: @3917   
+@3913   identifier_node  strg: __sync_val_compare_and_swap_16 
+                         lngt: 30      
+@3914   function_type    size: @12      algn: 8        retn: @41     
+                         prms: @3918   
+@3915   function_decl    name: @3919    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3920   
+                         body: undefined               link: extern  
+@3916   tree_list        valu: @26      chan: @188    
+@3917   tree_list        valu: @31      chan: @3921   
+@3918   tree_list        valu: @3706    chan: @3922   
+@3919   identifier_node  strg: __sync_lock_test_and_set 
+                         lngt: 24      
+@3920   function_decl    name: @3923    type: @3700    scpe: @176    
+                         srcp: <built-in>:0            chain: @3924   
+                         body: undefined               link: extern  
+@3921   tree_list        valu: @31      chan: @188    
+@3922   tree_list        valu: @41      chan: @3925   
+@3923   identifier_node  strg: __sync_lock_test_and_set_1 
+                         lngt: 26      
+@3924   function_decl    name: @3926    type: @3704    scpe: @176    
+                         srcp: <built-in>:0            chain: @3927   
+                         body: undefined               link: extern  
+@3925   tree_list        valu: @41      chan: @188    
+@3926   identifier_node  strg: __sync_lock_test_and_set_2 
+                         lngt: 26      
+@3927   function_decl    name: @3928    type: @3710    scpe: @176    
+                         srcp: <built-in>:0            chain: @3929   
+                         body: undefined               link: extern  
+@3928   identifier_node  strg: __sync_lock_test_and_set_4 
+                         lngt: 26      
+@3929   function_decl    name: @3930    type: @3716    scpe: @176    
+                         srcp: <built-in>:0            chain: @3931   
+                         body: undefined               link: extern  
+@3930   identifier_node  strg: __sync_lock_test_and_set_8 
+                         lngt: 26      
+@3931   function_decl    name: @3932    type: @3721    scpe: @176    
+                         srcp: <built-in>:0            chain: @3933   
+                         body: undefined               link: extern  
+@3932   identifier_node  strg: __sync_lock_test_and_set_16 
                          lngt: 27      
-@3902   function_decl    name: @3903    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3904   
+@3933   function_decl    name: @3934    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3935   
                          body: undefined               link: extern  
-@3903   identifier_node  strg: __sync_lock_release     lngt: 19      
-@3904   function_decl    name: @3905    type: @3906    scpe: @176    
-                         srcp: <built-in>:0            chain: @3907   
-                         body: undefined               link: extern  
-@3905   identifier_node  strg: __sync_lock_release_1   lngt: 21      
-@3906   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3908   
-@3907   function_decl    name: @3909    type: @3906    scpe: @176    
-                         srcp: <built-in>:0            chain: @3910   
-                         body: undefined               link: extern  
-@3908   tree_list        valu: @3675    chan: @188    
-@3909   identifier_node  strg: __sync_lock_release_2   lngt: 21      
-@3910   function_decl    name: @3911    type: @3906    scpe: @176    
-                         srcp: <built-in>:0            chain: @3912   
-                         body: undefined               link: extern  
-@3911   identifier_node  strg: __sync_lock_release_4   lngt: 21      
-@3912   function_decl    name: @3913    type: @3906    scpe: @176    
-                         srcp: <built-in>:0            chain: @3914   
-                         body: undefined               link: extern  
-@3913   identifier_node  strg: __sync_lock_release_8   lngt: 21      
-@3914   function_decl    name: @3915    type: @3906    scpe: @176    
-                         srcp: <built-in>:0            chain: @3916   
-                         body: undefined               link: extern  
-@3915   identifier_node  strg: __sync_lock_release_16  lngt: 22      
-@3916   function_decl    name: @3917    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @3918   
-                         body: undefined               link: extern  
-@3917   identifier_node  strg: __sync_synchronize      lngt: 18      
-@3918   function_decl    name: @3919    type: @3920    scpe: @176    
-                         srcp: <built-in>:0            chain: @3921   
-                         body: undefined               link: extern  
-@3919   identifier_node  strg: __atomic_test_and_set   lngt: 21      
-@3920   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @3922   
-@3921   function_decl    name: @3923    type: @3924    scpe: @176    
-                         srcp: <built-in>:0            chain: @3925   
-                         body: undefined               link: extern  
-@3922   tree_list        valu: @3675    chan: @3926   
-@3923   identifier_node  strg: __atomic_clear          lngt: 14      
-@3924   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3927   
-@3925   function_decl    name: @3928    type: @3929    scpe: @176    
-                         srcp: <built-in>:0            chain: @3930   
-                         body: undefined               link: extern  
-@3926   tree_list        valu: @3       chan: @188    
-@3927   tree_list        valu: @3675    chan: @3931   
-@3928   identifier_node  strg: __atomic_exchange       lngt: 17      
-@3929   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3932   
-@3930   function_decl    name: @3933    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3934   
-                         body: undefined               link: extern  
-@3931   tree_list        valu: @3       chan: @188    
-@3932   tree_list        valu: @31      chan: @3935   
-@3933   identifier_node  strg: __atomic_exchange_n     lngt: 19      
-@3934   function_decl    name: @3936    type: @3937    scpe: @176    
+@3934   identifier_node  strg: __sync_lock_release     lngt: 19      
+@3935   function_decl    name: @3936    type: @3937    scpe: @176    
                          srcp: <built-in>:0            chain: @3938   
                          body: undefined               link: extern  
-@3935   tree_list        valu: @3675    chan: @3939   
-@3936   identifier_node  strg: __atomic_exchange_1     lngt: 19      
-@3937   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @3940   
-@3938   function_decl    name: @3941    type: @3942    scpe: @176    
+@3936   identifier_node  strg: __sync_lock_release_1   lngt: 21      
+@3937   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3939   
+@3938   function_decl    name: @3940    type: @3937    scpe: @176    
+                         srcp: <built-in>:0            chain: @3941   
+                         body: undefined               link: extern  
+@3939   tree_list        valu: @3706    chan: @188    
+@3940   identifier_node  strg: __sync_lock_release_2   lngt: 21      
+@3941   function_decl    name: @3942    type: @3937    scpe: @176    
                          srcp: <built-in>:0            chain: @3943   
                          body: undefined               link: extern  
-@3939   tree_list        valu: @186     chan: @3944   
-@3940   tree_list        valu: @3675    chan: @3945   
-@3941   identifier_node  strg: __atomic_exchange_2     lngt: 19      
-@3942   function_type    size: @12      algn: 8        retn: @62     
-                         prms: @3946   
-@3943   function_decl    name: @3947    type: @3948    scpe: @176    
+@3942   identifier_node  strg: __sync_lock_release_4   lngt: 21      
+@3943   function_decl    name: @3944    type: @3937    scpe: @176    
+                         srcp: <built-in>:0            chain: @3945   
+                         body: undefined               link: extern  
+@3944   identifier_node  strg: __sync_lock_release_8   lngt: 21      
+@3945   function_decl    name: @3946    type: @3937    scpe: @176    
+                         srcp: <built-in>:0            chain: @3947   
+                         body: undefined               link: extern  
+@3946   identifier_node  strg: __sync_lock_release_16  lngt: 22      
+@3947   function_decl    name: @3948    type: @3513    scpe: @176    
                          srcp: <built-in>:0            chain: @3949   
                          body: undefined               link: extern  
-@3944   tree_list        valu: @186     chan: @3950   
-@3945   tree_list        valu: @72      chan: @3951   
-@3946   tree_list        valu: @3675    chan: @3952   
-@3947   identifier_node  strg: __atomic_exchange_4     lngt: 19      
-@3948   function_type    size: @12      algn: 8        retn: @26     
+@3948   identifier_node  strg: __sync_synchronize      lngt: 18      
+@3949   function_decl    name: @3950    type: @3951    scpe: @176    
+                         srcp: <built-in>:0            chain: @3952   
+                         body: undefined               link: extern  
+@3950   identifier_node  strg: __atomic_test_and_set   lngt: 21      
+@3951   function_type    size: @12      algn: 8        retn: @2635   
                          prms: @3953   
-@3949   function_decl    name: @3954    type: @3955    scpe: @176    
+@3952   function_decl    name: @3954    type: @3955    scpe: @176    
                          srcp: <built-in>:0            chain: @3956   
                          body: undefined               link: extern  
-@3950   tree_list        valu: @3       chan: @188    
-@3951   tree_list        valu: @3       chan: @188    
-@3952   tree_list        valu: @62      chan: @3957   
-@3953   tree_list        valu: @3675    chan: @3958   
-@3954   identifier_node  strg: __atomic_exchange_8     lngt: 19      
-@3955   function_type    size: @12      algn: 8        retn: @31     
-                         prms: @3959   
-@3956   function_decl    name: @3960    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @3962   
+@3953   tree_list        valu: @3706    chan: @3957   
+@3954   identifier_node  strg: __atomic_clear          lngt: 14      
+@3955   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3958   
+@3956   function_decl    name: @3959    type: @3960    scpe: @176    
+                         srcp: <built-in>:0            chain: @3961   
                          body: undefined               link: extern  
 @3957   tree_list        valu: @3       chan: @188    
-@3958   tree_list        valu: @26      chan: @3963   
-@3959   tree_list        valu: @3675    chan: @3964   
-@3960   identifier_node  strg: __atomic_exchange_16    lngt: 20      
-@3961   function_type    size: @12      algn: 8        retn: @41     
-                         prms: @3965   
-@3962   function_decl    name: @3966    type: @3967    scpe: @176    
-                         srcp: <built-in>:0            chain: @3968   
+@3958   tree_list        valu: @3706    chan: @3962   
+@3959   identifier_node  strg: __atomic_exchange       lngt: 17      
+@3960   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3963   
+@3961   function_decl    name: @3964    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @3965   
                          body: undefined               link: extern  
-@3963   tree_list        valu: @3       chan: @188    
-@3964   tree_list        valu: @31      chan: @3969   
-@3965   tree_list        valu: @3675    chan: @3970   
-@3966   identifier_node  strg: __atomic_load           lngt: 13      
-@3967   function_type    size: @12      algn: 8        retn: @151    
+@3962   tree_list        valu: @3       chan: @188    
+@3963   tree_list        valu: @31      chan: @3966   
+@3964   identifier_node  strg: __atomic_exchange_n     lngt: 19      
+@3965   function_decl    name: @3967    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @3969   
+                         body: undefined               link: extern  
+@3966   tree_list        valu: @3706    chan: @3970   
+@3967   identifier_node  strg: __atomic_exchange_1     lngt: 19      
+@3968   function_type    size: @12      algn: 8        retn: @72     
                          prms: @3971   
-@3968   function_decl    name: @3972    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @3973   
+@3969   function_decl    name: @3972    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @3974   
                          body: undefined               link: extern  
-@3969   tree_list        valu: @3       chan: @188    
-@3970   tree_list        valu: @41      chan: @3974   
-@3971   tree_list        valu: @31      chan: @3975   
-@3972   identifier_node  strg: __atomic_load_n         lngt: 15      
-@3973   function_decl    name: @3976    type: @3977    scpe: @176    
-                         srcp: <built-in>:0            chain: @3978   
+@3970   tree_list        valu: @186     chan: @3975   
+@3971   tree_list        valu: @3706    chan: @3976   
+@3972   identifier_node  strg: __atomic_exchange_2     lngt: 19      
+@3973   function_type    size: @12      algn: 8        retn: @62     
+                         prms: @3977   
+@3974   function_decl    name: @3978    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @3980   
                          body: undefined               link: extern  
-@3974   tree_list        valu: @3       chan: @188    
-@3975   tree_list        valu: @3979    chan: @3980   
-@3976   identifier_node  strg: __atomic_load_1         lngt: 15      
-@3977   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @3981   
-@3978   function_decl    name: @3982    type: @3983    scpe: @176    
-                         srcp: <built-in>:0            chain: @3984   
+@3975   tree_list        valu: @186     chan: @3981   
+@3976   tree_list        valu: @72      chan: @3982   
+@3977   tree_list        valu: @3706    chan: @3983   
+@3978   identifier_node  strg: __atomic_exchange_4     lngt: 19      
+@3979   function_type    size: @12      algn: 8        retn: @26     
+                         prms: @3984   
+@3980   function_decl    name: @3985    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @3987   
                          body: undefined               link: extern  
-@3979   pointer_type     size: @22      algn: 64       ptd : @3985   
-@3980   tree_list        valu: @186     chan: @3986   
-@3981   tree_list        valu: @3979    chan: @3987   
-@3982   identifier_node  strg: __atomic_load_2         lngt: 15      
-@3983   function_type    size: @12      algn: 8        retn: @62     
-                         prms: @3988   
-@3984   function_decl    name: @3989    type: @3990    scpe: @176    
-                         srcp: <built-in>:0            chain: @3991   
+@3981   tree_list        valu: @3       chan: @188    
+@3982   tree_list        valu: @3       chan: @188    
+@3983   tree_list        valu: @62      chan: @3988   
+@3984   tree_list        valu: @3706    chan: @3989   
+@3985   identifier_node  strg: __atomic_exchange_8     lngt: 19      
+@3986   function_type    size: @12      algn: 8        retn: @31     
+                         prms: @3990   
+@3987   function_decl    name: @3991    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @3993   
                          body: undefined               link: extern  
-@3985   void_type        qual: cv       name: @149     unql: @151    
+@3988   tree_list        valu: @3       chan: @188    
+@3989   tree_list        valu: @26      chan: @3994   
+@3990   tree_list        valu: @3706    chan: @3995   
+@3991   identifier_node  strg: __atomic_exchange_16    lngt: 20      
+@3992   function_type    size: @12      algn: 8        retn: @41     
+                         prms: @3996   
+@3993   function_decl    name: @3997    type: @3998    scpe: @176    
+                         srcp: <built-in>:0            chain: @3999   
+                         body: undefined               link: extern  
+@3994   tree_list        valu: @3       chan: @188    
+@3995   tree_list        valu: @31      chan: @4000   
+@3996   tree_list        valu: @3706    chan: @4001   
+@3997   identifier_node  strg: __atomic_load           lngt: 13      
+@3998   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4002   
+@3999   function_decl    name: @4003    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4004   
+                         body: undefined               link: extern  
+@4000   tree_list        valu: @3       chan: @188    
+@4001   tree_list        valu: @41      chan: @4005   
+@4002   tree_list        valu: @31      chan: @4006   
+@4003   identifier_node  strg: __atomic_load_n         lngt: 15      
+@4004   function_decl    name: @4007    type: @4008    scpe: @176    
+                         srcp: <built-in>:0            chain: @4009   
+                         body: undefined               link: extern  
+@4005   tree_list        valu: @3       chan: @188    
+@4006   tree_list        valu: @4010    chan: @4011   
+@4007   identifier_node  strg: __atomic_load_1         lngt: 15      
+@4008   function_type    size: @12      algn: 8        retn: @72     
+                         prms: @4012   
+@4009   function_decl    name: @4013    type: @4014    scpe: @176    
+                         srcp: <built-in>:0            chain: @4015   
+                         body: undefined               link: extern  
+@4010   pointer_type     size: @22      algn: 64       ptd : @4016   
+@4011   tree_list        valu: @186     chan: @4017   
+@4012   tree_list        valu: @4010    chan: @4018   
+@4013   identifier_node  strg: __atomic_load_2         lngt: 15      
+@4014   function_type    size: @12      algn: 8        retn: @62     
+                         prms: @4019   
+@4015   function_decl    name: @4020    type: @4021    scpe: @176    
+                         srcp: <built-in>:0            chain: @4022   
+                         body: undefined               link: extern  
+@4016   void_type        qual: cv       name: @149     unql: @151    
                          algn: 8       
-@3986   tree_list        valu: @3       chan: @188    
-@3987   tree_list        valu: @3       chan: @188    
-@3988   tree_list        valu: @3979    chan: @3992   
-@3989   identifier_node  strg: __atomic_load_4         lngt: 15      
-@3990   function_type    size: @12      algn: 8        retn: @26     
-                         prms: @3993   
-@3991   function_decl    name: @3994    type: @3995    scpe: @176    
-                         srcp: <built-in>:0            chain: @3996   
+@4017   tree_list        valu: @3       chan: @188    
+@4018   tree_list        valu: @3       chan: @188    
+@4019   tree_list        valu: @4010    chan: @4023   
+@4020   identifier_node  strg: __atomic_load_4         lngt: 15      
+@4021   function_type    size: @12      algn: 8        retn: @26     
+                         prms: @4024   
+@4022   function_decl    name: @4025    type: @4026    scpe: @176    
+                         srcp: <built-in>:0            chain: @4027   
                          body: undefined               link: extern  
-@3992   tree_list        valu: @3       chan: @188    
-@3993   tree_list        valu: @3979    chan: @3997   
-@3994   identifier_node  strg: __atomic_load_8         lngt: 15      
-@3995   function_type    size: @12      algn: 8        retn: @31     
-                         prms: @3998   
-@3996   function_decl    name: @3999    type: @4000    scpe: @176    
-                         srcp: <built-in>:0            chain: @4001   
-                         body: undefined               link: extern  
-@3997   tree_list        valu: @3       chan: @188    
-@3998   tree_list        valu: @3979    chan: @4002   
-@3999   identifier_node  strg: __atomic_load_16        lngt: 16      
-@4000   function_type    size: @12      algn: 8        retn: @41     
-                         prms: @4003   
-@4001   function_decl    name: @4004    type: @4005    scpe: @176    
-                         srcp: <built-in>:0            chain: @4006   
-                         body: undefined               link: extern  
-@4002   tree_list        valu: @3       chan: @188    
-@4003   tree_list        valu: @3979    chan: @4007   
-@4004   identifier_node  strg: __atomic_compare_exchange 
-                         lngt: 25      
-@4005   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @4008   
-@4006   function_decl    name: @4009    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4010   
-                         body: undefined               link: extern  
-@4007   tree_list        valu: @3       chan: @188    
-@4008   tree_list        valu: @31      chan: @4011   
-@4009   identifier_node  strg: __atomic_compare_exchange_n 
-                         lngt: 27      
-@4010   function_decl    name: @4012    type: @4013    scpe: @176    
-                         srcp: <built-in>:0            chain: @4014   
-                         body: undefined               link: extern  
-@4011   tree_list        valu: @3675    chan: @4015   
-@4012   identifier_node  strg: __atomic_compare_exchange_1 
-                         lngt: 27      
-@4013   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @4016   
-@4014   function_decl    name: @4017    type: @4018    scpe: @176    
-                         srcp: <built-in>:0            chain: @4019   
-                         body: undefined               link: extern  
-@4015   tree_list        valu: @186     chan: @4020   
-@4016   tree_list        valu: @3675    chan: @4021   
-@4017   identifier_node  strg: __atomic_compare_exchange_2 
-                         lngt: 27      
-@4018   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @4022   
-@4019   function_decl    name: @4023    type: @4024    scpe: @176    
-                         srcp: <built-in>:0            chain: @4025   
-                         body: undefined               link: extern  
-@4020   tree_list        valu: @186     chan: @4026   
-@4021   tree_list        valu: @186     chan: @4027   
-@4022   tree_list        valu: @3675    chan: @4028   
-@4023   identifier_node  strg: __atomic_compare_exchange_4 
-                         lngt: 27      
-@4024   function_type    size: @12      algn: 8        retn: @2635   
+@4023   tree_list        valu: @3       chan: @188    
+@4024   tree_list        valu: @4010    chan: @4028   
+@4025   identifier_node  strg: __atomic_load_8         lngt: 15      
+@4026   function_type    size: @12      algn: 8        retn: @31     
                          prms: @4029   
-@4025   function_decl    name: @4030    type: @4031    scpe: @176    
+@4027   function_decl    name: @4030    type: @4031    scpe: @176    
                          srcp: <built-in>:0            chain: @4032   
                          body: undefined               link: extern  
-@4026   tree_list        valu: @3       chan: @4033   
-@4027   tree_list        valu: @72      chan: @4034   
-@4028   tree_list        valu: @186     chan: @4035   
-@4029   tree_list        valu: @3675    chan: @4036   
-@4030   identifier_node  strg: __atomic_compare_exchange_8 
-                         lngt: 27      
-@4031   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @4037   
-@4032   function_decl    name: @4038    type: @4039    scpe: @176    
-                         srcp: <built-in>:0            chain: @4040   
+@4028   tree_list        valu: @3       chan: @188    
+@4029   tree_list        valu: @4010    chan: @4033   
+@4030   identifier_node  strg: __atomic_load_16        lngt: 16      
+@4031   function_type    size: @12      algn: 8        retn: @41     
+                         prms: @4034   
+@4032   function_decl    name: @4035    type: @4036    scpe: @176    
+                         srcp: <built-in>:0            chain: @4037   
                          body: undefined               link: extern  
 @4033   tree_list        valu: @3       chan: @188    
-@4034   tree_list        valu: @2635    chan: @4041   
-@4035   tree_list        valu: @62      chan: @4042   
-@4036   tree_list        valu: @186     chan: @4043   
-@4037   tree_list        valu: @3675    chan: @4044   
-@4038   identifier_node  strg: __atomic_compare_exchange_16 
-                         lngt: 28      
-@4039   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @4045   
-@4040   function_decl    name: @4046    type: @4047    scpe: @176    
-                         srcp: <built-in>:0            chain: @4048   
+@4034   tree_list        valu: @4010    chan: @4038   
+@4035   identifier_node  strg: __atomic_compare_exchange 
+                         lngt: 25      
+@4036   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4039   
+@4037   function_decl    name: @4040    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4041   
                          body: undefined               link: extern  
-@4041   tree_list        valu: @3       chan: @4049   
-@4042   tree_list        valu: @2635    chan: @4050   
-@4043   tree_list        valu: @26      chan: @4051   
-@4044   tree_list        valu: @186     chan: @4052   
-@4045   tree_list        valu: @3675    chan: @4053   
-@4046   identifier_node  strg: __atomic_store          lngt: 14      
-@4047   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4054   
-@4048   function_decl    name: @4055    type: @2856    scpe: @176    
+@4038   tree_list        valu: @3       chan: @188    
+@4039   tree_list        valu: @31      chan: @4042   
+@4040   identifier_node  strg: __atomic_compare_exchange_n 
+                         lngt: 27      
+@4041   function_decl    name: @4043    type: @4044    scpe: @176    
+                         srcp: <built-in>:0            chain: @4045   
+                         body: undefined               link: extern  
+@4042   tree_list        valu: @3706    chan: @4046   
+@4043   identifier_node  strg: __atomic_compare_exchange_1 
+                         lngt: 27      
+@4044   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4047   
+@4045   function_decl    name: @4048    type: @4049    scpe: @176    
+                         srcp: <built-in>:0            chain: @4050   
+                         body: undefined               link: extern  
+@4046   tree_list        valu: @186     chan: @4051   
+@4047   tree_list        valu: @3706    chan: @4052   
+@4048   identifier_node  strg: __atomic_compare_exchange_2 
+                         lngt: 27      
+@4049   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4053   
+@4050   function_decl    name: @4054    type: @4055    scpe: @176    
                          srcp: <built-in>:0            chain: @4056   
                          body: undefined               link: extern  
-@4049   tree_list        valu: @3       chan: @188    
-@4050   tree_list        valu: @3       chan: @4057   
-@4051   tree_list        valu: @2635    chan: @4058   
-@4052   tree_list        valu: @31      chan: @4059   
-@4053   tree_list        valu: @186     chan: @4060   
-@4054   tree_list        valu: @31      chan: @4061   
-@4055   identifier_node  strg: __atomic_store_n        lngt: 16      
-@4056   function_decl    name: @4062    type: @4063    scpe: @176    
-                         srcp: <built-in>:0            chain: @4064   
+@4051   tree_list        valu: @186     chan: @4057   
+@4052   tree_list        valu: @186     chan: @4058   
+@4053   tree_list        valu: @3706    chan: @4059   
+@4054   identifier_node  strg: __atomic_compare_exchange_4 
+                         lngt: 27      
+@4055   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4060   
+@4056   function_decl    name: @4061    type: @4062    scpe: @176    
+                         srcp: <built-in>:0            chain: @4063   
                          body: undefined               link: extern  
-@4057   tree_list        valu: @3       chan: @188    
-@4058   tree_list        valu: @3       chan: @4065   
-@4059   tree_list        valu: @2635    chan: @4066   
-@4060   tree_list        valu: @41      chan: @4067   
-@4061   tree_list        valu: @3675    chan: @4068   
-@4062   identifier_node  strg: __atomic_store_1        lngt: 16      
-@4063   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4069   
-@4064   function_decl    name: @4070    type: @4071    scpe: @176    
-                         srcp: <built-in>:0            chain: @4072   
+@4057   tree_list        valu: @3       chan: @4064   
+@4058   tree_list        valu: @72      chan: @4065   
+@4059   tree_list        valu: @186     chan: @4066   
+@4060   tree_list        valu: @3706    chan: @4067   
+@4061   identifier_node  strg: __atomic_compare_exchange_8 
+                         lngt: 27      
+@4062   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4068   
+@4063   function_decl    name: @4069    type: @4070    scpe: @176    
+                         srcp: <built-in>:0            chain: @4071   
                          body: undefined               link: extern  
-@4065   tree_list        valu: @3       chan: @188    
-@4066   tree_list        valu: @3       chan: @4073   
-@4067   tree_list        valu: @2635    chan: @4074   
-@4068   tree_list        valu: @186     chan: @4075   
-@4069   tree_list        valu: @3675    chan: @4076   
-@4070   identifier_node  strg: __atomic_store_2        lngt: 16      
-@4071   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4077   
-@4072   function_decl    name: @4078    type: @4079    scpe: @176    
-                         srcp: <built-in>:0            chain: @4080   
+@4064   tree_list        valu: @3       chan: @188    
+@4065   tree_list        valu: @2635    chan: @4072   
+@4066   tree_list        valu: @62      chan: @4073   
+@4067   tree_list        valu: @186     chan: @4074   
+@4068   tree_list        valu: @3706    chan: @4075   
+@4069   identifier_node  strg: __atomic_compare_exchange_16 
+                         lngt: 28      
+@4070   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4076   
+@4071   function_decl    name: @4077    type: @4078    scpe: @176    
+                         srcp: <built-in>:0            chain: @4079   
                          body: undefined               link: extern  
-@4073   tree_list        valu: @3       chan: @188    
-@4074   tree_list        valu: @3       chan: @4081   
-@4075   tree_list        valu: @3       chan: @188    
-@4076   tree_list        valu: @72      chan: @4082   
-@4077   tree_list        valu: @3675    chan: @4083   
-@4078   identifier_node  strg: __atomic_store_4        lngt: 16      
-@4079   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4084   
-@4080   function_decl    name: @4085    type: @4086    scpe: @176    
+@4072   tree_list        valu: @3       chan: @4080   
+@4073   tree_list        valu: @2635    chan: @4081   
+@4074   tree_list        valu: @26      chan: @4082   
+@4075   tree_list        valu: @186     chan: @4083   
+@4076   tree_list        valu: @3706    chan: @4084   
+@4077   identifier_node  strg: __atomic_store          lngt: 14      
+@4078   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4085   
+@4079   function_decl    name: @4086    type: @2856    scpe: @176    
                          srcp: <built-in>:0            chain: @4087   
                          body: undefined               link: extern  
-@4081   tree_list        valu: @3       chan: @188    
-@4082   tree_list        valu: @3       chan: @188    
-@4083   tree_list        valu: @62      chan: @4088   
-@4084   tree_list        valu: @3675    chan: @4089   
-@4085   identifier_node  strg: __atomic_store_8        lngt: 16      
-@4086   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4090   
-@4087   function_decl    name: @4091    type: @4092    scpe: @176    
-                         srcp: <built-in>:0            chain: @4093   
+@4080   tree_list        valu: @3       chan: @188    
+@4081   tree_list        valu: @3       chan: @4088   
+@4082   tree_list        valu: @2635    chan: @4089   
+@4083   tree_list        valu: @31      chan: @4090   
+@4084   tree_list        valu: @186     chan: @4091   
+@4085   tree_list        valu: @31      chan: @4092   
+@4086   identifier_node  strg: __atomic_store_n        lngt: 16      
+@4087   function_decl    name: @4093    type: @4094    scpe: @176    
+                         srcp: <built-in>:0            chain: @4095   
                          body: undefined               link: extern  
 @4088   tree_list        valu: @3       chan: @188    
-@4089   tree_list        valu: @26      chan: @4094   
-@4090   tree_list        valu: @3675    chan: @4095   
-@4091   identifier_node  strg: __atomic_store_16       lngt: 17      
-@4092   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4096   
-@4093   function_decl    name: @4097    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4098   
+@4089   tree_list        valu: @3       chan: @4096   
+@4090   tree_list        valu: @2635    chan: @4097   
+@4091   tree_list        valu: @41      chan: @4098   
+@4092   tree_list        valu: @3706    chan: @4099   
+@4093   identifier_node  strg: __atomic_store_1        lngt: 16      
+@4094   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4100   
+@4095   function_decl    name: @4101    type: @4102    scpe: @176    
+                         srcp: <built-in>:0            chain: @4103   
                          body: undefined               link: extern  
-@4094   tree_list        valu: @3       chan: @188    
-@4095   tree_list        valu: @31      chan: @4099   
-@4096   tree_list        valu: @3675    chan: @4100   
-@4097   identifier_node  strg: __atomic_add_fetch      lngt: 18      
-@4098   function_decl    name: @4101    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4102   
-                         body: undefined               link: extern  
-@4099   tree_list        valu: @3       chan: @188    
-@4100   tree_list        valu: @41      chan: @4103   
-@4101   identifier_node  strg: __atomic_add_fetch_1    lngt: 20      
-@4102   function_decl    name: @4104    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4105   
-                         body: undefined               link: extern  
-@4103   tree_list        valu: @3       chan: @188    
-@4104   identifier_node  strg: __atomic_add_fetch_2    lngt: 20      
-@4105   function_decl    name: @4106    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4107   
-                         body: undefined               link: extern  
-@4106   identifier_node  strg: __atomic_add_fetch_4    lngt: 20      
-@4107   function_decl    name: @4108    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4109   
-                         body: undefined               link: extern  
-@4108   identifier_node  strg: __atomic_add_fetch_8    lngt: 20      
-@4109   function_decl    name: @4110    type: @3961    scpe: @176    
+@4096   tree_list        valu: @3       chan: @188    
+@4097   tree_list        valu: @3       chan: @4104   
+@4098   tree_list        valu: @2635    chan: @4105   
+@4099   tree_list        valu: @186     chan: @4106   
+@4100   tree_list        valu: @3706    chan: @4107   
+@4101   identifier_node  strg: __atomic_store_2        lngt: 16      
+@4102   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4108   
+@4103   function_decl    name: @4109    type: @4110    scpe: @176    
                          srcp: <built-in>:0            chain: @4111   
                          body: undefined               link: extern  
-@4110   identifier_node  strg: __atomic_add_fetch_16   lngt: 21      
-@4111   function_decl    name: @4112    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4113   
+@4104   tree_list        valu: @3       chan: @188    
+@4105   tree_list        valu: @3       chan: @4112   
+@4106   tree_list        valu: @3       chan: @188    
+@4107   tree_list        valu: @72      chan: @4113   
+@4108   tree_list        valu: @3706    chan: @4114   
+@4109   identifier_node  strg: __atomic_store_4        lngt: 16      
+@4110   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4115   
+@4111   function_decl    name: @4116    type: @4117    scpe: @176    
+                         srcp: <built-in>:0            chain: @4118   
                          body: undefined               link: extern  
-@4112   identifier_node  strg: __atomic_sub_fetch      lngt: 18      
-@4113   function_decl    name: @4114    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4115   
+@4112   tree_list        valu: @3       chan: @188    
+@4113   tree_list        valu: @3       chan: @188    
+@4114   tree_list        valu: @62      chan: @4119   
+@4115   tree_list        valu: @3706    chan: @4120   
+@4116   identifier_node  strg: __atomic_store_8        lngt: 16      
+@4117   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4121   
+@4118   function_decl    name: @4122    type: @4123    scpe: @176    
+                         srcp: <built-in>:0            chain: @4124   
                          body: undefined               link: extern  
-@4114   identifier_node  strg: __atomic_sub_fetch_1    lngt: 20      
-@4115   function_decl    name: @4116    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4117   
-                         body: undefined               link: extern  
-@4116   identifier_node  strg: __atomic_sub_fetch_2    lngt: 20      
-@4117   function_decl    name: @4118    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4119   
-                         body: undefined               link: extern  
-@4118   identifier_node  strg: __atomic_sub_fetch_4    lngt: 20      
-@4119   function_decl    name: @4120    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4121   
-                         body: undefined               link: extern  
-@4120   identifier_node  strg: __atomic_sub_fetch_8    lngt: 20      
-@4121   function_decl    name: @4122    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4123   
-                         body: undefined               link: extern  
-@4122   identifier_node  strg: __atomic_sub_fetch_16   lngt: 21      
-@4123   function_decl    name: @4124    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4125   
-                         body: undefined               link: extern  
-@4124   identifier_node  strg: __atomic_and_fetch      lngt: 18      
-@4125   function_decl    name: @4126    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4127   
-                         body: undefined               link: extern  
-@4126   identifier_node  strg: __atomic_and_fetch_1    lngt: 20      
-@4127   function_decl    name: @4128    type: @3942    scpe: @176    
+@4119   tree_list        valu: @3       chan: @188    
+@4120   tree_list        valu: @26      chan: @4125   
+@4121   tree_list        valu: @3706    chan: @4126   
+@4122   identifier_node  strg: __atomic_store_16       lngt: 17      
+@4123   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4127   
+@4124   function_decl    name: @4128    type: @2856    scpe: @176    
                          srcp: <built-in>:0            chain: @4129   
                          body: undefined               link: extern  
-@4128   identifier_node  strg: __atomic_and_fetch_2    lngt: 20      
-@4129   function_decl    name: @4130    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4131   
-                         body: undefined               link: extern  
-@4130   identifier_node  strg: __atomic_and_fetch_4    lngt: 20      
-@4131   function_decl    name: @4132    type: @3955    scpe: @176    
+@4125   tree_list        valu: @3       chan: @188    
+@4126   tree_list        valu: @31      chan: @4130   
+@4127   tree_list        valu: @3706    chan: @4131   
+@4128   identifier_node  strg: __atomic_add_fetch      lngt: 18      
+@4129   function_decl    name: @4132    type: @3968    scpe: @176    
                          srcp: <built-in>:0            chain: @4133   
                          body: undefined               link: extern  
-@4132   identifier_node  strg: __atomic_and_fetch_8    lngt: 20      
-@4133   function_decl    name: @4134    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4135   
+@4130   tree_list        valu: @3       chan: @188    
+@4131   tree_list        valu: @41      chan: @4134   
+@4132   identifier_node  strg: __atomic_add_fetch_1    lngt: 20      
+@4133   function_decl    name: @4135    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4136   
                          body: undefined               link: extern  
-@4134   identifier_node  strg: __atomic_and_fetch_16   lngt: 21      
-@4135   function_decl    name: @4136    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4137   
+@4134   tree_list        valu: @3       chan: @188    
+@4135   identifier_node  strg: __atomic_add_fetch_2    lngt: 20      
+@4136   function_decl    name: @4137    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4138   
                          body: undefined               link: extern  
-@4136   identifier_node  strg: __atomic_nand_fetch     lngt: 19      
-@4137   function_decl    name: @4138    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4139   
+@4137   identifier_node  strg: __atomic_add_fetch_4    lngt: 20      
+@4138   function_decl    name: @4139    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4140   
                          body: undefined               link: extern  
-@4138   identifier_node  strg: __atomic_nand_fetch_1   lngt: 21      
-@4139   function_decl    name: @4140    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4141   
+@4139   identifier_node  strg: __atomic_add_fetch_8    lngt: 20      
+@4140   function_decl    name: @4141    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4142   
                          body: undefined               link: extern  
-@4140   identifier_node  strg: __atomic_nand_fetch_2   lngt: 21      
-@4141   function_decl    name: @4142    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4143   
+@4141   identifier_node  strg: __atomic_add_fetch_16   lngt: 21      
+@4142   function_decl    name: @4143    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4144   
                          body: undefined               link: extern  
-@4142   identifier_node  strg: __atomic_nand_fetch_4   lngt: 21      
-@4143   function_decl    name: @4144    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4145   
+@4143   identifier_node  strg: __atomic_sub_fetch      lngt: 18      
+@4144   function_decl    name: @4145    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4146   
                          body: undefined               link: extern  
-@4144   identifier_node  strg: __atomic_nand_fetch_8   lngt: 21      
-@4145   function_decl    name: @4146    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4147   
+@4145   identifier_node  strg: __atomic_sub_fetch_1    lngt: 20      
+@4146   function_decl    name: @4147    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4148   
                          body: undefined               link: extern  
-@4146   identifier_node  strg: __atomic_nand_fetch_16  lngt: 22      
-@4147   function_decl    name: @4148    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4149   
+@4147   identifier_node  strg: __atomic_sub_fetch_2    lngt: 20      
+@4148   function_decl    name: @4149    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4150   
                          body: undefined               link: extern  
-@4148   identifier_node  strg: __atomic_xor_fetch      lngt: 18      
-@4149   function_decl    name: @4150    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4151   
+@4149   identifier_node  strg: __atomic_sub_fetch_4    lngt: 20      
+@4150   function_decl    name: @4151    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4152   
                          body: undefined               link: extern  
-@4150   identifier_node  strg: __atomic_xor_fetch_1    lngt: 20      
-@4151   function_decl    name: @4152    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4153   
+@4151   identifier_node  strg: __atomic_sub_fetch_8    lngt: 20      
+@4152   function_decl    name: @4153    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4154   
                          body: undefined               link: extern  
-@4152   identifier_node  strg: __atomic_xor_fetch_2    lngt: 20      
-@4153   function_decl    name: @4154    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4155   
+@4153   identifier_node  strg: __atomic_sub_fetch_16   lngt: 21      
+@4154   function_decl    name: @4155    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4156   
                          body: undefined               link: extern  
-@4154   identifier_node  strg: __atomic_xor_fetch_4    lngt: 20      
-@4155   function_decl    name: @4156    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4157   
+@4155   identifier_node  strg: __atomic_and_fetch      lngt: 18      
+@4156   function_decl    name: @4157    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4158   
                          body: undefined               link: extern  
-@4156   identifier_node  strg: __atomic_xor_fetch_8    lngt: 20      
-@4157   function_decl    name: @4158    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4159   
+@4157   identifier_node  strg: __atomic_and_fetch_1    lngt: 20      
+@4158   function_decl    name: @4159    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4160   
                          body: undefined               link: extern  
-@4158   identifier_node  strg: __atomic_xor_fetch_16   lngt: 21      
-@4159   function_decl    name: @4160    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4161   
+@4159   identifier_node  strg: __atomic_and_fetch_2    lngt: 20      
+@4160   function_decl    name: @4161    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4162   
                          body: undefined               link: extern  
-@4160   identifier_node  strg: __atomic_or_fetch       lngt: 17      
-@4161   function_decl    name: @4162    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4163   
+@4161   identifier_node  strg: __atomic_and_fetch_4    lngt: 20      
+@4162   function_decl    name: @4163    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4164   
                          body: undefined               link: extern  
-@4162   identifier_node  strg: __atomic_or_fetch_1     lngt: 19      
-@4163   function_decl    name: @4164    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4165   
+@4163   identifier_node  strg: __atomic_and_fetch_8    lngt: 20      
+@4164   function_decl    name: @4165    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4166   
                          body: undefined               link: extern  
-@4164   identifier_node  strg: __atomic_or_fetch_2     lngt: 19      
-@4165   function_decl    name: @4166    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4167   
+@4165   identifier_node  strg: __atomic_and_fetch_16   lngt: 21      
+@4166   function_decl    name: @4167    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4168   
                          body: undefined               link: extern  
-@4166   identifier_node  strg: __atomic_or_fetch_4     lngt: 19      
-@4167   function_decl    name: @4168    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4169   
+@4167   identifier_node  strg: __atomic_nand_fetch     lngt: 19      
+@4168   function_decl    name: @4169    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4170   
                          body: undefined               link: extern  
-@4168   identifier_node  strg: __atomic_or_fetch_8     lngt: 19      
-@4169   function_decl    name: @4170    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4171   
+@4169   identifier_node  strg: __atomic_nand_fetch_1   lngt: 21      
+@4170   function_decl    name: @4171    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4172   
                          body: undefined               link: extern  
-@4170   identifier_node  strg: __atomic_or_fetch_16    lngt: 20      
-@4171   function_decl    name: @4172    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4173   
+@4171   identifier_node  strg: __atomic_nand_fetch_2   lngt: 21      
+@4172   function_decl    name: @4173    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4174   
                          body: undefined               link: extern  
-@4172   identifier_node  strg: __atomic_fetch_add      lngt: 18      
-@4173   function_decl    name: @4174    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4175   
+@4173   identifier_node  strg: __atomic_nand_fetch_4   lngt: 21      
+@4174   function_decl    name: @4175    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4176   
                          body: undefined               link: extern  
-@4174   identifier_node  strg: __atomic_fetch_add_1    lngt: 20      
-@4175   function_decl    name: @4176    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4177   
+@4175   identifier_node  strg: __atomic_nand_fetch_8   lngt: 21      
+@4176   function_decl    name: @4177    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4178   
                          body: undefined               link: extern  
-@4176   identifier_node  strg: __atomic_fetch_add_2    lngt: 20      
-@4177   function_decl    name: @4178    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4179   
+@4177   identifier_node  strg: __atomic_nand_fetch_16  lngt: 22      
+@4178   function_decl    name: @4179    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4180   
                          body: undefined               link: extern  
-@4178   identifier_node  strg: __atomic_fetch_add_4    lngt: 20      
-@4179   function_decl    name: @4180    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4181   
+@4179   identifier_node  strg: __atomic_xor_fetch      lngt: 18      
+@4180   function_decl    name: @4181    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4182   
                          body: undefined               link: extern  
-@4180   identifier_node  strg: __atomic_fetch_add_8    lngt: 20      
-@4181   function_decl    name: @4182    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4183   
+@4181   identifier_node  strg: __atomic_xor_fetch_1    lngt: 20      
+@4182   function_decl    name: @4183    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4184   
                          body: undefined               link: extern  
-@4182   identifier_node  strg: __atomic_fetch_add_16   lngt: 21      
-@4183   function_decl    name: @4184    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4185   
+@4183   identifier_node  strg: __atomic_xor_fetch_2    lngt: 20      
+@4184   function_decl    name: @4185    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4186   
                          body: undefined               link: extern  
-@4184   identifier_node  strg: __atomic_fetch_sub      lngt: 18      
-@4185   function_decl    name: @4186    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4187   
+@4185   identifier_node  strg: __atomic_xor_fetch_4    lngt: 20      
+@4186   function_decl    name: @4187    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4188   
                          body: undefined               link: extern  
-@4186   identifier_node  strg: __atomic_fetch_sub_1    lngt: 20      
-@4187   function_decl    name: @4188    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4189   
+@4187   identifier_node  strg: __atomic_xor_fetch_8    lngt: 20      
+@4188   function_decl    name: @4189    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4190   
                          body: undefined               link: extern  
-@4188   identifier_node  strg: __atomic_fetch_sub_2    lngt: 20      
-@4189   function_decl    name: @4190    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4191   
+@4189   identifier_node  strg: __atomic_xor_fetch_16   lngt: 21      
+@4190   function_decl    name: @4191    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4192   
                          body: undefined               link: extern  
-@4190   identifier_node  strg: __atomic_fetch_sub_4    lngt: 20      
-@4191   function_decl    name: @4192    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4193   
+@4191   identifier_node  strg: __atomic_or_fetch       lngt: 17      
+@4192   function_decl    name: @4193    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4194   
                          body: undefined               link: extern  
-@4192   identifier_node  strg: __atomic_fetch_sub_8    lngt: 20      
-@4193   function_decl    name: @4194    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4195   
+@4193   identifier_node  strg: __atomic_or_fetch_1     lngt: 19      
+@4194   function_decl    name: @4195    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4196   
                          body: undefined               link: extern  
-@4194   identifier_node  strg: __atomic_fetch_sub_16   lngt: 21      
-@4195   function_decl    name: @4196    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4197   
+@4195   identifier_node  strg: __atomic_or_fetch_2     lngt: 19      
+@4196   function_decl    name: @4197    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4198   
                          body: undefined               link: extern  
-@4196   identifier_node  strg: __atomic_fetch_and      lngt: 18      
-@4197   function_decl    name: @4198    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4199   
+@4197   identifier_node  strg: __atomic_or_fetch_4     lngt: 19      
+@4198   function_decl    name: @4199    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4200   
                          body: undefined               link: extern  
-@4198   identifier_node  strg: __atomic_fetch_and_1    lngt: 20      
-@4199   function_decl    name: @4200    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4201   
+@4199   identifier_node  strg: __atomic_or_fetch_8     lngt: 19      
+@4200   function_decl    name: @4201    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4202   
                          body: undefined               link: extern  
-@4200   identifier_node  strg: __atomic_fetch_and_2    lngt: 20      
-@4201   function_decl    name: @4202    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4203   
+@4201   identifier_node  strg: __atomic_or_fetch_16    lngt: 20      
+@4202   function_decl    name: @4203    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4204   
                          body: undefined               link: extern  
-@4202   identifier_node  strg: __atomic_fetch_and_4    lngt: 20      
-@4203   function_decl    name: @4204    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4205   
+@4203   identifier_node  strg: __atomic_fetch_add      lngt: 18      
+@4204   function_decl    name: @4205    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4206   
                          body: undefined               link: extern  
-@4204   identifier_node  strg: __atomic_fetch_and_8    lngt: 20      
-@4205   function_decl    name: @4206    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4207   
+@4205   identifier_node  strg: __atomic_fetch_add_1    lngt: 20      
+@4206   function_decl    name: @4207    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4208   
                          body: undefined               link: extern  
-@4206   identifier_node  strg: __atomic_fetch_and_16   lngt: 21      
-@4207   function_decl    name: @4208    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4209   
+@4207   identifier_node  strg: __atomic_fetch_add_2    lngt: 20      
+@4208   function_decl    name: @4209    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4210   
                          body: undefined               link: extern  
-@4208   identifier_node  strg: __atomic_fetch_nand     lngt: 19      
-@4209   function_decl    name: @4210    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4211   
+@4209   identifier_node  strg: __atomic_fetch_add_4    lngt: 20      
+@4210   function_decl    name: @4211    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4212   
                          body: undefined               link: extern  
-@4210   identifier_node  strg: __atomic_fetch_nand_1   lngt: 21      
-@4211   function_decl    name: @4212    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4213   
+@4211   identifier_node  strg: __atomic_fetch_add_8    lngt: 20      
+@4212   function_decl    name: @4213    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4214   
                          body: undefined               link: extern  
-@4212   identifier_node  strg: __atomic_fetch_nand_2   lngt: 21      
-@4213   function_decl    name: @4214    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4215   
+@4213   identifier_node  strg: __atomic_fetch_add_16   lngt: 21      
+@4214   function_decl    name: @4215    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4216   
                          body: undefined               link: extern  
-@4214   identifier_node  strg: __atomic_fetch_nand_4   lngt: 21      
-@4215   function_decl    name: @4216    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4217   
+@4215   identifier_node  strg: __atomic_fetch_sub      lngt: 18      
+@4216   function_decl    name: @4217    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4218   
                          body: undefined               link: extern  
-@4216   identifier_node  strg: __atomic_fetch_nand_8   lngt: 21      
-@4217   function_decl    name: @4218    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4219   
+@4217   identifier_node  strg: __atomic_fetch_sub_1    lngt: 20      
+@4218   function_decl    name: @4219    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4220   
                          body: undefined               link: extern  
-@4218   identifier_node  strg: __atomic_fetch_nand_16  lngt: 22      
-@4219   function_decl    name: @4220    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4221   
+@4219   identifier_node  strg: __atomic_fetch_sub_2    lngt: 20      
+@4220   function_decl    name: @4221    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4222   
                          body: undefined               link: extern  
-@4220   identifier_node  strg: __atomic_fetch_xor      lngt: 18      
-@4221   function_decl    name: @4222    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4223   
+@4221   identifier_node  strg: __atomic_fetch_sub_4    lngt: 20      
+@4222   function_decl    name: @4223    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4224   
                          body: undefined               link: extern  
-@4222   identifier_node  strg: __atomic_fetch_xor_1    lngt: 20      
-@4223   function_decl    name: @4224    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4225   
+@4223   identifier_node  strg: __atomic_fetch_sub_8    lngt: 20      
+@4224   function_decl    name: @4225    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4226   
                          body: undefined               link: extern  
-@4224   identifier_node  strg: __atomic_fetch_xor_2    lngt: 20      
-@4225   function_decl    name: @4226    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4227   
+@4225   identifier_node  strg: __atomic_fetch_sub_16   lngt: 21      
+@4226   function_decl    name: @4227    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4228   
                          body: undefined               link: extern  
-@4226   identifier_node  strg: __atomic_fetch_xor_4    lngt: 20      
-@4227   function_decl    name: @4228    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4229   
+@4227   identifier_node  strg: __atomic_fetch_and      lngt: 18      
+@4228   function_decl    name: @4229    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4230   
                          body: undefined               link: extern  
-@4228   identifier_node  strg: __atomic_fetch_xor_8    lngt: 20      
-@4229   function_decl    name: @4230    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4231   
+@4229   identifier_node  strg: __atomic_fetch_and_1    lngt: 20      
+@4230   function_decl    name: @4231    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4232   
                          body: undefined               link: extern  
-@4230   identifier_node  strg: __atomic_fetch_xor_16   lngt: 21      
-@4231   function_decl    name: @4232    type: @2856    scpe: @176    
-                         srcp: <built-in>:0            chain: @4233   
+@4231   identifier_node  strg: __atomic_fetch_and_2    lngt: 20      
+@4232   function_decl    name: @4233    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4234   
                          body: undefined               link: extern  
-@4232   identifier_node  strg: __atomic_fetch_or       lngt: 17      
-@4233   function_decl    name: @4234    type: @3937    scpe: @176    
-                         srcp: <built-in>:0            chain: @4235   
+@4233   identifier_node  strg: __atomic_fetch_and_4    lngt: 20      
+@4234   function_decl    name: @4235    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4236   
                          body: undefined               link: extern  
-@4234   identifier_node  strg: __atomic_fetch_or_1     lngt: 19      
-@4235   function_decl    name: @4236    type: @3942    scpe: @176    
-                         srcp: <built-in>:0            chain: @4237   
+@4235   identifier_node  strg: __atomic_fetch_and_8    lngt: 20      
+@4236   function_decl    name: @4237    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4238   
                          body: undefined               link: extern  
-@4236   identifier_node  strg: __atomic_fetch_or_2     lngt: 19      
-@4237   function_decl    name: @4238    type: @3948    scpe: @176    
-                         srcp: <built-in>:0            chain: @4239   
+@4237   identifier_node  strg: __atomic_fetch_and_16   lngt: 21      
+@4238   function_decl    name: @4239    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4240   
                          body: undefined               link: extern  
-@4238   identifier_node  strg: __atomic_fetch_or_4     lngt: 19      
-@4239   function_decl    name: @4240    type: @3955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4241   
+@4239   identifier_node  strg: __atomic_fetch_nand     lngt: 19      
+@4240   function_decl    name: @4241    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4242   
                          body: undefined               link: extern  
-@4240   identifier_node  strg: __atomic_fetch_or_8     lngt: 19      
-@4241   function_decl    name: @4242    type: @3961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4243   
+@4241   identifier_node  strg: __atomic_fetch_nand_1   lngt: 21      
+@4242   function_decl    name: @4243    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4244   
                          body: undefined               link: extern  
-@4242   identifier_node  strg: __atomic_fetch_or_16    lngt: 20      
-@4243   function_decl    name: @4244    type: @4245    scpe: @176    
+@4243   identifier_node  strg: __atomic_fetch_nand_2   lngt: 21      
+@4244   function_decl    name: @4245    type: @3979    scpe: @176    
                          srcp: <built-in>:0            chain: @4246   
                          body: undefined               link: extern  
-@4244   identifier_node  strg: __atomic_always_lock_free 
-                         lngt: 25      
-@4245   function_type    size: @12      algn: 8        retn: @2635   
-                         prms: @4247   
-@4246   function_decl    name: @4248    type: @4245    scpe: @176    
-                         srcp: <built-in>:0            chain: @4249   
+@4245   identifier_node  strg: __atomic_fetch_nand_4   lngt: 21      
+@4246   function_decl    name: @4247    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4248   
                          body: undefined               link: extern  
-@4247   tree_list        valu: @31      chan: @4250   
-@4248   identifier_node  strg: __atomic_is_lock_free   lngt: 21      
-@4249   function_decl    name: @4251    type: @3144    scpe: @176    
+@4247   identifier_node  strg: __atomic_fetch_nand_8   lngt: 21      
+@4248   function_decl    name: @4249    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4250   
+                         body: undefined               link: extern  
+@4249   identifier_node  strg: __atomic_fetch_nand_16  lngt: 22      
+@4250   function_decl    name: @4251    type: @2856    scpe: @176    
                          srcp: <built-in>:0            chain: @4252   
                          body: undefined               link: extern  
-@4250   tree_list        valu: @3979    chan: @188    
-@4251   identifier_node  strg: __atomic_thread_fence   lngt: 21      
-@4252   function_decl    name: @4253    type: @3144    scpe: @176    
+@4251   identifier_node  strg: __atomic_fetch_xor      lngt: 18      
+@4252   function_decl    name: @4253    type: @3968    scpe: @176    
                          srcp: <built-in>:0            chain: @4254   
                          body: undefined               link: extern  
-@4253   identifier_node  strg: __atomic_signal_fence   lngt: 21      
-@4254   function_decl    name: @4255    type: @3144    scpe: @176    
+@4253   identifier_node  strg: __atomic_fetch_xor_1    lngt: 20      
+@4254   function_decl    name: @4255    type: @3973    scpe: @176    
                          srcp: <built-in>:0            chain: @4256   
                          body: undefined               link: extern  
-@4255   identifier_node  strg: __atomic_feraiseexcept  lngt: 22      
-@4256   function_decl    name: @4257    mngl: @4258    type: @2221   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4259    body: undefined 
-                         link: extern  
-@4257   identifier_node  strg: __builtin_acc_on_device lngt: 23      
-@4258   identifier_node  strg: acc_on_device           lngt: 13      
-@4259   function_decl    name: @4260    mngl: @4261    type: @4262   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4263    body: undefined 
-                         link: extern  
-@4260   identifier_node  strg: __builtin___chkp_bndcl  lngt: 22      
-@4261   identifier_node  strg: __chkp_bndcl            lngt: 12      
-@4262   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4264   
-@4263   function_decl    name: @4261    type: @4262    scpe: @176    
-                         srcp: <built-in>:0            chain: @4265   
+@4255   identifier_node  strg: __atomic_fetch_xor_2    lngt: 20      
+@4256   function_decl    name: @4257    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4258   
                          body: undefined               link: extern  
-@4264   tree_list        valu: @186     chan: @4266   
-@4265   function_decl    name: @4267    mngl: @4268    type: @4262   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4269    body: undefined 
-                         link: extern  
-@4266   tree_list        valu: @4270    chan: @188    
-@4267   identifier_node  strg: __builtin___chkp_bndcu  lngt: 22      
-@4268   identifier_node  strg: __chkp_bndcu            lngt: 12      
-@4269   function_decl    name: @4268    type: @4262    scpe: @176    
-                         srcp: <built-in>:0            chain: @4271   
+@4257   identifier_node  strg: __atomic_fetch_xor_4    lngt: 20      
+@4258   function_decl    name: @4259    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4260   
                          body: undefined               link: extern  
-@4270   pointer_bounds_type name: @4272    size: @20      algn: 8       
-@4271   function_decl    name: @4273    mngl: @4274    type: @4275   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4276    body: undefined 
-                         link: extern  
-@4272   identifier_node  strg: __bounds_type           lngt: 13      
-@4273   identifier_node  strg: __builtin___chkp_bndstx lngt: 23      
-@4274   identifier_node  strg: __chkp_bndstx           lngt: 13      
-@4275   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4277   
-@4276   function_decl    name: @4274    type: @4275    scpe: @176    
-                         srcp: <built-in>:0            chain: @4278   
+@4259   identifier_node  strg: __atomic_fetch_xor_8    lngt: 20      
+@4260   function_decl    name: @4261    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4262   
                          body: undefined               link: extern  
-@4277   tree_list        valu: @1741    chan: @4279   
-@4278   function_decl    name: @4280    mngl: @4281    type: @4282   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4283    body: undefined 
-                         link: extern  
-@4279   tree_list        valu: @4270    chan: @4284   
-@4280   identifier_node  strg: __builtin___chkp_bndldx lngt: 23      
-@4281   identifier_node  strg: __chkp_bndldx           lngt: 13      
-@4282   function_type    size: @12      algn: 8        retn: @1741   
-                         prms: @4285   
-@4283   function_decl    name: @4281    type: @4282    scpe: @176    
-                         srcp: <built-in>:0            chain: @4286   
+@4261   identifier_node  strg: __atomic_fetch_xor_16   lngt: 21      
+@4262   function_decl    name: @4263    type: @2856    scpe: @176    
+                         srcp: <built-in>:0            chain: @4264   
                          body: undefined               link: extern  
-@4284   tree_list        valu: @1741    chan: @188    
-@4285   tree_list        valu: @1741    chan: @4287   
-@4286   function_decl    name: @4288    mngl: @4289    type: @4290   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4291    body: undefined 
-                         link: extern  
-@4287   tree_list        valu: @1741    chan: @188    
-@4288   identifier_node  strg: __builtin___chkp_bndret lngt: 23      
-@4289   identifier_node  strg: __chkp_bndret           lngt: 13      
-@4290   function_type    size: @12      algn: 8        retn: @4270   
-                         prms: @4292   
-@4291   function_decl    name: @4289    type: @4290    scpe: @176    
-                         srcp: <built-in>:0            chain: @4293   
+@4263   identifier_node  strg: __atomic_fetch_or       lngt: 17      
+@4264   function_decl    name: @4265    type: @3968    scpe: @176    
+                         srcp: <built-in>:0            chain: @4266   
                          body: undefined               link: extern  
-@4292   tree_list        valu: @1741    chan: @188    
-@4293   function_decl    name: @4294    mngl: @4295    type: @4296   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4297    body: undefined 
-                         link: extern  
-@4294   identifier_node  strg: __builtin___chkp_bndmk  lngt: 22      
-@4295   identifier_node  strg: __chkp_bndmk            lngt: 12      
-@4296   function_type    size: @12      algn: 8        retn: @4270   
-                         prms: @4298   
-@4297   function_decl    name: @4295    type: @4296    scpe: @176    
-                         srcp: <built-in>:0            chain: @4299   
+@4265   identifier_node  strg: __atomic_fetch_or_1     lngt: 19      
+@4266   function_decl    name: @4267    type: @3973    scpe: @176    
+                         srcp: <built-in>:0            chain: @4268   
                          body: undefined               link: extern  
-@4298   tree_list        valu: @1741    chan: @4300   
-@4299   function_decl    name: @4301    mngl: @4302    type: @4303   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4304    body: undefined 
-                         link: extern  
-@4300   tree_list        valu: @31      chan: @188    
-@4301   identifier_node  strg: __builtin___chkp_extract_lower 
-                         lngt: 30      
-@4302   identifier_node  strg: __chkp_extract_lower    lngt: 20      
-@4303   function_type    size: @12      algn: 8        retn: @1741   
-                         prms: @4305   
-@4304   function_decl    name: @4302    type: @4303    scpe: @176    
-                         srcp: <built-in>:0            chain: @4306   
+@4267   identifier_node  strg: __atomic_fetch_or_2     lngt: 19      
+@4268   function_decl    name: @4269    type: @3979    scpe: @176    
+                         srcp: <built-in>:0            chain: @4270   
                          body: undefined               link: extern  
-@4305   tree_list        valu: @4270    chan: @188    
-@4306   function_decl    name: @4307    mngl: @4308    type: @4303   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4309    body: undefined 
-                         link: extern  
-@4307   identifier_node  strg: __builtin___chkp_extract_upper 
-                         lngt: 30      
-@4308   identifier_node  strg: __chkp_extract_upper    lngt: 20      
-@4309   function_decl    name: @4308    type: @4303    scpe: @176    
-                         srcp: <built-in>:0            chain: @4310   
+@4269   identifier_node  strg: __atomic_fetch_or_4     lngt: 19      
+@4270   function_decl    name: @4271    type: @3986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4272   
                          body: undefined               link: extern  
-@4310   function_decl    name: @4311    mngl: @4312    type: @4313   
+@4271   identifier_node  strg: __atomic_fetch_or_8     lngt: 19      
+@4272   function_decl    name: @4273    type: @3992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4274   
+                         body: undefined               link: extern  
+@4273   identifier_node  strg: __atomic_fetch_or_16    lngt: 20      
+@4274   function_decl    name: @4275    type: @4276    scpe: @176    
+                         srcp: <built-in>:0            chain: @4277   
+                         body: undefined               link: extern  
+@4275   identifier_node  strg: __atomic_always_lock_free 
+                         lngt: 25      
+@4276   function_type    size: @12      algn: 8        retn: @2635   
+                         prms: @4278   
+@4277   function_decl    name: @4279    type: @4276    scpe: @176    
+                         srcp: <built-in>:0            chain: @4280   
+                         body: undefined               link: extern  
+@4278   tree_list        valu: @31      chan: @4281   
+@4279   identifier_node  strg: __atomic_is_lock_free   lngt: 21      
+@4280   function_decl    name: @4282    type: @3144    scpe: @176    
+                         srcp: <built-in>:0            chain: @4283   
+                         body: undefined               link: extern  
+@4281   tree_list        valu: @4010    chan: @188    
+@4282   identifier_node  strg: __atomic_thread_fence   lngt: 21      
+@4283   function_decl    name: @4284    type: @3144    scpe: @176    
+                         srcp: <built-in>:0            chain: @4285   
+                         body: undefined               link: extern  
+@4284   identifier_node  strg: __atomic_signal_fence   lngt: 21      
+@4285   function_decl    name: @4286    type: @3144    scpe: @176    
+                         srcp: <built-in>:0            chain: @4287   
+                         body: undefined               link: extern  
+@4286   identifier_node  strg: __atomic_feraiseexcept  lngt: 22      
+@4287   function_decl    name: @4288    mngl: @4289    type: @2221   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4290    body: undefined 
+                         link: extern  
+@4288   identifier_node  strg: __builtin_acc_on_device lngt: 23      
+@4289   identifier_node  strg: acc_on_device           lngt: 13      
+@4290   function_decl    name: @4291    mngl: @4292    type: @4293   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4294    body: undefined 
+                         link: extern  
+@4291   identifier_node  strg: __builtin___chkp_bndcl  lngt: 22      
+@4292   identifier_node  strg: __chkp_bndcl            lngt: 12      
+@4293   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4295   
+@4294   function_decl    name: @4292    type: @4293    scpe: @176    
+                         srcp: <built-in>:0            chain: @4296   
+                         body: undefined               link: extern  
+@4295   tree_list        valu: @186     chan: @4297   
+@4296   function_decl    name: @4298    mngl: @4299    type: @4293   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4300    body: undefined 
+                         link: extern  
+@4297   tree_list        valu: @4301    chan: @188    
+@4298   identifier_node  strg: __builtin___chkp_bndcu  lngt: 22      
+@4299   identifier_node  strg: __chkp_bndcu            lngt: 12      
+@4300   function_decl    name: @4299    type: @4293    scpe: @176    
+                         srcp: <built-in>:0            chain: @4302   
+                         body: undefined               link: extern  
+@4301   pointer_bounds_type name: @4303    size: @20      algn: 8       
+@4302   function_decl    name: @4304    mngl: @4305    type: @4306   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4307    body: undefined 
+                         link: extern  
+@4303   identifier_node  strg: __bounds_type           lngt: 13      
+@4304   identifier_node  strg: __builtin___chkp_bndstx lngt: 23      
+@4305   identifier_node  strg: __chkp_bndstx           lngt: 13      
+@4306   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4308   
+@4307   function_decl    name: @4305    type: @4306    scpe: @176    
+                         srcp: <built-in>:0            chain: @4309   
+                         body: undefined               link: extern  
+@4308   tree_list        valu: @1741    chan: @4310   
+@4309   function_decl    name: @4311    mngl: @4312    type: @4313   
                          scpe: @176     srcp: <built-in>:0      
                          chain: @4314    body: undefined 
                          link: extern  
-@4311   identifier_node  strg: __builtin___bnd_set_ptr_bounds 
-                         lngt: 30      
-@4312   identifier_node  strg: __bnd_set_ptr_bounds    lngt: 20      
-@4313   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @4315   
+@4310   tree_list        valu: @4301    chan: @4315   
+@4311   identifier_node  strg: __builtin___chkp_bndldx lngt: 23      
+@4312   identifier_node  strg: __chkp_bndldx           lngt: 13      
+@4313   function_type    size: @12      algn: 8        retn: @1741   
+                         prms: @4316   
 @4314   function_decl    name: @4312    type: @4313    scpe: @176    
-                         srcp: <built-in>:0            chain: @4316   
+                         srcp: <built-in>:0            chain: @4317   
                          body: undefined               link: extern  
-@4315   tree_list        valu: @1741    chan: @4317   
-@4316   function_decl    name: @4318    mngl: @4319    type: @4320   
+@4315   tree_list        valu: @1741    chan: @188    
+@4316   tree_list        valu: @1741    chan: @4318   
+@4317   function_decl    name: @4319    mngl: @4320    type: @4321   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4321    body: undefined 
+                         chain: @4322    body: undefined 
                          link: extern  
-@4317   tree_list        valu: @31      chan: @188    
-@4318   identifier_node  strg: __builtin___bnd_init_ptr_bounds 
-                         lngt: 31      
-@4319   identifier_node  strg: __bnd_init_ptr_bounds   lngt: 21      
-@4320   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @4322   
-@4321   function_decl    name: @4319    type: @4320    scpe: @176    
-                         srcp: <built-in>:0            chain: @4323   
+@4318   tree_list        valu: @1741    chan: @188    
+@4319   identifier_node  strg: __builtin___chkp_bndret lngt: 23      
+@4320   identifier_node  strg: __chkp_bndret           lngt: 13      
+@4321   function_type    size: @12      algn: 8        retn: @4301   
+                         prms: @4323   
+@4322   function_decl    name: @4320    type: @4321    scpe: @176    
+                         srcp: <built-in>:0            chain: @4324   
                          body: undefined               link: extern  
-@4322   tree_list        valu: @1741    chan: @188    
-@4323   function_decl    name: @4324    mngl: @4325    type: @4320   
+@4323   tree_list        valu: @1741    chan: @188    
+@4324   function_decl    name: @4325    mngl: @4326    type: @4327   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4326    body: undefined 
+                         chain: @4328    body: undefined 
                          link: extern  
-@4324   identifier_node  strg: __builtin___bnd_null_ptr_bounds 
-                         lngt: 31      
-@4325   identifier_node  strg: __bnd_null_ptr_bounds   lngt: 21      
-@4326   function_decl    name: @4325    type: @4320    scpe: @176    
-                         srcp: <built-in>:0            chain: @4327   
+@4325   identifier_node  strg: __builtin___chkp_bndmk  lngt: 22      
+@4326   identifier_node  strg: __chkp_bndmk            lngt: 12      
+@4327   function_type    size: @12      algn: 8        retn: @4301   
+                         prms: @4329   
+@4328   function_decl    name: @4326    type: @4327    scpe: @176    
+                         srcp: <built-in>:0            chain: @4330   
                          body: undefined               link: extern  
-@4327   function_decl    name: @4328    mngl: @4329    type: @4330   
+@4329   tree_list        valu: @1741    chan: @4331   
+@4330   function_decl    name: @4332    mngl: @4333    type: @4334   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4331    body: undefined 
+                         chain: @4335    body: undefined 
                          link: extern  
-@4328   identifier_node  strg: __builtin___bnd_copy_ptr_bounds 
-                         lngt: 31      
-@4329   identifier_node  strg: __bnd_copy_ptr_bounds   lngt: 21      
-@4330   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @4332   
-@4331   function_decl    name: @4329    type: @4330    scpe: @176    
-                         srcp: <built-in>:0            chain: @4333   
+@4331   tree_list        valu: @31      chan: @188    
+@4332   identifier_node  strg: __builtin___chkp_extract_lower 
+                         lngt: 30      
+@4333   identifier_node  strg: __chkp_extract_lower    lngt: 20      
+@4334   function_type    size: @12      algn: 8        retn: @1741   
+                         prms: @4336   
+@4335   function_decl    name: @4333    type: @4334    scpe: @176    
+                         srcp: <built-in>:0            chain: @4337   
                          body: undefined               link: extern  
-@4332   tree_list        valu: @1741    chan: @4334   
-@4333   function_decl    name: @4335    mngl: @4336    type: @4337   
+@4336   tree_list        valu: @4301    chan: @188    
+@4337   function_decl    name: @4338    mngl: @4339    type: @4334   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4338    body: undefined 
+                         chain: @4340    body: undefined 
                          link: extern  
-@4334   tree_list        valu: @1741    chan: @188    
-@4335   identifier_node  strg: __builtin___bnd_narrow_ptr_bounds 
-                         lngt: 33      
-@4336   identifier_node  strg: __bnd_narrow_ptr_bounds lngt: 23      
-@4337   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @4339   
-@4338   function_decl    name: @4336    type: @4337    scpe: @176    
-                         srcp: <built-in>:0            chain: @4340   
+@4338   identifier_node  strg: __builtin___chkp_extract_upper 
+                         lngt: 30      
+@4339   identifier_node  strg: __chkp_extract_upper    lngt: 20      
+@4340   function_decl    name: @4339    type: @4334    scpe: @176    
+                         srcp: <built-in>:0            chain: @4341   
                          body: undefined               link: extern  
-@4339   tree_list        valu: @1741    chan: @4341   
-@4340   function_decl    name: @4342    mngl: @4343    type: @4344   
+@4341   function_decl    name: @4342    mngl: @4343    type: @4344   
                          scpe: @176     srcp: <built-in>:0      
                          chain: @4345    body: undefined 
                          link: extern  
-@4341   tree_list        valu: @1741    chan: @4346   
-@4342   identifier_node  strg: __builtin___bnd_store_ptr_bounds 
-                         lngt: 32      
-@4343   identifier_node  strg: __bnd_store_ptr_bounds  lngt: 22      
-@4344   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4347   
+@4342   identifier_node  strg: __builtin___bnd_set_ptr_bounds 
+                         lngt: 30      
+@4343   identifier_node  strg: __bnd_set_ptr_bounds    lngt: 20      
+@4344   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @4346   
 @4345   function_decl    name: @4343    type: @4344    scpe: @176    
-                         srcp: <built-in>:0            chain: @4348   
+                         srcp: <built-in>:0            chain: @4347   
                          body: undefined               link: extern  
-@4346   tree_list        valu: @31      chan: @188    
-@4347   tree_list        valu: @3444    chan: @4349   
-@4348   function_decl    name: @4350    mngl: @4351    type: @4352   
+@4346   tree_list        valu: @1741    chan: @4348   
+@4347   function_decl    name: @4349    mngl: @4350    type: @4351   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4353    body: undefined 
+                         chain: @4352    body: undefined 
                          link: extern  
-@4349   tree_list        valu: @1741    chan: @188    
-@4350   identifier_node  strg: __builtin___bnd_chk_ptr_lbounds 
+@4348   tree_list        valu: @31      chan: @188    
+@4349   identifier_node  strg: __builtin___bnd_init_ptr_bounds 
                          lngt: 31      
-@4351   identifier_node  strg: __bnd_chk_ptr_lbounds   lngt: 21      
-@4352   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4354   
-@4353   function_decl    name: @4351    type: @4352    scpe: @176    
-                         srcp: <built-in>:0            chain: @4355   
+@4350   identifier_node  strg: __bnd_init_ptr_bounds   lngt: 21      
+@4351   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @4353   
+@4352   function_decl    name: @4350    type: @4351    scpe: @176    
+                         srcp: <built-in>:0            chain: @4354   
                          body: undefined               link: extern  
-@4354   tree_list        valu: @1741    chan: @188    
-@4355   function_decl    name: @4356    mngl: @4357    type: @4352   
+@4353   tree_list        valu: @1741    chan: @188    
+@4354   function_decl    name: @4355    mngl: @4356    type: @4351   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4358    body: undefined 
+                         chain: @4357    body: undefined 
                          link: extern  
-@4356   identifier_node  strg: __builtin___bnd_chk_ptr_ubounds 
+@4355   identifier_node  strg: __builtin___bnd_null_ptr_bounds 
                          lngt: 31      
-@4357   identifier_node  strg: __bnd_chk_ptr_ubounds   lngt: 21      
-@4358   function_decl    name: @4357    type: @4352    scpe: @176    
-                         srcp: <built-in>:0            chain: @4359   
+@4356   identifier_node  strg: __bnd_null_ptr_bounds   lngt: 21      
+@4357   function_decl    name: @4356    type: @4351    scpe: @176    
+                         srcp: <built-in>:0            chain: @4358   
                          body: undefined               link: extern  
-@4359   function_decl    name: @4360    mngl: @4361    type: @4362   
+@4358   function_decl    name: @4359    mngl: @4360    type: @4361   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4363    body: undefined 
+                         chain: @4362    body: undefined 
                          link: extern  
-@4360   identifier_node  strg: __builtin___bnd_chk_ptr_bounds 
-                         lngt: 30      
-@4361   identifier_node  strg: __bnd_chk_ptr_bounds    lngt: 20      
-@4362   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4364   
-@4363   function_decl    name: @4361    type: @4362    scpe: @176    
-                         srcp: <built-in>:0            chain: @4365   
+@4359   identifier_node  strg: __builtin___bnd_copy_ptr_bounds 
+                         lngt: 31      
+@4360   identifier_node  strg: __bnd_copy_ptr_bounds   lngt: 21      
+@4361   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @4363   
+@4362   function_decl    name: @4360    type: @4361    scpe: @176    
+                         srcp: <built-in>:0            chain: @4364   
                          body: undefined               link: extern  
-@4364   tree_list        valu: @1741    chan: @4366   
-@4365   function_decl    name: @4367    mngl: @4368    type: @4369   
+@4363   tree_list        valu: @1741    chan: @4365   
+@4364   function_decl    name: @4366    mngl: @4367    type: @4368   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4370    body: undefined 
+                         chain: @4369    body: undefined 
                          link: extern  
-@4366   tree_list        valu: @31      chan: @188    
-@4367   identifier_node  strg: __builtin___bnd_get_ptr_lbound 
-                         lngt: 30      
-@4368   identifier_node  strg: __bnd_get_ptr_lbound    lngt: 20      
-@4369   function_type    size: @12      algn: 8        retn: @1741   
-                         prms: @4371   
-@4370   function_decl    name: @4368    type: @4369    scpe: @176    
-                         srcp: <built-in>:0            chain: @4372   
+@4365   tree_list        valu: @1741    chan: @188    
+@4366   identifier_node  strg: __builtin___bnd_narrow_ptr_bounds 
+                         lngt: 33      
+@4367   identifier_node  strg: __bnd_narrow_ptr_bounds lngt: 23      
+@4368   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @4370   
+@4369   function_decl    name: @4367    type: @4368    scpe: @176    
+                         srcp: <built-in>:0            chain: @4371   
                          body: undefined               link: extern  
-@4371   tree_list        valu: @1741    chan: @188    
-@4372   function_decl    name: @4373    mngl: @4374    type: @4369   
+@4370   tree_list        valu: @1741    chan: @4372   
+@4371   function_decl    name: @4373    mngl: @4374    type: @4375   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4375    body: undefined 
+                         chain: @4376    body: undefined 
                          link: extern  
-@4373   identifier_node  strg: __builtin___bnd_get_ptr_ubound 
-                         lngt: 30      
-@4374   identifier_node  strg: __bnd_get_ptr_ubound    lngt: 20      
-@4375   function_decl    name: @4374    type: @4369    scpe: @176    
-                         srcp: <built-in>:0            chain: @4376   
+@4372   tree_list        valu: @1741    chan: @4377   
+@4373   identifier_node  strg: __builtin___bnd_store_ptr_bounds 
+                         lngt: 32      
+@4374   identifier_node  strg: __bnd_store_ptr_bounds  lngt: 22      
+@4375   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4378   
+@4376   function_decl    name: @4374    type: @4375    scpe: @176    
+                         srcp: <built-in>:0            chain: @4379   
                          body: undefined               link: extern  
-@4376   function_decl    name: @4377    mngl: @4378    type: @1783   
+@4377   tree_list        valu: @31      chan: @188    
+@4378   tree_list        valu: @3475    chan: @4380   
+@4379   function_decl    name: @4381    mngl: @4382    type: @4383   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4379    body: undefined 
-                         link: extern  
-@4377   identifier_node  strg: __builtin_chkp_memcpy_nobnd 
-                         lngt: 27      
-@4378   identifier_node  strg: chkp_memcpy_nobnd       lngt: 17      
-@4379   function_decl    name: @4378    type: @1783    srcp: <built-in>:0      
-                         chain: @4380    body: undefined 
-                         link: extern  
-@4380   function_decl    name: @4381    mngl: @4382    type: @1783   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4383    body: undefined 
-                         link: extern  
-@4381   identifier_node  strg: __builtin_chkp_memcpy_nochk 
-                         lngt: 27      
-@4382   identifier_node  strg: chkp_memcpy_nochk       lngt: 17      
-@4383   function_decl    name: @4382    type: @1783    srcp: <built-in>:0      
                          chain: @4384    body: undefined 
                          link: extern  
-@4384   function_decl    name: @4385    mngl: @4386    type: @1783   
+@4380   tree_list        valu: @1741    chan: @188    
+@4381   identifier_node  strg: __builtin___bnd_chk_ptr_lbounds 
+                         lngt: 31      
+@4382   identifier_node  strg: __bnd_chk_ptr_lbounds   lngt: 21      
+@4383   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4385   
+@4384   function_decl    name: @4382    type: @4383    scpe: @176    
+                         srcp: <built-in>:0            chain: @4386   
+                         body: undefined               link: extern  
+@4385   tree_list        valu: @1741    chan: @188    
+@4386   function_decl    name: @4387    mngl: @4388    type: @4383   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4387    body: undefined 
+                         chain: @4389    body: undefined 
                          link: extern  
-@4385   identifier_node  strg: __builtin_chkp_memcpy_nobnd_nochk 
+@4387   identifier_node  strg: __builtin___bnd_chk_ptr_ubounds 
+                         lngt: 31      
+@4388   identifier_node  strg: __bnd_chk_ptr_ubounds   lngt: 21      
+@4389   function_decl    name: @4388    type: @4383    scpe: @176    
+                         srcp: <built-in>:0            chain: @4390   
+                         body: undefined               link: extern  
+@4390   function_decl    name: @4391    mngl: @4392    type: @4393   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4394    body: undefined 
+                         link: extern  
+@4391   identifier_node  strg: __builtin___bnd_chk_ptr_bounds 
+                         lngt: 30      
+@4392   identifier_node  strg: __bnd_chk_ptr_bounds    lngt: 20      
+@4393   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4395   
+@4394   function_decl    name: @4392    type: @4393    scpe: @176    
+                         srcp: <built-in>:0            chain: @4396   
+                         body: undefined               link: extern  
+@4395   tree_list        valu: @1741    chan: @4397   
+@4396   function_decl    name: @4398    mngl: @4399    type: @4400   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4401    body: undefined 
+                         link: extern  
+@4397   tree_list        valu: @31      chan: @188    
+@4398   identifier_node  strg: __builtin___bnd_get_ptr_lbound 
+                         lngt: 30      
+@4399   identifier_node  strg: __bnd_get_ptr_lbound    lngt: 20      
+@4400   function_type    size: @12      algn: 8        retn: @1741   
+                         prms: @4402   
+@4401   function_decl    name: @4399    type: @4400    scpe: @176    
+                         srcp: <built-in>:0            chain: @4403   
+                         body: undefined               link: extern  
+@4402   tree_list        valu: @1741    chan: @188    
+@4403   function_decl    name: @4404    mngl: @4405    type: @4400   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4406    body: undefined 
+                         link: extern  
+@4404   identifier_node  strg: __builtin___bnd_get_ptr_ubound 
+                         lngt: 30      
+@4405   identifier_node  strg: __bnd_get_ptr_ubound    lngt: 20      
+@4406   function_decl    name: @4405    type: @4400    scpe: @176    
+                         srcp: <built-in>:0            chain: @4407   
+                         body: undefined               link: extern  
+@4407   function_decl    name: @4408    mngl: @4409    type: @1783   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4410    body: undefined 
+                         link: extern  
+@4408   identifier_node  strg: __builtin_chkp_memcpy_nobnd 
+                         lngt: 27      
+@4409   identifier_node  strg: chkp_memcpy_nobnd       lngt: 17      
+@4410   function_decl    name: @4409    type: @1783    srcp: <built-in>:0      
+                         chain: @4411    body: undefined 
+                         link: extern  
+@4411   function_decl    name: @4412    mngl: @4413    type: @1783   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4414    body: undefined 
+                         link: extern  
+@4412   identifier_node  strg: __builtin_chkp_memcpy_nochk 
+                         lngt: 27      
+@4413   identifier_node  strg: chkp_memcpy_nochk       lngt: 17      
+@4414   function_decl    name: @4413    type: @1783    srcp: <built-in>:0      
+                         chain: @4415    body: undefined 
+                         link: extern  
+@4415   function_decl    name: @4416    mngl: @4417    type: @1783   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4418    body: undefined 
+                         link: extern  
+@4416   identifier_node  strg: __builtin_chkp_memcpy_nobnd_nochk 
                          lngt: 33      
-@4386   identifier_node  strg: chkp_memcpy_nobnd_nochk lngt: 23      
-@4387   function_decl    name: @4386    type: @1783    srcp: <built-in>:0      
-                         chain: @4388    body: undefined 
+@4417   identifier_node  strg: chkp_memcpy_nobnd_nochk lngt: 23      
+@4418   function_decl    name: @4417    type: @1783    srcp: <built-in>:0      
+                         chain: @4419    body: undefined 
                          link: extern  
-@4388   function_decl    name: @4389    mngl: @4390    type: @1783   
+@4419   function_decl    name: @4420    mngl: @4421    type: @1783   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4391    body: undefined 
+                         chain: @4422    body: undefined 
                          link: extern  
-@4389   identifier_node  strg: __builtin_chkp_memmove_nobnd 
+@4420   identifier_node  strg: __builtin_chkp_memmove_nobnd 
                          lngt: 28      
-@4390   identifier_node  strg: chkp_memmove_nobnd      lngt: 18      
-@4391   function_decl    name: @4390    type: @1783    srcp: <built-in>:0      
-                         chain: @4392    body: undefined 
+@4421   identifier_node  strg: chkp_memmove_nobnd      lngt: 18      
+@4422   function_decl    name: @4421    type: @1783    srcp: <built-in>:0      
+                         chain: @4423    body: undefined 
                          link: extern  
-@4392   function_decl    name: @4393    mngl: @4394    type: @1783   
+@4423   function_decl    name: @4424    mngl: @4425    type: @1783   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4395    body: undefined 
+                         chain: @4426    body: undefined 
                          link: extern  
-@4393   identifier_node  strg: __builtin_chkp_memmove_nochk 
+@4424   identifier_node  strg: __builtin_chkp_memmove_nochk 
                          lngt: 28      
-@4394   identifier_node  strg: chkp_memmove_nochk      lngt: 18      
-@4395   function_decl    name: @4394    type: @1783    srcp: <built-in>:0      
-                         chain: @4396    body: undefined 
+@4425   identifier_node  strg: chkp_memmove_nochk      lngt: 18      
+@4426   function_decl    name: @4425    type: @1783    srcp: <built-in>:0      
+                         chain: @4427    body: undefined 
                          link: extern  
-@4396   function_decl    name: @4397    mngl: @4398    type: @1783   
+@4427   function_decl    name: @4428    mngl: @4429    type: @1783   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4399    body: undefined 
+                         chain: @4430    body: undefined 
                          link: extern  
-@4397   identifier_node  strg: __builtin_chkp_memmove_nobnd_nochk 
+@4428   identifier_node  strg: __builtin_chkp_memmove_nobnd_nochk 
                          lngt: 34      
-@4398   identifier_node  strg: chkp_memmove_nobnd_nochk 
+@4429   identifier_node  strg: chkp_memmove_nobnd_nochk 
                          lngt: 24      
-@4399   function_decl    name: @4398    type: @1783    srcp: <built-in>:0      
-                         chain: @4400    body: undefined 
+@4430   function_decl    name: @4429    type: @1783    srcp: <built-in>:0      
+                         chain: @4431    body: undefined 
                          link: extern  
-@4400   function_decl    name: @4401    mngl: @4402    type: @4403   
+@4431   function_decl    name: @4432    mngl: @4433    type: @4434   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4404    body: undefined 
+                         chain: @4435    body: undefined 
                          link: extern  
-@4401   identifier_node  strg: __builtin_chkp_mempcpy_nobnd 
+@4432   identifier_node  strg: __builtin_chkp_mempcpy_nobnd 
                          lngt: 28      
-@4402   identifier_node  strg: chkp_mempcpy_nobnd      lngt: 18      
-@4403   function_type    size: @12      algn: 8        retn: @186    
+@4433   identifier_node  strg: chkp_mempcpy_nobnd      lngt: 18      
+@4434   function_type    size: @12      algn: 8        retn: @186    
                          prms: @1785   
-@4404   function_decl    name: @4402    type: @4403    srcp: <built-in>:0      
-                         chain: @4405    body: undefined 
+@4435   function_decl    name: @4433    type: @4434    srcp: <built-in>:0      
+                         chain: @4436    body: undefined 
                          link: extern  
-@4405   function_decl    name: @4406    mngl: @4407    type: @4403   
+@4436   function_decl    name: @4437    mngl: @4438    type: @4434   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4408    body: undefined 
+                         chain: @4439    body: undefined 
                          link: extern  
-@4406   identifier_node  strg: __builtin_chkp_mempcpy_nochk 
+@4437   identifier_node  strg: __builtin_chkp_mempcpy_nochk 
                          lngt: 28      
-@4407   identifier_node  strg: chkp_mempcpy_nochk      lngt: 18      
-@4408   function_decl    name: @4407    type: @4403    srcp: <built-in>:0      
-                         chain: @4409    body: undefined 
+@4438   identifier_node  strg: chkp_mempcpy_nochk      lngt: 18      
+@4439   function_decl    name: @4438    type: @4434    srcp: <built-in>:0      
+                         chain: @4440    body: undefined 
                          link: extern  
-@4409   function_decl    name: @4410    mngl: @4411    type: @4403   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4412    body: undefined 
-                         link: extern  
-@4410   identifier_node  strg: __builtin_chkp_mempcpy_nobnd_nochk 
-                         lngt: 34      
-@4411   identifier_node  strg: chkp_mempcpy_nobnd_nochk 
-                         lngt: 24      
-@4412   function_decl    name: @4411    type: @4403    srcp: <built-in>:0      
-                         chain: @4413    body: undefined 
-                         link: extern  
-@4413   function_decl    name: @4414    mngl: @4415    type: @1800   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4416    body: undefined 
-                         link: extern  
-@4414   identifier_node  strg: __builtin_chkp_memset_nobnd 
-                         lngt: 27      
-@4415   identifier_node  strg: chkp_memset_nobnd       lngt: 17      
-@4416   function_decl    name: @4415    type: @1800    srcp: <built-in>:0      
-                         chain: @4417    body: undefined 
-                         link: extern  
-@4417   function_decl    name: @4418    mngl: @4419    type: @1800   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4420    body: undefined 
-                         link: extern  
-@4418   identifier_node  strg: __builtin_chkp_memset_nochk 
-                         lngt: 27      
-@4419   identifier_node  strg: chkp_memset_nochk       lngt: 17      
-@4420   function_decl    name: @4419    type: @1800    srcp: <built-in>:0      
-                         chain: @4421    body: undefined 
-                         link: extern  
-@4421   function_decl    name: @4422    mngl: @4423    type: @1800   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4424    body: undefined 
-                         link: extern  
-@4422   identifier_node  strg: __builtin_chkp_memset_nobnd_nochk 
-                         lngt: 33      
-@4423   identifier_node  strg: chkp_memset_nobnd_nochk lngt: 23      
-@4424   function_decl    name: @4423    type: @1800    srcp: <built-in>:0      
-                         chain: @4425    body: undefined 
-                         link: extern  
-@4425   type_decl        name: @4426    type: @95      note: artificial 
-                         chain: @4427   
-@4426   identifier_node  strg: __float80               lngt: 9       
-@4427   type_decl        name: @4428    type: @104     note: artificial 
-                         chain: @4429   
-@4428   identifier_node  strg: __float128              lngt: 10      
-@4429   function_decl    name: @4430    type: @2980    scpe: @176    
-                         srcp: <built-in>:0            chain: @4431   
-                         body: undefined               link: extern  
-@4430   identifier_node  strg: __builtin_cpu_init      lngt: 18      
-@4431   function_decl    name: @4432    type: @2812    scpe: @176    
-                         srcp: <built-in>:0            chain: @4433   
-                         body: undefined               link: extern  
-@4432   identifier_node  strg: __builtin_cpu_is        lngt: 16      
-@4433   function_decl    name: @4434    type: @2812    scpe: @176    
-                         srcp: <built-in>:0            chain: @4435   
-                         body: undefined               link: extern  
-@4434   identifier_node  strg: __builtin_cpu_supports  lngt: 22      
-@4435   function_decl    name: @4436    type: @649     scpe: @176    
-                         srcp: <built-in>:0            chain: @4437   
-                         body: undefined               link: extern  
-@4436   identifier_node  strg: __builtin_infq          lngt: 14      
-@4437   function_decl    name: @4438    type: @649     scpe: @176    
-                         srcp: <built-in>:0            chain: @4439   
-                         body: undefined               link: extern  
-@4438   identifier_node  strg: __builtin_huge_valq     lngt: 19      
-@4439   function_decl    name: @4440    mngl: @4441    type: @4442   
+@4440   function_decl    name: @4441    mngl: @4442    type: @4434   
                          scpe: @176     srcp: <built-in>:0      
                          chain: @4443    body: undefined 
                          link: extern  
-@4440   identifier_node  strg: __builtin_nanq          lngt: 14      
-@4441   identifier_node  strg: nanq     lngt: 4       
-@4442   function_type    size: @12      algn: 8        retn: @104    
-                         prms: @1025   
-@4443   function_decl    name: @4444    mngl: @4445    type: @4442   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @4446    body: undefined 
+@4441   identifier_node  strg: __builtin_chkp_mempcpy_nobnd_nochk 
+                         lngt: 34      
+@4442   identifier_node  strg: chkp_mempcpy_nobnd_nochk 
+                         lngt: 24      
+@4443   function_decl    name: @4442    type: @4434    srcp: <built-in>:0      
+                         chain: @4444    body: undefined 
                          link: extern  
-@4444   identifier_node  strg: __builtin_nansq         lngt: 15      
-@4445   identifier_node  strg: nansq    lngt: 5       
-@4446   function_decl    name: @4447    mngl: @4448    type: @480    
+@4444   function_decl    name: @4445    mngl: @4446    type: @1800   
                          scpe: @176     srcp: <built-in>:0      
-                         chain: @4449    body: undefined 
+                         chain: @4447    body: undefined 
                          link: extern  
-@4447   identifier_node  strg: __builtin_fabsq         lngt: 15      
-@4448   identifier_node  strg: __fabstf2               lngt: 9       
-@4449   function_decl    name: @4450    mngl: @4451    type: @336    
+@4445   identifier_node  strg: __builtin_chkp_memset_nobnd 
+                         lngt: 27      
+@4446   identifier_node  strg: chkp_memset_nobnd       lngt: 17      
+@4447   function_decl    name: @4446    type: @1800    srcp: <built-in>:0      
+                         chain: @4448    body: undefined 
+                         link: extern  
+@4448   function_decl    name: @4449    mngl: @4450    type: @1800   
                          scpe: @176     srcp: <built-in>:0      
+                         chain: @4451    body: undefined 
+                         link: extern  
+@4449   identifier_node  strg: __builtin_chkp_memset_nochk 
+                         lngt: 27      
+@4450   identifier_node  strg: chkp_memset_nochk       lngt: 17      
+@4451   function_decl    name: @4450    type: @1800    srcp: <built-in>:0      
                          chain: @4452    body: undefined 
                          link: extern  
-@4450   identifier_node  strg: __builtin_copysignq     lngt: 19      
-@4451   identifier_node  strg: __copysigntf3           lngt: 13      
-@4452   function_decl    name: @4453    type: @4454    scpe: @176    
-                         srcp: <built-in>:0            chain: @4455   
+@4452   function_decl    name: @4453    mngl: @4454    type: @1800   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4455    body: undefined 
+                         link: extern  
+@4453   identifier_node  strg: __builtin_chkp_memset_nobnd_nochk 
+                         lngt: 33      
+@4454   identifier_node  strg: chkp_memset_nobnd_nochk lngt: 23      
+@4455   function_decl    name: @4454    type: @1800    srcp: <built-in>:0      
+                         chain: @4456    body: undefined 
+                         link: extern  
+@4456   type_decl        name: @4457    type: @95      note: artificial 
+                         chain: @4458   
+@4457   identifier_node  strg: __float80               lngt: 9       
+@4458   type_decl        name: @4459    type: @104     note: artificial 
+                         chain: @4460   
+@4459   identifier_node  strg: __float128              lngt: 10      
+@4460   function_decl    name: @4461    type: @2980    scpe: @176    
+                         srcp: <built-in>:0            chain: @4462   
                          body: undefined               link: extern  
-@4453   identifier_node  strg: __builtin_ia32_rdtsc    lngt: 20      
-@4454   function_type    size: @12      algn: 8        retn: @51     
-                         prms: @188    
-@4455   function_decl    name: @4456    type: @4457    scpe: @176    
-                         srcp: <built-in>:0            chain: @4458   
+@4461   identifier_node  strg: __builtin_cpu_init      lngt: 18      
+@4462   function_decl    name: @4463    type: @2812    scpe: @176    
+                         srcp: <built-in>:0            chain: @4464   
                          body: undefined               link: extern  
-@4456   identifier_node  strg: __builtin_ia32_rdtscp   lngt: 21      
-@4457   function_type    size: @12      algn: 8        retn: @51     
-                         prms: @4459   
-@4458   function_decl    name: @4460    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @4461   
+@4463   identifier_node  strg: __builtin_cpu_is        lngt: 16      
+@4464   function_decl    name: @4465    type: @2812    scpe: @176    
+                         srcp: <built-in>:0            chain: @4466   
                          body: undefined               link: extern  
-@4459   tree_list        valu: @2745    chan: @188    
-@4460   identifier_node  strg: __builtin_ia32_pause    lngt: 20      
-@4461   function_decl    name: @4462    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @4463   
-                         body: undefined               link: extern  
-@4462   identifier_node  strg: __builtin_ia32_fnstenv  lngt: 22      
-@4463   function_decl    name: @4464    type: @4352    scpe: @176    
-                         srcp: <built-in>:0            chain: @4465   
-                         body: undefined               link: extern  
-@4464   identifier_node  strg: __builtin_ia32_fldenv   lngt: 21      
-@4465   function_decl    name: @4466    type: @4467    scpe: @176    
+@4465   identifier_node  strg: __builtin_cpu_supports  lngt: 22      
+@4466   function_decl    name: @4467    type: @649     scpe: @176    
                          srcp: <built-in>:0            chain: @4468   
                          body: undefined               link: extern  
-@4466   identifier_node  strg: __builtin_ia32_fnstsw   lngt: 21      
-@4467   function_type    size: @12      algn: 8        retn: @62     
-                         prms: @188    
-@4468   function_decl    name: @4469    type: @3482    scpe: @176    
+@4467   identifier_node  strg: __builtin_infq          lngt: 14      
+@4468   function_decl    name: @4469    type: @649     scpe: @176    
                          srcp: <built-in>:0            chain: @4470   
                          body: undefined               link: extern  
-@4469   identifier_node  strg: __builtin_ia32_fnclex   lngt: 21      
-@4470   function_decl    name: @4471    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @4472   
-                         body: undefined               link: extern  
-@4471   identifier_node  strg: __builtin_ia32_emms     lngt: 19      
-@4472   function_decl    name: @4473    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @4474   
-                         body: undefined               link: extern  
-@4473   identifier_node  strg: __builtin_ia32_fxsave   lngt: 21      
-@4474   function_decl    name: @4475    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @4476   
-                         body: undefined               link: extern  
-@4475   identifier_node  strg: __builtin_ia32_fxrstor  lngt: 22      
-@4476   function_decl    name: @4477    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @4478   
-                         body: undefined               link: extern  
-@4477   identifier_node  strg: __builtin_ia32_fxsave64 lngt: 23      
-@4478   function_decl    name: @4479    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @4480   
-                         body: undefined               link: extern  
-@4479   identifier_node  strg: __builtin_ia32_fxrstor64 
-                         lngt: 24      
-@4480   function_decl    name: @4481    type: @4482    scpe: @176    
-                         srcp: <built-in>:0            chain: @4483   
-                         body: undefined               link: extern  
-@4481   identifier_node  strg: __builtin_ia32_storeups lngt: 23      
-@4482   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4484   
-@4483   function_decl    name: @4485    type: @4482    scpe: @176    
+@4469   identifier_node  strg: __builtin_huge_valq     lngt: 19      
+@4470   function_decl    name: @4471    mngl: @4472    type: @4473   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4474    body: undefined 
+                         link: extern  
+@4471   identifier_node  strg: __builtin_nanq          lngt: 14      
+@4472   identifier_node  strg: nanq     lngt: 4       
+@4473   function_type    size: @12      algn: 8        retn: @104    
+                         prms: @1025   
+@4474   function_decl    name: @4475    mngl: @4476    type: @4473   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4477    body: undefined 
+                         link: extern  
+@4475   identifier_node  strg: __builtin_nansq         lngt: 15      
+@4476   identifier_node  strg: nansq    lngt: 5       
+@4477   function_decl    name: @4478    mngl: @4479    type: @480    
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4480    body: undefined 
+                         link: extern  
+@4478   identifier_node  strg: __builtin_fabsq         lngt: 15      
+@4479   identifier_node  strg: __fabstf2               lngt: 9       
+@4480   function_decl    name: @4481    mngl: @4482    type: @336    
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @4483    body: undefined 
+                         link: extern  
+@4481   identifier_node  strg: __builtin_copysignq     lngt: 19      
+@4482   identifier_node  strg: __copysigntf3           lngt: 13      
+@4483   function_decl    name: @4484    type: @4485    scpe: @176    
                          srcp: <built-in>:0            chain: @4486   
                          body: undefined               link: extern  
-@4484   tree_list        valu: @989     chan: @4487   
-@4485   identifier_node  strg: __builtin_ia32_movntps  lngt: 22      
-@4486   function_decl    name: @4488    type: @4489    scpe: @176    
-                         srcp: <built-in>:0            chain: @4490   
+@4484   identifier_node  strg: __builtin_ia32_rdtsc    lngt: 20      
+@4485   function_type    size: @12      algn: 8        retn: @51     
+                         prms: @188    
+@4486   function_decl    name: @4487    type: @4488    scpe: @176    
+                         srcp: <built-in>:0            chain: @4489   
                          body: undefined               link: extern  
-@4487   tree_list        valu: @4491    chan: @188    
-@4488   identifier_node  strg: __builtin_ia32_loadups  lngt: 22      
-@4489   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4492   
-@4490   function_decl    name: @4493    type: @4494    scpe: @176    
-                         srcp: <built-in>:0            chain: @4495   
+@4487   identifier_node  strg: __builtin_ia32_rdtscp   lngt: 21      
+@4488   function_type    size: @12      algn: 8        retn: @51     
+                         prms: @4490   
+@4489   function_decl    name: @4491    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @4492   
                          body: undefined               link: extern  
-@4491   vector_type      size: @19      algn: 128     
-@4492   tree_list        valu: @4496    chan: @188    
-@4493   identifier_node  strg: __builtin_ia32_loadhps  lngt: 22      
-@4494   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4497   
-@4495   function_decl    name: @4498    type: @4494    scpe: @176    
+@4490   tree_list        valu: @2745    chan: @188    
+@4491   identifier_node  strg: __builtin_ia32_pause    lngt: 20      
+@4492   function_decl    name: @4493    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @4494   
+                         body: undefined               link: extern  
+@4493   identifier_node  strg: __builtin_ia32_fnstenv  lngt: 22      
+@4494   function_decl    name: @4495    type: @4383    scpe: @176    
+                         srcp: <built-in>:0            chain: @4496   
+                         body: undefined               link: extern  
+@4495   identifier_node  strg: __builtin_ia32_fldenv   lngt: 21      
+@4496   function_decl    name: @4497    type: @4498    scpe: @176    
                          srcp: <built-in>:0            chain: @4499   
                          body: undefined               link: extern  
-@4496   pointer_type     size: @22      algn: 64       ptd : @4500   
-@4497   tree_list        valu: @4491    chan: @4501   
-@4498   identifier_node  strg: __builtin_ia32_loadlps  lngt: 22      
-@4499   function_decl    name: @4502    type: @4503    scpe: @176    
-                         srcp: <built-in>:0            chain: @4504   
+@4497   identifier_node  strg: __builtin_ia32_fnstsw   lngt: 21      
+@4498   function_type    size: @12      algn: 8        retn: @62     
+                         prms: @188    
+@4499   function_decl    name: @4500    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @4501   
                          body: undefined               link: extern  
-@4500   real_type        qual: c        name: @87      unql: @89     
-                         size: @5       algn: 32       prec: 32      
-@4501   tree_list        valu: @4505    chan: @188    
-@4502   identifier_node  strg: __builtin_ia32_storehps lngt: 23      
-@4503   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4506   
-@4504   function_decl    name: @4507    type: @4503    scpe: @176    
-                         srcp: <built-in>:0            chain: @4508   
+@4500   identifier_node  strg: __builtin_ia32_fnclex   lngt: 21      
+@4501   function_decl    name: @4502    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @4503   
                          body: undefined               link: extern  
-@4505   pointer_type     size: @22      algn: 64       ptd : @4509   
-@4506   tree_list        valu: @4510    chan: @4511   
-@4507   identifier_node  strg: __builtin_ia32_storelps lngt: 23      
-@4508   function_decl    name: @4512    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @4513   
+@4502   identifier_node  strg: __builtin_ia32_emms     lngt: 19      
+@4503   function_decl    name: @4504    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @4505   
                          body: undefined               link: extern  
-@4509   vector_type      qual: c        unql: @4514    size: @22     
-                         algn: 64      
-@4510   pointer_type     size: @22      algn: 64       ptd : @4514   
-@4511   tree_list        valu: @4491    chan: @188    
-@4512   identifier_node  strg: __builtin_ia32_sfence   lngt: 21      
-@4513   function_decl    name: @4515    type: @4516    scpe: @176    
+@4504   identifier_node  strg: __builtin_ia32_fxsave   lngt: 21      
+@4505   function_decl    name: @4506    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @4507   
+                         body: undefined               link: extern  
+@4506   identifier_node  strg: __builtin_ia32_fxrstor  lngt: 22      
+@4507   function_decl    name: @4508    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @4509   
+                         body: undefined               link: extern  
+@4508   identifier_node  strg: __builtin_ia32_fxsave64 lngt: 23      
+@4509   function_decl    name: @4510    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @4511   
+                         body: undefined               link: extern  
+@4510   identifier_node  strg: __builtin_ia32_fxrstor64 
+                         lngt: 24      
+@4511   function_decl    name: @4512    type: @4513    scpe: @176    
+                         srcp: <built-in>:0            chain: @4514   
+                         body: undefined               link: extern  
+@4512   identifier_node  strg: __builtin_ia32_storeups lngt: 23      
+@4513   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4515   
+@4514   function_decl    name: @4516    type: @4513    scpe: @176    
                          srcp: <built-in>:0            chain: @4517   
                          body: undefined               link: extern  
-@4514   vector_type      size: @22      algn: 64      
-@4515   identifier_node  strg: __builtin_ia32_movntq   lngt: 21      
-@4516   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4518   
-@4517   function_decl    name: @4519    type: @3482    scpe: @176    
-                         srcp: <built-in>:0            chain: @4520   
+@4515   tree_list        valu: @989     chan: @4518   
+@4516   identifier_node  strg: __builtin_ia32_movntps  lngt: 22      
+@4517   function_decl    name: @4519    type: @4520    scpe: @176    
+                         srcp: <built-in>:0            chain: @4521   
                          body: undefined               link: extern  
-@4518   tree_list        valu: @2766    chan: @4521   
-@4519   identifier_node  strg: __builtin_ia32_lfence   lngt: 21      
-@4520   function_decl    name: @4522    type: @4523    scpe: @176    
-                         srcp: <built-in>:0            chain: @4524   
+@4518   tree_list        valu: @4522    chan: @188    
+@4519   identifier_node  strg: __builtin_ia32_loadups  lngt: 22      
+@4520   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4523   
+@4521   function_decl    name: @4524    type: @4525    scpe: @176    
+                         srcp: <built-in>:0            chain: @4526   
                          body: undefined               link: extern  
-@4521   tree_list        valu: @51      chan: @188    
-@4522   identifier_node  strg: __builtin_ia32_storeupd lngt: 23      
-@4523   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4525   
-@4524   function_decl    name: @4526    type: @4527    scpe: @176    
-                         srcp: <built-in>:0            chain: @4528   
+@4522   vector_type      size: @19      algn: 128     
+@4523   tree_list        valu: @4527    chan: @188    
+@4524   identifier_node  strg: __builtin_ia32_loadhps  lngt: 22      
+@4525   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4528   
+@4526   function_decl    name: @4529    type: @4525    scpe: @176    
+                         srcp: <built-in>:0            chain: @4530   
                          body: undefined               link: extern  
-@4525   tree_list        valu: @981     chan: @4529   
-@4526   identifier_node  strg: __builtin_ia32_storedqu lngt: 23      
-@4527   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4530   
-@4528   function_decl    name: @4531    type: @4523    scpe: @176    
-                         srcp: <built-in>:0            chain: @4532   
+@4527   pointer_type     size: @22      algn: 64       ptd : @4531   
+@4528   tree_list        valu: @4522    chan: @4532   
+@4529   identifier_node  strg: __builtin_ia32_loadlps  lngt: 22      
+@4530   function_decl    name: @4533    type: @4534    scpe: @176    
+                         srcp: <built-in>:0            chain: @4535   
                          body: undefined               link: extern  
-@4529   tree_list        valu: @4533    chan: @188    
-@4530   tree_list        valu: @1764    chan: @4534   
-@4531   identifier_node  strg: __builtin_ia32_movntpd  lngt: 22      
-@4532   function_decl    name: @4535    type: @4536    scpe: @176    
-                         srcp: <built-in>:0            chain: @4537   
+@4531   real_type        qual: c        name: @87      unql: @89     
+                         size: @5       algn: 32       prec: 32      
+@4532   tree_list        valu: @4536    chan: @188    
+@4533   identifier_node  strg: __builtin_ia32_storehps lngt: 23      
+@4534   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4537   
+@4535   function_decl    name: @4538    type: @4534    scpe: @176    
+                         srcp: <built-in>:0            chain: @4539   
                          body: undefined               link: extern  
-@4533   vector_type      size: @19      algn: 128     
-@4534   tree_list        valu: @4538    chan: @188    
-@4535   identifier_node  strg: __builtin_ia32_movntdq  lngt: 22      
-@4536   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4539   
-@4537   function_decl    name: @4540    type: @4541    scpe: @176    
-                         srcp: <built-in>:0            chain: @4542   
+@4536   pointer_type     size: @22      algn: 64       ptd : @4540   
+@4537   tree_list        valu: @4541    chan: @4542   
+@4538   identifier_node  strg: __builtin_ia32_storelps lngt: 23      
+@4539   function_decl    name: @4543    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @4544   
                          body: undefined               link: extern  
-@4538   vector_type      size: @19      algn: 128     
-@4539   tree_list        valu: @4543    chan: @4544   
-@4540   identifier_node  strg: __builtin_ia32_movnti   lngt: 21      
-@4541   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4545   
-@4542   function_decl    name: @4546    type: @4547    scpe: @176    
+@4540   vector_type      qual: c        unql: @4545    size: @22     
+                         algn: 64      
+@4541   pointer_type     size: @22      algn: 64       ptd : @4545   
+@4542   tree_list        valu: @4522    chan: @188    
+@4543   identifier_node  strg: __builtin_ia32_sfence   lngt: 21      
+@4544   function_decl    name: @4546    type: @4547    scpe: @176    
                          srcp: <built-in>:0            chain: @4548   
                          body: undefined               link: extern  
-@4543   pointer_type     size: @22      algn: 64       ptd : @4549   
-@4544   tree_list        valu: @4549    chan: @188    
-@4545   tree_list        valu: @598     chan: @4550   
-@4546   identifier_node  strg: __builtin_ia32_movnti64 lngt: 23      
+@4545   vector_type      size: @22      algn: 64      
+@4546   identifier_node  strg: __builtin_ia32_movntq   lngt: 21      
 @4547   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @4551   
-@4548   function_decl    name: @4552    type: @4553    scpe: @176    
-                         srcp: <built-in>:0            chain: @4554   
+                         prms: @4549   
+@4548   function_decl    name: @4550    type: @3513    scpe: @176    
+                         srcp: <built-in>:0            chain: @4551   
                          body: undefined               link: extern  
-@4549   vector_type      size: @19      algn: 128     
-@4550   tree_list        valu: @3       chan: @188    
-@4551   tree_list        valu: @2701    chan: @4555   
-@4552   identifier_node  strg: __builtin_ia32_loadupd  lngt: 22      
-@4553   function_type    size: @12      algn: 8        retn: @4533   
+@4549   tree_list        valu: @2766    chan: @4552   
+@4550   identifier_node  strg: __builtin_ia32_lfence   lngt: 21      
+@4551   function_decl    name: @4553    type: @4554    scpe: @176    
+                         srcp: <built-in>:0            chain: @4555   
+                         body: undefined               link: extern  
+@4552   tree_list        valu: @51      chan: @188    
+@4553   identifier_node  strg: __builtin_ia32_storeupd lngt: 23      
+@4554   function_type    size: @12      algn: 8        retn: @151    
                          prms: @4556   
-@4554   function_decl    name: @4557    type: @4558    scpe: @176    
+@4555   function_decl    name: @4557    type: @4558    scpe: @176    
                          srcp: <built-in>:0            chain: @4559   
                          body: undefined               link: extern  
-@4555   tree_list        valu: @46      chan: @188    
-@4556   tree_list        valu: @4560    chan: @188    
-@4557   identifier_node  strg: __builtin_ia32_loaddqu  lngt: 22      
-@4558   function_type    size: @12      algn: 8        retn: @4538   
+@4556   tree_list        valu: @981     chan: @4560   
+@4557   identifier_node  strg: __builtin_ia32_storedqu lngt: 23      
+@4558   function_type    size: @12      algn: 8        retn: @151    
                          prms: @4561   
-@4559   function_decl    name: @4562    type: @4563    scpe: @176    
-                         srcp: <built-in>:0            chain: @4564   
+@4559   function_decl    name: @4562    type: @4554    scpe: @176    
+                         srcp: <built-in>:0            chain: @4563   
                          body: undefined               link: extern  
-@4560   pointer_type     size: @22      algn: 64       ptd : @4565   
-@4561   tree_list        valu: @1000    chan: @188    
-@4562   identifier_node  strg: __builtin_ia32_loadhpd  lngt: 22      
-@4563   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4566   
-@4564   function_decl    name: @4567    type: @4563    scpe: @176    
+@4560   tree_list        valu: @4564    chan: @188    
+@4561   tree_list        valu: @1764    chan: @4565   
+@4562   identifier_node  strg: __builtin_ia32_movntpd  lngt: 22      
+@4563   function_decl    name: @4566    type: @4567    scpe: @176    
                          srcp: <built-in>:0            chain: @4568   
                          body: undefined               link: extern  
-@4565   real_type        qual: c        name: @90      unql: @92     
-                         size: @22      algn: 64       prec: 64      
-@4566   tree_list        valu: @4533    chan: @4569   
-@4567   identifier_node  strg: __builtin_ia32_loadlpd  lngt: 22      
-@4568   function_decl    name: @4570    type: @2221    scpe: @176    
-                         srcp: <built-in>:0            chain: @4571   
-                         body: undefined               link: extern  
-@4569   tree_list        valu: @4560    chan: @188    
-@4570   identifier_node  strg: __builtin_ia32_bsrsi    lngt: 20      
-@4571   function_decl    name: @4572    type: @3406    scpe: @176    
+@4564   vector_type      size: @19      algn: 128     
+@4565   tree_list        valu: @4569    chan: @188    
+@4566   identifier_node  strg: __builtin_ia32_movntdq  lngt: 22      
+@4567   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4570   
+@4568   function_decl    name: @4571    type: @4572    scpe: @176    
                          srcp: <built-in>:0            chain: @4573   
                          body: undefined               link: extern  
-@4572   identifier_node  strg: __builtin_ia32_bsrdi    lngt: 20      
-@4573   function_decl    name: @4574    type: @4575    scpe: @176    
-                         srcp: <built-in>:0            chain: @4576   
+@4569   vector_type      size: @19      algn: 128     
+@4570   tree_list        valu: @4574    chan: @4575   
+@4571   identifier_node  strg: __builtin_ia32_movnti   lngt: 21      
+@4572   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4576   
+@4573   function_decl    name: @4577    type: @4578    scpe: @176    
+                         srcp: <built-in>:0            chain: @4579   
                          body: undefined               link: extern  
-@4574   identifier_node  strg: __builtin_ia32_rdpmc    lngt: 20      
-@4575   function_type    size: @12      algn: 8        retn: @51     
-                         prms: @4577   
-@4576   function_decl    name: @4578    type: @4579    scpe: @176    
-                         srcp: <built-in>:0            chain: @4580   
+@4574   pointer_type     size: @22      algn: 64       ptd : @4580   
+@4575   tree_list        valu: @4580    chan: @188    
+@4576   tree_list        valu: @598     chan: @4581   
+@4577   identifier_node  strg: __builtin_ia32_movnti64 lngt: 23      
+@4578   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @4582   
+@4579   function_decl    name: @4583    type: @4584    scpe: @176    
+                         srcp: <built-in>:0            chain: @4585   
                          body: undefined               link: extern  
-@4577   tree_list        valu: @3       chan: @188    
-@4578   identifier_node  strg: __builtin_ia32_rolqi    lngt: 20      
-@4579   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @4581   
-@4580   function_decl    name: @4582    type: @4583    scpe: @176    
-                         srcp: <built-in>:0            chain: @4584   
+@4580   vector_type      size: @19      algn: 128     
+@4581   tree_list        valu: @3       chan: @188    
+@4582   tree_list        valu: @2701    chan: @4586   
+@4583   identifier_node  strg: __builtin_ia32_loadupd  lngt: 22      
+@4584   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @4587   
+@4585   function_decl    name: @4588    type: @4589    scpe: @176    
+                         srcp: <built-in>:0            chain: @4590   
                          body: undefined               link: extern  
-@4581   tree_list        valu: @72      chan: @4585   
-@4582   identifier_node  strg: __builtin_ia32_rolhi    lngt: 20      
-@4583   function_type    size: @12      algn: 8        retn: @62     
-                         prms: @4586   
-@4584   function_decl    name: @4587    type: @4579    scpe: @176    
-                         srcp: <built-in>:0            chain: @4588   
+@4586   tree_list        valu: @46      chan: @188    
+@4587   tree_list        valu: @4591    chan: @188    
+@4588   identifier_node  strg: __builtin_ia32_loaddqu  lngt: 22      
+@4589   function_type    size: @12      algn: 8        retn: @4569   
+                         prms: @4592   
+@4590   function_decl    name: @4593    type: @4594    scpe: @176    
+                         srcp: <built-in>:0            chain: @4595   
                          body: undefined               link: extern  
-@4585   tree_list        valu: @3       chan: @188    
-@4586   tree_list        valu: @62      chan: @4589   
-@4587   identifier_node  strg: __builtin_ia32_rorqi    lngt: 20      
-@4588   function_decl    name: @4590    type: @4583    scpe: @176    
-                         srcp: <built-in>:0            chain: @4591   
-                         body: undefined               link: extern  
-@4589   tree_list        valu: @3       chan: @188    
-@4590   identifier_node  strg: __builtin_ia32_rorhi    lngt: 20      
-@4591   function_decl    name: @4592    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4594   
-                         body: undefined               link: extern  
-@4592   identifier_node  strg: __builtin_ia32_paddb    lngt: 20      
-@4593   function_type    size: @12      algn: 8        retn: @4595   
-                         prms: @4596   
-@4594   function_decl    name: @4597    type: @4598    scpe: @176    
+@4591   pointer_type     size: @22      algn: 64       ptd : @4596   
+@4592   tree_list        valu: @1000    chan: @188    
+@4593   identifier_node  strg: __builtin_ia32_loadhpd  lngt: 22      
+@4594   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @4597   
+@4595   function_decl    name: @4598    type: @4594    scpe: @176    
                          srcp: <built-in>:0            chain: @4599   
                          body: undefined               link: extern  
-@4595   vector_type      size: @22      algn: 64      
-@4596   tree_list        valu: @4595    chan: @4600   
-@4597   identifier_node  strg: __builtin_ia32_paddw    lngt: 20      
-@4598   function_type    size: @12      algn: 8        retn: @4601   
-                         prms: @4602   
-@4599   function_decl    name: @4603    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4605   
+@4596   real_type        qual: c        name: @90      unql: @92     
+                         size: @22      algn: 64       prec: 64      
+@4597   tree_list        valu: @4564    chan: @4600   
+@4598   identifier_node  strg: __builtin_ia32_loadlpd  lngt: 22      
+@4599   function_decl    name: @4601    type: @2221    scpe: @176    
+                         srcp: <built-in>:0            chain: @4602   
                          body: undefined               link: extern  
-@4600   tree_list        valu: @4595    chan: @188    
-@4601   vector_type      size: @22      algn: 64      
-@4602   tree_list        valu: @4601    chan: @4606   
-@4603   identifier_node  strg: __builtin_ia32_paddd    lngt: 20      
-@4604   function_type    size: @12      algn: 8        retn: @4607   
+@4600   tree_list        valu: @4591    chan: @188    
+@4601   identifier_node  strg: __builtin_ia32_bsrsi    lngt: 20      
+@4602   function_decl    name: @4603    type: @3437    scpe: @176    
+                         srcp: <built-in>:0            chain: @4604   
+                         body: undefined               link: extern  
+@4603   identifier_node  strg: __builtin_ia32_bsrdi    lngt: 20      
+@4604   function_decl    name: @4605    type: @4606    scpe: @176    
+                         srcp: <built-in>:0            chain: @4607   
+                         body: undefined               link: extern  
+@4605   identifier_node  strg: __builtin_ia32_rdpmc    lngt: 20      
+@4606   function_type    size: @12      algn: 8        retn: @51     
                          prms: @4608   
-@4605   function_decl    name: @4609    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4610   
+@4607   function_decl    name: @4609    type: @4610    scpe: @176    
+                         srcp: <built-in>:0            chain: @4611   
                          body: undefined               link: extern  
-@4606   tree_list        valu: @4601    chan: @188    
-@4607   vector_type      size: @22      algn: 64      
-@4608   tree_list        valu: @4607    chan: @4611   
-@4609   identifier_node  strg: __builtin_ia32_psubb    lngt: 20      
-@4610   function_decl    name: @4612    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4613   
-                         body: undefined               link: extern  
-@4611   tree_list        valu: @4607    chan: @188    
-@4612   identifier_node  strg: __builtin_ia32_psubw    lngt: 20      
-@4613   function_decl    name: @4614    type: @4604    scpe: @176    
+@4608   tree_list        valu: @3       chan: @188    
+@4609   identifier_node  strg: __builtin_ia32_rolqi    lngt: 20      
+@4610   function_type    size: @12      algn: 8        retn: @72     
+                         prms: @4612   
+@4611   function_decl    name: @4613    type: @4614    scpe: @176    
                          srcp: <built-in>:0            chain: @4615   
                          body: undefined               link: extern  
-@4614   identifier_node  strg: __builtin_ia32_psubd    lngt: 20      
-@4615   function_decl    name: @4616    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4617   
-                         body: undefined               link: extern  
-@4616   identifier_node  strg: __builtin_ia32_paddsb   lngt: 21      
-@4617   function_decl    name: @4618    type: @4598    scpe: @176    
+@4612   tree_list        valu: @72      chan: @4616   
+@4613   identifier_node  strg: __builtin_ia32_rolhi    lngt: 20      
+@4614   function_type    size: @12      algn: 8        retn: @62     
+                         prms: @4617   
+@4615   function_decl    name: @4618    type: @4610    scpe: @176    
                          srcp: <built-in>:0            chain: @4619   
                          body: undefined               link: extern  
-@4618   identifier_node  strg: __builtin_ia32_paddsw   lngt: 21      
-@4619   function_decl    name: @4620    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4621   
+@4616   tree_list        valu: @3       chan: @188    
+@4617   tree_list        valu: @62      chan: @4620   
+@4618   identifier_node  strg: __builtin_ia32_rorqi    lngt: 20      
+@4619   function_decl    name: @4621    type: @4614    scpe: @176    
+                         srcp: <built-in>:0            chain: @4622   
                          body: undefined               link: extern  
-@4620   identifier_node  strg: __builtin_ia32_psubsb   lngt: 21      
-@4621   function_decl    name: @4622    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4623   
-                         body: undefined               link: extern  
-@4622   identifier_node  strg: __builtin_ia32_psubsw   lngt: 21      
-@4623   function_decl    name: @4624    type: @4593    scpe: @176    
+@4620   tree_list        valu: @3       chan: @188    
+@4621   identifier_node  strg: __builtin_ia32_rorhi    lngt: 20      
+@4622   function_decl    name: @4623    type: @4624    scpe: @176    
                          srcp: <built-in>:0            chain: @4625   
                          body: undefined               link: extern  
-@4624   identifier_node  strg: __builtin_ia32_paddusb  lngt: 22      
-@4625   function_decl    name: @4626    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4627   
+@4623   identifier_node  strg: __builtin_ia32_paddb    lngt: 20      
+@4624   function_type    size: @12      algn: 8        retn: @4626   
+                         prms: @4627   
+@4625   function_decl    name: @4628    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4630   
                          body: undefined               link: extern  
-@4626   identifier_node  strg: __builtin_ia32_paddusw  lngt: 22      
-@4627   function_decl    name: @4628    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4629   
+@4626   vector_type      size: @22      algn: 64      
+@4627   tree_list        valu: @4626    chan: @4631   
+@4628   identifier_node  strg: __builtin_ia32_paddw    lngt: 20      
+@4629   function_type    size: @12      algn: 8        retn: @4632   
+                         prms: @4633   
+@4630   function_decl    name: @4634    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4636   
                          body: undefined               link: extern  
-@4628   identifier_node  strg: __builtin_ia32_psubusb  lngt: 22      
-@4629   function_decl    name: @4630    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4631   
-                         body: undefined               link: extern  
-@4630   identifier_node  strg: __builtin_ia32_psubusw  lngt: 22      
-@4631   function_decl    name: @4632    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4633   
-                         body: undefined               link: extern  
-@4632   identifier_node  strg: __builtin_ia32_pmullw   lngt: 21      
-@4633   function_decl    name: @4634    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4635   
-                         body: undefined               link: extern  
-@4634   identifier_node  strg: __builtin_ia32_pmulhw   lngt: 21      
-@4635   function_decl    name: @4636    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4637   
-                         body: undefined               link: extern  
-@4636   identifier_node  strg: __builtin_ia32_pand     lngt: 19      
-@4637   function_decl    name: @4638    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4639   
-                         body: undefined               link: extern  
-@4638   identifier_node  strg: __builtin_ia32_pandn    lngt: 20      
-@4639   function_decl    name: @4640    type: @4604    scpe: @176    
+@4631   tree_list        valu: @4626    chan: @188    
+@4632   vector_type      size: @22      algn: 64      
+@4633   tree_list        valu: @4632    chan: @4637   
+@4634   identifier_node  strg: __builtin_ia32_paddd    lngt: 20      
+@4635   function_type    size: @12      algn: 8        retn: @4638   
+                         prms: @4639   
+@4636   function_decl    name: @4640    type: @4624    scpe: @176    
                          srcp: <built-in>:0            chain: @4641   
                          body: undefined               link: extern  
-@4640   identifier_node  strg: __builtin_ia32_por      lngt: 18      
-@4641   function_decl    name: @4642    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4643   
+@4637   tree_list        valu: @4632    chan: @188    
+@4638   vector_type      size: @22      algn: 64      
+@4639   tree_list        valu: @4638    chan: @4642   
+@4640   identifier_node  strg: __builtin_ia32_psubb    lngt: 20      
+@4641   function_decl    name: @4643    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4644   
                          body: undefined               link: extern  
-@4642   identifier_node  strg: __builtin_ia32_pxor     lngt: 19      
-@4643   function_decl    name: @4644    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4645   
+@4642   tree_list        valu: @4638    chan: @188    
+@4643   identifier_node  strg: __builtin_ia32_psubw    lngt: 20      
+@4644   function_decl    name: @4645    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4646   
                          body: undefined               link: extern  
-@4644   identifier_node  strg: __builtin_ia32_pcmpeqb  lngt: 22      
-@4645   function_decl    name: @4646    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4647   
+@4645   identifier_node  strg: __builtin_ia32_psubd    lngt: 20      
+@4646   function_decl    name: @4647    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4648   
                          body: undefined               link: extern  
-@4646   identifier_node  strg: __builtin_ia32_pcmpeqw  lngt: 22      
-@4647   function_decl    name: @4648    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4649   
+@4647   identifier_node  strg: __builtin_ia32_paddsb   lngt: 21      
+@4648   function_decl    name: @4649    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4650   
                          body: undefined               link: extern  
-@4648   identifier_node  strg: __builtin_ia32_pcmpeqd  lngt: 22      
-@4649   function_decl    name: @4650    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4651   
+@4649   identifier_node  strg: __builtin_ia32_paddsw   lngt: 21      
+@4650   function_decl    name: @4651    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4652   
                          body: undefined               link: extern  
-@4650   identifier_node  strg: __builtin_ia32_pcmpgtb  lngt: 22      
-@4651   function_decl    name: @4652    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4653   
+@4651   identifier_node  strg: __builtin_ia32_psubsb   lngt: 21      
+@4652   function_decl    name: @4653    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4654   
                          body: undefined               link: extern  
-@4652   identifier_node  strg: __builtin_ia32_pcmpgtw  lngt: 22      
-@4653   function_decl    name: @4654    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4655   
+@4653   identifier_node  strg: __builtin_ia32_psubsw   lngt: 21      
+@4654   function_decl    name: @4655    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4656   
                          body: undefined               link: extern  
-@4654   identifier_node  strg: __builtin_ia32_pcmpgtd  lngt: 22      
-@4655   function_decl    name: @4656    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4657   
+@4655   identifier_node  strg: __builtin_ia32_paddusb  lngt: 22      
+@4656   function_decl    name: @4657    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4658   
                          body: undefined               link: extern  
-@4656   identifier_node  strg: __builtin_ia32_punpckhbw 
-                         lngt: 24      
-@4657   function_decl    name: @4658    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4659   
+@4657   identifier_node  strg: __builtin_ia32_paddusw  lngt: 22      
+@4658   function_decl    name: @4659    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4660   
                          body: undefined               link: extern  
-@4658   identifier_node  strg: __builtin_ia32_punpckhwd 
-                         lngt: 24      
-@4659   function_decl    name: @4660    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4661   
+@4659   identifier_node  strg: __builtin_ia32_psubusb  lngt: 22      
+@4660   function_decl    name: @4661    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4662   
                          body: undefined               link: extern  
-@4660   identifier_node  strg: __builtin_ia32_punpckhdq 
-                         lngt: 24      
-@4661   function_decl    name: @4662    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4663   
+@4661   identifier_node  strg: __builtin_ia32_psubusw  lngt: 22      
+@4662   function_decl    name: @4663    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4664   
                          body: undefined               link: extern  
-@4662   identifier_node  strg: __builtin_ia32_punpcklbw 
-                         lngt: 24      
-@4663   function_decl    name: @4664    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4665   
+@4663   identifier_node  strg: __builtin_ia32_pmullw   lngt: 21      
+@4664   function_decl    name: @4665    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4666   
                          body: undefined               link: extern  
-@4664   identifier_node  strg: __builtin_ia32_punpcklwd 
-                         lngt: 24      
-@4665   function_decl    name: @4666    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4667   
+@4665   identifier_node  strg: __builtin_ia32_pmulhw   lngt: 21      
+@4666   function_decl    name: @4667    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4668   
                          body: undefined               link: extern  
-@4666   identifier_node  strg: __builtin_ia32_punpckldq 
-                         lngt: 24      
-@4667   function_decl    name: @4668    type: @4669    scpe: @176    
+@4667   identifier_node  strg: __builtin_ia32_pand     lngt: 19      
+@4668   function_decl    name: @4669    type: @4635    scpe: @176    
                          srcp: <built-in>:0            chain: @4670   
                          body: undefined               link: extern  
-@4668   identifier_node  strg: __builtin_ia32_packsswb lngt: 23      
-@4669   function_type    size: @12      algn: 8        retn: @4595   
-                         prms: @4671   
-@4670   function_decl    name: @4672    type: @4673    scpe: @176    
+@4669   identifier_node  strg: __builtin_ia32_pandn    lngt: 20      
+@4670   function_decl    name: @4671    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4672   
+                         body: undefined               link: extern  
+@4671   identifier_node  strg: __builtin_ia32_por      lngt: 18      
+@4672   function_decl    name: @4673    type: @4635    scpe: @176    
                          srcp: <built-in>:0            chain: @4674   
                          body: undefined               link: extern  
-@4671   tree_list        valu: @4601    chan: @4675   
-@4672   identifier_node  strg: __builtin_ia32_packssdw lngt: 23      
-@4673   function_type    size: @12      algn: 8        retn: @4601   
-                         prms: @4676   
-@4674   function_decl    name: @4677    type: @4669    scpe: @176    
+@4673   identifier_node  strg: __builtin_ia32_pxor     lngt: 19      
+@4674   function_decl    name: @4675    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4676   
+                         body: undefined               link: extern  
+@4675   identifier_node  strg: __builtin_ia32_pcmpeqb  lngt: 22      
+@4676   function_decl    name: @4677    type: @4629    scpe: @176    
                          srcp: <built-in>:0            chain: @4678   
                          body: undefined               link: extern  
-@4675   tree_list        valu: @4601    chan: @188    
-@4676   tree_list        valu: @4607    chan: @4679   
-@4677   identifier_node  strg: __builtin_ia32_packuswb lngt: 23      
-@4678   function_decl    name: @4680    type: @4681    scpe: @176    
+@4677   identifier_node  strg: __builtin_ia32_pcmpeqw  lngt: 22      
+@4678   function_decl    name: @4679    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4680   
+                         body: undefined               link: extern  
+@4679   identifier_node  strg: __builtin_ia32_pcmpeqd  lngt: 22      
+@4680   function_decl    name: @4681    type: @4624    scpe: @176    
                          srcp: <built-in>:0            chain: @4682   
                          body: undefined               link: extern  
-@4679   tree_list        valu: @4607    chan: @188    
-@4680   identifier_node  strg: __builtin_ia32_pmaddwd  lngt: 22      
-@4681   function_type    size: @12      algn: 8        retn: @4607   
-                         prms: @4683   
-@4682   function_decl    name: @4684    type: @4685    scpe: @176    
+@4681   identifier_node  strg: __builtin_ia32_pcmpgtb  lngt: 22      
+@4682   function_decl    name: @4683    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4684   
+                         body: undefined               link: extern  
+@4683   identifier_node  strg: __builtin_ia32_pcmpgtw  lngt: 22      
+@4684   function_decl    name: @4685    type: @4635    scpe: @176    
                          srcp: <built-in>:0            chain: @4686   
                          body: undefined               link: extern  
-@4683   tree_list        valu: @4601    chan: @4687   
-@4684   identifier_node  strg: __builtin_ia32_psllwi   lngt: 21      
-@4685   function_type    size: @12      algn: 8        retn: @4601   
-                         prms: @4688   
-@4686   function_decl    name: @4689    type: @4690    scpe: @176    
-                         srcp: <built-in>:0            chain: @4691   
+@4685   identifier_node  strg: __builtin_ia32_pcmpgtd  lngt: 22      
+@4686   function_decl    name: @4687    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4688   
                          body: undefined               link: extern  
-@4687   tree_list        valu: @4601    chan: @188    
-@4688   tree_list        valu: @4601    chan: @4692   
-@4689   identifier_node  strg: __builtin_ia32_pslldi   lngt: 21      
-@4690   function_type    size: @12      algn: 8        retn: @4607   
-                         prms: @4693   
-@4691   function_decl    name: @4694    type: @4695    scpe: @176    
+@4687   identifier_node  strg: __builtin_ia32_punpckhbw 
+                         lngt: 24      
+@4688   function_decl    name: @4689    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4690   
+                         body: undefined               link: extern  
+@4689   identifier_node  strg: __builtin_ia32_punpckhwd 
+                         lngt: 24      
+@4690   function_decl    name: @4691    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4692   
+                         body: undefined               link: extern  
+@4691   identifier_node  strg: __builtin_ia32_punpckhdq 
+                         lngt: 24      
+@4692   function_decl    name: @4693    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4694   
+                         body: undefined               link: extern  
+@4693   identifier_node  strg: __builtin_ia32_punpcklbw 
+                         lngt: 24      
+@4694   function_decl    name: @4695    type: @4629    scpe: @176    
                          srcp: <built-in>:0            chain: @4696   
                          body: undefined               link: extern  
-@4692   tree_list        valu: @3       chan: @188    
-@4693   tree_list        valu: @4607    chan: @4697   
-@4694   identifier_node  strg: __builtin_ia32_psllqi   lngt: 21      
-@4695   function_type    size: @12      algn: 8        retn: @4698   
-                         prms: @4699   
-@4696   function_decl    name: @4700    type: @4598    scpe: @176    
+@4695   identifier_node  strg: __builtin_ia32_punpcklwd 
+                         lngt: 24      
+@4696   function_decl    name: @4697    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4698   
+                         body: undefined               link: extern  
+@4697   identifier_node  strg: __builtin_ia32_punpckldq 
+                         lngt: 24      
+@4698   function_decl    name: @4699    type: @4700    scpe: @176    
                          srcp: <built-in>:0            chain: @4701   
                          body: undefined               link: extern  
-@4697   tree_list        valu: @3       chan: @188    
-@4698   vector_type      size: @22      algn: 64      
-@4699   tree_list        valu: @4698    chan: @4702   
-@4700   identifier_node  strg: __builtin_ia32_psllw    lngt: 20      
-@4701   function_decl    name: @4703    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4704   
+@4699   identifier_node  strg: __builtin_ia32_packsswb lngt: 23      
+@4700   function_type    size: @12      algn: 8        retn: @4626   
+                         prms: @4702   
+@4701   function_decl    name: @4703    type: @4704    scpe: @176    
+                         srcp: <built-in>:0            chain: @4705   
                          body: undefined               link: extern  
-@4702   tree_list        valu: @3       chan: @188    
-@4703   identifier_node  strg: __builtin_ia32_pslld    lngt: 20      
-@4704   function_decl    name: @4705    type: @4706    scpe: @176    
-                         srcp: <built-in>:0            chain: @4707   
+@4702   tree_list        valu: @4632    chan: @4706   
+@4703   identifier_node  strg: __builtin_ia32_packssdw lngt: 23      
+@4704   function_type    size: @12      algn: 8        retn: @4632   
+                         prms: @4707   
+@4705   function_decl    name: @4708    type: @4700    scpe: @176    
+                         srcp: <built-in>:0            chain: @4709   
                          body: undefined               link: extern  
-@4705   identifier_node  strg: __builtin_ia32_psllq    lngt: 20      
-@4706   function_type    size: @12      algn: 8        retn: @4698   
-                         prms: @4708   
-@4707   function_decl    name: @4709    type: @4685    scpe: @176    
-                         srcp: <built-in>:0            chain: @4710   
-                         body: undefined               link: extern  
-@4708   tree_list        valu: @4698    chan: @4711   
-@4709   identifier_node  strg: __builtin_ia32_psrlwi   lngt: 21      
-@4710   function_decl    name: @4712    type: @4690    scpe: @176    
+@4706   tree_list        valu: @4632    chan: @188    
+@4707   tree_list        valu: @4638    chan: @4710   
+@4708   identifier_node  strg: __builtin_ia32_packuswb lngt: 23      
+@4709   function_decl    name: @4711    type: @4712    scpe: @176    
                          srcp: <built-in>:0            chain: @4713   
                          body: undefined               link: extern  
-@4711   tree_list        valu: @4698    chan: @188    
-@4712   identifier_node  strg: __builtin_ia32_psrldi   lngt: 21      
-@4713   function_decl    name: @4714    type: @4695    scpe: @176    
-                         srcp: <built-in>:0            chain: @4715   
-                         body: undefined               link: extern  
-@4714   identifier_node  strg: __builtin_ia32_psrlqi   lngt: 21      
-@4715   function_decl    name: @4716    type: @4598    scpe: @176    
+@4710   tree_list        valu: @4638    chan: @188    
+@4711   identifier_node  strg: __builtin_ia32_pmaddwd  lngt: 22      
+@4712   function_type    size: @12      algn: 8        retn: @4638   
+                         prms: @4714   
+@4713   function_decl    name: @4715    type: @4716    scpe: @176    
                          srcp: <built-in>:0            chain: @4717   
                          body: undefined               link: extern  
-@4716   identifier_node  strg: __builtin_ia32_psrlw    lngt: 20      
-@4717   function_decl    name: @4718    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4719   
+@4714   tree_list        valu: @4632    chan: @4718   
+@4715   identifier_node  strg: __builtin_ia32_psllwi   lngt: 21      
+@4716   function_type    size: @12      algn: 8        retn: @4632   
+                         prms: @4719   
+@4717   function_decl    name: @4720    type: @4721    scpe: @176    
+                         srcp: <built-in>:0            chain: @4722   
                          body: undefined               link: extern  
-@4718   identifier_node  strg: __builtin_ia32_psrld    lngt: 20      
-@4719   function_decl    name: @4720    type: @4706    scpe: @176    
-                         srcp: <built-in>:0            chain: @4721   
-                         body: undefined               link: extern  
-@4720   identifier_node  strg: __builtin_ia32_psrlq    lngt: 20      
-@4721   function_decl    name: @4722    type: @4685    scpe: @176    
-                         srcp: <built-in>:0            chain: @4723   
-                         body: undefined               link: extern  
-@4722   identifier_node  strg: __builtin_ia32_psrawi   lngt: 21      
-@4723   function_decl    name: @4724    type: @4690    scpe: @176    
-                         srcp: <built-in>:0            chain: @4725   
-                         body: undefined               link: extern  
-@4724   identifier_node  strg: __builtin_ia32_psradi   lngt: 21      
-@4725   function_decl    name: @4726    type: @4598    scpe: @176    
+@4718   tree_list        valu: @4632    chan: @188    
+@4719   tree_list        valu: @4632    chan: @4723   
+@4720   identifier_node  strg: __builtin_ia32_pslldi   lngt: 21      
+@4721   function_type    size: @12      algn: 8        retn: @4638   
+                         prms: @4724   
+@4722   function_decl    name: @4725    type: @4726    scpe: @176    
                          srcp: <built-in>:0            chain: @4727   
                          body: undefined               link: extern  
-@4726   identifier_node  strg: __builtin_ia32_psraw    lngt: 20      
-@4727   function_decl    name: @4728    type: @4604    scpe: @176    
-                         srcp: <built-in>:0            chain: @4729   
-                         body: undefined               link: extern  
-@4728   identifier_node  strg: __builtin_ia32_psrad    lngt: 20      
-@4729   function_decl    name: @4730    type: @4731    scpe: @176    
+@4723   tree_list        valu: @3       chan: @188    
+@4724   tree_list        valu: @4638    chan: @4728   
+@4725   identifier_node  strg: __builtin_ia32_psllqi   lngt: 21      
+@4726   function_type    size: @12      algn: 8        retn: @4729   
+                         prms: @4730   
+@4727   function_decl    name: @4731    type: @4629    scpe: @176    
                          srcp: <built-in>:0            chain: @4732   
                          body: undefined               link: extern  
-@4730   identifier_node  strg: __builtin_ia32_movmskps lngt: 23      
-@4731   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @4733   
-@4732   function_decl    name: @4734    type: @4735    scpe: @176    
-                         srcp: <built-in>:0            chain: @4736   
+@4728   tree_list        valu: @3       chan: @188    
+@4729   vector_type      size: @22      algn: 64      
+@4730   tree_list        valu: @4729    chan: @4733   
+@4731   identifier_node  strg: __builtin_ia32_psllw    lngt: 20      
+@4732   function_decl    name: @4734    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4735   
                          body: undefined               link: extern  
-@4733   tree_list        valu: @4491    chan: @188    
-@4734   identifier_node  strg: __builtin_ia32_sqrtps   lngt: 21      
-@4735   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4737   
-@4736   function_decl    name: @4738    type: @4735    scpe: @176    
-                         srcp: <built-in>:0            chain: @4739   
+@4733   tree_list        valu: @3       chan: @188    
+@4734   identifier_node  strg: __builtin_ia32_pslld    lngt: 20      
+@4735   function_decl    name: @4736    type: @4737    scpe: @176    
+                         srcp: <built-in>:0            chain: @4738   
                          body: undefined               link: extern  
-@4737   tree_list        valu: @4491    chan: @188    
-@4738   identifier_node  strg: __builtin_ia32_sqrtps_nr 
-                         lngt: 24      
-@4739   function_decl    name: @4740    type: @4735    scpe: @176    
+@4736   identifier_node  strg: __builtin_ia32_psllq    lngt: 20      
+@4737   function_type    size: @12      algn: 8        retn: @4729   
+                         prms: @4739   
+@4738   function_decl    name: @4740    type: @4716    scpe: @176    
                          srcp: <built-in>:0            chain: @4741   
                          body: undefined               link: extern  
-@4740   identifier_node  strg: __builtin_ia32_rsqrtps  lngt: 22      
-@4741   function_decl    name: @4742    type: @4735    scpe: @176    
-                         srcp: <built-in>:0            chain: @4743   
+@4739   tree_list        valu: @4729    chan: @4742   
+@4740   identifier_node  strg: __builtin_ia32_psrlwi   lngt: 21      
+@4741   function_decl    name: @4743    type: @4721    scpe: @176    
+                         srcp: <built-in>:0            chain: @4744   
                          body: undefined               link: extern  
-@4742   identifier_node  strg: __builtin_ia32_rsqrtps_nr 
-                         lngt: 25      
-@4743   function_decl    name: @4744    type: @4735    scpe: @176    
-                         srcp: <built-in>:0            chain: @4745   
+@4742   tree_list        valu: @4729    chan: @188    
+@4743   identifier_node  strg: __builtin_ia32_psrldi   lngt: 21      
+@4744   function_decl    name: @4745    type: @4726    scpe: @176    
+                         srcp: <built-in>:0            chain: @4746   
                          body: undefined               link: extern  
-@4744   identifier_node  strg: __builtin_ia32_rcpps    lngt: 20      
-@4745   function_decl    name: @4746    type: @4747    scpe: @176    
+@4745   identifier_node  strg: __builtin_ia32_psrlqi   lngt: 21      
+@4746   function_decl    name: @4747    type: @4629    scpe: @176    
                          srcp: <built-in>:0            chain: @4748   
                          body: undefined               link: extern  
-@4746   identifier_node  strg: __builtin_ia32_cvtps2pi lngt: 23      
-@4747   function_type    size: @12      algn: 8        retn: @4607   
-                         prms: @4749   
-@4748   function_decl    name: @4750    type: @4731    scpe: @176    
-                         srcp: <built-in>:0            chain: @4751   
+@4747   identifier_node  strg: __builtin_ia32_psrlw    lngt: 20      
+@4748   function_decl    name: @4749    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4750   
                          body: undefined               link: extern  
-@4749   tree_list        valu: @4491    chan: @188    
-@4750   identifier_node  strg: __builtin_ia32_cvtss2si lngt: 23      
-@4751   function_decl    name: @4752    type: @4753    scpe: @176    
+@4749   identifier_node  strg: __builtin_ia32_psrld    lngt: 20      
+@4750   function_decl    name: @4751    type: @4737    scpe: @176    
+                         srcp: <built-in>:0            chain: @4752   
+                         body: undefined               link: extern  
+@4751   identifier_node  strg: __builtin_ia32_psrlq    lngt: 20      
+@4752   function_decl    name: @4753    type: @4716    scpe: @176    
                          srcp: <built-in>:0            chain: @4754   
                          body: undefined               link: extern  
-@4752   identifier_node  strg: __builtin_ia32_cvtss2si64 
-                         lngt: 25      
-@4753   function_type    size: @12      algn: 8        retn: @46     
-                         prms: @4755   
-@4754   function_decl    name: @4756    type: @4747    scpe: @176    
-                         srcp: <built-in>:0            chain: @4757   
+@4753   identifier_node  strg: __builtin_ia32_psrawi   lngt: 21      
+@4754   function_decl    name: @4755    type: @4721    scpe: @176    
+                         srcp: <built-in>:0            chain: @4756   
                          body: undefined               link: extern  
-@4755   tree_list        valu: @4491    chan: @188    
-@4756   identifier_node  strg: __builtin_ia32_cvttps2pi 
+@4755   identifier_node  strg: __builtin_ia32_psradi   lngt: 21      
+@4756   function_decl    name: @4757    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4758   
+                         body: undefined               link: extern  
+@4757   identifier_node  strg: __builtin_ia32_psraw    lngt: 20      
+@4758   function_decl    name: @4759    type: @4635    scpe: @176    
+                         srcp: <built-in>:0            chain: @4760   
+                         body: undefined               link: extern  
+@4759   identifier_node  strg: __builtin_ia32_psrad    lngt: 20      
+@4760   function_decl    name: @4761    type: @4762    scpe: @176    
+                         srcp: <built-in>:0            chain: @4763   
+                         body: undefined               link: extern  
+@4761   identifier_node  strg: __builtin_ia32_movmskps lngt: 23      
+@4762   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @4764   
+@4763   function_decl    name: @4765    type: @4766    scpe: @176    
+                         srcp: <built-in>:0            chain: @4767   
+                         body: undefined               link: extern  
+@4764   tree_list        valu: @4522    chan: @188    
+@4765   identifier_node  strg: __builtin_ia32_sqrtps   lngt: 21      
+@4766   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4768   
+@4767   function_decl    name: @4769    type: @4766    scpe: @176    
+                         srcp: <built-in>:0            chain: @4770   
+                         body: undefined               link: extern  
+@4768   tree_list        valu: @4522    chan: @188    
+@4769   identifier_node  strg: __builtin_ia32_sqrtps_nr 
                          lngt: 24      
-@4757   function_decl    name: @4758    type: @4731    scpe: @176    
-                         srcp: <built-in>:0            chain: @4759   
-                         body: undefined               link: extern  
-@4758   identifier_node  strg: __builtin_ia32_cvttss2si 
-                         lngt: 24      
-@4759   function_decl    name: @4760    type: @4753    scpe: @176    
-                         srcp: <built-in>:0            chain: @4761   
-                         body: undefined               link: extern  
-@4760   identifier_node  strg: __builtin_ia32_cvttss2si64 
-                         lngt: 26      
-@4761   function_decl    name: @4762    type: @4763    scpe: @176    
-                         srcp: <built-in>:0            chain: @4764   
-                         body: undefined               link: extern  
-@4762   identifier_node  strg: __builtin_ia32_shufps   lngt: 21      
-@4763   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4765   
-@4764   function_decl    name: @4766    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4768   
-                         body: undefined               link: extern  
-@4765   tree_list        valu: @4491    chan: @4769   
-@4766   identifier_node  strg: __builtin_ia32_addps    lngt: 20      
-@4767   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4770   
-@4768   function_decl    name: @4771    type: @4767    scpe: @176    
+@4770   function_decl    name: @4771    type: @4766    scpe: @176    
                          srcp: <built-in>:0            chain: @4772   
                          body: undefined               link: extern  
-@4769   tree_list        valu: @4491    chan: @4773   
-@4770   tree_list        valu: @4491    chan: @4774   
-@4771   identifier_node  strg: __builtin_ia32_subps    lngt: 20      
-@4772   function_decl    name: @4775    type: @4767    scpe: @176    
+@4771   identifier_node  strg: __builtin_ia32_rsqrtps  lngt: 22      
+@4772   function_decl    name: @4773    type: @4766    scpe: @176    
+                         srcp: <built-in>:0            chain: @4774   
+                         body: undefined               link: extern  
+@4773   identifier_node  strg: __builtin_ia32_rsqrtps_nr 
+                         lngt: 25      
+@4774   function_decl    name: @4775    type: @4766    scpe: @176    
                          srcp: <built-in>:0            chain: @4776   
                          body: undefined               link: extern  
-@4773   tree_list        valu: @3       chan: @188    
-@4774   tree_list        valu: @4491    chan: @188    
-@4775   identifier_node  strg: __builtin_ia32_mulps    lngt: 20      
-@4776   function_decl    name: @4777    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4778   
+@4775   identifier_node  strg: __builtin_ia32_rcpps    lngt: 20      
+@4776   function_decl    name: @4777    type: @4778    scpe: @176    
+                         srcp: <built-in>:0            chain: @4779   
                          body: undefined               link: extern  
-@4777   identifier_node  strg: __builtin_ia32_divps    lngt: 20      
-@4778   function_decl    name: @4779    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4780   
-                         body: undefined               link: extern  
-@4779   identifier_node  strg: __builtin_ia32_addss    lngt: 20      
-@4780   function_decl    name: @4781    type: @4767    scpe: @176    
+@4777   identifier_node  strg: __builtin_ia32_cvtps2pi lngt: 23      
+@4778   function_type    size: @12      algn: 8        retn: @4638   
+                         prms: @4780   
+@4779   function_decl    name: @4781    type: @4762    scpe: @176    
                          srcp: <built-in>:0            chain: @4782   
                          body: undefined               link: extern  
-@4781   identifier_node  strg: __builtin_ia32_subss    lngt: 20      
-@4782   function_decl    name: @4783    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4784   
+@4780   tree_list        valu: @4522    chan: @188    
+@4781   identifier_node  strg: __builtin_ia32_cvtss2si lngt: 23      
+@4782   function_decl    name: @4783    type: @4784    scpe: @176    
+                         srcp: <built-in>:0            chain: @4785   
                          body: undefined               link: extern  
-@4783   identifier_node  strg: __builtin_ia32_mulss    lngt: 20      
-@4784   function_decl    name: @4785    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4786   
-                         body: undefined               link: extern  
-@4785   identifier_node  strg: __builtin_ia32_divss    lngt: 20      
-@4786   function_decl    name: @4787    type: @4767    scpe: @176    
+@4783   identifier_node  strg: __builtin_ia32_cvtss2si64 
+                         lngt: 25      
+@4784   function_type    size: @12      algn: 8        retn: @46     
+                         prms: @4786   
+@4785   function_decl    name: @4787    type: @4778    scpe: @176    
                          srcp: <built-in>:0            chain: @4788   
                          body: undefined               link: extern  
-@4787   identifier_node  strg: __builtin_ia32_cmpeqps  lngt: 22      
-@4788   function_decl    name: @4789    type: @4767    scpe: @176    
+@4786   tree_list        valu: @4522    chan: @188    
+@4787   identifier_node  strg: __builtin_ia32_cvttps2pi 
+                         lngt: 24      
+@4788   function_decl    name: @4789    type: @4762    scpe: @176    
                          srcp: <built-in>:0            chain: @4790   
                          body: undefined               link: extern  
-@4789   identifier_node  strg: __builtin_ia32_cmpltps  lngt: 22      
-@4790   function_decl    name: @4791    type: @4767    scpe: @176    
+@4789   identifier_node  strg: __builtin_ia32_cvttss2si 
+                         lngt: 24      
+@4790   function_decl    name: @4791    type: @4784    scpe: @176    
                          srcp: <built-in>:0            chain: @4792   
                          body: undefined               link: extern  
-@4791   identifier_node  strg: __builtin_ia32_cmpleps  lngt: 22      
-@4792   function_decl    name: @4793    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4794   
+@4791   identifier_node  strg: __builtin_ia32_cvttss2si64 
+                         lngt: 26      
+@4792   function_decl    name: @4793    type: @4794    scpe: @176    
+                         srcp: <built-in>:0            chain: @4795   
                          body: undefined               link: extern  
-@4793   identifier_node  strg: __builtin_ia32_cmpgtps  lngt: 22      
-@4794   function_decl    name: @4795    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4796   
+@4793   identifier_node  strg: __builtin_ia32_shufps   lngt: 21      
+@4794   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4796   
+@4795   function_decl    name: @4797    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4799   
                          body: undefined               link: extern  
-@4795   identifier_node  strg: __builtin_ia32_cmpgeps  lngt: 22      
-@4796   function_decl    name: @4797    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4798   
+@4796   tree_list        valu: @4522    chan: @4800   
+@4797   identifier_node  strg: __builtin_ia32_addps    lngt: 20      
+@4798   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4801   
+@4799   function_decl    name: @4802    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4803   
                          body: undefined               link: extern  
-@4797   identifier_node  strg: __builtin_ia32_cmpunordps 
+@4800   tree_list        valu: @4522    chan: @4804   
+@4801   tree_list        valu: @4522    chan: @4805   
+@4802   identifier_node  strg: __builtin_ia32_subps    lngt: 20      
+@4803   function_decl    name: @4806    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4807   
+                         body: undefined               link: extern  
+@4804   tree_list        valu: @3       chan: @188    
+@4805   tree_list        valu: @4522    chan: @188    
+@4806   identifier_node  strg: __builtin_ia32_mulps    lngt: 20      
+@4807   function_decl    name: @4808    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4809   
+                         body: undefined               link: extern  
+@4808   identifier_node  strg: __builtin_ia32_divps    lngt: 20      
+@4809   function_decl    name: @4810    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4811   
+                         body: undefined               link: extern  
+@4810   identifier_node  strg: __builtin_ia32_addss    lngt: 20      
+@4811   function_decl    name: @4812    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4813   
+                         body: undefined               link: extern  
+@4812   identifier_node  strg: __builtin_ia32_subss    lngt: 20      
+@4813   function_decl    name: @4814    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4815   
+                         body: undefined               link: extern  
+@4814   identifier_node  strg: __builtin_ia32_mulss    lngt: 20      
+@4815   function_decl    name: @4816    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4817   
+                         body: undefined               link: extern  
+@4816   identifier_node  strg: __builtin_ia32_divss    lngt: 20      
+@4817   function_decl    name: @4818    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4819   
+                         body: undefined               link: extern  
+@4818   identifier_node  strg: __builtin_ia32_cmpeqps  lngt: 22      
+@4819   function_decl    name: @4820    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4821   
+                         body: undefined               link: extern  
+@4820   identifier_node  strg: __builtin_ia32_cmpltps  lngt: 22      
+@4821   function_decl    name: @4822    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4823   
+                         body: undefined               link: extern  
+@4822   identifier_node  strg: __builtin_ia32_cmpleps  lngt: 22      
+@4823   function_decl    name: @4824    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4825   
+                         body: undefined               link: extern  
+@4824   identifier_node  strg: __builtin_ia32_cmpgtps  lngt: 22      
+@4825   function_decl    name: @4826    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4827   
+                         body: undefined               link: extern  
+@4826   identifier_node  strg: __builtin_ia32_cmpgeps  lngt: 22      
+@4827   function_decl    name: @4828    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4829   
+                         body: undefined               link: extern  
+@4828   identifier_node  strg: __builtin_ia32_cmpunordps 
                          lngt: 25      
-@4798   function_decl    name: @4799    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4800   
+@4829   function_decl    name: @4830    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4831   
                          body: undefined               link: extern  
-@4799   identifier_node  strg: __builtin_ia32_cmpneqps lngt: 23      
-@4800   function_decl    name: @4801    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4802   
+@4830   identifier_node  strg: __builtin_ia32_cmpneqps lngt: 23      
+@4831   function_decl    name: @4832    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4833   
                          body: undefined               link: extern  
-@4801   identifier_node  strg: __builtin_ia32_cmpnltps lngt: 23      
-@4802   function_decl    name: @4803    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4804   
+@4832   identifier_node  strg: __builtin_ia32_cmpnltps lngt: 23      
+@4833   function_decl    name: @4834    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4835   
                          body: undefined               link: extern  
-@4803   identifier_node  strg: __builtin_ia32_cmpnleps lngt: 23      
-@4804   function_decl    name: @4805    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4806   
+@4834   identifier_node  strg: __builtin_ia32_cmpnleps lngt: 23      
+@4835   function_decl    name: @4836    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4837   
                          body: undefined               link: extern  
-@4805   identifier_node  strg: __builtin_ia32_cmpngtps lngt: 23      
-@4806   function_decl    name: @4807    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4808   
+@4836   identifier_node  strg: __builtin_ia32_cmpngtps lngt: 23      
+@4837   function_decl    name: @4838    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4839   
                          body: undefined               link: extern  
-@4807   identifier_node  strg: __builtin_ia32_cmpngeps lngt: 23      
-@4808   function_decl    name: @4809    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4810   
+@4838   identifier_node  strg: __builtin_ia32_cmpngeps lngt: 23      
+@4839   function_decl    name: @4840    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4841   
                          body: undefined               link: extern  
-@4809   identifier_node  strg: __builtin_ia32_cmpordps lngt: 23      
-@4810   function_decl    name: @4811    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4812   
+@4840   identifier_node  strg: __builtin_ia32_cmpordps lngt: 23      
+@4841   function_decl    name: @4842    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4843   
                          body: undefined               link: extern  
-@4811   identifier_node  strg: __builtin_ia32_cmpeqss  lngt: 22      
-@4812   function_decl    name: @4813    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4814   
+@4842   identifier_node  strg: __builtin_ia32_cmpeqss  lngt: 22      
+@4843   function_decl    name: @4844    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4845   
                          body: undefined               link: extern  
-@4813   identifier_node  strg: __builtin_ia32_cmpltss  lngt: 22      
-@4814   function_decl    name: @4815    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4816   
+@4844   identifier_node  strg: __builtin_ia32_cmpltss  lngt: 22      
+@4845   function_decl    name: @4846    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4847   
                          body: undefined               link: extern  
-@4815   identifier_node  strg: __builtin_ia32_cmpless  lngt: 22      
-@4816   function_decl    name: @4817    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4818   
+@4846   identifier_node  strg: __builtin_ia32_cmpless  lngt: 22      
+@4847   function_decl    name: @4848    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4849   
                          body: undefined               link: extern  
-@4817   identifier_node  strg: __builtin_ia32_cmpunordss 
+@4848   identifier_node  strg: __builtin_ia32_cmpunordss 
                          lngt: 25      
-@4818   function_decl    name: @4819    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4820   
+@4849   function_decl    name: @4850    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4851   
                          body: undefined               link: extern  
-@4819   identifier_node  strg: __builtin_ia32_cmpneqss lngt: 23      
-@4820   function_decl    name: @4821    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4822   
+@4850   identifier_node  strg: __builtin_ia32_cmpneqss lngt: 23      
+@4851   function_decl    name: @4852    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4853   
                          body: undefined               link: extern  
-@4821   identifier_node  strg: __builtin_ia32_cmpnltss lngt: 23      
-@4822   function_decl    name: @4823    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4824   
+@4852   identifier_node  strg: __builtin_ia32_cmpnltss lngt: 23      
+@4853   function_decl    name: @4854    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4855   
                          body: undefined               link: extern  
-@4823   identifier_node  strg: __builtin_ia32_cmpnless lngt: 23      
-@4824   function_decl    name: @4825    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4826   
-                         body: undefined               link: extern  
-@4825   identifier_node  strg: __builtin_ia32_cmpordss lngt: 23      
-@4826   function_decl    name: @4827    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4828   
-                         body: undefined               link: extern  
-@4827   identifier_node  strg: __builtin_ia32_minps    lngt: 20      
-@4828   function_decl    name: @4829    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4830   
-                         body: undefined               link: extern  
-@4829   identifier_node  strg: __builtin_ia32_maxps    lngt: 20      
-@4830   function_decl    name: @4831    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4832   
-                         body: undefined               link: extern  
-@4831   identifier_node  strg: __builtin_ia32_minss    lngt: 20      
-@4832   function_decl    name: @4833    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4834   
-                         body: undefined               link: extern  
-@4833   identifier_node  strg: __builtin_ia32_maxss    lngt: 20      
-@4834   function_decl    name: @4835    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4836   
-                         body: undefined               link: extern  
-@4835   identifier_node  strg: __builtin_ia32_andps    lngt: 20      
-@4836   function_decl    name: @4837    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4838   
-                         body: undefined               link: extern  
-@4837   identifier_node  strg: __builtin_ia32_andnps   lngt: 21      
-@4838   function_decl    name: @4839    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4840   
-                         body: undefined               link: extern  
-@4839   identifier_node  strg: __builtin_ia32_orps     lngt: 19      
-@4840   function_decl    name: @4841    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4842   
-                         body: undefined               link: extern  
-@4841   identifier_node  strg: __builtin_ia32_xorps    lngt: 20      
-@4842   function_decl    name: @4843    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4844   
-                         body: undefined               link: extern  
-@4843   identifier_node  strg: __builtin_ia32_copysignps 
-                         lngt: 25      
-@4844   function_decl    name: @4845    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4846   
-                         body: undefined               link: extern  
-@4845   identifier_node  strg: __builtin_ia32_movss    lngt: 20      
-@4846   function_decl    name: @4847    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4848   
-                         body: undefined               link: extern  
-@4847   identifier_node  strg: __builtin_ia32_movhlps  lngt: 22      
-@4848   function_decl    name: @4849    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4850   
-                         body: undefined               link: extern  
-@4849   identifier_node  strg: __builtin_ia32_movlhps  lngt: 22      
-@4850   function_decl    name: @4851    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4852   
-                         body: undefined               link: extern  
-@4851   identifier_node  strg: __builtin_ia32_unpckhps lngt: 23      
-@4852   function_decl    name: @4853    type: @4767    scpe: @176    
-                         srcp: <built-in>:0            chain: @4854   
-                         body: undefined               link: extern  
-@4853   identifier_node  strg: __builtin_ia32_unpcklps lngt: 23      
-@4854   function_decl    name: @4855    type: @4856    scpe: @176    
+@4854   identifier_node  strg: __builtin_ia32_cmpnless lngt: 23      
+@4855   function_decl    name: @4856    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4857   
                          body: undefined               link: extern  
-@4855   identifier_node  strg: __builtin_ia32_cvtpi2ps lngt: 23      
-@4856   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4858   
-@4857   function_decl    name: @4859    type: @4860    scpe: @176    
+@4856   identifier_node  strg: __builtin_ia32_cmpordss lngt: 23      
+@4857   function_decl    name: @4858    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4859   
+                         body: undefined               link: extern  
+@4858   identifier_node  strg: __builtin_ia32_minps    lngt: 20      
+@4859   function_decl    name: @4860    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4861   
                          body: undefined               link: extern  
-@4858   tree_list        valu: @4491    chan: @4862   
-@4859   identifier_node  strg: __builtin_ia32_cvtsi2ss lngt: 23      
-@4860   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4863   
-@4861   function_decl    name: @4864    type: @4865    scpe: @176    
-                         srcp: <built-in>:0            chain: @4866   
+@4860   identifier_node  strg: __builtin_ia32_maxps    lngt: 20      
+@4861   function_decl    name: @4862    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4863   
                          body: undefined               link: extern  
-@4862   tree_list        valu: @4607    chan: @188    
-@4863   tree_list        valu: @4491    chan: @4867   
-@4864   identifier_node  strg: __builtin_ia32_cvtsi642ss 
-                         lngt: 25      
-@4865   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4868   
-@4866   function_decl    name: @4869    type: @191     scpe: @176    
-                         srcp: <built-in>:0            chain: @4870   
+@4862   identifier_node  strg: __builtin_ia32_minss    lngt: 20      
+@4863   function_decl    name: @4864    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4865   
                          body: undefined               link: extern  
-@4867   tree_list        valu: @3       chan: @188    
-@4868   tree_list        valu: @4491    chan: @4871   
-@4869   identifier_node  strg: __builtin_ia32_rsqrtf   lngt: 21      
-@4870   function_decl    name: @4872    type: @4735    scpe: @176    
+@4864   identifier_node  strg: __builtin_ia32_maxss    lngt: 20      
+@4865   function_decl    name: @4866    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4867   
+                         body: undefined               link: extern  
+@4866   identifier_node  strg: __builtin_ia32_andps    lngt: 20      
+@4867   function_decl    name: @4868    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4869   
+                         body: undefined               link: extern  
+@4868   identifier_node  strg: __builtin_ia32_andnps   lngt: 21      
+@4869   function_decl    name: @4870    type: @4798    scpe: @176    
+                         srcp: <built-in>:0            chain: @4871   
+                         body: undefined               link: extern  
+@4870   identifier_node  strg: __builtin_ia32_orps     lngt: 19      
+@4871   function_decl    name: @4872    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4873   
                          body: undefined               link: extern  
-@4871   tree_list        valu: @46      chan: @188    
-@4872   identifier_node  strg: __builtin_ia32_sqrtss   lngt: 21      
-@4873   function_decl    name: @4874    type: @4735    scpe: @176    
+@4872   identifier_node  strg: __builtin_ia32_xorps    lngt: 20      
+@4873   function_decl    name: @4874    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4875   
                          body: undefined               link: extern  
-@4874   identifier_node  strg: __builtin_ia32_rsqrtss  lngt: 22      
-@4875   function_decl    name: @4876    type: @4735    scpe: @176    
+@4874   identifier_node  strg: __builtin_ia32_copysignps 
+                         lngt: 25      
+@4875   function_decl    name: @4876    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4877   
                          body: undefined               link: extern  
-@4876   identifier_node  strg: __builtin_ia32_rcpss    lngt: 20      
-@4877   function_decl    name: @4878    type: @4593    scpe: @176    
+@4876   identifier_node  strg: __builtin_ia32_movss    lngt: 20      
+@4877   function_decl    name: @4878    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4879   
                          body: undefined               link: extern  
-@4878   identifier_node  strg: __builtin_ia32_pavgb    lngt: 20      
-@4879   function_decl    name: @4880    type: @4598    scpe: @176    
+@4878   identifier_node  strg: __builtin_ia32_movhlps  lngt: 22      
+@4879   function_decl    name: @4880    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4881   
                          body: undefined               link: extern  
-@4880   identifier_node  strg: __builtin_ia32_pavgw    lngt: 20      
-@4881   function_decl    name: @4882    type: @4598    scpe: @176    
+@4880   identifier_node  strg: __builtin_ia32_movlhps  lngt: 22      
+@4881   function_decl    name: @4882    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4883   
                          body: undefined               link: extern  
-@4882   identifier_node  strg: __builtin_ia32_pmulhuw  lngt: 22      
-@4883   function_decl    name: @4884    type: @4593    scpe: @176    
+@4882   identifier_node  strg: __builtin_ia32_unpckhps lngt: 23      
+@4883   function_decl    name: @4884    type: @4798    scpe: @176    
                          srcp: <built-in>:0            chain: @4885   
                          body: undefined               link: extern  
-@4884   identifier_node  strg: __builtin_ia32_pmaxub   lngt: 21      
-@4885   function_decl    name: @4886    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4887   
+@4884   identifier_node  strg: __builtin_ia32_unpcklps lngt: 23      
+@4885   function_decl    name: @4886    type: @4887    scpe: @176    
+                         srcp: <built-in>:0            chain: @4888   
                          body: undefined               link: extern  
-@4886   identifier_node  strg: __builtin_ia32_pmaxsw   lngt: 21      
-@4887   function_decl    name: @4888    type: @4593    scpe: @176    
-                         srcp: <built-in>:0            chain: @4889   
+@4886   identifier_node  strg: __builtin_ia32_cvtpi2ps lngt: 23      
+@4887   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4889   
+@4888   function_decl    name: @4890    type: @4891    scpe: @176    
+                         srcp: <built-in>:0            chain: @4892   
                          body: undefined               link: extern  
-@4888   identifier_node  strg: __builtin_ia32_pminub   lngt: 21      
-@4889   function_decl    name: @4890    type: @4598    scpe: @176    
-                         srcp: <built-in>:0            chain: @4891   
+@4889   tree_list        valu: @4522    chan: @4893   
+@4890   identifier_node  strg: __builtin_ia32_cvtsi2ss lngt: 23      
+@4891   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4894   
+@4892   function_decl    name: @4895    type: @4896    scpe: @176    
+                         srcp: <built-in>:0            chain: @4897   
                          body: undefined               link: extern  
-@4890   identifier_node  strg: __builtin_ia32_pminsw   lngt: 21      
-@4891   function_decl    name: @4892    type: @4893    scpe: @176    
-                         srcp: <built-in>:0            chain: @4894   
+@4893   tree_list        valu: @4638    chan: @188    
+@4894   tree_list        valu: @4522    chan: @4898   
+@4895   identifier_node  strg: __builtin_ia32_cvtsi642ss 
+                         lngt: 25      
+@4896   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4899   
+@4897   function_decl    name: @4900    type: @191     scpe: @176    
+                         srcp: <built-in>:0            chain: @4901   
                          body: undefined               link: extern  
-@4892   identifier_node  strg: __builtin_ia32_psadbw   lngt: 21      
-@4893   function_type    size: @12      algn: 8        retn: @4698   
-                         prms: @4895   
-@4894   function_decl    name: @4896    type: @4897    scpe: @176    
-                         srcp: <built-in>:0            chain: @4898   
+@4898   tree_list        valu: @3       chan: @188    
+@4899   tree_list        valu: @4522    chan: @4902   
+@4900   identifier_node  strg: __builtin_ia32_rsqrtf   lngt: 21      
+@4901   function_decl    name: @4903    type: @4766    scpe: @176    
+                         srcp: <built-in>:0            chain: @4904   
                          body: undefined               link: extern  
-@4895   tree_list        valu: @4595    chan: @4899   
-@4896   identifier_node  strg: __builtin_ia32_pmovmskb lngt: 23      
-@4897   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @4900   
-@4898   function_decl    name: @4901    type: @4685    scpe: @176    
-                         srcp: <built-in>:0            chain: @4902   
+@4902   tree_list        valu: @46      chan: @188    
+@4903   identifier_node  strg: __builtin_ia32_sqrtss   lngt: 21      
+@4904   function_decl    name: @4905    type: @4766    scpe: @176    
+                         srcp: <built-in>:0            chain: @4906   
                          body: undefined               link: extern  
-@4899   tree_list        valu: @4595    chan: @188    
-@4900   tree_list        valu: @4595    chan: @188    
-@4901   identifier_node  strg: __builtin_ia32_pshufw   lngt: 21      
-@4902   function_decl    name: @4903    type: @4904    scpe: @176    
-                         srcp: <built-in>:0            chain: @4905   
+@4905   identifier_node  strg: __builtin_ia32_rsqrtss  lngt: 22      
+@4906   function_decl    name: @4907    type: @4766    scpe: @176    
+                         srcp: <built-in>:0            chain: @4908   
                          body: undefined               link: extern  
-@4903   identifier_node  strg: __builtin_ia32_shufpd   lngt: 21      
-@4904   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4906   
-@4905   function_decl    name: @4907    type: @4908    scpe: @176    
-                         srcp: <built-in>:0            chain: @4909   
+@4907   identifier_node  strg: __builtin_ia32_rcpss    lngt: 20      
+@4908   function_decl    name: @4909    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4910   
                          body: undefined               link: extern  
-@4906   tree_list        valu: @4533    chan: @4910   
-@4907   identifier_node  strg: __builtin_ia32_movmskpd lngt: 23      
-@4908   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @4911   
-@4909   function_decl    name: @4912    type: @4913    scpe: @176    
+@4909   identifier_node  strg: __builtin_ia32_pavgb    lngt: 20      
+@4910   function_decl    name: @4911    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4912   
+                         body: undefined               link: extern  
+@4911   identifier_node  strg: __builtin_ia32_pavgw    lngt: 20      
+@4912   function_decl    name: @4913    type: @4629    scpe: @176    
                          srcp: <built-in>:0            chain: @4914   
                          body: undefined               link: extern  
-@4910   tree_list        valu: @4533    chan: @4915   
-@4911   tree_list        valu: @4533    chan: @188    
-@4912   identifier_node  strg: __builtin_ia32_pmovmskb128 
-                         lngt: 26      
-@4913   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @4916   
-@4914   function_decl    name: @4917    type: @4918    scpe: @176    
-                         srcp: <built-in>:0            chain: @4919   
+@4913   identifier_node  strg: __builtin_ia32_pmulhuw  lngt: 22      
+@4914   function_decl    name: @4915    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4916   
                          body: undefined               link: extern  
-@4915   tree_list        valu: @3       chan: @188    
-@4916   tree_list        valu: @4538    chan: @188    
-@4917   identifier_node  strg: __builtin_ia32_sqrtpd   lngt: 21      
-@4918   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4920   
-@4919   function_decl    name: @4921    type: @4922    scpe: @176    
-                         srcp: <built-in>:0            chain: @4923   
+@4915   identifier_node  strg: __builtin_ia32_pmaxub   lngt: 21      
+@4916   function_decl    name: @4917    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4918   
                          body: undefined               link: extern  
-@4920   tree_list        valu: @4533    chan: @188    
-@4921   identifier_node  strg: __builtin_ia32_cvtdq2pd lngt: 23      
-@4922   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4924   
-@4923   function_decl    name: @4925    type: @4926    scpe: @176    
-                         srcp: <built-in>:0            chain: @4927   
+@4917   identifier_node  strg: __builtin_ia32_pmaxsw   lngt: 21      
+@4918   function_decl    name: @4919    type: @4624    scpe: @176    
+                         srcp: <built-in>:0            chain: @4920   
                          body: undefined               link: extern  
-@4924   tree_list        valu: @4928    chan: @188    
-@4925   identifier_node  strg: __builtin_ia32_cvtdq2ps lngt: 23      
-@4926   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4929   
-@4927   function_decl    name: @4930    type: @4931    scpe: @176    
-                         srcp: <built-in>:0            chain: @4932   
+@4919   identifier_node  strg: __builtin_ia32_pminub   lngt: 21      
+@4920   function_decl    name: @4921    type: @4629    scpe: @176    
+                         srcp: <built-in>:0            chain: @4922   
                          body: undefined               link: extern  
-@4928   vector_type      size: @19      algn: 128     
-@4929   tree_list        valu: @4928    chan: @188    
-@4930   identifier_node  strg: __builtin_ia32_cvtpd2dq lngt: 23      
-@4931   function_type    size: @12      algn: 8        retn: @4928   
-                         prms: @4933   
-@4932   function_decl    name: @4934    type: @4935    scpe: @176    
+@4921   identifier_node  strg: __builtin_ia32_pminsw   lngt: 21      
+@4922   function_decl    name: @4923    type: @4924    scpe: @176    
+                         srcp: <built-in>:0            chain: @4925   
+                         body: undefined               link: extern  
+@4923   identifier_node  strg: __builtin_ia32_psadbw   lngt: 21      
+@4924   function_type    size: @12      algn: 8        retn: @4729   
+                         prms: @4926   
+@4925   function_decl    name: @4927    type: @4928    scpe: @176    
+                         srcp: <built-in>:0            chain: @4929   
+                         body: undefined               link: extern  
+@4926   tree_list        valu: @4626    chan: @4930   
+@4927   identifier_node  strg: __builtin_ia32_pmovmskb lngt: 23      
+@4928   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @4931   
+@4929   function_decl    name: @4932    type: @4716    scpe: @176    
+                         srcp: <built-in>:0            chain: @4933   
+                         body: undefined               link: extern  
+@4930   tree_list        valu: @4626    chan: @188    
+@4931   tree_list        valu: @4626    chan: @188    
+@4932   identifier_node  strg: __builtin_ia32_pshufw   lngt: 21      
+@4933   function_decl    name: @4934    type: @4935    scpe: @176    
                          srcp: <built-in>:0            chain: @4936   
                          body: undefined               link: extern  
-@4933   tree_list        valu: @4533    chan: @188    
-@4934   identifier_node  strg: __builtin_ia32_cvtpd2pi lngt: 23      
-@4935   function_type    size: @12      algn: 8        retn: @4607   
+@4934   identifier_node  strg: __builtin_ia32_shufpd   lngt: 21      
+@4935   function_type    size: @12      algn: 8        retn: @4564   
                          prms: @4937   
 @4936   function_decl    name: @4938    type: @4939    scpe: @176    
                          srcp: <built-in>:0            chain: @4940   
                          body: undefined               link: extern  
-@4937   tree_list        valu: @4533    chan: @188    
-@4938   identifier_node  strg: __builtin_ia32_cvtpd2ps lngt: 23      
-@4939   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @4941   
-@4940   function_decl    name: @4942    type: @4931    scpe: @176    
-                         srcp: <built-in>:0            chain: @4943   
-                         body: undefined               link: extern  
-@4941   tree_list        valu: @4533    chan: @188    
-@4942   identifier_node  strg: __builtin_ia32_cvttpd2dq 
-                         lngt: 24      
-@4943   function_decl    name: @4944    type: @4935    scpe: @176    
+@4937   tree_list        valu: @4564    chan: @4941   
+@4938   identifier_node  strg: __builtin_ia32_movmskpd lngt: 23      
+@4939   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @4942   
+@4940   function_decl    name: @4943    type: @4944    scpe: @176    
                          srcp: <built-in>:0            chain: @4945   
                          body: undefined               link: extern  
-@4944   identifier_node  strg: __builtin_ia32_cvttpd2pi 
-                         lngt: 24      
-@4945   function_decl    name: @4946    type: @4947    scpe: @176    
-                         srcp: <built-in>:0            chain: @4948   
-                         body: undefined               link: extern  
-@4946   identifier_node  strg: __builtin_ia32_cvtpi2pd lngt: 23      
-@4947   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4949   
-@4948   function_decl    name: @4950    type: @4908    scpe: @176    
-                         srcp: <built-in>:0            chain: @4951   
-                         body: undefined               link: extern  
-@4949   tree_list        valu: @4607    chan: @188    
-@4950   identifier_node  strg: __builtin_ia32_cvtsd2si lngt: 23      
-@4951   function_decl    name: @4952    type: @4908    scpe: @176    
-                         srcp: <built-in>:0            chain: @4953   
-                         body: undefined               link: extern  
-@4952   identifier_node  strg: __builtin_ia32_cvttsd2si 
-                         lngt: 24      
-@4953   function_decl    name: @4954    type: @4955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4956   
-                         body: undefined               link: extern  
-@4954   identifier_node  strg: __builtin_ia32_cvtsd2si64 
-                         lngt: 25      
-@4955   function_type    size: @12      algn: 8        retn: @46     
-                         prms: @4957   
-@4956   function_decl    name: @4958    type: @4955    scpe: @176    
-                         srcp: <built-in>:0            chain: @4959   
-                         body: undefined               link: extern  
-@4957   tree_list        valu: @4533    chan: @188    
-@4958   identifier_node  strg: __builtin_ia32_cvttsd2si64 
+@4941   tree_list        valu: @4564    chan: @4946   
+@4942   tree_list        valu: @4564    chan: @188    
+@4943   identifier_node  strg: __builtin_ia32_pmovmskb128 
                          lngt: 26      
-@4959   function_decl    name: @4960    type: @4961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4962   
+@4944   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @4947   
+@4945   function_decl    name: @4948    type: @4949    scpe: @176    
+                         srcp: <built-in>:0            chain: @4950   
                          body: undefined               link: extern  
-@4960   identifier_node  strg: __builtin_ia32_cvtps2dq lngt: 23      
-@4961   function_type    size: @12      algn: 8        retn: @4928   
-                         prms: @4963   
-@4962   function_decl    name: @4964    type: @4965    scpe: @176    
-                         srcp: <built-in>:0            chain: @4966   
+@4946   tree_list        valu: @3       chan: @188    
+@4947   tree_list        valu: @4569    chan: @188    
+@4948   identifier_node  strg: __builtin_ia32_sqrtpd   lngt: 21      
+@4949   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @4951   
+@4950   function_decl    name: @4952    type: @4953    scpe: @176    
+                         srcp: <built-in>:0            chain: @4954   
                          body: undefined               link: extern  
-@4963   tree_list        valu: @4491    chan: @188    
-@4964   identifier_node  strg: __builtin_ia32_cvtps2pd lngt: 23      
-@4965   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4967   
-@4966   function_decl    name: @4968    type: @4961    scpe: @176    
-                         srcp: <built-in>:0            chain: @4969   
+@4951   tree_list        valu: @4564    chan: @188    
+@4952   identifier_node  strg: __builtin_ia32_cvtdq2pd lngt: 23      
+@4953   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @4955   
+@4954   function_decl    name: @4956    type: @4957    scpe: @176    
+                         srcp: <built-in>:0            chain: @4958   
                          body: undefined               link: extern  
-@4967   tree_list        valu: @4491    chan: @188    
-@4968   identifier_node  strg: __builtin_ia32_cvttps2dq 
+@4955   tree_list        valu: @4959    chan: @188    
+@4956   identifier_node  strg: __builtin_ia32_cvtdq2ps lngt: 23      
+@4957   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4960   
+@4958   function_decl    name: @4961    type: @4962    scpe: @176    
+                         srcp: <built-in>:0            chain: @4963   
+                         body: undefined               link: extern  
+@4959   vector_type      size: @19      algn: 128     
+@4960   tree_list        valu: @4959    chan: @188    
+@4961   identifier_node  strg: __builtin_ia32_cvtpd2dq lngt: 23      
+@4962   function_type    size: @12      algn: 8        retn: @4959   
+                         prms: @4964   
+@4963   function_decl    name: @4965    type: @4966    scpe: @176    
+                         srcp: <built-in>:0            chain: @4967   
+                         body: undefined               link: extern  
+@4964   tree_list        valu: @4564    chan: @188    
+@4965   identifier_node  strg: __builtin_ia32_cvtpd2pi lngt: 23      
+@4966   function_type    size: @12      algn: 8        retn: @4638   
+                         prms: @4968   
+@4967   function_decl    name: @4969    type: @4970    scpe: @176    
+                         srcp: <built-in>:0            chain: @4971   
+                         body: undefined               link: extern  
+@4968   tree_list        valu: @4564    chan: @188    
+@4969   identifier_node  strg: __builtin_ia32_cvtpd2ps lngt: 23      
+@4970   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @4972   
+@4971   function_decl    name: @4973    type: @4962    scpe: @176    
+                         srcp: <built-in>:0            chain: @4974   
+                         body: undefined               link: extern  
+@4972   tree_list        valu: @4564    chan: @188    
+@4973   identifier_node  strg: __builtin_ia32_cvttpd2dq 
                          lngt: 24      
-@4969   function_decl    name: @4970    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4972   
+@4974   function_decl    name: @4975    type: @4966    scpe: @176    
+                         srcp: <built-in>:0            chain: @4976   
                          body: undefined               link: extern  
-@4970   identifier_node  strg: __builtin_ia32_addpd    lngt: 20      
-@4971   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @4973   
-@4972   function_decl    name: @4974    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4975   
+@4975   identifier_node  strg: __builtin_ia32_cvttpd2pi 
+                         lngt: 24      
+@4976   function_decl    name: @4977    type: @4978    scpe: @176    
+                         srcp: <built-in>:0            chain: @4979   
                          body: undefined               link: extern  
-@4973   tree_list        valu: @4533    chan: @4976   
-@4974   identifier_node  strg: __builtin_ia32_subpd    lngt: 20      
-@4975   function_decl    name: @4977    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4978   
-                         body: undefined               link: extern  
-@4976   tree_list        valu: @4533    chan: @188    
-@4977   identifier_node  strg: __builtin_ia32_mulpd    lngt: 20      
-@4978   function_decl    name: @4979    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4980   
-                         body: undefined               link: extern  
-@4979   identifier_node  strg: __builtin_ia32_divpd    lngt: 20      
-@4980   function_decl    name: @4981    type: @4971    scpe: @176    
+@4977   identifier_node  strg: __builtin_ia32_cvtpi2pd lngt: 23      
+@4978   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @4980   
+@4979   function_decl    name: @4981    type: @4939    scpe: @176    
                          srcp: <built-in>:0            chain: @4982   
                          body: undefined               link: extern  
-@4981   identifier_node  strg: __builtin_ia32_addsd    lngt: 20      
-@4982   function_decl    name: @4983    type: @4971    scpe: @176    
+@4980   tree_list        valu: @4638    chan: @188    
+@4981   identifier_node  strg: __builtin_ia32_cvtsd2si lngt: 23      
+@4982   function_decl    name: @4983    type: @4939    scpe: @176    
                          srcp: <built-in>:0            chain: @4984   
                          body: undefined               link: extern  
-@4983   identifier_node  strg: __builtin_ia32_subsd    lngt: 20      
-@4984   function_decl    name: @4985    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4986   
+@4983   identifier_node  strg: __builtin_ia32_cvttsd2si 
+                         lngt: 24      
+@4984   function_decl    name: @4985    type: @4986    scpe: @176    
+                         srcp: <built-in>:0            chain: @4987   
                          body: undefined               link: extern  
-@4985   identifier_node  strg: __builtin_ia32_mulsd    lngt: 20      
-@4986   function_decl    name: @4987    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4988   
-                         body: undefined               link: extern  
-@4987   identifier_node  strg: __builtin_ia32_divsd    lngt: 20      
-@4988   function_decl    name: @4989    type: @4971    scpe: @176    
+@4985   identifier_node  strg: __builtin_ia32_cvtsd2si64 
+                         lngt: 25      
+@4986   function_type    size: @12      algn: 8        retn: @46     
+                         prms: @4988   
+@4987   function_decl    name: @4989    type: @4986    scpe: @176    
                          srcp: <built-in>:0            chain: @4990   
                          body: undefined               link: extern  
-@4989   identifier_node  strg: __builtin_ia32_cmpeqpd  lngt: 22      
-@4990   function_decl    name: @4991    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4992   
+@4988   tree_list        valu: @4564    chan: @188    
+@4989   identifier_node  strg: __builtin_ia32_cvttsd2si64 
+                         lngt: 26      
+@4990   function_decl    name: @4991    type: @4992    scpe: @176    
+                         srcp: <built-in>:0            chain: @4993   
                          body: undefined               link: extern  
-@4991   identifier_node  strg: __builtin_ia32_cmpltpd  lngt: 22      
-@4992   function_decl    name: @4993    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4994   
+@4991   identifier_node  strg: __builtin_ia32_cvtps2dq lngt: 23      
+@4992   function_type    size: @12      algn: 8        retn: @4959   
+                         prms: @4994   
+@4993   function_decl    name: @4995    type: @4996    scpe: @176    
+                         srcp: <built-in>:0            chain: @4997   
                          body: undefined               link: extern  
-@4993   identifier_node  strg: __builtin_ia32_cmplepd  lngt: 22      
-@4994   function_decl    name: @4995    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4996   
-                         body: undefined               link: extern  
-@4995   identifier_node  strg: __builtin_ia32_cmpgtpd  lngt: 22      
-@4996   function_decl    name: @4997    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @4998   
-                         body: undefined               link: extern  
-@4997   identifier_node  strg: __builtin_ia32_cmpgepd  lngt: 22      
-@4998   function_decl    name: @4999    type: @4971    scpe: @176    
+@4994   tree_list        valu: @4522    chan: @188    
+@4995   identifier_node  strg: __builtin_ia32_cvtps2pd lngt: 23      
+@4996   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @4998   
+@4997   function_decl    name: @4999    type: @4992    scpe: @176    
                          srcp: <built-in>:0            chain: @5000   
                          body: undefined               link: extern  
-@4999   identifier_node  strg: __builtin_ia32_cmpunordpd 
-                         lngt: 25      
-@5000   function_decl    name: @5001    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5002   
+@4998   tree_list        valu: @4522    chan: @188    
+@4999   identifier_node  strg: __builtin_ia32_cvttps2dq 
+                         lngt: 24      
+@5000   function_decl    name: @5001    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5003   
                          body: undefined               link: extern  
-@5001   identifier_node  strg: __builtin_ia32_cmpneqpd lngt: 23      
-@5002   function_decl    name: @5003    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5004   
-                         body: undefined               link: extern  
-@5003   identifier_node  strg: __builtin_ia32_cmpnltpd lngt: 23      
-@5004   function_decl    name: @5005    type: @4971    scpe: @176    
+@5001   identifier_node  strg: __builtin_ia32_addpd    lngt: 20      
+@5002   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @5004   
+@5003   function_decl    name: @5005    type: @5002    scpe: @176    
                          srcp: <built-in>:0            chain: @5006   
                          body: undefined               link: extern  
-@5005   identifier_node  strg: __builtin_ia32_cmpnlepd lngt: 23      
-@5006   function_decl    name: @5007    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5008   
+@5004   tree_list        valu: @4564    chan: @5007   
+@5005   identifier_node  strg: __builtin_ia32_subpd    lngt: 20      
+@5006   function_decl    name: @5008    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5009   
                          body: undefined               link: extern  
-@5007   identifier_node  strg: __builtin_ia32_cmpngtpd lngt: 23      
-@5008   function_decl    name: @5009    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5010   
+@5007   tree_list        valu: @4564    chan: @188    
+@5008   identifier_node  strg: __builtin_ia32_mulpd    lngt: 20      
+@5009   function_decl    name: @5010    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5011   
                          body: undefined               link: extern  
-@5009   identifier_node  strg: __builtin_ia32_cmpngepd lngt: 23      
-@5010   function_decl    name: @5011    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5012   
+@5010   identifier_node  strg: __builtin_ia32_divpd    lngt: 20      
+@5011   function_decl    name: @5012    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5013   
                          body: undefined               link: extern  
-@5011   identifier_node  strg: __builtin_ia32_cmpordpd lngt: 23      
-@5012   function_decl    name: @5013    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5014   
+@5012   identifier_node  strg: __builtin_ia32_addsd    lngt: 20      
+@5013   function_decl    name: @5014    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5015   
                          body: undefined               link: extern  
-@5013   identifier_node  strg: __builtin_ia32_cmpeqsd  lngt: 22      
-@5014   function_decl    name: @5015    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5016   
+@5014   identifier_node  strg: __builtin_ia32_subsd    lngt: 20      
+@5015   function_decl    name: @5016    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5017   
                          body: undefined               link: extern  
-@5015   identifier_node  strg: __builtin_ia32_cmpltsd  lngt: 22      
-@5016   function_decl    name: @5017    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5018   
+@5016   identifier_node  strg: __builtin_ia32_mulsd    lngt: 20      
+@5017   function_decl    name: @5018    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5019   
                          body: undefined               link: extern  
-@5017   identifier_node  strg: __builtin_ia32_cmplesd  lngt: 22      
-@5018   function_decl    name: @5019    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5020   
+@5018   identifier_node  strg: __builtin_ia32_divsd    lngt: 20      
+@5019   function_decl    name: @5020    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5021   
                          body: undefined               link: extern  
-@5019   identifier_node  strg: __builtin_ia32_cmpunordsd 
+@5020   identifier_node  strg: __builtin_ia32_cmpeqpd  lngt: 22      
+@5021   function_decl    name: @5022    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5023   
+                         body: undefined               link: extern  
+@5022   identifier_node  strg: __builtin_ia32_cmpltpd  lngt: 22      
+@5023   function_decl    name: @5024    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5025   
+                         body: undefined               link: extern  
+@5024   identifier_node  strg: __builtin_ia32_cmplepd  lngt: 22      
+@5025   function_decl    name: @5026    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5027   
+                         body: undefined               link: extern  
+@5026   identifier_node  strg: __builtin_ia32_cmpgtpd  lngt: 22      
+@5027   function_decl    name: @5028    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5029   
+                         body: undefined               link: extern  
+@5028   identifier_node  strg: __builtin_ia32_cmpgepd  lngt: 22      
+@5029   function_decl    name: @5030    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5031   
+                         body: undefined               link: extern  
+@5030   identifier_node  strg: __builtin_ia32_cmpunordpd 
                          lngt: 25      
-@5020   function_decl    name: @5021    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5022   
+@5031   function_decl    name: @5032    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5033   
                          body: undefined               link: extern  
-@5021   identifier_node  strg: __builtin_ia32_cmpneqsd lngt: 23      
-@5022   function_decl    name: @5023    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5024   
+@5032   identifier_node  strg: __builtin_ia32_cmpneqpd lngt: 23      
+@5033   function_decl    name: @5034    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5035   
                          body: undefined               link: extern  
-@5023   identifier_node  strg: __builtin_ia32_cmpnltsd lngt: 23      
-@5024   function_decl    name: @5025    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5026   
+@5034   identifier_node  strg: __builtin_ia32_cmpnltpd lngt: 23      
+@5035   function_decl    name: @5036    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5037   
                          body: undefined               link: extern  
-@5025   identifier_node  strg: __builtin_ia32_cmpnlesd lngt: 23      
-@5026   function_decl    name: @5027    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5028   
+@5036   identifier_node  strg: __builtin_ia32_cmpnlepd lngt: 23      
+@5037   function_decl    name: @5038    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5039   
                          body: undefined               link: extern  
-@5027   identifier_node  strg: __builtin_ia32_cmpordsd lngt: 23      
-@5028   function_decl    name: @5029    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5030   
+@5038   identifier_node  strg: __builtin_ia32_cmpngtpd lngt: 23      
+@5039   function_decl    name: @5040    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5041   
                          body: undefined               link: extern  
-@5029   identifier_node  strg: __builtin_ia32_minpd    lngt: 20      
-@5030   function_decl    name: @5031    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5032   
+@5040   identifier_node  strg: __builtin_ia32_cmpngepd lngt: 23      
+@5041   function_decl    name: @5042    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5043   
                          body: undefined               link: extern  
-@5031   identifier_node  strg: __builtin_ia32_maxpd    lngt: 20      
-@5032   function_decl    name: @5033    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5034   
+@5042   identifier_node  strg: __builtin_ia32_cmpordpd lngt: 23      
+@5043   function_decl    name: @5044    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5045   
                          body: undefined               link: extern  
-@5033   identifier_node  strg: __builtin_ia32_minsd    lngt: 20      
-@5034   function_decl    name: @5035    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5036   
+@5044   identifier_node  strg: __builtin_ia32_cmpeqsd  lngt: 22      
+@5045   function_decl    name: @5046    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5047   
                          body: undefined               link: extern  
-@5035   identifier_node  strg: __builtin_ia32_maxsd    lngt: 20      
-@5036   function_decl    name: @5037    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5038   
+@5046   identifier_node  strg: __builtin_ia32_cmpltsd  lngt: 22      
+@5047   function_decl    name: @5048    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5049   
                          body: undefined               link: extern  
-@5037   identifier_node  strg: __builtin_ia32_andpd    lngt: 20      
-@5038   function_decl    name: @5039    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5040   
+@5048   identifier_node  strg: __builtin_ia32_cmplesd  lngt: 22      
+@5049   function_decl    name: @5050    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5051   
                          body: undefined               link: extern  
-@5039   identifier_node  strg: __builtin_ia32_andnpd   lngt: 21      
-@5040   function_decl    name: @5041    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5042   
-                         body: undefined               link: extern  
-@5041   identifier_node  strg: __builtin_ia32_orpd     lngt: 19      
-@5042   function_decl    name: @5043    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5044   
-                         body: undefined               link: extern  
-@5043   identifier_node  strg: __builtin_ia32_xorpd    lngt: 20      
-@5044   function_decl    name: @5045    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5046   
-                         body: undefined               link: extern  
-@5045   identifier_node  strg: __builtin_ia32_copysignpd 
+@5050   identifier_node  strg: __builtin_ia32_cmpunordsd 
                          lngt: 25      
-@5046   function_decl    name: @5047    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5048   
+@5051   function_decl    name: @5052    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5053   
                          body: undefined               link: extern  
-@5047   identifier_node  strg: __builtin_ia32_movsd    lngt: 20      
-@5048   function_decl    name: @5049    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5050   
-                         body: undefined               link: extern  
-@5049   identifier_node  strg: __builtin_ia32_unpckhpd lngt: 23      
-@5050   function_decl    name: @5051    type: @4971    scpe: @176    
-                         srcp: <built-in>:0            chain: @5052   
-                         body: undefined               link: extern  
-@5051   identifier_node  strg: __builtin_ia32_unpcklpd lngt: 23      
-@5052   function_decl    name: @5053    type: @5054    scpe: @176    
+@5052   identifier_node  strg: __builtin_ia32_cmpneqsd lngt: 23      
+@5053   function_decl    name: @5054    type: @5002    scpe: @176    
                          srcp: <built-in>:0            chain: @5055   
                          body: undefined               link: extern  
-@5053   identifier_node  strg: __builtin_ia32_vec_pack_sfix 
-                         lngt: 28      
-@5054   function_type    size: @12      algn: 8        retn: @4928   
-                         prms: @5056   
-@5055   function_decl    name: @5057    type: @5058    scpe: @176    
+@5054   identifier_node  strg: __builtin_ia32_cmpnltsd lngt: 23      
+@5055   function_decl    name: @5056    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5057   
+                         body: undefined               link: extern  
+@5056   identifier_node  strg: __builtin_ia32_cmpnlesd lngt: 23      
+@5057   function_decl    name: @5058    type: @5002    scpe: @176    
                          srcp: <built-in>:0            chain: @5059   
                          body: undefined               link: extern  
-@5056   tree_list        valu: @4533    chan: @5060   
-@5057   identifier_node  strg: __builtin_ia32_paddb128 lngt: 23      
-@5058   function_type    size: @12      algn: 8        retn: @4538   
-                         prms: @5061   
-@5059   function_decl    name: @5062    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5064   
+@5058   identifier_node  strg: __builtin_ia32_cmpordsd lngt: 23      
+@5059   function_decl    name: @5060    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5061   
                          body: undefined               link: extern  
-@5060   tree_list        valu: @4533    chan: @188    
-@5061   tree_list        valu: @4538    chan: @5065   
-@5062   identifier_node  strg: __builtin_ia32_paddw128 lngt: 23      
-@5063   function_type    size: @12      algn: 8        retn: @5066   
-                         prms: @5067   
-@5064   function_decl    name: @5068    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5070   
+@5060   identifier_node  strg: __builtin_ia32_minpd    lngt: 20      
+@5061   function_decl    name: @5062    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5063   
                          body: undefined               link: extern  
-@5065   tree_list        valu: @4538    chan: @188    
-@5066   vector_type      size: @19      algn: 128     
-@5067   tree_list        valu: @5066    chan: @5071   
-@5068   identifier_node  strg: __builtin_ia32_paddd128 lngt: 23      
-@5069   function_type    size: @12      algn: 8        retn: @4928   
-                         prms: @5072   
-@5070   function_decl    name: @5073    type: @5074    scpe: @176    
+@5062   identifier_node  strg: __builtin_ia32_maxpd    lngt: 20      
+@5063   function_decl    name: @5064    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5065   
+                         body: undefined               link: extern  
+@5064   identifier_node  strg: __builtin_ia32_minsd    lngt: 20      
+@5065   function_decl    name: @5066    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5067   
+                         body: undefined               link: extern  
+@5066   identifier_node  strg: __builtin_ia32_maxsd    lngt: 20      
+@5067   function_decl    name: @5068    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5069   
+                         body: undefined               link: extern  
+@5068   identifier_node  strg: __builtin_ia32_andpd    lngt: 20      
+@5069   function_decl    name: @5070    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5071   
+                         body: undefined               link: extern  
+@5070   identifier_node  strg: __builtin_ia32_andnpd   lngt: 21      
+@5071   function_decl    name: @5072    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5073   
+                         body: undefined               link: extern  
+@5072   identifier_node  strg: __builtin_ia32_orpd     lngt: 19      
+@5073   function_decl    name: @5074    type: @5002    scpe: @176    
                          srcp: <built-in>:0            chain: @5075   
                          body: undefined               link: extern  
-@5071   tree_list        valu: @5066    chan: @188    
-@5072   tree_list        valu: @4928    chan: @5076   
-@5073   identifier_node  strg: __builtin_ia32_paddq128 lngt: 23      
-@5074   function_type    size: @12      algn: 8        retn: @4549   
-                         prms: @5077   
-@5075   function_decl    name: @5078    type: @5058    scpe: @176    
+@5074   identifier_node  strg: __builtin_ia32_xorpd    lngt: 20      
+@5075   function_decl    name: @5076    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5077   
+                         body: undefined               link: extern  
+@5076   identifier_node  strg: __builtin_ia32_copysignpd 
+                         lngt: 25      
+@5077   function_decl    name: @5078    type: @5002    scpe: @176    
                          srcp: <built-in>:0            chain: @5079   
                          body: undefined               link: extern  
-@5076   tree_list        valu: @4928    chan: @188    
-@5077   tree_list        valu: @4549    chan: @5080   
-@5078   identifier_node  strg: __builtin_ia32_psubb128 lngt: 23      
-@5079   function_decl    name: @5081    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5082   
+@5078   identifier_node  strg: __builtin_ia32_movsd    lngt: 20      
+@5079   function_decl    name: @5080    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5081   
                          body: undefined               link: extern  
-@5080   tree_list        valu: @4549    chan: @188    
-@5081   identifier_node  strg: __builtin_ia32_psubw128 lngt: 23      
-@5082   function_decl    name: @5083    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5084   
+@5080   identifier_node  strg: __builtin_ia32_unpckhpd lngt: 23      
+@5081   function_decl    name: @5082    type: @5002    scpe: @176    
+                         srcp: <built-in>:0            chain: @5083   
                          body: undefined               link: extern  
-@5083   identifier_node  strg: __builtin_ia32_psubd128 lngt: 23      
-@5084   function_decl    name: @5085    type: @5074    scpe: @176    
+@5082   identifier_node  strg: __builtin_ia32_unpcklpd lngt: 23      
+@5083   function_decl    name: @5084    type: @5085    scpe: @176    
                          srcp: <built-in>:0            chain: @5086   
                          body: undefined               link: extern  
-@5085   identifier_node  strg: __builtin_ia32_psubq128 lngt: 23      
-@5086   function_decl    name: @5087    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5088   
-                         body: undefined               link: extern  
-@5087   identifier_node  strg: __builtin_ia32_paddsb128 
-                         lngt: 24      
-@5088   function_decl    name: @5089    type: @5063    scpe: @176    
+@5084   identifier_node  strg: __builtin_ia32_vec_pack_sfix 
+                         lngt: 28      
+@5085   function_type    size: @12      algn: 8        retn: @4959   
+                         prms: @5087   
+@5086   function_decl    name: @5088    type: @5089    scpe: @176    
                          srcp: <built-in>:0            chain: @5090   
                          body: undefined               link: extern  
-@5089   identifier_node  strg: __builtin_ia32_paddsw128 
-                         lngt: 24      
-@5090   function_decl    name: @5091    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5092   
+@5087   tree_list        valu: @4564    chan: @5091   
+@5088   identifier_node  strg: __builtin_ia32_paddb128 lngt: 23      
+@5089   function_type    size: @12      algn: 8        retn: @4569   
+                         prms: @5092   
+@5090   function_decl    name: @5093    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5095   
                          body: undefined               link: extern  
-@5091   identifier_node  strg: __builtin_ia32_psubsb128 
-                         lngt: 24      
-@5092   function_decl    name: @5093    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5094   
+@5091   tree_list        valu: @4564    chan: @188    
+@5092   tree_list        valu: @4569    chan: @5096   
+@5093   identifier_node  strg: __builtin_ia32_paddw128 lngt: 23      
+@5094   function_type    size: @12      algn: 8        retn: @5097   
+                         prms: @5098   
+@5095   function_decl    name: @5099    type: @5100    scpe: @176    
+                         srcp: <built-in>:0            chain: @5101   
                          body: undefined               link: extern  
-@5093   identifier_node  strg: __builtin_ia32_psubsw128 
-                         lngt: 24      
-@5094   function_decl    name: @5095    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5096   
-                         body: undefined               link: extern  
-@5095   identifier_node  strg: __builtin_ia32_paddusb128 
-                         lngt: 25      
-@5096   function_decl    name: @5097    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5098   
-                         body: undefined               link: extern  
-@5097   identifier_node  strg: __builtin_ia32_paddusw128 
-                         lngt: 25      
-@5098   function_decl    name: @5099    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5100   
-                         body: undefined               link: extern  
-@5099   identifier_node  strg: __builtin_ia32_psubusb128 
-                         lngt: 25      
-@5100   function_decl    name: @5101    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5102   
-                         body: undefined               link: extern  
-@5101   identifier_node  strg: __builtin_ia32_psubusw128 
-                         lngt: 25      
-@5102   function_decl    name: @5103    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5104   
-                         body: undefined               link: extern  
-@5103   identifier_node  strg: __builtin_ia32_pmullw128 
-                         lngt: 24      
-@5104   function_decl    name: @5105    type: @5063    scpe: @176    
+@5096   tree_list        valu: @4569    chan: @188    
+@5097   vector_type      size: @19      algn: 128     
+@5098   tree_list        valu: @5097    chan: @5102   
+@5099   identifier_node  strg: __builtin_ia32_paddd128 lngt: 23      
+@5100   function_type    size: @12      algn: 8        retn: @4959   
+                         prms: @5103   
+@5101   function_decl    name: @5104    type: @5105    scpe: @176    
                          srcp: <built-in>:0            chain: @5106   
                          body: undefined               link: extern  
-@5105   identifier_node  strg: __builtin_ia32_pmulhw128 
-                         lngt: 24      
-@5106   function_decl    name: @5107    type: @5074    scpe: @176    
-                         srcp: <built-in>:0            chain: @5108   
-                         body: undefined               link: extern  
-@5107   identifier_node  strg: __builtin_ia32_pand128  lngt: 22      
-@5108   function_decl    name: @5109    type: @5074    scpe: @176    
+@5102   tree_list        valu: @5097    chan: @188    
+@5103   tree_list        valu: @4959    chan: @5107   
+@5104   identifier_node  strg: __builtin_ia32_paddq128 lngt: 23      
+@5105   function_type    size: @12      algn: 8        retn: @4580   
+                         prms: @5108   
+@5106   function_decl    name: @5109    type: @5089    scpe: @176    
                          srcp: <built-in>:0            chain: @5110   
                          body: undefined               link: extern  
-@5109   identifier_node  strg: __builtin_ia32_pandn128 lngt: 23      
-@5110   function_decl    name: @5111    type: @5074    scpe: @176    
-                         srcp: <built-in>:0            chain: @5112   
+@5107   tree_list        valu: @4959    chan: @188    
+@5108   tree_list        valu: @4580    chan: @5111   
+@5109   identifier_node  strg: __builtin_ia32_psubb128 lngt: 23      
+@5110   function_decl    name: @5112    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5113   
                          body: undefined               link: extern  
-@5111   identifier_node  strg: __builtin_ia32_por128   lngt: 21      
-@5112   function_decl    name: @5113    type: @5074    scpe: @176    
-                         srcp: <built-in>:0            chain: @5114   
+@5111   tree_list        valu: @4580    chan: @188    
+@5112   identifier_node  strg: __builtin_ia32_psubw128 lngt: 23      
+@5113   function_decl    name: @5114    type: @5100    scpe: @176    
+                         srcp: <built-in>:0            chain: @5115   
                          body: undefined               link: extern  
-@5113   identifier_node  strg: __builtin_ia32_pxor128  lngt: 22      
-@5114   function_decl    name: @5115    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5116   
+@5114   identifier_node  strg: __builtin_ia32_psubd128 lngt: 23      
+@5115   function_decl    name: @5116    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5117   
                          body: undefined               link: extern  
-@5115   identifier_node  strg: __builtin_ia32_pavgb128 lngt: 23      
-@5116   function_decl    name: @5117    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5118   
+@5116   identifier_node  strg: __builtin_ia32_psubq128 lngt: 23      
+@5117   function_decl    name: @5118    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5119   
                          body: undefined               link: extern  
-@5117   identifier_node  strg: __builtin_ia32_pavgw128 lngt: 23      
-@5118   function_decl    name: @5119    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5120   
-                         body: undefined               link: extern  
-@5119   identifier_node  strg: __builtin_ia32_pcmpeqb128 
-                         lngt: 25      
-@5120   function_decl    name: @5121    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5122   
-                         body: undefined               link: extern  
-@5121   identifier_node  strg: __builtin_ia32_pcmpeqw128 
-                         lngt: 25      
-@5122   function_decl    name: @5123    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5124   
-                         body: undefined               link: extern  
-@5123   identifier_node  strg: __builtin_ia32_pcmpeqd128 
-                         lngt: 25      
-@5124   function_decl    name: @5125    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5126   
-                         body: undefined               link: extern  
-@5125   identifier_node  strg: __builtin_ia32_pcmpgtb128 
-                         lngt: 25      
-@5126   function_decl    name: @5127    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5128   
-                         body: undefined               link: extern  
-@5127   identifier_node  strg: __builtin_ia32_pcmpgtw128 
-                         lngt: 25      
-@5128   function_decl    name: @5129    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5130   
-                         body: undefined               link: extern  
-@5129   identifier_node  strg: __builtin_ia32_pcmpgtd128 
-                         lngt: 25      
-@5130   function_decl    name: @5131    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5132   
-                         body: undefined               link: extern  
-@5131   identifier_node  strg: __builtin_ia32_pmaxub128 
+@5118   identifier_node  strg: __builtin_ia32_paddsb128 
                          lngt: 24      
-@5132   function_decl    name: @5133    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5134   
+@5119   function_decl    name: @5120    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5121   
                          body: undefined               link: extern  
-@5133   identifier_node  strg: __builtin_ia32_pmaxsw128 
+@5120   identifier_node  strg: __builtin_ia32_paddsw128 
                          lngt: 24      
-@5134   function_decl    name: @5135    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5136   
+@5121   function_decl    name: @5122    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5123   
                          body: undefined               link: extern  
-@5135   identifier_node  strg: __builtin_ia32_pminub128 
+@5122   identifier_node  strg: __builtin_ia32_psubsb128 
                          lngt: 24      
-@5136   function_decl    name: @5137    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5138   
+@5123   function_decl    name: @5124    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5125   
                          body: undefined               link: extern  
-@5137   identifier_node  strg: __builtin_ia32_pminsw128 
+@5124   identifier_node  strg: __builtin_ia32_psubsw128 
                          lngt: 24      
-@5138   function_decl    name: @5139    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5140   
+@5125   function_decl    name: @5126    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5127   
                          body: undefined               link: extern  
-@5139   identifier_node  strg: __builtin_ia32_punpckhbw128 
-                         lngt: 27      
-@5140   function_decl    name: @5141    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5142   
+@5126   identifier_node  strg: __builtin_ia32_paddusb128 
+                         lngt: 25      
+@5127   function_decl    name: @5128    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5129   
                          body: undefined               link: extern  
-@5141   identifier_node  strg: __builtin_ia32_punpckhwd128 
-                         lngt: 27      
-@5142   function_decl    name: @5143    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5144   
+@5128   identifier_node  strg: __builtin_ia32_paddusw128 
+                         lngt: 25      
+@5129   function_decl    name: @5130    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5131   
                          body: undefined               link: extern  
-@5143   identifier_node  strg: __builtin_ia32_punpckhdq128 
-                         lngt: 27      
-@5144   function_decl    name: @5145    type: @5074    scpe: @176    
-                         srcp: <built-in>:0            chain: @5146   
+@5130   identifier_node  strg: __builtin_ia32_psubusb128 
+                         lngt: 25      
+@5131   function_decl    name: @5132    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5133   
                          body: undefined               link: extern  
-@5145   identifier_node  strg: __builtin_ia32_punpckhqdq128 
-                         lngt: 28      
-@5146   function_decl    name: @5147    type: @5058    scpe: @176    
-                         srcp: <built-in>:0            chain: @5148   
+@5132   identifier_node  strg: __builtin_ia32_psubusw128 
+                         lngt: 25      
+@5133   function_decl    name: @5134    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5135   
                          body: undefined               link: extern  
-@5147   identifier_node  strg: __builtin_ia32_punpcklbw128 
-                         lngt: 27      
-@5148   function_decl    name: @5149    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5150   
+@5134   identifier_node  strg: __builtin_ia32_pmullw128 
+                         lngt: 24      
+@5135   function_decl    name: @5136    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5137   
                          body: undefined               link: extern  
-@5149   identifier_node  strg: __builtin_ia32_punpcklwd128 
-                         lngt: 27      
-@5150   function_decl    name: @5151    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5152   
+@5136   identifier_node  strg: __builtin_ia32_pmulhw128 
+                         lngt: 24      
+@5137   function_decl    name: @5138    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5139   
                          body: undefined               link: extern  
-@5151   identifier_node  strg: __builtin_ia32_punpckldq128 
-                         lngt: 27      
-@5152   function_decl    name: @5153    type: @5074    scpe: @176    
-                         srcp: <built-in>:0            chain: @5154   
+@5138   identifier_node  strg: __builtin_ia32_pand128  lngt: 22      
+@5139   function_decl    name: @5140    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5141   
                          body: undefined               link: extern  
-@5153   identifier_node  strg: __builtin_ia32_punpcklqdq128 
-                         lngt: 28      
-@5154   function_decl    name: @5155    type: @5156    scpe: @176    
+@5140   identifier_node  strg: __builtin_ia32_pandn128 lngt: 23      
+@5141   function_decl    name: @5142    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5143   
+                         body: undefined               link: extern  
+@5142   identifier_node  strg: __builtin_ia32_por128   lngt: 21      
+@5143   function_decl    name: @5144    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5145   
+                         body: undefined               link: extern  
+@5144   identifier_node  strg: __builtin_ia32_pxor128  lngt: 22      
+@5145   function_decl    name: @5146    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5147   
+                         body: undefined               link: extern  
+@5146   identifier_node  strg: __builtin_ia32_pavgb128 lngt: 23      
+@5147   function_decl    name: @5148    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5149   
+                         body: undefined               link: extern  
+@5148   identifier_node  strg: __builtin_ia32_pavgw128 lngt: 23      
+@5149   function_decl    name: @5150    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5151   
+                         body: undefined               link: extern  
+@5150   identifier_node  strg: __builtin_ia32_pcmpeqb128 
+                         lngt: 25      
+@5151   function_decl    name: @5152    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5153   
+                         body: undefined               link: extern  
+@5152   identifier_node  strg: __builtin_ia32_pcmpeqw128 
+                         lngt: 25      
+@5153   function_decl    name: @5154    type: @5100    scpe: @176    
+                         srcp: <built-in>:0            chain: @5155   
+                         body: undefined               link: extern  
+@5154   identifier_node  strg: __builtin_ia32_pcmpeqd128 
+                         lngt: 25      
+@5155   function_decl    name: @5156    type: @5089    scpe: @176    
                          srcp: <built-in>:0            chain: @5157   
                          body: undefined               link: extern  
-@5155   identifier_node  strg: __builtin_ia32_packsswb128 
-                         lngt: 26      
-@5156   function_type    size: @12      algn: 8        retn: @4538   
-                         prms: @5158   
-@5157   function_decl    name: @5159    type: @5160    scpe: @176    
+@5156   identifier_node  strg: __builtin_ia32_pcmpgtb128 
+                         lngt: 25      
+@5157   function_decl    name: @5158    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5159   
+                         body: undefined               link: extern  
+@5158   identifier_node  strg: __builtin_ia32_pcmpgtw128 
+                         lngt: 25      
+@5159   function_decl    name: @5160    type: @5100    scpe: @176    
                          srcp: <built-in>:0            chain: @5161   
                          body: undefined               link: extern  
-@5158   tree_list        valu: @5066    chan: @5162   
-@5159   identifier_node  strg: __builtin_ia32_packssdw128 
-                         lngt: 26      
-@5160   function_type    size: @12      algn: 8        retn: @5066   
-                         prms: @5163   
-@5161   function_decl    name: @5164    type: @5156    scpe: @176    
+@5160   identifier_node  strg: __builtin_ia32_pcmpgtd128 
+                         lngt: 25      
+@5161   function_decl    name: @5162    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5163   
+                         body: undefined               link: extern  
+@5162   identifier_node  strg: __builtin_ia32_pmaxub128 
+                         lngt: 24      
+@5163   function_decl    name: @5164    type: @5094    scpe: @176    
                          srcp: <built-in>:0            chain: @5165   
                          body: undefined               link: extern  
-@5162   tree_list        valu: @5066    chan: @188    
-@5163   tree_list        valu: @4928    chan: @5166   
-@5164   identifier_node  strg: __builtin_ia32_packuswb128 
-                         lngt: 26      
-@5165   function_decl    name: @5167    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5168   
+@5164   identifier_node  strg: __builtin_ia32_pmaxsw128 
+                         lngt: 24      
+@5165   function_decl    name: @5166    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5167   
                          body: undefined               link: extern  
-@5166   tree_list        valu: @4928    chan: @188    
-@5167   identifier_node  strg: __builtin_ia32_pmulhuw128 
-                         lngt: 25      
-@5168   function_decl    name: @5169    type: @5170    scpe: @176    
+@5166   identifier_node  strg: __builtin_ia32_pminub128 
+                         lngt: 24      
+@5167   function_decl    name: @5168    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5169   
+                         body: undefined               link: extern  
+@5168   identifier_node  strg: __builtin_ia32_pminsw128 
+                         lngt: 24      
+@5169   function_decl    name: @5170    type: @5089    scpe: @176    
                          srcp: <built-in>:0            chain: @5171   
                          body: undefined               link: extern  
-@5169   identifier_node  strg: __builtin_ia32_psadbw128 
-                         lngt: 24      
-@5170   function_type    size: @12      algn: 8        retn: @4549   
-                         prms: @5172   
-@5171   function_decl    name: @5173    type: @5174    scpe: @176    
+@5170   identifier_node  strg: __builtin_ia32_punpckhbw128 
+                         lngt: 27      
+@5171   function_decl    name: @5172    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5173   
+                         body: undefined               link: extern  
+@5172   identifier_node  strg: __builtin_ia32_punpckhwd128 
+                         lngt: 27      
+@5173   function_decl    name: @5174    type: @5100    scpe: @176    
                          srcp: <built-in>:0            chain: @5175   
                          body: undefined               link: extern  
-@5172   tree_list        valu: @4538    chan: @5176   
-@5173   identifier_node  strg: __builtin_ia32_pmuludq  lngt: 22      
-@5174   function_type    size: @12      algn: 8        retn: @4698   
-                         prms: @5177   
-@5175   function_decl    name: @5178    type: @5179    scpe: @176    
-                         srcp: <built-in>:0            chain: @5180   
+@5174   identifier_node  strg: __builtin_ia32_punpckhdq128 
+                         lngt: 27      
+@5175   function_decl    name: @5176    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5177   
                          body: undefined               link: extern  
-@5176   tree_list        valu: @4538    chan: @188    
-@5177   tree_list        valu: @4607    chan: @5181   
-@5178   identifier_node  strg: __builtin_ia32_pmuludq128 
-                         lngt: 25      
-@5179   function_type    size: @12      algn: 8        retn: @4549   
-                         prms: @5182   
-@5180   function_decl    name: @5183    type: @5184    scpe: @176    
+@5176   identifier_node  strg: __builtin_ia32_punpckhqdq128 
+                         lngt: 28      
+@5177   function_decl    name: @5178    type: @5089    scpe: @176    
+                         srcp: <built-in>:0            chain: @5179   
+                         body: undefined               link: extern  
+@5178   identifier_node  strg: __builtin_ia32_punpcklbw128 
+                         lngt: 27      
+@5179   function_decl    name: @5180    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5181   
+                         body: undefined               link: extern  
+@5180   identifier_node  strg: __builtin_ia32_punpcklwd128 
+                         lngt: 27      
+@5181   function_decl    name: @5182    type: @5100    scpe: @176    
+                         srcp: <built-in>:0            chain: @5183   
+                         body: undefined               link: extern  
+@5182   identifier_node  strg: __builtin_ia32_punpckldq128 
+                         lngt: 27      
+@5183   function_decl    name: @5184    type: @5105    scpe: @176    
                          srcp: <built-in>:0            chain: @5185   
                          body: undefined               link: extern  
-@5181   tree_list        valu: @4607    chan: @188    
-@5182   tree_list        valu: @4928    chan: @5186   
-@5183   identifier_node  strg: __builtin_ia32_pmaddwd128 
+@5184   identifier_node  strg: __builtin_ia32_punpcklqdq128 
+                         lngt: 28      
+@5185   function_decl    name: @5186    type: @5187    scpe: @176    
+                         srcp: <built-in>:0            chain: @5188   
+                         body: undefined               link: extern  
+@5186   identifier_node  strg: __builtin_ia32_packsswb128 
+                         lngt: 26      
+@5187   function_type    size: @12      algn: 8        retn: @4569   
+                         prms: @5189   
+@5188   function_decl    name: @5190    type: @5191    scpe: @176    
+                         srcp: <built-in>:0            chain: @5192   
+                         body: undefined               link: extern  
+@5189   tree_list        valu: @5097    chan: @5193   
+@5190   identifier_node  strg: __builtin_ia32_packssdw128 
+                         lngt: 26      
+@5191   function_type    size: @12      algn: 8        retn: @5097   
+                         prms: @5194   
+@5192   function_decl    name: @5195    type: @5187    scpe: @176    
+                         srcp: <built-in>:0            chain: @5196   
+                         body: undefined               link: extern  
+@5193   tree_list        valu: @5097    chan: @188    
+@5194   tree_list        valu: @4959    chan: @5197   
+@5195   identifier_node  strg: __builtin_ia32_packuswb128 
+                         lngt: 26      
+@5196   function_decl    name: @5198    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5199   
+                         body: undefined               link: extern  
+@5197   tree_list        valu: @4959    chan: @188    
+@5198   identifier_node  strg: __builtin_ia32_pmulhuw128 
                          lngt: 25      
-@5184   function_type    size: @12      algn: 8        retn: @4928   
-                         prms: @5187   
-@5185   function_decl    name: @5188    type: @5189    scpe: @176    
-                         srcp: <built-in>:0            chain: @5190   
+@5199   function_decl    name: @5200    type: @5201    scpe: @176    
+                         srcp: <built-in>:0            chain: @5202   
                          body: undefined               link: extern  
-@5186   tree_list        valu: @4928    chan: @188    
-@5187   tree_list        valu: @5066    chan: @5191   
-@5188   identifier_node  strg: __builtin_ia32_cvtsi2sd lngt: 23      
-@5189   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @5192   
-@5190   function_decl    name: @5193    type: @5194    scpe: @176    
-                         srcp: <built-in>:0            chain: @5195   
+@5200   identifier_node  strg: __builtin_ia32_psadbw128 
+                         lngt: 24      
+@5201   function_type    size: @12      algn: 8        retn: @4580   
+                         prms: @5203   
+@5202   function_decl    name: @5204    type: @5205    scpe: @176    
+                         srcp: <built-in>:0            chain: @5206   
                          body: undefined               link: extern  
-@5191   tree_list        valu: @5066    chan: @188    
-@5192   tree_list        valu: @4533    chan: @5196   
-@5193   identifier_node  strg: __builtin_ia32_cvtsi642sd 
+@5203   tree_list        valu: @4569    chan: @5207   
+@5204   identifier_node  strg: __builtin_ia32_pmuludq  lngt: 22      
+@5205   function_type    size: @12      algn: 8        retn: @4729   
+                         prms: @5208   
+@5206   function_decl    name: @5209    type: @5210    scpe: @176    
+                         srcp: <built-in>:0            chain: @5211   
+                         body: undefined               link: extern  
+@5207   tree_list        valu: @4569    chan: @188    
+@5208   tree_list        valu: @4638    chan: @5212   
+@5209   identifier_node  strg: __builtin_ia32_pmuludq128 
                          lngt: 25      
-@5194   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @5197   
-@5195   function_decl    name: @5198    type: @5199    scpe: @176    
-                         srcp: <built-in>:0            chain: @5200   
+@5210   function_type    size: @12      algn: 8        retn: @4580   
+                         prms: @5213   
+@5211   function_decl    name: @5214    type: @5215    scpe: @176    
+                         srcp: <built-in>:0            chain: @5216   
                          body: undefined               link: extern  
-@5196   tree_list        valu: @3       chan: @188    
-@5197   tree_list        valu: @4533    chan: @5201   
-@5198   identifier_node  strg: __builtin_ia32_cvtsd2ss lngt: 23      
-@5199   function_type    size: @12      algn: 8        retn: @4491   
-                         prms: @5202   
-@5200   function_decl    name: @5203    type: @5204    scpe: @176    
-                         srcp: <built-in>:0            chain: @5205   
-                         body: undefined               link: extern  
-@5201   tree_list        valu: @46      chan: @188    
-@5202   tree_list        valu: @4491    chan: @5206   
-@5203   identifier_node  strg: __builtin_ia32_cvtss2sd lngt: 23      
-@5204   function_type    size: @12      algn: 8        retn: @4533   
-                         prms: @5207   
-@5205   function_decl    name: @5208    type: @5209    scpe: @176    
-                         srcp: <built-in>:0            chain: @5210   
-                         body: undefined               link: extern  
-@5206   tree_list        valu: @4533    chan: @188    
-@5207   tree_list        valu: @4533    chan: @5211   
-@5208   identifier_node  strg: __builtin_ia32_pslldqi128 
+@5212   tree_list        valu: @4638    chan: @188    
+@5213   tree_list        valu: @4959    chan: @5217   
+@5214   identifier_node  strg: __builtin_ia32_pmaddwd128 
                          lngt: 25      
-@5209   function_type    size: @12      algn: 8        retn: @4549   
-                         prms: @5212   
-@5210   function_decl    name: @5213    type: @5214    scpe: @176    
-                         srcp: <built-in>:0            chain: @5215   
+@5215   function_type    size: @12      algn: 8        retn: @4959   
+                         prms: @5218   
+@5216   function_decl    name: @5219    type: @5220    scpe: @176    
+                         srcp: <built-in>:0            chain: @5221   
                          body: undefined               link: extern  
-@5211   tree_list        valu: @4491    chan: @188    
-@5212   tree_list        valu: @4549    chan: @5216   
-@5213   identifier_node  strg: __builtin_ia32_psllwi128 
-                         lngt: 24      
-@5214   function_type    size: @12      algn: 8        retn: @5066   
-                         prms: @5217   
-@5215   function_decl    name: @5218    type: @5219    scpe: @176    
-                         srcp: <built-in>:0            chain: @5220   
+@5217   tree_list        valu: @4959    chan: @188    
+@5218   tree_list        valu: @5097    chan: @5222   
+@5219   identifier_node  strg: __builtin_ia32_cvtsi2sd lngt: 23      
+@5220   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @5223   
+@5221   function_decl    name: @5224    type: @5225    scpe: @176    
+                         srcp: <built-in>:0            chain: @5226   
                          body: undefined               link: extern  
-@5216   tree_list        valu: @3       chan: @188    
-@5217   tree_list        valu: @5066    chan: @5221   
-@5218   identifier_node  strg: __builtin_ia32_pslldi128 
-                         lngt: 24      
-@5219   function_type    size: @12      algn: 8        retn: @4928   
-                         prms: @5222   
-@5220   function_decl    name: @5223    type: @5209    scpe: @176    
-                         srcp: <built-in>:0            chain: @5224   
-                         body: undefined               link: extern  
-@5221   tree_list        valu: @3       chan: @188    
-@5222   tree_list        valu: @4928    chan: @5225   
-@5223   identifier_node  strg: __builtin_ia32_psllqi128 
-                         lngt: 24      
-@5224   function_decl    name: @5226    type: @5063    scpe: @176    
-                         srcp: <built-in>:0            chain: @5227   
-                         body: undefined               link: extern  
-@5225   tree_list        valu: @3       chan: @188    
-@5226   identifier_node  strg: __builtin_ia32_psllw128 lngt: 23      
-@5227   function_decl    name: @5228    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5229   
-                         body: undefined               link: extern  
-@5228   identifier_node  strg: __builtin_ia32_pslld128 lngt: 23      
-@5229   function_decl    name: @5230    type: @5074    scpe: @176    
+@5222   tree_list        valu: @5097    chan: @188    
+@5223   tree_list        valu: @4564    chan: @5227   
+@5224   identifier_node  strg: __builtin_ia32_cvtsi642sd 
+                         lngt: 25      
+@5225   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @5228   
+@5226   function_decl    name: @5229    type: @5230    scpe: @176    
                          srcp: <built-in>:0            chain: @5231   
                          body: undefined               link: extern  
-@5230   identifier_node  strg: __builtin_ia32_psllq128 lngt: 23      
-@5231   function_decl    name: @5232    type: @5209    scpe: @176    
-                         srcp: <built-in>:0            chain: @5233   
+@5227   tree_list        valu: @3       chan: @188    
+@5228   tree_list        valu: @4564    chan: @5232   
+@5229   identifier_node  strg: __builtin_ia32_cvtsd2ss lngt: 23      
+@5230   function_type    size: @12      algn: 8        retn: @4522   
+                         prms: @5233   
+@5231   function_decl    name: @5234    type: @5235    scpe: @176    
+                         srcp: <built-in>:0            chain: @5236   
                          body: undefined               link: extern  
-@5232   identifier_node  strg: __builtin_ia32_psrldqi128 
-                         lngt: 25      
-@5233   function_decl    name: @5234    type: @5214    scpe: @176    
-                         srcp: <built-in>:0            chain: @5235   
-                         body: undefined               link: extern  
-@5234   identifier_node  strg: __builtin_ia32_psrlwi128 
-                         lngt: 24      
-@5235   function_decl    name: @5236    type: @5219    scpe: @176    
-                         srcp: <built-in>:0            chain: @5237   
-                         body: undefined               link: extern  
-@5236   identifier_node  strg: __builtin_ia32_psrldi128 
-                         lngt: 24      
-@5237   function_decl    name: @5238    type: @5209    scpe: @176    
-                         srcp: <built-in>:0            chain: @5239   
-                         body: undefined               link: extern  
-@5238   identifier_node  strg: __builtin_ia32_psrlqi128 
-                         lngt: 24      
-@5239   function_decl    name: @5240    type: @5063    scpe: @176    
+@5232   tree_list        valu: @46      chan: @188    
+@5233   tree_list        valu: @4522    chan: @5237   
+@5234   identifier_node  strg: __builtin_ia32_cvtss2sd lngt: 23      
+@5235   function_type    size: @12      algn: 8        retn: @4564   
+                         prms: @5238   
+@5236   function_decl    name: @5239    type: @5240    scpe: @176    
                          srcp: <built-in>:0            chain: @5241   
                          body: undefined               link: extern  
-@5240   identifier_node  strg: __builtin_ia32_psrlw128 lngt: 23      
-@5241   function_decl    name: @5242    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5243   
+@5237   tree_list        valu: @4564    chan: @188    
+@5238   tree_list        valu: @4564    chan: @5242   
+@5239   identifier_node  strg: __builtin_ia32_pslldqi128 
+                         lngt: 25      
+@5240   function_type    size: @12      algn: 8        retn: @4580   
+                         prms: @5243   
+@5241   function_decl    name: @5244    type: @5245    scpe: @176    
+                         srcp: <built-in>:0            chain: @5246   
                          body: undefined               link: extern  
-@5242   identifier_node  strg: __builtin_ia32_psrld128 lngt: 23      
-@5243   function_decl    name: @5244    type: @5074    scpe: @176    
-                         srcp: <built-in>:0            chain: @5245   
-                         body: undefined               link: extern  
-@5244   identifier_node  strg: __builtin_ia32_psrlq128 lngt: 23      
-@5245   function_decl    name: @5246    type: @5214    scpe: @176    
-                         srcp: <built-in>:0            chain: @5247   
-                         body: undefined               link: extern  
-@5246   identifier_node  strg: __builtin_ia32_psrawi128 
+@5242   tree_list        valu: @4522    chan: @188    
+@5243   tree_list        valu: @4580    chan: @5247   
+@5244   identifier_node  strg: __builtin_ia32_psllwi128 
                          lngt: 24      
-@5247   function_decl    name: @5248    type: @5219    scpe: @176    
-                         srcp: <built-in>:0            chain: @5249   
-                         body: undefined               link: extern  
-@5248   identifier_node  strg: __builtin_ia32_psradi128 
-                         lngt: 24      
-@5249   function_decl    name: @5250    type: @5063    scpe: @176    
+@5245   function_type    size: @12      algn: 8        retn: @5097   
+                         prms: @5248   
+@5246   function_decl    name: @5249    type: @5250    scpe: @176    
                          srcp: <built-in>:0            chain: @5251   
                          body: undefined               link: extern  
-@5250   identifier_node  strg: __builtin_ia32_psraw128 lngt: 23      
-@5251   function_decl    name: @5252    type: @5069    scpe: @176    
-                         srcp: <built-in>:0            chain: @5253   
-                         body: undefined               link: extern  
-@5252   identifier_node  strg: __builtin_ia32_psrad128 lngt: 23      
-@5253   function_decl    name: @5254    type: @5219    scpe: @176    
+@5247   tree_list        valu: @3       chan: @188    
+@5248   tree_list        valu: @5097    chan: @5252   
+@5249   identifier_node  strg: __builtin_ia32_pslldi128 
+                         lngt: 24      
+@5250   function_type    size: @12      algn: 8        retn: @4959   
+                         prms: @5253   
+@5251   function_decl    name: @5254    type: @5240    scpe: @176    
                          srcp: <built-in>:0            chain: @5255   
                          body: undefined               link: extern  
-@5254   identifier_node  strg: __builtin_ia32_pshufd   lngt: 21      
-@5255   function_decl    name: @5256    type: @5214    scpe: @176    
-                         srcp: <built-in>:0            chain: @5257   
+@5252   tree_list        valu: @3       chan: @188    
+@5253   tree_list        valu: @4959    chan: @5256   
+@5254   identifier_node  strg: __builtin_ia32_psllqi128 
+                         lngt: 24      
+@5255   function_decl    name: @5257    type: @5094    scpe: @176    
+                         srcp: <built-in>:0            chain: @5258   
                          body: undefined               link: extern  
-@5256   identifier_node  strg: __builtin_ia32_pshuflw  lngt: 22      
-@5257   function_decl    name: @5258    type: @5214    scpe: @176    
-                         srcp: <built-in>:0            chain: @5259   
+@5256   tree_list        valu: @3       chan: @188    
+@5257   identifier_node  strg: __builtin_ia32_psllw128 lngt: 23      
+@5258   function_decl    name: @5259    type: @5100    scpe: @176    
+                         srcp: <built-in>:0            chain: @5260   
                          body: undefined               link: extern  
-@5258   identifier_node  strg: __builtin_ia32_pshufhw  lngt: 22      
-@5259   function_decl    name: @5260    type: @4918    scpe: @176    
-                         srcp: <built-in>:0            chain: @5261   
+@5259   identifier_node  strg: __builtin_ia32_pslld128 lngt: 23      
+@5260   function_decl    name: @5261    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5262   
                          body: undefined               link: extern  
-@5260   identifier_node  strg: __builtin_ia32_sqrtsd   lngt: 21      
-@5261   function_decl    name: @5262    type: @5263    scpe: @176    
+@5261   identifier_node  strg: __builtin_ia32_psllq128 lngt: 23      
+@5262   function_decl    name: @5263    type: @5240    scpe: @176    
                          srcp: <built-in>:0            chain: @5264   
                          body: undefined               link: extern  
-@5262   identifier_node  strg: __builtin_ia32_movq128  lngt: 22      
-@5263   function_type    size: @12      algn: 8        retn: @4549   
-                         prms: @5265   
-@5264   function_decl    name: @5266    type: @4706    scpe: @176    
-                         srcp: <built-in>:0            chain: @5267   
+@5263   identifier_node  strg: __builtin_ia32_psrldqi128 
+                         lngt: 25      
+@5264   function_decl    name: @5265    type: @5245    scpe: @176    
+                         srcp: <built-in>:0            chain: @5266   
                          body: undefined               link: extern  
-@5265   tree_list        valu: @4549    chan: @188    
-@5266   identifier_node  strg: __builtin_ia32_paddq    lngt: 20      
-@5267   function_decl    name: @5268    type: @4706    scpe: @176    
-                         srcp: <built-in>:0            chain: @5269   
+@5265   identifier_node  strg: __builtin_ia32_psrlwi128 
+                         lngt: 24      
+@5266   function_decl    name: @5267    type: @5250    scpe: @176    
+                         srcp: <built-in>:0            chain: @5268   
                          body: undefined               link: extern  
-@5268   identifier_node  strg: __builtin_ia32_psubq    lngt: 20      
-@5269   function_decl    name: @5270    type: @5271    scpe: @176    
+@5267   identifier_node  strg: __builtin_ia32_psrldi128 
+                         lngt: 24      
+@5268   function_decl    name: @5269    type: @5240    scpe: @176    
+                         srcp: <built-in>:0            chain: @5270   
+                         body: undefined               link: extern  
+@5269   identifier_node  strg: __builtin_ia32_psrlqi128 
+                         lngt: 24      
+@5270   function_decl    name: @5271    type: @5094    scpe: @176    
                          srcp: <built-in>:0            chain: @5272   
                          body: undefined               link: extern  
-@5270   identifier_node  strg: __builtin_ia32_comieq   lngt: 21      
-@5271   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @5273   
-@5272   function_decl    name: @5274    type: @5271    scpe: @176    
-                         srcp: <built-in>:0            chain: @5275   
+@5271   identifier_node  strg: __builtin_ia32_psrlw128 lngt: 23      
+@5272   function_decl    name: @5273    type: @5100    scpe: @176    
+                         srcp: <built-in>:0            chain: @5274   
                          body: undefined               link: extern  
-@5273   tree_list        valu: @4491    chan: @5276   
-@5274   identifier_node  strg: __builtin_ia32_comilt   lngt: 21      
-@5275   function_decl    name: @5277    type: @5271    scpe: @176    
+@5273   identifier_node  strg: __builtin_ia32_psrld128 lngt: 23      
+@5274   function_decl    name: @5275    type: @5105    scpe: @176    
+                         srcp: <built-in>:0            chain: @5276   
+                         body: undefined               link: extern  
+@5275   identifier_node  strg: __builtin_ia32_psrlq128 lngt: 23      
+@5276   function_decl    name: @5277    type: @5245    scpe: @176    
                          srcp: <built-in>:0            chain: @5278   
                          body: undefined               link: extern  
-@5276   tree_list        valu: @4491    chan: @188    
-@5277   identifier_node  strg: __builtin_ia32_comile   lngt: 21      
-@5278   function_decl    name: @5279    type: @5271    scpe: @176    
+@5277   identifier_node  strg: __builtin_ia32_psrawi128 
+                         lngt: 24      
+@5278   function_decl    name: @5279    type: @5250    scpe: @176    
                          srcp: <built-in>:0            chain: @5280   
                          body: undefined               link: extern  
-@5279   identifier_node  strg: __builtin_ia32_comigt   lngt: 21      
-@5280   function_decl    name: @5281    type: @5271    scpe: @176    
+@5279   identifier_node  strg: __builtin_ia32_psradi128 
+                         lngt: 24      
+@5280   function_decl    name: @5281    type: @5094    scpe: @176    
                          srcp: <built-in>:0            chain: @5282   
                          body: undefined               link: extern  
-@5281   identifier_node  strg: __builtin_ia32_comige   lngt: 21      
-@5282   function_decl    name: @5283    type: @5271    scpe: @176    
+@5281   identifier_node  strg: __builtin_ia32_psraw128 lngt: 23      
+@5282   function_decl    name: @5283    type: @5100    scpe: @176    
                          srcp: <built-in>:0            chain: @5284   
                          body: undefined               link: extern  
-@5283   identifier_node  strg: __builtin_ia32_comineq  lngt: 22      
-@5284   function_decl    name: @5285    type: @5271    scpe: @176    
+@5283   identifier_node  strg: __builtin_ia32_psrad128 lngt: 23      
+@5284   function_decl    name: @5285    type: @5250    scpe: @176    
                          srcp: <built-in>:0            chain: @5286   
                          body: undefined               link: extern  
-@5285   identifier_node  strg: __builtin_ia32_ucomieq  lngt: 22      
-@5286   function_decl    name: @5287    type: @5271    scpe: @176    
+@5285   identifier_node  strg: __builtin_ia32_pshufd   lngt: 21      
+@5286   function_decl    name: @5287    type: @5245    scpe: @176    
                          srcp: <built-in>:0            chain: @5288   
                          body: undefined               link: extern  
-@5287   identifier_node  strg: __builtin_ia32_ucomilt  lngt: 22      
-@5288   function_decl    name: @5289    type: @5271    scpe: @176    
+@5287   identifier_node  strg: __builtin_ia32_pshuflw  lngt: 22      
+@5288   function_decl    name: @5289    type: @5245    scpe: @176    
                          srcp: <built-in>:0            chain: @5290   
                          body: undefined               link: extern  
-@5289   identifier_node  strg: __builtin_ia32_ucomile  lngt: 22      
-@5290   function_decl    name: @5291    type: @5271    scpe: @176    
+@5289   identifier_node  strg: __builtin_ia32_pshufhw  lngt: 22      
+@5290   function_decl    name: @5291    type: @4949    scpe: @176    
                          srcp: <built-in>:0            chain: @5292   
                          body: undefined               link: extern  
-@5291   identifier_node  strg: __builtin_ia32_ucomigt  lngt: 22      
-@5292   function_decl    name: @5293    type: @5271    scpe: @176    
-                         srcp: <built-in>:0            chain: @5294   
+@5291   identifier_node  strg: __builtin_ia32_sqrtsd   lngt: 21      
+@5292   function_decl    name: @5293    type: @5294    scpe: @176    
+                         srcp: <built-in>:0            chain: @5295   
                          body: undefined               link: extern  
-@5293   identifier_node  strg: __builtin_ia32_ucomige  lngt: 22      
-@5294   function_decl    name: @5295    type: @5271    scpe: @176    
-                         srcp: <built-in>:0            chain: @5296   
+@5293   identifier_node  strg: __builtin_ia32_movq128  lngt: 22      
+@5294   function_type    size: @12      algn: 8        retn: @4580   
+                         prms: @5296   
+@5295   function_decl    name: @5297    type: @4737    scpe: @176    
+                         srcp: <built-in>:0            chain: @5298   
                          body: undefined               link: extern  
-@5295   identifier_node  strg: __builtin_ia32_ucomineq lngt: 23      
-@5296   function_decl    name: @5297    type: @5298    scpe: @176    
-                         srcp: <built-in>:0            chain: @5299   
+@5296   tree_list        valu: @4580    chan: @188    
+@5297   identifier_node  strg: __builtin_ia32_paddq    lngt: 20      
+@5298   function_decl    name: @5299    type: @4737    scpe: @176    
+                         srcp: <built-in>:0            chain: @5300   
                          body: undefined               link: extern  
-@5297   identifier_node  strg: __builtin_ia32_comisdeq lngt: 23      
-@5298   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @5300   
-@5299   function_decl    name: @5301    type: @5298    scpe: @176    
-                         srcp: <built-in>:0            chain: @5302   
+@5299   identifier_node  strg: __builtin_ia32_psubq    lngt: 20      
+@5300   function_decl    name: @5301    type: @5302    scpe: @176    
+                         srcp: <built-in>:0            chain: @5303   
                          body: undefined               link: extern  
-@5300   tree_list        valu: @4533    chan: @5303   
-@5301   identifier_node  strg: __builtin_ia32_comisdlt lngt: 23      
-@5302   function_decl    name: @5304    type: @5298    scpe: @176    
-                         srcp: <built-in>:0            chain: @5305   
+@5301   identifier_node  strg: __builtin_ia32_comieq   lngt: 21      
+@5302   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @5304   
+@5303   function_decl    name: @5305    type: @5302    scpe: @176    
+                         srcp: <built-in>:0            chain: @5306   
                          body: undefined               link: extern  
-@5303   tree_list        valu: @4533    chan: @188    
-@5304   identifier_node  strg: __builtin_ia32_comisdle lngt: 23      
-@5305   function_decl    name: @5306    type: @5298    scpe: @176    
-                         srcp: <built-in>:0            chain: @5307   
-                         body: undefined               link: extern  
-@5306   identifier_node  strg: __builtin_ia32_comisdgt lngt: 23      
-@5307   function_decl    name: @5308    type: @5298    scpe: @176    
+@5304   tree_list        valu: @4522    chan: @5307   
+@5305   identifier_node  strg: __builtin_ia32_comilt   lngt: 21      
+@5306   function_decl    name: @5308    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5309   
                          body: undefined               link: extern  
-@5308   identifier_node  strg: __builtin_ia32_comisdge lngt: 23      
-@5309   function_decl    name: @5310    type: @5298    scpe: @176    
+@5307   tree_list        valu: @4522    chan: @188    
+@5308   identifier_node  strg: __builtin_ia32_comile   lngt: 21      
+@5309   function_decl    name: @5310    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5311   
                          body: undefined               link: extern  
-@5310   identifier_node  strg: __builtin_ia32_comisdneq 
-                         lngt: 24      
-@5311   function_decl    name: @5312    type: @5298    scpe: @176    
+@5310   identifier_node  strg: __builtin_ia32_comigt   lngt: 21      
+@5311   function_decl    name: @5312    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5313   
                          body: undefined               link: extern  
-@5312   identifier_node  strg: __builtin_ia32_ucomisdeq 
-                         lngt: 24      
-@5313   function_decl    name: @5314    type: @5298    scpe: @176    
+@5312   identifier_node  strg: __builtin_ia32_comige   lngt: 21      
+@5313   function_decl    name: @5314    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5315   
                          body: undefined               link: extern  
-@5314   identifier_node  strg: __builtin_ia32_ucomisdlt 
-                         lngt: 24      
-@5315   function_decl    name: @5316    type: @5298    scpe: @176    
+@5314   identifier_node  strg: __builtin_ia32_comineq  lngt: 22      
+@5315   function_decl    name: @5316    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5317   
                          body: undefined               link: extern  
-@5316   identifier_node  strg: __builtin_ia32_ucomisdle 
-                         lngt: 24      
-@5317   function_decl    name: @5318    type: @5298    scpe: @176    
+@5316   identifier_node  strg: __builtin_ia32_ucomieq  lngt: 22      
+@5317   function_decl    name: @5318    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5319   
                          body: undefined               link: extern  
-@5318   identifier_node  strg: __builtin_ia32_ucomisdgt 
-                         lngt: 24      
-@5319   function_decl    name: @5320    type: @5298    scpe: @176    
+@5318   identifier_node  strg: __builtin_ia32_ucomilt  lngt: 22      
+@5319   function_decl    name: @5320    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5321   
                          body: undefined               link: extern  
-@5320   identifier_node  strg: __builtin_ia32_ucomisdge 
-                         lngt: 24      
-@5321   function_decl    name: @5322    type: @5298    scpe: @176    
+@5320   identifier_node  strg: __builtin_ia32_ucomile  lngt: 22      
+@5321   function_decl    name: @5322    type: @5302    scpe: @176    
                          srcp: <built-in>:0            chain: @5323   
                          body: undefined               link: extern  
-@5322   identifier_node  strg: __builtin_ia32_ucomisdneq 
-                         lngt: 25      
-@5323   function_decl    name: @5324    type: @5325    scpe: @176    
-                         srcp: <built-in>:0            chain: @5326   
+@5322   identifier_node  strg: __builtin_ia32_ucomigt  lngt: 22      
+@5323   function_decl    name: @5324    type: @5302    scpe: @176    
+                         srcp: <built-in>:0            chain: @5325   
                          body: undefined               link: extern  
-@5324   identifier_node  strg: __builtin_ia32_ldmxcsr  lngt: 22      
-@5325   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5327   
-@5326   function_decl    name: @5328    type: @3031    scpe: @176    
-                         srcp: <built-in>:0            chain: @5329   
+@5324   identifier_node  strg: __builtin_ia32_ucomige  lngt: 22      
+@5325   function_decl    name: @5326    type: @5302    scpe: @176    
+                         srcp: <built-in>:0            chain: @5327   
                          body: undefined               link: extern  
-@5327   tree_list        valu: @26      chan: @188    
-@5328   identifier_node  strg: __builtin_ia32_stmxcsr  lngt: 22      
-@5329   function_decl    name: @5330    type: @5331    scpe: @176    
-                         srcp: <built-in>:0            chain: @5332   
+@5326   identifier_node  strg: __builtin_ia32_ucomineq lngt: 23      
+@5327   function_decl    name: @5328    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5330   
                          body: undefined               link: extern  
-@5330   identifier_node  strg: __builtin_ia32_maskmovq lngt: 23      
-@5331   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5333   
-@5332   function_decl    name: @5334    type: @5335    scpe: @176    
+@5328   identifier_node  strg: __builtin_ia32_comisdeq lngt: 23      
+@5329   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @5331   
+@5330   function_decl    name: @5332    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5333   
+                         body: undefined               link: extern  
+@5331   tree_list        valu: @4564    chan: @5334   
+@5332   identifier_node  strg: __builtin_ia32_comisdlt lngt: 23      
+@5333   function_decl    name: @5335    type: @5329    scpe: @176    
                          srcp: <built-in>:0            chain: @5336   
                          body: undefined               link: extern  
-@5333   tree_list        valu: @4595    chan: @5337   
-@5334   identifier_node  strg: __builtin_ia32_maskmovdqu 
-                         lngt: 25      
-@5335   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5338   
-@5336   function_decl    name: @5339    type: @4352    scpe: @176    
+@5334   tree_list        valu: @4564    chan: @188    
+@5335   identifier_node  strg: __builtin_ia32_comisdle lngt: 23      
+@5336   function_decl    name: @5337    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5338   
+                         body: undefined               link: extern  
+@5337   identifier_node  strg: __builtin_ia32_comisdgt lngt: 23      
+@5338   function_decl    name: @5339    type: @5329    scpe: @176    
                          srcp: <built-in>:0            chain: @5340   
                          body: undefined               link: extern  
-@5337   tree_list        valu: @4595    chan: @5341   
-@5338   tree_list        valu: @4538    chan: @5342   
-@5339   identifier_node  strg: __builtin_ia32_clflush  lngt: 22      
-@5340   function_decl    name: @5343    type: @3482    scpe: @176    
+@5339   identifier_node  strg: __builtin_ia32_comisdge lngt: 23      
+@5340   function_decl    name: @5341    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5342   
+                         body: undefined               link: extern  
+@5341   identifier_node  strg: __builtin_ia32_comisdneq 
+                         lngt: 24      
+@5342   function_decl    name: @5343    type: @5329    scpe: @176    
                          srcp: <built-in>:0            chain: @5344   
                          body: undefined               link: extern  
-@5341   tree_list        valu: @1764    chan: @188    
-@5342   tree_list        valu: @4538    chan: @5345   
-@5343   identifier_node  strg: __builtin_ia32_mfence   lngt: 21      
-@5344   function_decl    name: @5346    type: @5347    scpe: @176    
+@5343   identifier_node  strg: __builtin_ia32_ucomisdeq 
+                         lngt: 24      
+@5344   function_decl    name: @5345    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5346   
+                         body: undefined               link: extern  
+@5345   identifier_node  strg: __builtin_ia32_ucomisdlt 
+                         lngt: 24      
+@5346   function_decl    name: @5347    type: @5329    scpe: @176    
                          srcp: <built-in>:0            chain: @5348   
                          body: undefined               link: extern  
-@5345   tree_list        valu: @1764    chan: @188    
-@5346   identifier_node  strg: __builtin_ia32_vec_init_v2si 
-                         lngt: 28      
-@5347   function_type    size: @12      algn: 8        retn: @4607   
-                         prms: @5349   
-@5348   function_decl    name: @5350    type: @5351    scpe: @176    
+@5347   identifier_node  strg: __builtin_ia32_ucomisdle 
+                         lngt: 24      
+@5348   function_decl    name: @5349    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5350   
+                         body: undefined               link: extern  
+@5349   identifier_node  strg: __builtin_ia32_ucomisdgt 
+                         lngt: 24      
+@5350   function_decl    name: @5351    type: @5329    scpe: @176    
                          srcp: <built-in>:0            chain: @5352   
                          body: undefined               link: extern  
-@5349   tree_list        valu: @3       chan: @5353   
-@5350   identifier_node  strg: __builtin_ia32_vec_init_v4hi 
-                         lngt: 28      
-@5351   function_type    size: @12      algn: 8        retn: @4601   
-                         prms: @5354   
-@5352   function_decl    name: @5355    type: @5356    scpe: @176    
+@5351   identifier_node  strg: __builtin_ia32_ucomisdge 
+                         lngt: 24      
+@5352   function_decl    name: @5353    type: @5329    scpe: @176    
+                         srcp: <built-in>:0            chain: @5354   
+                         body: undefined               link: extern  
+@5353   identifier_node  strg: __builtin_ia32_ucomisdneq 
+                         lngt: 25      
+@5354   function_decl    name: @5355    type: @5356    scpe: @176    
                          srcp: <built-in>:0            chain: @5357   
                          body: undefined               link: extern  
-@5353   tree_list        valu: @3       chan: @188    
-@5354   tree_list        valu: @56      chan: @5358   
-@5355   identifier_node  strg: __builtin_ia32_vec_init_v8qi 
-                         lngt: 28      
-@5356   function_type    size: @12      algn: 8        retn: @4595   
-                         prms: @5359   
-@5357   function_decl    name: @5360    type: @5361    scpe: @176    
-                         srcp: <built-in>:0            chain: @5362   
+@5355   identifier_node  strg: __builtin_ia32_ldmxcsr  lngt: 22      
+@5356   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5358   
+@5357   function_decl    name: @5359    type: @3031    scpe: @176    
+                         srcp: <built-in>:0            chain: @5360   
                          body: undefined               link: extern  
-@5358   tree_list        valu: @56      chan: @5363   
-@5359   tree_list        valu: @9       chan: @5364   
-@5360   identifier_node  strg: __builtin_ia32_vec_ext_v2df 
-                         lngt: 27      
-@5361   function_type    size: @12      algn: 8        retn: @92     
-                         prms: @5365   
-@5362   function_decl    name: @5366    type: @5367    scpe: @176    
-                         srcp: <built-in>:0            chain: @5368   
+@5358   tree_list        valu: @26      chan: @188    
+@5359   identifier_node  strg: __builtin_ia32_stmxcsr  lngt: 22      
+@5360   function_decl    name: @5361    type: @5362    scpe: @176    
+                         srcp: <built-in>:0            chain: @5363   
                          body: undefined               link: extern  
-@5363   tree_list        valu: @56      chan: @5369   
-@5364   tree_list        valu: @9       chan: @5370   
-@5365   tree_list        valu: @4533    chan: @5371   
-@5366   identifier_node  strg: __builtin_ia32_vec_ext_v2di 
-                         lngt: 27      
-@5367   function_type    size: @12      algn: 8        retn: @46     
-                         prms: @5372   
-@5368   function_decl    name: @5373    type: @5374    scpe: @176    
+@5361   identifier_node  strg: __builtin_ia32_maskmovq lngt: 23      
+@5362   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5364   
+@5363   function_decl    name: @5365    type: @5366    scpe: @176    
+                         srcp: <built-in>:0            chain: @5367   
+                         body: undefined               link: extern  
+@5364   tree_list        valu: @4626    chan: @5368   
+@5365   identifier_node  strg: __builtin_ia32_maskmovdqu 
+                         lngt: 25      
+@5366   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5369   
+@5367   function_decl    name: @5370    type: @4383    scpe: @176    
+                         srcp: <built-in>:0            chain: @5371   
+                         body: undefined               link: extern  
+@5368   tree_list        valu: @4626    chan: @5372   
+@5369   tree_list        valu: @4569    chan: @5373   
+@5370   identifier_node  strg: __builtin_ia32_clflush  lngt: 22      
+@5371   function_decl    name: @5374    type: @3513    scpe: @176    
                          srcp: <built-in>:0            chain: @5375   
                          body: undefined               link: extern  
-@5369   tree_list        valu: @56      chan: @188    
-@5370   tree_list        valu: @9       chan: @5376   
-@5371   tree_list        valu: @3       chan: @188    
-@5372   tree_list        valu: @4549    chan: @5377   
-@5373   identifier_node  strg: __builtin_ia32_vec_ext_v4sf 
-                         lngt: 27      
-@5374   function_type    size: @12      algn: 8        retn: @89     
-                         prms: @5378   
-@5375   function_decl    name: @5379    type: @5380    scpe: @176    
-                         srcp: <built-in>:0            chain: @5381   
+@5372   tree_list        valu: @1764    chan: @188    
+@5373   tree_list        valu: @4569    chan: @5376   
+@5374   identifier_node  strg: __builtin_ia32_mfence   lngt: 21      
+@5375   function_decl    name: @5377    type: @5378    scpe: @176    
+                         srcp: <built-in>:0            chain: @5379   
                          body: undefined               link: extern  
-@5376   tree_list        valu: @9       chan: @5382   
-@5377   tree_list        valu: @3       chan: @188    
-@5378   tree_list        valu: @4491    chan: @5383   
-@5379   identifier_node  strg: __builtin_ia32_vec_ext_v4si 
-                         lngt: 27      
-@5380   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @5384   
-@5381   function_decl    name: @5385    type: @5386    scpe: @176    
-                         srcp: <built-in>:0            chain: @5387   
+@5376   tree_list        valu: @1764    chan: @188    
+@5377   identifier_node  strg: __builtin_ia32_vec_init_v2si 
+                         lngt: 28      
+@5378   function_type    size: @12      algn: 8        retn: @4638   
+                         prms: @5380   
+@5379   function_decl    name: @5381    type: @5382    scpe: @176    
+                         srcp: <built-in>:0            chain: @5383   
                          body: undefined               link: extern  
-@5382   tree_list        valu: @9       chan: @5388   
-@5383   tree_list        valu: @3       chan: @188    
-@5384   tree_list        valu: @4928    chan: @5389   
-@5385   identifier_node  strg: __builtin_ia32_vec_ext_v8hi 
-                         lngt: 27      
-@5386   function_type    size: @12      algn: 8        retn: @56     
+@5380   tree_list        valu: @3       chan: @5384   
+@5381   identifier_node  strg: __builtin_ia32_vec_init_v4hi 
+                         lngt: 28      
+@5382   function_type    size: @12      algn: 8        retn: @4632   
+                         prms: @5385   
+@5383   function_decl    name: @5386    type: @5387    scpe: @176    
+                         srcp: <built-in>:0            chain: @5388   
+                         body: undefined               link: extern  
+@5384   tree_list        valu: @3       chan: @188    
+@5385   tree_list        valu: @56      chan: @5389   
+@5386   identifier_node  strg: __builtin_ia32_vec_init_v8qi 
+                         lngt: 28      
+@5387   function_type    size: @12      algn: 8        retn: @4626   
                          prms: @5390   
-@5387   function_decl    name: @5391    type: @5392    scpe: @176    
+@5388   function_decl    name: @5391    type: @5392    scpe: @176    
                          srcp: <built-in>:0            chain: @5393   
                          body: undefined               link: extern  
-@5388   tree_list        valu: @9       chan: @5394   
-@5389   tree_list        valu: @3       chan: @188    
-@5390   tree_list        valu: @5066    chan: @5395   
-@5391   identifier_node  strg: __builtin_ia32_vec_ext_v4hi 
+@5389   tree_list        valu: @56      chan: @5394   
+@5390   tree_list        valu: @9       chan: @5395   
+@5391   identifier_node  strg: __builtin_ia32_vec_ext_v2df 
                          lngt: 27      
-@5392   function_type    size: @12      algn: 8        retn: @56     
+@5392   function_type    size: @12      algn: 8        retn: @92     
                          prms: @5396   
 @5393   function_decl    name: @5397    type: @5398    scpe: @176    
                          srcp: <built-in>:0            chain: @5399   
                          body: undefined               link: extern  
-@5394   tree_list        valu: @9       chan: @5400   
-@5395   tree_list        valu: @3       chan: @188    
-@5396   tree_list        valu: @4601    chan: @5401   
-@5397   identifier_node  strg: __builtin_ia32_vec_ext_v2si 
+@5394   tree_list        valu: @56      chan: @5400   
+@5395   tree_list        valu: @9       chan: @5401   
+@5396   tree_list        valu: @4564    chan: @5402   
+@5397   identifier_node  strg: __builtin_ia32_vec_ext_v2di 
                          lngt: 27      
-@5398   function_type    size: @12      algn: 8        retn: @3      
-                         prms: @5402   
-@5399   function_decl    name: @5403    type: @5404    scpe: @176    
-                         srcp: <built-in>:0            chain: @5405   
+@5398   function_type    size: @12      algn: 8        retn: @46     
+                         prms: @5403   
+@5399   function_decl    name: @5404    type: @5405    scpe: @176    
+                         srcp: <built-in>:0            chain: @5406   
                          body: undefined               link: extern  
-@5400   tree_list        valu: @9       chan: @188    
-@5401   tree_list        valu: @3       chan: @188    
-@5402   tree_list        valu: @4607    chan: @5406   
-@5403   identifier_node  strg: __builtin_ia32_vec_ext_v16qi 
-                         lngt: 28      
-@5404   function_type    size: @12      algn: 8        retn: @9      
-                         prms: @5407   
-@5405   function_decl    name: @5408    type: @5409    scpe: @176    
-                         srcp: <built-in>:0            chain: @5410   
-                         body: undefined               link: extern  
-@5406   tree_list        valu: @3       chan: @188    
-@5407   tree_list        valu: @4538    chan: @5411   
-@5408   identifier_node  strg: __builtin_ia32_vec_set_v8hi 
+@5400   tree_list        valu: @56      chan: @188    
+@5401   tree_list        valu: @9       chan: @5407   
+@5402   tree_list        valu: @3       chan: @188    
+@5403   tree_list        valu: @4580    chan: @5408   
+@5404   identifier_node  strg: __builtin_ia32_vec_ext_v4sf 
                          lngt: 27      
-@5409   function_type    size: @12      algn: 8        retn: @5066   
-                         prms: @5412   
-@5410   function_decl    name: @5413    type: @5414    scpe: @176    
-                         srcp: <built-in>:0            chain: @5415   
+@5405   function_type    size: @12      algn: 8        retn: @89     
+                         prms: @5409   
+@5406   function_decl    name: @5410    type: @5411    scpe: @176    
+                         srcp: <built-in>:0            chain: @5412   
                          body: undefined               link: extern  
-@5411   tree_list        valu: @3       chan: @188    
-@5412   tree_list        valu: @5066    chan: @5416   
-@5413   identifier_node  strg: __builtin_ia32_vec_set_v4hi 
+@5407   tree_list        valu: @9       chan: @5413   
+@5408   tree_list        valu: @3       chan: @188    
+@5409   tree_list        valu: @4522    chan: @5414   
+@5410   identifier_node  strg: __builtin_ia32_vec_ext_v4si 
                          lngt: 27      
-@5414   function_type    size: @12      algn: 8        retn: @4601   
-                         prms: @5417   
-@5415   function_decl    name: @5418    type: @5419    scpe: @176    
-                         srcp: <built-in>:0            chain: @5420   
+@5411   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @5415   
+@5412   function_decl    name: @5416    type: @5417    scpe: @176    
+                         srcp: <built-in>:0            chain: @5418   
                          body: undefined               link: extern  
-@5416   tree_list        valu: @56      chan: @5421   
-@5417   tree_list        valu: @4601    chan: @5422   
-@5418   identifier_node  strg: __builtin_ia32_addcarryx_u32 
+@5413   tree_list        valu: @9       chan: @5419   
+@5414   tree_list        valu: @3       chan: @188    
+@5415   tree_list        valu: @4959    chan: @5420   
+@5416   identifier_node  strg: __builtin_ia32_vec_ext_v8hi 
+                         lngt: 27      
+@5417   function_type    size: @12      algn: 8        retn: @56     
+                         prms: @5421   
+@5418   function_decl    name: @5422    type: @5423    scpe: @176    
+                         srcp: <built-in>:0            chain: @5424   
+                         body: undefined               link: extern  
+@5419   tree_list        valu: @9       chan: @5425   
+@5420   tree_list        valu: @3       chan: @188    
+@5421   tree_list        valu: @5097    chan: @5426   
+@5422   identifier_node  strg: __builtin_ia32_vec_ext_v4hi 
+                         lngt: 27      
+@5423   function_type    size: @12      algn: 8        retn: @56     
+                         prms: @5427   
+@5424   function_decl    name: @5428    type: @5429    scpe: @176    
+                         srcp: <built-in>:0            chain: @5430   
+                         body: undefined               link: extern  
+@5425   tree_list        valu: @9       chan: @5431   
+@5426   tree_list        valu: @3       chan: @188    
+@5427   tree_list        valu: @4632    chan: @5432   
+@5428   identifier_node  strg: __builtin_ia32_vec_ext_v2si 
+                         lngt: 27      
+@5429   function_type    size: @12      algn: 8        retn: @3      
+                         prms: @5433   
+@5430   function_decl    name: @5434    type: @5435    scpe: @176    
+                         srcp: <built-in>:0            chain: @5436   
+                         body: undefined               link: extern  
+@5431   tree_list        valu: @9       chan: @188    
+@5432   tree_list        valu: @3       chan: @188    
+@5433   tree_list        valu: @4638    chan: @5437   
+@5434   identifier_node  strg: __builtin_ia32_vec_ext_v16qi 
                          lngt: 28      
-@5419   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @5423   
-@5420   function_decl    name: @5424    type: @5425    scpe: @176    
-                         srcp: <built-in>:0            chain: @5426   
+@5435   function_type    size: @12      algn: 8        retn: @9      
+                         prms: @5438   
+@5436   function_decl    name: @5439    type: @5440    scpe: @176    
+                         srcp: <built-in>:0            chain: @5441   
                          body: undefined               link: extern  
-@5421   tree_list        valu: @3       chan: @188    
-@5422   tree_list        valu: @56      chan: @5427   
-@5423   tree_list        valu: @72      chan: @5428   
-@5424   identifier_node  strg: __builtin_ia32_addcarryx_u64 
-                         lngt: 28      
-@5425   function_type    size: @12      algn: 8        retn: @72     
-                         prms: @5429   
-@5426   function_decl    name: @5430    type: @5419    scpe: @176    
-                         srcp: <built-in>:0            chain: @5431   
+@5437   tree_list        valu: @3       chan: @188    
+@5438   tree_list        valu: @4569    chan: @5442   
+@5439   identifier_node  strg: __builtin_ia32_vec_set_v8hi 
+                         lngt: 27      
+@5440   function_type    size: @12      algn: 8        retn: @5097   
+                         prms: @5443   
+@5441   function_decl    name: @5444    type: @5445    scpe: @176    
+                         srcp: <built-in>:0            chain: @5446   
                          body: undefined               link: extern  
-@5427   tree_list        valu: @3       chan: @188    
-@5428   tree_list        valu: @26      chan: @5432   
-@5429   tree_list        valu: @72      chan: @5433   
-@5430   identifier_node  strg: __builtin_ia32_sbb_u32  lngt: 22      
-@5431   function_decl    name: @5434    type: @5425    scpe: @176    
-                         srcp: <built-in>:0            chain: @5435   
-                         body: undefined               link: extern  
-@5432   tree_list        valu: @26      chan: @5436   
-@5433   tree_list        valu: @51      chan: @5437   
-@5434   identifier_node  strg: __builtin_ia32_sbb_u64  lngt: 22      
-@5435   function_decl    name: @5438    type: @3031    scpe: @176    
-                         srcp: <built-in>:0            chain: @5439   
-                         body: undefined               link: extern  
-@5436   tree_list        valu: @2745    chan: @188    
-@5437   tree_list        valu: @51      chan: @5440   
-@5438   identifier_node  strg: __builtin_ia32_readeflags_u32 
-                         lngt: 29      
-@5439   function_decl    name: @5441    type: @4454    scpe: @176    
-                         srcp: <built-in>:0            chain: @5442   
-                         body: undefined               link: extern  
-@5440   tree_list        valu: @2766    chan: @188    
-@5441   identifier_node  strg: __builtin_ia32_readeflags_u64 
-                         lngt: 29      
-@5442   function_decl    name: @5443    type: @5325    scpe: @176    
-                         srcp: <built-in>:0            chain: @5444   
-                         body: undefined               link: extern  
-@5443   identifier_node  strg: __builtin_ia32_writeeflags_u32 
-                         lngt: 30      
-@5444   function_decl    name: @5445    type: @5446    scpe: @176    
-                         srcp: <built-in>:0            chain: @5447   
-                         body: undefined               link: extern  
-@5445   identifier_node  strg: __builtin_ia32_writeeflags_u64 
-                         lngt: 30      
-@5446   function_type    size: @12      algn: 8        retn: @151    
+@5442   tree_list        valu: @3       chan: @188    
+@5443   tree_list        valu: @5097    chan: @5447   
+@5444   identifier_node  strg: __builtin_ia32_vec_set_v4hi 
+                         lngt: 27      
+@5445   function_type    size: @12      algn: 8        retn: @4632   
                          prms: @5448   
-@5447   function_decl    name: @5449    type: @5450    scpe: @176    
+@5446   function_decl    name: @5449    type: @5450    scpe: @176    
                          srcp: <built-in>:0            chain: @5451   
                          body: undefined               link: extern  
-@5448   tree_list        valu: @51      chan: @188    
-@5449   identifier_node  strg: __builtin_ms_va_start   lngt: 21      
-@5450   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5452   
-@5451   function_decl    name: @5453    type: @5454    scpe: @176    
-                         srcp: <built-in>:0            chain: @5455   
+@5447   tree_list        valu: @56      chan: @5452   
+@5448   tree_list        valu: @4632    chan: @5453   
+@5449   identifier_node  strg: __builtin_ia32_addcarryx_u32 
+                         lngt: 28      
+@5450   function_type    size: @12      algn: 8        retn: @72     
+                         prms: @5454   
+@5451   function_decl    name: @5455    type: @5456    scpe: @176    
+                         srcp: <built-in>:0            chain: @5457   
                          body: undefined               link: extern  
-@5452   tree_list        valu: @5456   
-@5453   identifier_node  strg: __builtin_ms_va_end     lngt: 19      
-@5454   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5457   
-@5455   function_decl    name: @5458    type: @5459    scpe: @176    
-                         srcp: <built-in>:0            chain: @5460   
+@5452   tree_list        valu: @3       chan: @188    
+@5453   tree_list        valu: @56      chan: @5458   
+@5454   tree_list        valu: @72      chan: @5459   
+@5455   identifier_node  strg: __builtin_ia32_addcarryx_u64 
+                         lngt: 28      
+@5456   function_type    size: @12      algn: 8        retn: @72     
+                         prms: @5460   
+@5457   function_decl    name: @5461    type: @5450    scpe: @176    
+                         srcp: <built-in>:0            chain: @5462   
                          body: undefined               link: extern  
-@5456   reference_type   size: @22      algn: 64       refd: @161    
-@5457   tree_list        valu: @5456    chan: @188    
-@5458   identifier_node  strg: __builtin_ms_va_copy    lngt: 20      
-@5459   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5461   
-@5460   function_decl    name: @5462    type: @5463    scpe: @176    
-                         srcp: <built-in>:0            chain: @5464   
+@5458   tree_list        valu: @3       chan: @188    
+@5459   tree_list        valu: @26      chan: @5463   
+@5460   tree_list        valu: @72      chan: @5464   
+@5461   identifier_node  strg: __builtin_ia32_sbb_u32  lngt: 22      
+@5462   function_decl    name: @5465    type: @5456    scpe: @176    
+                         srcp: <built-in>:0            chain: @5466   
                          body: undefined               link: extern  
-@5461   tree_list        valu: @5456    chan: @5465   
-@5462   identifier_node  strg: __builtin_sysv_va_start lngt: 23      
-@5463   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3504   
-@5464   function_decl    name: @5466    type: @5467    scpe: @176    
-                         srcp: <built-in>:0            chain: @5468   
+@5463   tree_list        valu: @26      chan: @5467   
+@5464   tree_list        valu: @51      chan: @5468   
+@5465   identifier_node  strg: __builtin_ia32_sbb_u64  lngt: 22      
+@5466   function_decl    name: @5469    type: @3031    scpe: @176    
+                         srcp: <built-in>:0            chain: @5470   
                          body: undefined               link: extern  
-@5465   tree_list        valu: @161     chan: @188    
-@5466   identifier_node  strg: __builtin_sysv_va_end   lngt: 21      
-@5467   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3500   
-@5468   function_decl    name: @5469    type: @5470    scpe: @176    
-                         srcp: <built-in>:0            chain: @5471   
+@5467   tree_list        valu: @2745    chan: @188    
+@5468   tree_list        valu: @51      chan: @5471   
+@5469   identifier_node  strg: __builtin_ia32_readeflags_u32 
+                         lngt: 29      
+@5470   function_decl    name: @5472    type: @4485    scpe: @176    
+                         srcp: <built-in>:0            chain: @5473   
                          body: undefined               link: extern  
-@5469   identifier_node  strg: __builtin_sysv_va_copy  lngt: 22      
-@5470   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @3495   
-@5471   function_decl    name: @5472    type: @5473    scpe: @176    
-                         srcp: <built-in>:0            chain: @5474   
+@5471   tree_list        valu: @2766    chan: @188    
+@5472   identifier_node  strg: __builtin_ia32_readeflags_u64 
+                         lngt: 29      
+@5473   function_decl    name: @5474    type: @5356    scpe: @176    
+                         srcp: <built-in>:0            chain: @5475   
                          body: undefined               link: extern  
-@5472   identifier_node  strg: __builtin_alloca_with_align 
-                         lngt: 27      
-@5473   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @218    
-@5474   function_decl    name: @5475    type: @5476    scpe: @176    
-                         srcp: <built-in>:0            chain: @5477   
-                         body: undefined               link: extern  
-@5475   identifier_node  strg: __builtin_init_trampoline 
-                         lngt: 25      
-@5476   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5478   
-@5477   function_decl    name: @5479    type: @5476    scpe: @176    
-                         srcp: <built-in>:0            chain: @5480   
-                         body: undefined               link: extern  
-@5478   tree_list        valu: @186     chan: @5481   
-@5479   identifier_node  strg: __builtin_init_heap_trampoline 
+@5474   identifier_node  strg: __builtin_ia32_writeeflags_u32 
                          lngt: 30      
-@5480   function_decl    name: @5482    type: @5476    scpe: @176    
-                         srcp: <built-in>:0            chain: @5483   
+@5475   function_decl    name: @5476    type: @5477    scpe: @176    
+                         srcp: <built-in>:0            chain: @5478   
                          body: undefined               link: extern  
-@5481   tree_list        valu: @186     chan: @5484   
-@5482   identifier_node  strg: __builtin_init_descriptor 
-                         lngt: 25      
-@5483   function_decl    name: @5485    type: @3177    scpe: @176    
+@5476   identifier_node  strg: __builtin_ia32_writeeflags_u64 
+                         lngt: 30      
+@5477   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5479   
+@5478   function_decl    name: @5480    type: @5481    scpe: @176    
+                         srcp: <built-in>:0            chain: @5482   
+                         body: undefined               link: extern  
+@5479   tree_list        valu: @51      chan: @188    
+@5480   identifier_node  strg: __builtin_ms_va_start   lngt: 21      
+@5481   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5483   
+@5482   function_decl    name: @5484    type: @5485    scpe: @176    
                          srcp: <built-in>:0            chain: @5486   
                          body: undefined               link: extern  
-@5484   tree_list        valu: @186     chan: @188    
-@5485   identifier_node  strg: __builtin_adjust_trampoline 
+@5483   tree_list        valu: @5487   
+@5484   identifier_node  strg: __builtin_ms_va_end     lngt: 19      
+@5485   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5488   
+@5486   function_decl    name: @5489    type: @5490    scpe: @176    
+                         srcp: <built-in>:0            chain: @5491   
+                         body: undefined               link: extern  
+@5487   reference_type   size: @22      algn: 64       refd: @161    
+@5488   tree_list        valu: @5487    chan: @188    
+@5489   identifier_node  strg: __builtin_ms_va_copy    lngt: 20      
+@5490   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5492   
+@5491   function_decl    name: @5493    type: @5494    scpe: @176    
+                         srcp: <built-in>:0            chain: @5495   
+                         body: undefined               link: extern  
+@5492   tree_list        valu: @5487    chan: @5496   
+@5493   identifier_node  strg: __builtin_sysv_va_start lngt: 23      
+@5494   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3535   
+@5495   function_decl    name: @5497    type: @5498    scpe: @176    
+                         srcp: <built-in>:0            chain: @5499   
+                         body: undefined               link: extern  
+@5496   tree_list        valu: @161     chan: @188    
+@5497   identifier_node  strg: __builtin_sysv_va_end   lngt: 21      
+@5498   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3531   
+@5499   function_decl    name: @5500    type: @5501    scpe: @176    
+                         srcp: <built-in>:0            chain: @5502   
+                         body: undefined               link: extern  
+@5500   identifier_node  strg: __builtin_sysv_va_copy  lngt: 22      
+@5501   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @3526   
+@5502   function_decl    name: @5503    type: @5504    scpe: @176    
+                         srcp: <built-in>:0            chain: @5505   
+                         body: undefined               link: extern  
+@5503   identifier_node  strg: __builtin_alloca_with_align 
                          lngt: 27      
-@5486   function_decl    name: @5487    type: @3177    scpe: @176    
-                         srcp: <built-in>:0            chain: @5488   
+@5504   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @218    
+@5505   function_decl    name: @5506    type: @5507    scpe: @176    
+                         srcp: <built-in>:0            chain: @5508   
                          body: undefined               link: extern  
-@5487   identifier_node  strg: __builtin_adjust_descriptor 
-                         lngt: 27      
-@5488   function_decl    name: @5489    type: @2873    scpe: @176    
-                         srcp: <built-in>:0            chain: @5490   
-                         body: undefined               link: extern  
-@5489   identifier_node  strg: __builtin_nonlocal_goto lngt: 23      
-@5490   function_decl    name: @5491    type: @2873    scpe: @176    
-                         srcp: <built-in>:0            chain: @5492   
-                         body: undefined               link: extern  
-@5491   identifier_node  strg: __builtin_setjmp_setup  lngt: 22      
-@5492   function_decl    name: @5493    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @5494   
-                         body: undefined               link: extern  
-@5493   identifier_node  strg: __builtin_setjmp_receiver 
+@5506   identifier_node  strg: __builtin_init_trampoline 
                          lngt: 25      
-@5494   function_decl    name: @5495    type: @3024    scpe: @176    
-                         srcp: <built-in>:0            chain: @5496   
+@5507   function_type    size: @12      algn: 8        retn: @151    
+                         prms: @5509   
+@5508   function_decl    name: @5510    type: @5507    scpe: @176    
+                         srcp: <built-in>:0            chain: @5511   
                          body: undefined               link: extern  
-@5495   identifier_node  strg: __builtin_stack_save    lngt: 20      
-@5496   function_decl    name: @5497    type: @3252    scpe: @176    
-                         srcp: <built-in>:0            chain: @5498   
-                         body: undefined               link: extern  
-@5497   identifier_node  strg: __builtin_stack_restore lngt: 23      
-@5498   function_decl    name: @5499    type: @1737    scpe: @176    
-                         srcp: <built-in>:0            chain: @5500   
-                         body: undefined               link: extern  
-@5499   identifier_node  strg: __builtin_memcmp_eq     lngt: 19      
-@5500   function_decl    name: @5501    mngl: @5502    type: @3252   
-                         scpe: @176     srcp: <built-in>:0      
-                         chain: @5503    body: undefined 
-                         link: extern  
-@5501   identifier_node  strg: __builtin_unwind_resume lngt: 23      
-@5502   identifier_node  strg: _Unwind_Resume          lngt: 14      
-@5503   function_decl    name: @5504    type: @5505    scpe: @176    
-                         srcp: <built-in>:0            chain: @5506   
-                         body: undefined               link: extern  
-@5504   identifier_node  strg: __builtin_eh_pointer    lngt: 20      
-@5505   function_type    size: @12      algn: 8        retn: @186    
-                         prms: @5507   
-@5506   function_decl    name: @5508    type: @5509    scpe: @176    
-                         srcp: <built-in>:0            chain: @5510   
-                         body: undefined               link: extern  
-@5507   tree_list        valu: @3       chan: @188    
-@5508   identifier_node  strg: __builtin_eh_filter     lngt: 19      
-@5509   function_type    size: @12      algn: 8        retn: @16     
-                         prms: @5511   
-@5510   function_decl    name: @5512    type: @5513    scpe: @176    
+@5509   tree_list        valu: @186     chan: @5512   
+@5510   identifier_node  strg: __builtin_init_heap_trampoline 
+                         lngt: 30      
+@5511   function_decl    name: @5513    type: @5507    scpe: @176    
                          srcp: <built-in>:0            chain: @5514   
                          body: undefined               link: extern  
-@5511   tree_list        valu: @3       chan: @188    
-@5512   identifier_node  strg: __builtin_eh_copy_values 
+@5512   tree_list        valu: @186     chan: @5515   
+@5513   identifier_node  strg: __builtin_init_descriptor 
+                         lngt: 25      
+@5514   function_decl    name: @5516    type: @3177    scpe: @176    
+                         srcp: <built-in>:0            chain: @5517   
+                         body: undefined               link: extern  
+@5515   tree_list        valu: @186     chan: @188    
+@5516   identifier_node  strg: __builtin_adjust_trampoline 
+                         lngt: 27      
+@5517   function_decl    name: @5518    type: @3177    scpe: @176    
+                         srcp: <built-in>:0            chain: @5519   
+                         body: undefined               link: extern  
+@5518   identifier_node  strg: __builtin_adjust_descriptor 
+                         lngt: 27      
+@5519   function_decl    name: @5520    type: @2873    scpe: @176    
+                         srcp: <built-in>:0            chain: @5521   
+                         body: undefined               link: extern  
+@5520   identifier_node  strg: __builtin_nonlocal_goto lngt: 23      
+@5521   function_decl    name: @5522    type: @2873    scpe: @176    
+                         srcp: <built-in>:0            chain: @5523   
+                         body: undefined               link: extern  
+@5522   identifier_node  strg: __builtin_setjmp_setup  lngt: 22      
+@5523   function_decl    name: @5524    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @5525   
+                         body: undefined               link: extern  
+@5524   identifier_node  strg: __builtin_setjmp_receiver 
+                         lngt: 25      
+@5525   function_decl    name: @5526    type: @3024    scpe: @176    
+                         srcp: <built-in>:0            chain: @5527   
+                         body: undefined               link: extern  
+@5526   identifier_node  strg: __builtin_stack_save    lngt: 20      
+@5527   function_decl    name: @5528    type: @3252    scpe: @176    
+                         srcp: <built-in>:0            chain: @5529   
+                         body: undefined               link: extern  
+@5528   identifier_node  strg: __builtin_stack_restore lngt: 23      
+@5529   function_decl    name: @5530    type: @1737    scpe: @176    
+                         srcp: <built-in>:0            chain: @5531   
+                         body: undefined               link: extern  
+@5530   identifier_node  strg: __builtin_memcmp_eq     lngt: 19      
+@5531   function_decl    name: @5532    mngl: @5533    type: @3252   
+                         scpe: @176     srcp: <built-in>:0      
+                         chain: @5534    body: undefined 
+                         link: extern  
+@5532   identifier_node  strg: __builtin_unwind_resume lngt: 23      
+@5533   identifier_node  strg: _Unwind_Resume          lngt: 14      
+@5534   function_decl    name: @5535    type: @5536    scpe: @176    
+                         srcp: <built-in>:0            chain: @5537   
+                         body: undefined               link: extern  
+@5535   identifier_node  strg: __builtin_eh_pointer    lngt: 20      
+@5536   function_type    size: @12      algn: 8        retn: @186    
+                         prms: @5538   
+@5537   function_decl    name: @5539    type: @5540    scpe: @176    
+                         srcp: <built-in>:0            chain: @5541   
+                         body: undefined               link: extern  
+@5538   tree_list        valu: @3       chan: @188    
+@5539   identifier_node  strg: __builtin_eh_filter     lngt: 19      
+@5540   function_type    size: @12      algn: 8        retn: @16     
+                         prms: @5542   
+@5541   function_decl    name: @5543    type: @5544    scpe: @176    
+                         srcp: <built-in>:0            chain: @5545   
+                         body: undefined               link: extern  
+@5542   tree_list        valu: @3       chan: @188    
+@5543   identifier_node  strg: __builtin_eh_copy_values 
                          lngt: 24      
-@5513   function_type    size: @12      algn: 8        retn: @151    
-                         prms: @5515   
-@5514   function_decl    name: @5516    type: @5517    scpe: @176    
-                         srcp: <built-in>:0            chain: @5518   
-                         body: undefined               link: extern  
-@5515   tree_list        valu: @3       chan: @5519   
-@5516   identifier_node  strg: __mulsc3 lngt: 8       
-@5517   function_type    size: @12      algn: 8        retn: @126    
-                         prms: @5520   
-@5518   function_decl    name: @5521    type: @5517    scpe: @176    
-                         srcp: <built-in>:0            chain: @5522   
-                         body: undefined               link: extern  
-@5519   tree_list        valu: @3       chan: @188    
-@5520   tree_list        valu: @89      chan: @5523   
-@5521   identifier_node  strg: __divsc3 lngt: 8       
-@5522   function_decl    name: @5524    type: @5525    scpe: @176    
-                         srcp: <built-in>:0            chain: @5526   
-                         body: undefined               link: extern  
-@5523   tree_list        valu: @89      chan: @5527   
-@5524   identifier_node  strg: __muldc3 lngt: 8       
-@5525   function_type    size: @12      algn: 8        retn: @129    
-                         prms: @5528   
-@5526   function_decl    name: @5529    type: @5525    scpe: @176    
-                         srcp: <built-in>:0            chain: @5530   
-                         body: undefined               link: extern  
-@5527   tree_list        valu: @89      chan: @5531   
-@5528   tree_list        valu: @92      chan: @5532   
-@5529   identifier_node  strg: __divdc3 lngt: 8       
-@5530   function_decl    name: @5533    type: @5534    scpe: @176    
-                         srcp: <built-in>:0            chain: @5535   
-                         body: undefined               link: extern  
-@5531   tree_list        valu: @89      chan: @188    
-@5532   tree_list        valu: @92      chan: @5536   
-@5533   identifier_node  strg: __mulxc3 lngt: 8       
-@5534   function_type    size: @12      algn: 8        retn: @132    
-                         prms: @5537   
-@5535   function_decl    name: @5538    type: @5534    scpe: @176    
-                         srcp: <built-in>:0            chain: @5539   
-                         body: undefined               link: extern  
-@5536   tree_list        valu: @92      chan: @5540   
-@5537   tree_list        valu: @95      chan: @5541   
-@5538   identifier_node  strg: __divxc3 lngt: 8       
-@5539   function_decl    name: @5542    type: @5543    scpe: @176    
-                         srcp: <built-in>:0            chain: @5544   
-                         body: undefined               link: extern  
-@5540   tree_list        valu: @92      chan: @188    
-@5541   tree_list        valu: @95      chan: @5545   
-@5542   identifier_node  strg: __multc3 lngt: 8       
-@5543   function_type    size: @12      algn: 8        retn: @142    
+@5544   function_type    size: @12      algn: 8        retn: @151    
                          prms: @5546   
-@5544   function_decl    name: @5547    type: @5543    scpe: @176    
+@5545   function_decl    name: @5547    type: @5548    scpe: @176    
+                         srcp: <built-in>:0            chain: @5549   
+                         body: undefined               link: extern  
+@5546   tree_list        valu: @3       chan: @5550   
+@5547   identifier_node  strg: __mulsc3 lngt: 8       
+@5548   function_type    size: @12      algn: 8        retn: @126    
+                         prms: @5551   
+@5549   function_decl    name: @5552    type: @5548    scpe: @176    
+                         srcp: <built-in>:0            chain: @5553   
+                         body: undefined               link: extern  
+@5550   tree_list        valu: @3       chan: @188    
+@5551   tree_list        valu: @89      chan: @5554   
+@5552   identifier_node  strg: __divsc3 lngt: 8       
+@5553   function_decl    name: @5555    type: @5556    scpe: @176    
+                         srcp: <built-in>:0            chain: @5557   
+                         body: undefined               link: extern  
+@5554   tree_list        valu: @89      chan: @5558   
+@5555   identifier_node  strg: __muldc3 lngt: 8       
+@5556   function_type    size: @12      algn: 8        retn: @129    
+                         prms: @5559   
+@5557   function_decl    name: @5560    type: @5556    scpe: @176    
+                         srcp: <built-in>:0            chain: @5561   
+                         body: undefined               link: extern  
+@5558   tree_list        valu: @89      chan: @5562   
+@5559   tree_list        valu: @92      chan: @5563   
+@5560   identifier_node  strg: __divdc3 lngt: 8       
+@5561   function_decl    name: @5564    type: @5565    scpe: @176    
+                         srcp: <built-in>:0            chain: @5566   
+                         body: undefined               link: extern  
+@5562   tree_list        valu: @89      chan: @188    
+@5563   tree_list        valu: @92      chan: @5567   
+@5564   identifier_node  strg: __mulxc3 lngt: 8       
+@5565   function_type    size: @12      algn: 8        retn: @132    
+                         prms: @5568   
+@5566   function_decl    name: @5569    type: @5565    scpe: @176    
+                         srcp: <built-in>:0            chain: @5570   
+                         body: undefined               link: extern  
+@5567   tree_list        valu: @92      chan: @5571   
+@5568   tree_list        valu: @95      chan: @5572   
+@5569   identifier_node  strg: __divxc3 lngt: 8       
+@5570   function_decl    name: @5573    type: @5574    scpe: @176    
+                         srcp: <built-in>:0            chain: @5575   
+                         body: undefined               link: extern  
+@5571   tree_list        valu: @92      chan: @188    
+@5572   tree_list        valu: @95      chan: @5576   
+@5573   identifier_node  strg: __multc3 lngt: 8       
+@5574   function_type    size: @12      algn: 8        retn: @142    
+                         prms: @5577   
+@5575   function_decl    name: @5578    type: @5574    scpe: @176    
                          srcp: <built-in>:0            chain: @2638   
                          body: undefined               link: extern  
-@5545   tree_list        valu: @95      chan: @5548   
-@5546   tree_list        valu: @104     chan: @5549   
-@5547   identifier_node  strg: __divtc3 lngt: 8       
-@5548   tree_list        valu: @95      chan: @188    
-@5549   tree_list        valu: @104     chan: @5550   
-@5550   tree_list        valu: @104     chan: @5551   
-@5551   tree_list        valu: @104     chan: @188    
+@5576   tree_list        valu: @95      chan: @5579   
+@5577   tree_list        valu: @104     chan: @5580   
+@5578   identifier_node  strg: __divtc3 lngt: 8       
+@5579   tree_list        valu: @95      chan: @188    
+@5580   tree_list        valu: @104     chan: @5581   
+@5581   tree_list        valu: @104     chan: @5582   
+@5582   tree_list        valu: @104     chan: @188    

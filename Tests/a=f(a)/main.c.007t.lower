@@ -21,7 +21,7 @@ main ()
   int D.2268;
 
   a = 0;
-  if (a == 0) goto <D.2256>; else goto <D.2257>;
+  if (a == 3) goto <D.2256>; else goto <D.2257>;
   <D.2256>:
   if (a == 1) goto <D.2258>; else goto <D.2259>;
   <D.2258>:

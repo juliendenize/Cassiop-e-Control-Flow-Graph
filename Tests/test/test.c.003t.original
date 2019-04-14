@@ -20,6 +20,21 @@
   int b = 3;
 
     int b = 3;
+  goto <D.2255>;
+  <D.2256>:;
+  if (b == 3)
+    {
+      // predicted unlikely by continue predictor.;
+      goto <D.2255>;
+    }
+  if (b == 4)
+    {
+      printf ((const char * restrict) "hey\n");
+    }
+  b = 6;
+  <D.2255>:;
+  if (b == 3) goto <D.2256>; else goto <D.2257>;
+  <D.2257>:;
   if (foo (b) > 3)
     {
       printf ((const char * restrict) "Large\n");

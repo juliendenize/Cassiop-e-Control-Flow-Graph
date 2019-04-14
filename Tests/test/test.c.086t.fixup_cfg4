@@ -3,7 +3,7 @@
 
 foo (int a)
 {
-  int D.2258;
+  int D.2261;
   int _1;
   int _3;
   int _4;
@@ -34,30 +34,62 @@ foo (int a)
 main (int argc, char * * argv)
 {
   int b;
-  int D.2263;
+  int D.2270;
   int _1;
-  int _8;
+  int _11;
 
   <bb 2> [0.00%]:
-  b_3 = 3;
-  _1 = foo (b_3);
-  if (_1 > 3)
-    goto <bb 3>; [0.00%]
-  else
-    goto <bb 4>; [0.00%]
+  b_6 = 3;
+  goto <bb 8>; [0.00%]
 
   <bb 3> [0.00%]:
-  __builtin_puts (&"Large"[0]);
-  goto <bb 5>; [0.00%]
+  if (b_2 == 3)
+    goto <bb 4>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
 
   <bb 4> [0.00%]:
-  __builtin_puts (&"Small"[0]);
+  // predicted unlikely by continue predictor.
+  goto <bb 8>; [0.00%]
 
   <bb 5> [0.00%]:
-  _8 = 0;
+  if (b_2 == 4)
+    goto <bb 6>; [0.00%]
+  else
+    goto <bb 7>; [0.00%]
 
-<L3> [0.00%]:
-  return _8;
+  <bb 6> [0.00%]:
+  __builtin_puts (&"hey"[0]);
+
+  <bb 7> [0.00%]:
+  b_13 = 6;
+
+  <bb 8> [0.00%]:
+  # b_2 = PHI <b_6(2), b_2(4), b_13(7)>
+  if (b_2 == 3)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 9>; [0.00%]
+
+  <bb 9> [0.00%]:
+  _1 = foo (b_2);
+  if (_1 > 3)
+    goto <bb 10>; [0.00%]
+  else
+    goto <bb 11>; [0.00%]
+
+  <bb 10> [0.00%]:
+  __builtin_puts (&"Large"[0]);
+  goto <bb 12>; [0.00%]
+
+  <bb 11> [0.00%]:
+  __builtin_puts (&"Small"[0]);
+
+  <bb 12> [0.00%]:
+  _11 = 0;
+
+<L10> [0.00%]:
+  return _11;
 
 }
 

@@ -32,7 +32,7 @@ subgraph "cluster_main" {
 
 	fn_1_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{ FREQ:0 |\<bb\ 2\>:\l\
 |a_5\ =\ 0;\l\
-|if\ (a_5\ ==\ 0)\l\
+|if\ (a_5\ ==\ 3)\l\
 \ \ goto\ \<bb\ 3\>;\ [0.00%]\l\
 else\l\
 \ \ goto\ \<bb\ 7\>;\ [0.00%]\l\
