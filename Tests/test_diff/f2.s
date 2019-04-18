@@ -6,25 +6,8 @@
 foo:
 .LFB0:
 	.cfi_startproc
-	leal	-1(%rdi), %edx
 	xorl	%eax, %eax
-	cmpl	$98, %edx
-	ja	.L1
-	movl	%edi, %eax
-	movl	$780903145, %edx
-	imull	%edx
-	movl	%edi, %eax
-	sarl	$31, %eax
-	sarl	%edx
-	subl	%eax, %edx
-	leal	(%rdx,%rdx,4), %eax
-	leal	(%rdx,%rax,2), %eax
-	subl	%eax, %edi
-	cmpl	$1, %edi
-	sbbl	%eax, %eax
-	andl	$11, %eax
-.L1:
-	rep ret
+	ret
 	.cfi_endproc
 .LFE0:
 	.size	foo, .-foo

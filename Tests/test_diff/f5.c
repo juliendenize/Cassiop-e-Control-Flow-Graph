@@ -1,17 +1,11 @@
-int foo(const int a) {
-    int b = a;
+int foo(const int a, const int d) {
+    int b = a + d;
 
-    if (b > 0)
-    {
-        if(b < 100)
-        {
-            if (b % 11 == 0)
-            {
-                    return 11;
-            }
-        }
+    if (b < a) {
+        return 11;
     }
-    return 0;
+
+    return b;
 }
 
 int main(void)

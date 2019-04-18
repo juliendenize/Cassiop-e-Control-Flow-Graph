@@ -1,4 +1,4 @@
-	.file	"f1.c"
+	.file	"f4.c"
 	.text
 	.p2align 4,,15
 	.globl	foo
@@ -6,8 +6,20 @@
 foo:
 .LFB0:
 	.cfi_startproc
-	xorl	%eax, %eax
-	ret
+	leal	(%rdi,%rsi), %eax
+	cmpl	%eax, %edi
+	jle	.L1
+	addl	$9, %edi
+	cmpl	%edi, %eax
+	jle	.L4
+.L3:
+	jmp	.L3
+	.p2align 4,,10
+	.p2align 3
+.L4:
+	movl	$11, %eax
+.L1:
+	rep ret
 	.cfi_endproc
 .LFE0:
 	.size	foo, .-foo

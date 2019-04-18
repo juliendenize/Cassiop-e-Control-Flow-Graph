@@ -1,4 +1,4 @@
-	.file	"f1.c"
+	.file	"f3.c"
 	.text
 	.p2align 4,,15
 	.globl	foo
@@ -6,7 +6,10 @@
 foo:
 .LFB0:
 	.cfi_startproc
-	xorl	%eax, %eax
+	leal	(%rdi,%rsi), %eax
+	movl	$11, %edx
+	cmpl	%eax, %edi
+	cmovg	%edx, %eax
 	ret
 	.cfi_endproc
 .LFE0:

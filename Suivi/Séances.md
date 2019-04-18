@@ -115,9 +115,42 @@ Certaines petites propriétés plus liées au code peuvent être intéressantes 
 - Lundi 8: mise en commun de 14h à 16h-18h
 - Jeudi 11: développement
 
-#1 11/04/2019
+# 11/04/2019
 
 ## Récapitulatif
 Le compilateur travaille automatiquement sur les conditions true sans variables
 et supprime les conditions vides.
 On va se pencher plus sur le côté compilateur. Voir si on décide de se pencher vers la compilation ou parser.
+
+# 18/04/2019
+
+## Récapitulatif
+
+Voilà ce qu'on a trouvé que gcc n'optimise pas:
+
+~~~
+while(b < a) {
+    if (b < a + 10) {
+        return 11;
+    }
+    return 10;
+}
+~~~
+~~~
+if (b > 0)
+{
+    if(b < 100)
+    {
+        if (b % 11 == 0)
+        {
+                return 11;
+        }
+    }
+}
+~~~
+
+On pense que GCC fait une analyse statique des valeurs qu'ils remplacent quand il le peut ce qui explique l'optimisation des conditions en générales car les valeurs, ou plages valeurs sont directement remplacées. Cependant quand on lui fournit des valeurs qu'il ne peut remplacer on voit très vite du code non optimisé, et donc du code mort qui pourrait être supprimé.
+
+## Roadmap
+
+Point jeudi 25 à effectuer et d'ici là recherches sûr si ce qu'on a trouvé existe et preuves formelles.

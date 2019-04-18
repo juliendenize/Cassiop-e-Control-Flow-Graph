@@ -10,11 +10,11 @@ int foo(const int a) {
 
 int main(void)
 {
-        int x;
-        if (x > 0 && x < 100 && x % 11 == 0)
-        {
-            return 11;
+    int x;
+    if (x > 0 && x < 100 && x % 11 == 0)
+    {
+        return 11;
 
-        }
-        return 0;
+    }
+    return 0;
 }
