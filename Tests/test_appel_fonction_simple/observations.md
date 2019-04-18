@@ -1,0 +1,5 @@
+- **f1:** c'est pas une question de main ou autre fonction, si la variable est déterminée, alors la variable est remplacée par sa valeur et de grosses modifications sont faites
+- **f2:** la complexité de l'opération ne semble pas changer grand chose
+- **f3:** il y a tout de même moyen de perdre l'optimisation de gcc, en effet, gcc ne voit pas si on appelle deux fois une fonction qui réalise la même chose
+- **f4:** on commence à voir les limitations de l'opti gcc, puisque gcc ne voit pas que a % 2 avec a pair sera toujours égal à 0
+- **f5:** on confirme que le fait que l'opération réalisée précédement soit réalisée entièrement dans le main ne change rien a fait que gcc ne sait pas l'optimiser
