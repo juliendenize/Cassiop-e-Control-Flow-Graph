@@ -154,3 +154,20 @@ On pense que GCC fait une analyse statique des valeurs qu'ils remplacent quand i
 ## Roadmap
 
 Point jeudi 25 à effectuer et d'ici là recherches sûr si ce qu'on a trouvé existe et preuves formelles.
+
+# 25/04/2019
+
+## Récapitulatif
+
+On a trouvé des articles permettant de tester les conditions d'un programme et détecter des bugs et deadcode. On peut s'en inspirer pour la notation et la méthode et on pense que ce n'est pas exactement ce qu'on fait donc on continue sur notre idée.
+
+## Todo durant les vacances
+
+- [] planning
+- [] compréhension des articles inconsitencies
+- [] lecture du cours compilateur
+- [] commencer le POC
+
+## Roadmap
+Point jeudi 2 mai pour suivre notre avancée et faire une mise en commun.
+Point le dimanche 5 mai pour finaliser avant le rendeez-vous avec Jorge.
