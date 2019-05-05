@@ -163,8 +163,8 @@ On a trouvé des articles permettant de tester les conditions d'un programme et 
 
 ## Todo durant les vacances
 
-- [] planning
-- [] compréhension des articles inconsitencies
+- [x] planning
+- [x] compréhension des articles inconsitencies
 - [] lecture du cours compilateur
 - [] commencer le POC
 
