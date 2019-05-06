@@ -173,7 +173,6 @@ Point jeudi 2 mai pour suivre notre avancée et faire une mise en commun.
 Point le dimanche 5 mai pour finaliser avant le rendeez-vous avec Jorge.
 
 
-<<<<<<< HEAD
 # 5/05/2019
 
 ## Récapitulatif
@@ -181,7 +180,6 @@ Point le dimanche 5 mai pour finaliser avant le rendeez-vous avec Jorge.
 On a effectué le planning à rendre pour le 6 mai.
 
 On a mis en commun nos réflexions en parlant de recherches sur l'optimisation, deadcode detection, ... On attend le 6 mai pour discuter avec Jorge de la suite.
-=======
 
 # 06/05/2019
 
@@ -199,4 +197,3 @@ On va utiliser le parser pycparser pour parser l'ast d'un programme simple afin 
 
 - [] comparer détection erreur avec les deux autres outils mentionnés dans l'article inconsistencies
 - [] script détection et correction d'erreur
->>>>>>> 83a32ffda9fa9a656155a62cb3b348279d05054f
