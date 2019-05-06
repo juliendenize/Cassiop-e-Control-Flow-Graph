@@ -107,7 +107,7 @@ Certaines petites propriétés plus liées au code peuvent être intéressantes 
 
 ## Todo
 - [x] Voir si graphe complet
-- [] Recherche partial dead code
+- [x] Recherche partial dead code
 - [] Etudier fonctionnement compilateur (étapes)
 
 ## Roadmap
@@ -171,3 +171,12 @@ On a trouvé des articles permettant de tester les conditions d'un programme et 
 ## Roadmap
 Point jeudi 2 mai pour suivre notre avancée et faire une mise en commun.
 Point le dimanche 5 mai pour finaliser avant le rendeez-vous avec Jorge.
+
+
+# 5/05/2019
+
+## Récapitulatif
+
+On a effectué le planning à rendre pour le 6 mai.
+
+On a mis en commun nos réflexions en parlant de recherches sur l'optimisation, deadcode detection, ... On attend le 6 mai pour discuter avec Jorge de la suite.
