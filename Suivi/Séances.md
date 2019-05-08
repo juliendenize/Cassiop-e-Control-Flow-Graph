@@ -197,3 +197,10 @@ On va utiliser le parser pycparser pour parser l'ast d'un programme simple afin 
 
 - [] comparer détection erreur avec les deux autres outils mentionnés dans l'article inconsistencies
 - [] script détection et correction d'erreur
+
+# 08/05/2019
+
+## Récapitulatif
+
+On a avancé sur le script du POC mais on s'est heurté à un double problème: les bornes des variables sont modulées et GCC optimise les conditions disjointes lorsqu'elles sont statiques.
+On a demandé à Jorge ce qu'il en pense.

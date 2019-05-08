@@ -1,3 +1,18 @@
+int foo2(const int* a, const unsigned int d) {
+    for(int b = a + d; b < a; b++) {
+        if (b < a + 10) {
+            return 11;
+        }
+        else if (b > a) {
+            return 10;
+        } else {
+            return 9;
+        }
+    }
+
+    return 0;
+}
+
 int foo(const int a, const int d) {
     int b = a + d;
 
@@ -13,16 +28,5 @@ int foo(const int a, const int d) {
 
 int main(void)
 {
-    int x;
-    if (x > 0)
-    {
-        if(x < 100)
-        {
-            if (x % 11 == 0)
-            {
-                    return 11;
-            }
-        }
-    }
     return 0;
 }
