@@ -1,4 +1,4 @@
-int foo(const int a, const int d) {
+int foo(const int a, const unsigned int d) {
     int b = a + d;
 
     if (b < a) {

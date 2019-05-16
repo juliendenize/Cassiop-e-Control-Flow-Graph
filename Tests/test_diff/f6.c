@@ -1,4 +1,6 @@
-int foo(const int a, const int d) {
+#include <stdint.h>
+
+int foo(const int a, const unsigned_int d) {
     int b = a + d;
 
     while (b < a) {

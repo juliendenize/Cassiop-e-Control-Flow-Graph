@@ -59,8 +59,11 @@ On utilise un dévelopeur personnage comme fil rouge
     (3.1) La détection de code mort, ou dead code detection, consiste à détecter automatiquement des parties du code qui ne sont jamais executées, et de les supprimer.
 
 > visage un peu content, puis visage très content
-    (3.2) Supprimer des pans entier de code permet non seulement de réduire la place mémoire du code, mais peut même dans certains cas faire grandement gagner le programme en vitesse d'exécution !
+    (3.2) Supprimer des pans entier de code permet non seulement de réduire la place mémoire du code, mais peut même dans certains cas faire grandement gagner le programme en vitesse d'exécution ! En effet, si des conditions s'avèrent toujours vraies ou fausses, il est possible de les supprimer et d'exécuter ou non le code sous-jacent. Le programme n'aura donc plus à tester ces conditions ce qui représente un gain de temps et une économie d'énergie.
 
+- Tu n'as pas parlé de l'optimisation avant qu'on a fait:
+  
+>
     (3.3) L'optimisation dont nous avons montré la possibilité d'implémentation permet d'aider le programmeur à voir les zones de code mort, dans le cas où des conditions sont toujours vérifiées, ou au contraire ne le sont jamais.
 
 > image de code avec la boucle, puis gros marquage rouge sur la boucle while pour la barrer
