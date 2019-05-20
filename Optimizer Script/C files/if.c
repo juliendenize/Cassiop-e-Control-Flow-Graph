@@ -12,9 +12,21 @@ int foo2(const int* a, const unsigned int d) {
 
 int foo(const int a, const unsigned int d) {
     int b = a + d;
+    int w = d;
 
-    if (b < a) {
-        return 11;
+    if (b < a + 10) {
+        printf("hello world");
+        if (d < 10) {
+            w += a;
+        } else {
+            printf("yolo");
+        }
+        b = 6;
+    } else if (d > 10) {
+        b = 92;
+    } else {
+        w = 6;
+        b = d + a - 10;
     }
 
     return b;
