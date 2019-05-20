@@ -2,6 +2,8 @@ int foo2(const int* a, const unsigned int d) {
     int* b = malloc(sizeof(int));
 
     if (b == a) {
+        int d = 5;
+        d = a + d;
         return 11;
     }
 
