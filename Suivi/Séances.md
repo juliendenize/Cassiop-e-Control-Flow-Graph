@@ -204,3 +204,13 @@ On va utiliser le parser pycparser pour parser l'ast d'un programme simple afin 
 
 On a avancé sur le script du POC mais on s'est heurté à un double problème: les bornes des variables sont modulées et GCC optimise les conditions disjointes lorsqu'elles sont statiques.
 On a demandé à Jorge ce qu'il en pense.
+
+
+# 20/05/2019
+
+## Réunion notes
+
+Éventuellement voir si on peut facilement intégrer un plugin permettant de faire de la value analysis, voir éventuellement frama-c.
+
+Il faut savoir comment garder une trace, par exemple, du fait que A a servi à initialiser B et C, et donc qu'on peut en conclure quelque chose sur la relation entre B et C.
+-> Si A est égal à n'importe quoi, alors on le remplace par une valeur au hasard. On devrait alors pouvoir propager les valeurs.
