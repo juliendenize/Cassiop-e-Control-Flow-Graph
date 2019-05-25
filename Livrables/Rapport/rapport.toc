@@ -1,0 +1,20 @@
+\babel@toc {french}{}
+\contentsline {chapter}{\numberline {1}Introduction}{2}% 
+\contentsline {section}{\numberline {1.1}Qu'est ce que l'optimisation}{2}% 
+\contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finition}{2}% 
+\contentsline {subsection}{\numberline {1.1.2}Probl\IeC {\`e}mes \IeC {\`a} r\IeC {\'e}soudre par optimisation}{2}% 
+\contentsline {subsection}{\numberline {1.1.3}Outils existants}{3}% 
+\contentsline {section}{\numberline {1.2}Notre approche}{3}% 
+\contentsline {subsection}{\numberline {1.2.1}Les Control Flow Graphs (CFG)}{3}% 
+\contentsline {subsection}{\numberline {1.2.2}D\IeC {\'e}tection de code mort}{3}% 
+\contentsline {subsection}{\numberline {1.2.3}Notre projet}{3}% 
+\contentsline {chapter}{\numberline {2}Control Flow Graphs}{4}% 
+\contentsline {section}{\numberline {2.1}Introduction}{4}% 
+\contentsline {section}{\numberline {2.2}Nos recherches}{4}% 
+\contentsline {section}{\numberline {2.3}Impl\IeC {\'e}mentation}{4}% 
+\contentsline {subsection}{\numberline {2.3.1}Notre script de modifications des CFG}{4}% 
+\contentsline {subsection}{\numberline {2.3.2}Notre analyse des CFG}{4}% 
+\contentsline {chapter}{\numberline {3}Dead Code Detection}{5}% 
+\contentsline {section}{\numberline {3.1}Introduction}{5}% 
+\contentsline {section}{\numberline {3.2}Nos recherches}{5}% 
+\contentsline {section}{\numberline {3.3}Impl\IeC {\'e}mentation}{5}% 
