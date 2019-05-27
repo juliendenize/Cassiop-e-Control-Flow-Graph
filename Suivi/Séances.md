@@ -225,3 +225,11 @@ Il faut savoir comment garder une trace, par exemple, du fait que A a servi à i
 ## Récapitulatif
 
 On a avancé sur le script. On sait comment parcourir le graphe en un seul coup. Il nous reste à implémenter la gestion des variables.
+
+# 27/05/2019
+
+## Récapitulatif
+
+On a enregistré le son pour la vidéo. Cyprien prévoit de la terminer d'ici le 31.
+
+On a avancé sur le script. Julien prévoit de le continuer d'ici le 02.

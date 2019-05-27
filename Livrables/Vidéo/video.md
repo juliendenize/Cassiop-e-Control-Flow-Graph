@@ -71,9 +71,9 @@ On utilise un dévelopeur personnage comme fil rouge
 
 ## Script plus court
 
-(1) Notre Cassiopée avait pour but de rechercher des techniques d'optimisation de code. Mais tout d'abord, qu'est-ce que l'optimisation de code ? 
+(1) Notre Cassiopée a pour but de rechercher des techniques d'optimisation de code. Mais tout d'abord, qu'est-ce que l'optimisation de code ? 
 
-   (1.1) En programmation informatique, l'optimisation de code est la pratique consistant à augmenter l'efficacité du code d'un programme ou d'une librairie logicielle, ainsi que les différentes techniques permettant d'y parvenir.
+   (1.1) En programmation informatique, l'optimisation de code est la pratique consistant à augmenter l'efficacité du code d'un programme, ou d'une librairie logicielle.
    
    (1.2) Nous nous sommes concentrés lors de ce projet sur deux types d'optimisation :
 
@@ -82,11 +82,11 @@ On utilise un dévelopeur personnage comme fil rouge
         (1.2.2) et améliorer la rapidité d'exécution du programme.
 
 
-(3) Nous avons personnellement tenté d'apporter de l'optimisation de code en détectant du code mort !
+(3) Nous avons tenté d'apporter de l'optimisation de code en détectant du code mort !
 
     (3.1) La détection de code mort, ou dead code detection, consiste à détecter des parties du code qui ne sont jamais executées.
 
-    (3.2) Nous avons ainsi pensé à une méthode permettant de trouver du code mort dans des conditions. Cela permet de réduire la taille du code, mais aussi de diminuer son temps d'exécution. La différence peut être vraiment importante si la condition est dans une boucle !
+    (3.2) Nous avons ainsi pensé à une méthode permettant de trouver du code mort dûes aux conditions. Cela permet de réduire la taille du code, mais aussi de diminuer son temps d'exécution. La différence peut être vraiment importante si la condition est dans une boucle !
 
 
 (2) Un autre but de notre projet était de travailler sur des Control Flow Graph.
@@ -95,8 +95,8 @@ On utilise un dévelopeur personnage comme fil rouge
 
     (2.2) Cela peut être utilisé pour améliorer le code, tout comme pour le représenter de manière plus claire à un interlocuteur.
 
-    (2.3) Nous sommes concentrés sur le deuxième aspect, et avons amélioré une bibliothèque de génération de graphe déja existante. Les appels à fonction sont maintenant plus visibles, représentés par des flêches de couleur.
+    (2.3) A la suite de nos recherches, nous avons amélioré une bibliothèque de génération de graphe déja existante. Les appels à fonction sont maintenant plus visibles, car représentés par des flêches de couleur.
 
 
 > Image avec séparation au milieu : à gauche -> la quantité de code supprimée barrée en rouge ; à droite -> la programmeuse expliquant son code devant un auditoire
-(4) Nous avons donc ainsi créé des outils permettant, en language C, non seulement d'écrire un code plus efficace, mais aussi de mieux le représenter.
+(4) Nous avons ainsi créé des outils permettant, en language C, non seulement d'écrire un code plus efficace, mais aussi de mieux le représenter.

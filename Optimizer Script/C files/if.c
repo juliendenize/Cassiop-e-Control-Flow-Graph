@@ -12,7 +12,7 @@
 
 int foo(const int a, const unsigned int d) {
     int b = a + d;
-    int w = d;
+    int w = a + 10;
 
     if (b < a + 10) {
         printf("hello world");
