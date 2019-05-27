@@ -27,7 +27,7 @@ On utilise un dévelopeur personnage comme fil rouge
 
 ## Script
 
-(1) Qu'est-ce que l'optimisation de code ? 
+(1) Notre Cassiopée avait pour but de rechercher des techniques d'optimisation de code. Mais qinu'est-ce que l'optimisation de code ? 
 
 > point d'interrogation qui pop
    (1.1) En programmation informatique, l'optimisation de code est la pratique consistant à augmenter l'efficacité du code d'un programme ou d'une librairie logicielle, ainsi que les différentes techniques permettant d'y parvenir.
@@ -61,10 +61,42 @@ On utilise un dévelopeur personnage comme fil rouge
 > visage un peu content, puis visage très content
     (3.2) Supprimer des pans entier de code permet non seulement de réduire la place mémoire du code, mais peut même dans certains cas faire grandement gagner le programme en vitesse d'exécution ! En effet, si des conditions s'avèrent toujours vraies ou fausses, il est possible de les supprimer et d'exécuter ou non le code sous-jacent. Le programme n'aura donc plus à tester ces conditions ce qui représente un gain de temps et une économie d'énergie.
 
-- Tu n'as pas parlé de l'optimisation avant qu'on a fait:
-  
->
-    (3.3) L'optimisation dont nous avons montré la possibilité d'implémentation permet d'aider le programmeur à voir les zones de code mort, dans le cas où des conditions sont toujours vérifiées, ou au contraire ne le sont jamais.
+//////// Tu n'as pas parlé de l'optimisation avant qu'on a fait: -> j'ai essayé de reformuler
+
+    (3.3) Nous avons ainsi montré la possibilité d'implémentation permet d'aider le programmeur à voir les zones de code mort, dans le cas où des conditions sont toujours vérifiées, ou au contraire ne le sont jamais.
 
 > image de code avec la boucle, puis gros marquage rouge sur la boucle while pour la barrer
 (4) Cette optimisation permet dans certains cas de gagner un très grand temps d'exécution ! Ici, la fonction appelée dans la boucle while ne peut jamais s'exécuter, puisque la condition pour son exécution n'est jamais vérifiée. Il serait donc possible de supprimer toute la boucle, enlevant un important temps de calcul.
+
+
+## Script plus court
+
+(1) Notre Cassiopée avait pour but de rechercher des techniques d'optimisation de code. Mais tout d'abord, qu'est-ce que l'optimisation de code ? 
+
+   (1.1) En programmation informatique, l'optimisation de code est la pratique consistant à augmenter l'efficacité du code d'un programme ou d'une librairie logicielle, ainsi que les différentes techniques permettant d'y parvenir.
+   
+   (1.2) Nous nous sommes concentrés lors de ce projet sur deux types d'optimisation :
+
+        (1.2.1) réduire la place prise en mémoire par le code ayant été écrit,
+
+        (1.2.2) et améliorer la rapidité d'exécution du programme.
+
+
+(3) Nous avons personnellement tenté d'apporter de l'optimisation de code en détectant du code mort !
+
+    (3.1) La détection de code mort, ou dead code detection, consiste à détecter des parties du code qui ne sont jamais executées.
+
+    (3.2) Nous avons ainsi pensé à une méthode permettant de trouver du code mort dans des conditions. Cela permet de réduire la taille du code, mais aussi de diminuer son temps d'exécution. La différence peut être vraiment importante si la condition est dans une boucle !
+
+
+(2) Un autre but de notre projet était de travailler sur des Control Flow Graph.
+
+    (2.1 ) Un Control Flow Graph, ou Graphe de flot de contrôle, est la représentation sous forme de graphe de tous les chemins que peut suivre un programme pendant son exécution.
+
+    (2.2) Cela peut être utilisé pour améliorer le code, tout comme pour le représenter de manière plus claire à un interlocuteur.
+
+    (2.3) Nous sommes concentrés sur le deuxième aspect, et avons amélioré une bibliothèque de génération de graphe déja existante. Les appels à fonction sont maintenant plus visibles, représentés par des flêches de couleur.
+
+
+> Image avec séparation au milieu : à gauche -> la quantité de code supprimée barrée en rouge ; à droite -> la programmeuse expliquant son code devant un auditoire
+(4) Nous avons donc ainsi créé des outils permettant, en language C, non seulement d'écrire un code plus efficace, mais aussi de mieux le représenter.
