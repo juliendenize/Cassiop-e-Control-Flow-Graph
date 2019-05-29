@@ -1,0 +1,26 @@
+
+;; Function foo (null)
+;; enabled by -tree-original
+
+
+{
+  int b = (int) a + (int) d;
+
+    int b = (int) a + (int) d;
+  if (b > (int) d)
+    {
+      return 10;
+    }
+  return b;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  return 0;
+}
+return 0;
+
