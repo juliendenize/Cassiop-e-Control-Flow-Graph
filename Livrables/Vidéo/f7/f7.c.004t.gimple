@@ -1,0 +1,29 @@
+foo (const int a, const int d)
+{
+  int D.2258;
+  int b;
+
+  b = a + d;
+  if (b > d) goto <D.2256>; else goto <D.2257>;
+  <D.2256>:
+  D.2258 = 10;
+  return D.2258;
+  <D.2257>:
+  D.2258 = b;
+  return D.2258;
+}
+
+
+main ()
+{
+  int D.2260;
+
+  {
+    D.2260 = 0;
+    return D.2260;
+  }
+  D.2260 = 0;
+  return D.2260;
+}
+
+

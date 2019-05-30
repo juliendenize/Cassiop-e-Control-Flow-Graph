@@ -1,0 +1,48 @@
+foo (int a)
+{
+  int D.2261;
+
+  if (a > 0) goto <D.2259>; else goto <D.2260>;
+  <D.2259>:
+  D.2261 = -a;
+  return D.2261;
+  <D.2260>:
+  D.2261 = a;
+  return D.2261;
+}
+
+
+yolo (int c)
+{
+  int D.2263;
+
+  D.2263 = c;
+  return D.2263;
+}
+
+
+main (int argc, char * * argv)
+{
+  int D.2268;
+
+  {
+    int b;
+
+    b = 3;
+    _1 = yolo (b);
+    _2 = foo (_1);
+    if (_2 > 3) goto <D.2265>; else goto <D.2266>;
+    <D.2265>:
+    __builtin_puts (&"Large"[0]);
+    goto <D.2267>;
+    <D.2266>:
+    __builtin_puts (&"Small"[0]);
+    <D.2267>:
+    D.2268 = 0;
+    return D.2268;
+  }
+  D.2268 = 0;
+  return D.2268;
+}
+
+

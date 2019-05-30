@@ -1,0 +1,43 @@
+
+;; Function foo (null)
+;; enabled by -tree-original
+
+
+{
+  if (a > 0)
+    {
+      return -a;
+    }
+  return a;
+}
+
+
+;; Function yolo (null)
+;; enabled by -tree-original
+
+
+{
+  return c;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int b = 3;
+
+    int b = 3;
+  if (foo (yolo (b)) > 3)
+    {
+      printf ((const char * restrict) "Large\n");
+    }
+  else
+    {
+      printf ((const char * restrict) "Small\n");
+    }
+  return 0;
+}
+return 0;
+
