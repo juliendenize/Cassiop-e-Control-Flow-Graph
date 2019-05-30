@@ -8,4 +8,18 @@ Wikipedia.
   2019.
 \newblock [Online; accessed 25-May-2019].
 
+\bibitem{wiki:Graphe_de_flot_de_controle}
+Wikipedia.
+\newblock {Graphe de flot de contrôle} --- {W}ikipedia{,} the free
+  encyclopedia.
+\newblock
+  \url{http://fr.wikipedia.org/w/index.php?title=Graphe\%20de\%20flot\%20de\%20contr\%C3\%B4le&oldid=156813634},
+  2019.
+\newblock [Online; accessed 29-May-2019].
+
+\bibitem{compilateurs}
+Alfred~V. Aho, Monica~S. Lam, Ravi Sethi, and Jeffrey~D. Ullman.
+\newblock {\em Compilers: Principles, Techniques, and Tools}.
+\newblock 2006.
+
 \end{thebibliography}
