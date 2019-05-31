@@ -168,8 +168,42 @@ Comme il est possible de le constater dans le code et le CFG, les appels à fonc
 \end{center}
 Pour ce faire, nous avons utilisé une librairie appelée \textit{pydot}\footnote{Pydot est une librairie pouvant parser du code DOT généré par la librairie GraphViz (utilisée par GCC pour générer des CFG).} qui nous a permis de parser les fichiers DOT et de les modifier par le langage de programmation Python.
 
-Nous avons décidé que les blocs de base spéciaux \textit{Entry} et \textit{Exit}, seront désormais des blocs normaux avec un flot entrant et sortant, sauf pour l'entrée et la sortie du programme.
+Nous avons décidé que les blocs de base spéciaux \textit{Entry} et \textit{Exit}, seront désormais des blocs normaux avec un flot entrant et sortant, sauf pour l'entrée et la sortie du programme. Les appels à fonctions sont désormais considérés comme des sauts et la variable de retour est la cible du saut de la fin de fonction, ce qui permet de définir deux nouveaux blocs de base à partir d'un appel à fonction.
 
-On remarque que le flot passe maintenant dans les fonctions ce qui permet de mieux les situer les unes par rapport aux autres. Cela permet notamment d'identifier du code mort ou non utile dans le fichier parser. En effet, si on remarque qu'une fonction n'est pas atteinte, cela signifie que son code n'est jamais exécutée (par les fonctions présentes dans son fichier).
+On remarque que le flot passe maintenant dans les fonctions ce qui permet de mieux les situer les unes par rapport aux autres. Cela permet notamment d'identifier du code mort ou non utile dans le fichier parsé. En effet, si on remarque qu'une fonction n'est pas atteinte, cela signifie que son code n'est jamais exécutée (par les fonctions présentes dans son fichier).
 
 \subsection{Notre script d'analyse des CFG}
+Nous avons développé un second script permettant d'analyser les CFG en utilisant encore une fois Python et une librairie nommée \textit{NetworkX}\footnote{NetworkX est une librairie permettant de modéliser, analyser la structure et la dynamique de graphe via un lot de fonctions implémentées.}. Notre script permet d'analyser différentes choses.
+
+Il identifie quels sont les noeuds qui n'ont pas de degré entrant, ce qui signifie qu'il est capable de détecter du code mort au sens du fichier, c'est à dire, si une fonction n'est pas exécutée par une autre dans un fichier. Il peut également détecter si un graphe est acyclique, c'est à dire si une boucle est présente ou non dans un graphe.
+
+Le script renvoie également le plus court et long chemin entre le début et la fin du graphe (donc du programme) ce qui permet d'étudier quelles sont les différentes étapes d'exécution qui entraine une durée plus ou moins importante du programme.
+
+Il permet également d'étudier la connectivité qui représente le nombre de possibilité moyenne pour aller d'un noeud à un autre. Plus ce nombre est haut, plus il y a de conditions dans le programme.
+
+Pour le CFG de la section précédente après traitement par notre script de modifications des appels à fonction, le script d'analyse renvoie les résultats suivants:
+\begin{itemize}
+    \item Il y a un noeud sans entrée dans la fonction main, ce qui correspond à l'entrée du programme.
+    \item Les chemins plus long et court font 17 noeuds.
+    \item Le graphe est acyclique.
+    \item Le graphe a une connectivité de 1.19.
+    \item Il n'y a pas de noeuds isolés.
+\end{itemize}
+Analysons maintenant le graphe généré par notre programme:
+\lstinputlisting[language=c, xleftmargin=.35\textwidth]{code/fonction_inutile.c}
+
+Le graphe est alors:
+\begin{center}
+    \includegraphics[scale=0.35]{images/fonction_inutile.png}
+\end{center}
+
+Notre script d'analyse renvoie ceci:
+\begin{itemize}
+    \item Il y a un noeud sans entrée dans la fonction foo
+    \item Il y a un noeud sans entrée dans la fonction main
+    \item Les chemins plus long et court font 4 noeuds.
+    \item Le graphe est acyclique.
+    \item Le graphe a une connectivité de 1.
+    \item Il n'y a pas de noeuds isolés.
+\end{itemize}
+On remarque donc que notre programme a bien détecté qu'une fonction n'est jamais exécutée et donc qu'il y a du code mort. Le degré de connectivité a également baissé, ce qui est logique car il y a moins de chemins puisqu'il n'y a pas de conditions. Il n'y a toujours pas de noeuds isolés car la fonction foo contient plusieurs noeuds.

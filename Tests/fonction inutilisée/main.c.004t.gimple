@@ -1,0 +1,30 @@
+foo (int a)
+{
+  int D.2255;
+
+  D.2255 = 100;
+  return D.2255;
+}
+
+
+main ()
+{
+  int D.2257;
+
+  {
+    int a;
+    int b;
+
+    a = 50;
+    b = 90;
+    printf ("je suis la fonction main");
+    _1 = a + b;
+    printf ("%d", _1);
+    D.2257 = 0;
+    return D.2257;
+  }
+  D.2257 = 0;
+  return D.2257;
+}
+
+
