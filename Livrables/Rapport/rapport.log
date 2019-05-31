@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.25)  31 MAY 2019 01:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.25)  31 MAY 2019 12:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -396,28 +396,46 @@ File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \tikz@expandcount=\count141
  (/home/julien/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
-))) (/home/julien/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+))) (/home/julien/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+ (/home/julien/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)))) (/home/julien/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count142
+)) (/home/julien/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ) (/home/julien/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ) (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Info: Redefining \degres on input line 22.
-LaTeX Info: Redefining \dots on input line 22.
-LaTeX Info: Redefining \up on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Info: Redefining \degres on input line 23.
+LaTeX Info: Redefining \dots on input line 23.
+LaTeX Info: Redefining \up on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -455,37 +473,24 @@ LaTeX Info: Redefining \up on input line 22.
 
 (/home/julien/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
+\scratchcounter=\count143
 \scratchdimen=\dimen190
 \scratchbox=\box66
-\nofMPsegments=\count143
-\nofMParguments=\count144
+\nofMPsegments=\count144
+\nofMParguments=\count145
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count145
+\MPscratchCnt=\count146
 \MPscratchDim=\dimen191
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks35
 ) (/home/julien/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/home/julien/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/home/julien/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
  (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
- (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/home/julien/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
- (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)))) (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+)) (/home/julien/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -499,23 +504,23 @@ Package grfext Info: Graphics extension search list:
  (/home/julien/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count148
+\c@lstlisting=\count149
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-<iconcassiopee.jpg, id=4, 1014.6708pt x 1013.7072pt>
-File: iconcassiopee.jpg Graphic file (type jpg)
-<use iconcassiopee.jpg>
-Package pdftex.def Info: iconcassiopee.jpg  used on input line 33.
+<images/iconcassiopee.jpg, id=4, 1014.6708pt x 1013.7072pt>
+File: images/iconcassiopee.jpg Graphic file (type jpg)
+<use images/iconcassiopee.jpg>
+Package pdftex.def Info: images/iconcassiopee.jpg  used on input line 34.
 (pdftex.def)             Requested size: 202.93056pt x 202.73784pt.
-<tsp.jpeg, id=5, 250.9375pt x 250.9375pt>
-File: tsp.jpeg Graphic file (type jpg)
-<use tsp.jpeg>
-Package pdftex.def Info: tsp.jpeg  used on input line 34.
+<images/tsp.jpeg, id=5, 250.9375pt x 250.9375pt>
+File: images/tsp.jpeg Graphic file (type jpg)
+<use images/tsp.jpeg>
+Package pdftex.def Info: images/tsp.jpeg  used on input line 35.
 (pdftex.def)             Requested size: 203.25826pt x 203.25826pt.
  [1
 
-{/home/julien/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/iconcassiopee.jpg> </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/tsp.jpeg>] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.toc
+{/home/julien/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/iconcassiopee.jpg> </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/tsp.jpeg>] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -528,7 +533,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapitre 1.
-(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/introduction.tex [2
+(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/introduction.tex (/home/julien/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+) (/home/julien/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+) [2
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 35.
@@ -539,28 +548,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 35.
- [3]) [4]
+) [3]
 Chapitre 2.
 (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/cfg.tex
-<graph.png, id=32, 626.34pt x 1606.0pt>
-File: graph.png Graphic file (type png)
-<use graph.png>
-Package pdftex.def Info: graph.png  used on input line 25.
-(pdftex.def)             Requested size: 144.05516pt x 369.37224pt.
+<images/graph.png, id=29, 626.34pt x 1606.0pt>
+File: images/graph.png Graphic file (type png)
+<use images/graph.png>
+Package pdftex.def Info: images/graph.png  used on input line 25.
+(pdftex.def)             Requested size: 137.79521pt x 353.32109pt.
 
-Overfull \vbox (35.83472pt too high) has occurred while \output is active []
+Overfull \vbox (7.7909pt too high) has occurred while \output is active []
 
+ [4
 
-Overfull \vbox (14.83472pt too high) has occurred while \output is active []
+ </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/graph.png>] [5] [6] [7] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/code/code.c)
+<images/graph2.png, id=48, 458.71375pt x 1289.81876pt>
+File: images/graph2.png Graphic file (type png)
+<use images/graph2.png>
+Package pdftex.def Info: images/graph2.png  used on input line 145.
+(pdftex.def)             Requested size: 146.7914pt x 412.75044pt.
 
+Overfull \vbox (4.30534pt too high) has occurred while \output is active []
 
-Overfull \vbox (14.83472pt too high) has occurred while \output is active []
-
- [5
-
- </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/graph.png>] [6]) [7]
+ [8 </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/graph2.png>]) [9]
 Chapitre 3.
-(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.bbl [8
+(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.bbl [10
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
@@ -577,22 +589,27 @@ Underfull \hbox (badness 6526) in paragraph at lines 12--19
 \T1/cmr/m/n/10 dia.  $\T1/cmtt/m/n/10 http : / / fr . wikipedia . org / w / index . php ? title = Graphe \ %20de \ %20flot \ %20de \
  []
 
-) [9
+
+Underfull \hbox (badness 1308) in paragraph at lines 26--32
+[]\T1/cmr/m/n/10 GCC.  Control flow graph.  $\T1/cmtt/m/n/10 https : / / gcc . gnu . org / onlinedocs / gcc-[]4 . 4 . 2 / gccint /
+ []
+
+) [11
 
 ] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 16830 strings out of 492609
- 319208 string characters out of 6128085
- 392786 words of memory out of 5000000
- 20429 multiletter control sequences out of 15000+600000
- 18928 words of font info for 39 fonts, out of 8000000 for 9000
+ 17306 strings out of 492609
+ 325675 string characters out of 6128085
+ 574961 words of memory out of 5000000
+ 20883 multiletter control sequences out of 15000+600000
+ 19704 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,53p,833b,1562s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/home/julien/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc0900.pfb>
-Output written on /home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.pdf (10 pages, 2658116 bytes).
+ 55i,6n,53p,894b,1609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/home/julien/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</home/julien/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc0900.pfb>
+Output written on /home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.pdf (12 pages, 2742623 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

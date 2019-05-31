@@ -15,7 +15,7 @@ Les optimisations permettent d'améliorer nombreuses choses: une exécutions plu
 
 En effet, les optimisations permettent de supprimer des choses inutiles par exemple le code suivant
 \begin{center}
-\begin{lstlisting}[xleftmargin=.35\textwidth]
+\begin{lstlisting}[language=c, xleftmargin=.35\textwidth]
 int foo(const int d) {
     int a = d;
     int b = 1 + a;
@@ -24,7 +24,7 @@ int foo(const int d) {
 \end{lstlisting}
 \end{center}
 pourrait être optimisé de la façon suivante:
-\begin{lstlisting}[xleftmargin=.35\textwidth]
+\begin{lstlisting}[language=c, xleftmargin=.35\textwidth]
 int foo(const int d) {
     return 1 + d;
 }
