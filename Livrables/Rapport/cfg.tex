@@ -146,5 +146,30 @@ Afin de nous permettre d'étudier et de comprendre les CFG, nous avions besoin d
 \end{center}
 \end{multicols}
 \section{Implémentation}
+Dans le cadre de notre étude des CFG, nous avons réalisé deux scripts différents via l'utilisation de python et de différentes librairies.
+
+Comme nous avons pu le voir, grâce à GCC, nous avons pu générer des CFG. Pour pouvoir avoir une représentation adéquate, GCC propose un fichier de sortie au format \textit{.dot}\footnote{Le langage DOT est un langage de description de graphe dans un format texte.}.
 \subsection{Notre script de modifications des CFG}
+De base, lorsqu'un CFG est généré, les fonctions sont séparées dans des sous graphes distincts. Cela est intéressant car il est alors possible d'analyser chacune des fonctions séparémment, ce qui est en générale l'intérêt d'une fonction, encapsuler du code.
+
+Cependant, l'intérêt d'un CFG, c'est aussi de savoir comment le flot traverse le programme. Or, il peut-être intéressant de voir le flot entre deux fonctions. Nous avons donc développé un script permettant de raccorder deux fonctions lorsque celles-ci sont situées dans le même fichier.
+
+Prenons l'exemple du code source suivant:
+\lstinputlisting[language=c, xleftmargin=.35\textwidth]{code/cfg_avant.c}
+
+\pagebreak
+Le CFG fabriqué à partir de ce code par GCC est ceci:
+\begin{center}
+    \includegraphics[scale=0.32]{images/cfg_avant.png}
+\end{center}
+Comme il est possible de le constater dans le code et le CFG, les appels à fonction sont identifiables dans ce programme et après passage du fichier dot représentant ce graphe dans notre script, voici le nouveau CFG que nous avons obtenu:
+\begin{center}
+    \includegraphics[scale=0.26]{images/cfg_apres.png}
+\end{center}
+Pour ce faire, nous avons utilisé une librairie appelée \textit{pydot}\footnote{Pydot est une librairie pouvant parser du code DOT généré par la librairie GraphViz (utilisée par GCC pour générer des CFG).} qui nous a permis de parser les fichiers DOT et de les modifier par le langage de programmation Python.
+
+Nous avons décidé que les blocs de base spéciaux \textit{Entry} et \textit{Exit}, seront désormais des blocs normaux avec un flot entrant et sortant, sauf pour l'entrée et la sortie du programme.
+
+On remarque que le flot passe maintenant dans les fonctions ce qui permet de mieux les situer les unes par rapport aux autres. Cela permet notamment d'identifier du code mort ou non utile dans le fichier parser. En effet, si on remarque qu'une fonction n'est pas atteinte, cela signifie que son code n'est jamais exécutée (par les fonctions présentes dans son fichier).
+
 \subsection{Notre script d'analyse des CFG}

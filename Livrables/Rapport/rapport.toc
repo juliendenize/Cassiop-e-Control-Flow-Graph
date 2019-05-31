@@ -16,8 +16,8 @@
 \contentsline {subsection}{\numberline {2.2.3}Outil de GCC}{8}% 
 \contentsline {section}{\numberline {2.3}Impl\IeC {\'e}mentation}{9}% 
 \contentsline {subsection}{\numberline {2.3.1}Notre script de modifications des CFG}{9}% 
-\contentsline {subsection}{\numberline {2.3.2}Notre script d'analyse des CFG}{9}% 
-\contentsline {chapter}{\numberline {3}Dead Code Detection}{10}% 
-\contentsline {section}{\numberline {3.1}Introduction}{10}% 
-\contentsline {section}{\numberline {3.2}Nos recherches}{10}% 
-\contentsline {section}{\numberline {3.3}Impl\IeC {\'e}mentation}{10}% 
+\contentsline {subsection}{\numberline {2.3.2}Notre script d'analyse des CFG}{12}% 
+\contentsline {chapter}{\numberline {3}Dead Code Detection}{13}% 
+\contentsline {section}{\numberline {3.1}Introduction}{13}% 
+\contentsline {section}{\numberline {3.2}Nos recherches}{13}% 
+\contentsline {section}{\numberline {3.3}Impl\IeC {\'e}mentation}{13}% 
