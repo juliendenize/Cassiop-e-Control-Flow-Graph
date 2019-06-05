@@ -11,9 +11,10 @@
 }**/
 
 int foo(const int a, const unsigned int d) {
-    int b = a + d;
+    int b = 0;
     int w = a + 10;
 
+    b = a + 6;
     if (b < a + 10) {
         printf("hello world");
         if (d < 10) {
