@@ -15,7 +15,7 @@ int foo(const int a, const unsigned int d) {
     int w = a + 10;
 
     b = a + 6;
-    if (a + 4 != a + 4) {
+    if (a + 4 < b) {
         printf("hello world");
         if (d < 10) {
             w += a;
