@@ -27,7 +27,7 @@ int foo(const int a, const unsigned int d) {
         b = 92;
     } else {
         w = 6;
-        b = d + a - 10;
+        b = a - 10;
     }
 
     return b;
