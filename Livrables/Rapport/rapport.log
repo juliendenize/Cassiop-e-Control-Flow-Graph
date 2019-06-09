@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.25)  31 MAY 2019 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.25)  31 MAY 2019 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -599,7 +599,7 @@ Package pdftex.def Info: images/fonction_inutile.png  used on input line 197.
 (pdftex.def)             Requested size: 191.11685pt x 318.6452pt.
 ) [13 </home/julien/Dev/Cassiopee/Livrables/Rapport/images/fonction_inutile.png>]
 Chapitre 3.
-(/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.bbl [14
+(/home/julien/Dev/Cassiopee/Livrables/Rapport/dcd.tex) (/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.bbl [14
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
@@ -625,15 +625,15 @@ Underfull \hbox (badness 1308) in paragraph at lines 26--32
 
 ] (/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 17353 strings out of 492609
- 326336 string characters out of 6128085
+ 17356 strings out of 492609
+ 326443 string characters out of 6128085
  574961 words of memory out of 5000000
  20920 multiletter control sequences out of 15000+600000
  19704 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,6n,53p,875b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/julien/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</home/julien/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc0900.pfb>
-Output written on /home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.pdf (16 pages, 3044361 bytes).
+Output written on /home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.pdf (16 pages, 3044359 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
