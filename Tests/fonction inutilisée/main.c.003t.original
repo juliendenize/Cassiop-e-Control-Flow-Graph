@@ -1,0 +1,26 @@
+
+;; Function foo (null)
+;; enabled by -tree-original
+
+
+{
+  return 100;
+}
+
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a = 50;
+  int b = 90;
+
+    int a = 50;
+    int b = 90;
+  printf ((const char * restrict) "je suis la fonction main");
+  printf ((const char * restrict) "%d", a + b);
+  return 0;
+}
+return 0;
+
