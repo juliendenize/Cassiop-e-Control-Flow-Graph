@@ -5,7 +5,7 @@ En informatique, les Control Flow Graphs sont définis ainsi:
     Un graphe de flot de contrôle (abrégé en GFC, control flow graph ou CFG en anglais) est une représentation sous forme de graphe de tous les chemins qui peuvent être suivis par un programme durant son exécution. \cite{wiki:Graphe_de_flot_de_controle}
 \end{quotation}
 A droite un exemple de CFG généré à partir du programme suivant:
-\begin{lstlisting}[language=c]
+\begin{lstlisting}[language=c, caption={Exemple de programme pour construire un CFG}, captionpos=b]
     int main() {
         int a = 0;
         
@@ -44,7 +44,7 @@ Pour chaque fonction il existe toujours au moins deux blocs spéciaux. Le bloc \
 Par construction le degré entrant et sortant d'un noeud, à part pour les blocs spéciaux définis ci-dessus, sont toujours supérieurs ou égaux à 1. En effet, si un bloc de base n'a pas de degré entrant, ce bloc n'est jamais exécuté et représente donc du code mort. Il peut alors être supprimé. De même, le seul bloc ayant un flot sortant nul est le bloc de sortie. 
 
 Le code:
-\begin{lstlisting}[language=c, numbers=left, xleftmargin=.35\textwidth]
+\begin{lstlisting}[language=c, numbers=left, xleftmargin=.35\textwidth, caption={Exemple de code à transformer}, captionpos=b]
     a = 0
     b = a + 70
     if b < 50
@@ -54,7 +54,8 @@ Le code:
     fin
 \end{lstlisting}
 se traduit en 4 blocs de base:
-\begin{lstlisting}[language=c, xleftmargin=.26\textwidth]
+\newpage
+\begin{lstlisting}[language=c, xleftmargin=.26\textwidth, caption={Séparation du code précédent en blocs de base}, captionpos=b]
     a = 0
     b = a + 70
     if b < 50
@@ -83,6 +84,7 @@ et le graphe est représenté de la manière suivante:
         \draw[->] (n2) to (n4);
         \draw[->] (n3) to (n4);
     \end{tikzpicture}
+    \captionof{figure}{Graphe de blocs de base}
 \end{center}
 
 Les boucles introduisent un nouveau type d'arc: les \textit{arcs en arrière}. Ce sont des arcs spéciaux qui permettent de remonter à un arc déjà rencontré. En effet, un programme est exécuté ligne par ligne sauf lorsqu'une boucle fait explicitement remonter le programme à des instructions précédentes. 
@@ -90,7 +92,7 @@ Les boucles introduisent un nouveau type d'arc: les \textit{arcs en arrière}. C
 Une boucle est constitué en en-tête d'un bloc \textbf{dominant} de la boucle qui représente sa condition et qui est la cible de l'arc en arrière. Ensuite ce bloc d'en-tête pointe vers la sortie de la boucle et vers le premier bloc de base de la boucle.
 
 Voici un exemple:
-\begin{lstlisting}[numbers=left, language=c, xleftmargin=.35\textwidth]
+\begin{lstlisting}[numbers=left, language=c, xleftmargin=.35\textwidth, caption={Exemple de boucle}, captionpos=b]
     a = -3
     while a > 0:
         a++
@@ -114,6 +116,7 @@ Voici un exemple:
         \draw[->] (n2) to (n4);
         \draw[->, dashed, out = -40, in =40, looseness=2] (n3.south) to (n2.north);
     \end{tikzpicture}
+    \captionof{figure}{Exemple graphe avec une boucle}
 \end{center}
 
 Les CFG permettent également d'étudier le flot du programme c'est à dire de savoir de quelle manière l'exécution a tendance à s'effectuer. Si par exemple une condition a plus souvent une chance d'être vraie ou fausse, une boucle de se terminer ou non. Cela a des utilités pratiques pour le compilateur comme nous allons l'évoquer dans la prochaine section.
@@ -140,31 +143,35 @@ Cependant, les CFG ne sont pas seulement utiles pour le compilateur, mais pour d
 \subsection{Outil de GCC}
 Afin de nous permettre d'étudier et de comprendre les CFG, nous avions besoin d'avoir un outil permettant de les générer. GCC via sa palette d'options de compilation nous a fourni cet outil. Par exemple via GCC\footnote{Commande Bash utilisée: \textbf{gcc -fdump-tree-all-graph <target.c>}}, le code et son graphe ci-dessous:
 \begin{multicols}{2}
-\lstinputlisting[language=c]{code/code.c}
+\lstinputlisting[language=c, caption={Exemple de code avec une boucle pour transformation en CFG}, captionpos=b]{code/code.c}
 \begin{center}
-    \includegraphics[scale=0.32]{images/graph2.png}
+    \includegraphics[scale=0.3]{images/graph2.png}
+    \captionof{figure}{CFG généré avec le code précédent}
 \end{center}
 \end{multicols}
 \section{Implémentation}
 Dans le cadre de notre étude des CFG, nous avons réalisé deux scripts différents via l'utilisation de python et de différentes librairies.
 
 Comme nous avons pu le voir, grâce à GCC, nous avons pu générer des CFG. Pour pouvoir avoir une représentation adéquate, GCC propose un fichier de sortie au format \textit{.dot}\footnote{Le langage DOT est un langage de description de graphe dans un format texte.}.
+
 \subsection{Notre script de modifications des CFG}
 De base, lorsqu'un CFG est généré, les fonctions sont séparées dans des sous graphes distincts. Cela est intéressant car il est alors possible d'analyser chacune des fonctions séparémment, ce qui est en générale l'intérêt d'une fonction, encapsuler du code.
 
 Cependant, l'intérêt d'un CFG, c'est aussi de savoir comment le flot traverse le programme. Or, il peut-être intéressant de voir le flot entre deux fonctions. Nous avons donc développé un script permettant de raccorder deux fonctions lorsque celles-ci sont situées dans le même fichier.
 
 Prenons l'exemple du code source suivant:
-\lstinputlisting[language=c, xleftmargin=.35\textwidth]{code/cfg_avant.c}
+\lstinputlisting[language=c, xleftmargin=.35\textwidth, caption={Programme d'exemple pour le script de modifications}, captionpos=b]{code/cfg_avant.c}
 
 \pagebreak
 Le CFG fabriqué à partir de ce code par GCC est ceci:
 \begin{center}
     \includegraphics[scale=0.32]{images/cfg_avant.png}
+    \captionof{figure}{CFG avant utilisation du script}
 \end{center}
 Comme il est possible de le constater dans le code et le CFG, les appels à fonction sont identifiables dans ce programme et après passage du fichier dot représentant ce graphe dans notre script, voici le nouveau CFG que nous avons obtenu:
 \begin{center}
-    \includegraphics[scale=0.26]{images/cfg_apres.png}
+    \includegraphics[scale=0.24]{images/cfg_apres.png}
+    \captionof{figure}{CFG après utilisation du script}
 \end{center}
 Pour ce faire, nous avons utilisé une librairie appelée \textit{pydot}\footnote{Pydot est une librairie pouvant parser du code DOT généré par la librairie GraphViz (utilisée par GCC pour générer des CFG).} qui nous a permis de parser les fichiers DOT et de les modifier par le langage de programmation Python.
 
@@ -190,11 +197,12 @@ Pour le CFG de la section précédente après traitement par notre script de mod
     \item Il n'y a pas de noeuds isolés.
 \end{itemize}
 Analysons maintenant le graphe généré par notre programme:
-\lstinputlisting[language=c, xleftmargin=.35\textwidth]{code/fonction_inutile.c}
+\lstinputlisting[language=c, xleftmargin=.35\textwidth, caption={Exemple de code pour le script d'analyse}, captionpos=b]{code/fonction_inutile.c}
 
 Le graphe est alors:
 \begin{center}
     \includegraphics[scale=0.35]{images/fonction_inutile.png}
+    \captionof{figure}{CFG pour le script d'analyse avant utilisation du script de modifications}
 \end{center}
 
 Notre script d'analyse renvoie ceci:
