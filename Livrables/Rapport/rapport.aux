@@ -11,40 +11,67 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Qu'est ce que l'optimisation}{2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finition}{2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Probl\IeC {\`e}mes \IeC {\`a} r\IeC {\'e}soudre par optimisation}{2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.1}Exemple de code non optimis\IeC {\'e}}{3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1.2}Exemple de code optimis\IeC {\'e}}{3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}Outils existants}{3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Notre approche}{3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Les Control Flow Graphs (CFG)}{3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}D\IeC {\'e}tection de code mort}{3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Notre projet}{3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Notre projet}{4}\protected@file@percent }
 \citation{wiki:Graphe_de_flot_de_controle}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Control Flow Graphs}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Control Flow Graphs}{5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple CFG\relax }}{4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{5}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.1}Exemple de programme pour construire un CFG}{5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple CFG\relax }}{5}\protected@file@percent }
 \citation{wiki:Graphe_de_flot_de_controle}
 \citation{compilateurs}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Nos recherches}{5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Mod\IeC {\'e}lisation des CFG}{5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Nos recherches}{6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Mod\IeC {\'e}lisation des CFG}{6}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.2}Exemple de code \IeC {\`a} transformer}{6}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.3}S\IeC {\'e}paration du code pr\IeC {\'e}c\IeC {\'e}dent en blocs de base}{7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Graphe de blocs de base\relax }}{7}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.4}Exemple de boucle}{7}\protected@file@percent }
 \citation{compilateurs}
 \citation{gcc:cfg}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Utilit\IeC {\'e} des CFG}{7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Outil de GCC}{8}\protected@file@percent }
-\@writefile{lol}{\contentsline {lstlisting}{code/code.c}{8}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Impl\IeC {\'e}mentation}{9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Notre script de modifications des CFG}{9}\protected@file@percent }
-\@writefile{lol}{\contentsline {lstlisting}{code/cfg\textunderscore avant.c}{9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Notre script d'analyse des CFG}{12}\protected@file@percent }
-\@writefile{lol}{\contentsline {lstlisting}{code/fonction\textunderscore inutile.c}{12}\protected@file@percent }
-\bibstyle{unsrt}
-\bibdata{rapport}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Dead Code Detection}{14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemple graphe avec une boucle\relax }}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Utilit\IeC {\'e} des CFG}{8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Outil de GCC}{9}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.5}Exemple de code avec une boucle pour transformation en CFG}{9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces CFG g\IeC {\'e}n\IeC {\'e}r\IeC {\'e} avec le code pr\IeC {\'e}c\IeC {\'e}dent\relax }}{9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Impl\IeC {\'e}mentation}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Notre script de modifications des CFG}{10}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.6}Programme d'exemple pour le script de modifications}{10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces CFG avant utilisation du script\relax }}{11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces CFG apr\IeC {\`e}s utilisation du script\relax }}{12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Notre script d'analyse des CFG}{13}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2.7}Exemple de code pour le script d'analyse}{13}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces CFG pour le script d'analyse avant utilisation du script de modifications\relax }}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Dead Code Detection}{16}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Nos recherches}{14}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Impl\IeC {\'e}mentation}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{16}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.1}{\ignorespaces Le code a gauche contient du code mort, \IeC {\`a} droite il est optimis\IeC {\'e}\relax }}{16}\protected@file@percent }
+\citation{compilateurs}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Nos recherches}{17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Des exemples de d\IeC {\'e}tection de code mort}{17}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.2}Exemple de programme avec du code mort}{17}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.3}{\ignorespaces De gauche \IeC {\`a} droite, propagation de constante apr\IeC {\`e}s 0, 1, 2 passes du compilateur\relax }}{18}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.4}Exemple de programme avec du code potentiellement mort}{18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}La d\IeC {\'e}tection d'incoh\IeC {\'e}rence}{18}\protected@file@percent }
+\citation{inconsistencies}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.5}Programme d'exemple pour la d\IeC {\'e}tection d'incoh\IeC {\'e}rence}{19}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.6}Deuxi\IeC {\`e}me branche \IeC {\'e}valu\IeC {\'e}e \IeC {\`a} true du programme}{19}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.7}Exemple d'incoh\IeC {\'e}rence non optimis\IeC {\'e} par GCC}{19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Analyse de valeurs}{20}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.8}Exemple d'incoh\IeC {\'e}rence d\IeC {\'e}tectable par Value Analysis}{20}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Impl\IeC {\'e}mentation}{20}\protected@file@percent }
+\bibstyle{unsrt}
+\bibdata{rapport}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3.9}Pseudo code du script de d\IeC {\'e}tection d'incoh\IeC {\'e}rence}{21}\protected@file@percent }
 \bibcite{wiki:Optimisation_de_code}{1}
 \bibcite{wiki:Graphe_de_flot_de_controle}{2}
 \bibcite{compilateurs}{3}
 \bibcite{gcc:cfg}{4}
+\bibcite{inconsistencies}{5}

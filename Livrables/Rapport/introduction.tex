@@ -13,9 +13,10 @@ Le Big Data illustre parfaitement ceci, les machines peuvent traiter des million
 \subsection{Problèmes à résoudre par optimisation}
 Les optimisations permettent d'améliorer nombreuses choses: une exécutions plus rapide, une place en mémoire réduite, une limitation des ressources consommées comme les fichiers et enfin une diminution de la consommation électrique.
 
-En effet, les optimisations permettent de supprimer des choses inutiles par exemple le code suivant
+En effet, les optimisations permettent de supprimer des choses inutiles par exemple le code suivant:
+\newpage
 \begin{center}
-\begin{lstlisting}[language=c, xleftmargin=.35\textwidth]
+\begin{lstlisting}[language=c, xleftmargin=.35\textwidth, caption={Exemple de code non optimisé}, captionpos=b]
 int foo(const int d) {
     int a = d;
     int b = 1 + a;
@@ -24,7 +25,7 @@ int foo(const int d) {
 \end{lstlisting}
 \end{center}
 pourrait être optimisé de la façon suivante:
-\begin{lstlisting}[language=c, xleftmargin=.35\textwidth]
+\begin{lstlisting}[language=c, xleftmargin=.35\textwidth, caption={Exemple de code optimisé}, captionpos=b]
 int foo(const int d) {
     return 1 + d;
 }
