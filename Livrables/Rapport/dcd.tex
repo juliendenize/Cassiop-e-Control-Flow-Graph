@@ -44,7 +44,9 @@ Voici un exemple de suppression de code mort:
     \captionof{lstlisting}{Le code a gauche contient du code mort, à droite il est optimisé}
 \end{center}
 
-On remarque que le programme de droite est non seulement plus court, mais évite également 150.000 qu'une condition soit vérifiée. De nombreux compilateurs et analyseurs syntaxiques permettent de détecter du code mort, GCC par exemple aurait détecté le code mort précédent et aurait réarrangé le code durant la compilation pour le supprimer.
+On remarque que le programme de droite est non seulement plus court, mais évite également 150.000 qu'une condition soit vérifiée. En effet, $while (b < a)$ implique que $if (b < a)$ soit toujours vrai car ni a ni b ne sont changées entre temps. 
+
+De nombreux compilateurs et analyseurs syntaxiques permettent de détecter du code mort, GCC par exemple aurait détecté le code mort précédent et aurait réarrangé le code durant la compilation pour le supprimer.
 
 \section{Nos recherches}
 \subsection{Des exemples de détection de code mort}
@@ -54,7 +56,7 @@ A l'heure actuelle, la détection de code mort via des outils d'analyseurs synta
         int a = 0;
         int b = -150000;
         
-        while b < a) {
+        while (b < a) {
             if(b < a) {
                 ...
             } else {
@@ -115,11 +117,11 @@ En voici un exemple en trois temps:
 \begin{center}
     \captionof{lstlisting}{De gauche à droite, propagation de constante après 0, 1, 2 passes du compilateur}
 \end{center}
-En faisant de nombreux tests de suppresion de code mort grâce à GCC en demandant au compilateur de créer un fichier en code assembleur optimisé le plus possible, nous nous sommes rendus compte qu'il y a une détection de code \og potentionnelement mort \fg{} qui n'est pas effectué.
+En faisant de nombreux tests de suppresion de code mort grâce à GCC en demandant au compilateur de créer un fichier en code assembleur optimisé le plus possible, nous nous sommes rendus compte qu'il y a une détection de code \og potentiellement mort \fg{} qui n'est pas effectué.
 
 Le code suivant, déclarant une fonction foo dont le fonctionnement ne nous intéresse pas, n'est pas nécéssairement optimisé:
 \begin{lstlisting}[language=c, xleftmargin=.2\textwidth, caption={Exemple de programme avec du code potentiellement mort}, captionpos=b]
-    int main(const int a, const unisgned int d) {
+    int foo(const int a, const unsigned int d) {
         int b = a + d;
         
         if(b < a) {
@@ -132,7 +134,7 @@ Le code suivant, déclarant une fonction foo dont le fonctionnement ne nous int�
 \end{lstlisting}
 En effet dans un monde purement mathématiques, nous avons que $a + d = b > a$ car $d > 0$. Cependant en informatique les valeurs infinies n'existent pas et si un entier est supérieur à la valeur maximale, via un modulo, l'entier a une valeur inférieur à celle escomptée. Cela s'appelle \og l'arithmétique modulo\footnote{Cet article wikipédia explique très bien comment fonctionne cette arithmétique: \url{https://fr.wikipedia.org/wiki/Congruence_sur_les_entiers}.}\fg{}.
 
-Ainsi le compilateur n'a pas optimisé le code car il ne sait pas si le développeur prend en compte ou non cette notion d'arithmétique ou s'il a simplement commis une erreur de programmation, ce que nous appelons donc du code \og potentionnelement mort \fg{}.
+Ainsi le compilateur n'a pas optimisé le code car il ne sait pas si le développeur prend en compte ou non cette notion d'arithmétique ou s'il a simplement commis une erreur de programmation, ce que nous appelons donc du code \og potentiellement mort \fg{}.
 
 \subsection{La détection d'incohérence}
 
@@ -217,23 +219,25 @@ Voici le pseudo code du script qui analyse une fonction:
         Ajouter la variable au contexte avec la valeur: [-inf, inf]
     Pour chaque noeud du graphe
         Pour chaque contexte:
-            Pour chaque noeud du graphe dans la liste des noeuds du contexte:
-                Si le noeud est une declaration de variable:
-                    Ajouter la variable au contexte avec la valeur d'initialisation
-                Sinon si le noeud est une assignation de variable:
-                    Mettre a jour la valeur de la variable
-                Sinon si le noeud est une condition:
-                    Creer deux contextes c1 et c2 heritant du contexte actuel
-                    Donner l'evaluation true de la condition a c1
-                    Donner l'evaluation false de la condition a c2
-                    Si la condition pour c1 n'est pas possible, stopper c1
-                    Si la condition pour c2 n'est pas possible, stopper c2
-                    Faire parcourir la branche true a c1
-                    Faire parcourir la branche false a c2
+            Si le noeud est une declaration de variable:
+                Ajouter la variable au contexte avec la valeur d'initialisation
+            Sinon si le noeud est une assignation de variable:
+                Mettre a jour la valeur de la variable
+            Sinon si le noeud est une condition:
+                Creer deux contextes c1 et c2 heritant du contexte actuel
+                Donner l'evaluation true de la condition a c1
+                Donner l'evaluation false de la condition a c2
+                Si la condition pour c1 n'est pas possible, stopper c1
+                Si la condition pour c2 n'est pas possible, stopper c2
+                Faire parcourir la branche true a c1
+                Faire parcourir la branche false a c2
+            Fin Si
+        Fin Pour
+    Fin Pour
     Afficher les contextes ayant ete stoppes avec le numero de ligne en cause
 \end{lstlisting}
 
-Ainsi le script issu de ce pseudo code renvoie les contextes ayant été stoppés car la condition dans un contexte d'évaluation n'a pas pu être évaluée à $False$ ou à $True$ ce qui signifie que soit la condition est toujours vraie, soit la condition est toujours fausse et donc qu'il y a du code mort potentiellement mort.
+Ainsi le script issu de ce pseudo code renvoie les contextes ayant été stoppés car la condition dans un contexte d'évaluation n'a pas pu être évaluée à $False$ ou à $True$ ce qui signifie que soit la condition est toujours vraie, soit la condition est toujours fausse et donc qu'il y a du code mort ou potentiellement mort.
 
 Notre ambition aurait été de pouvoir ajouter ce script à un éditeur de code comme VS Code\footnote{Visual Studio Code est un éditeur de code facilement modulable gratuit et opensource qui a été développé par Microsoft et est cross-platform.}, afin d'aider les développeurs à pouvoir analyser leur code et ainsi repérer si des conditions sont inutiles et donc si soit ils n'avaient pas vu que la condition était toujours vraie, ou s'il avaient effectué une erreur de programmation.
 
