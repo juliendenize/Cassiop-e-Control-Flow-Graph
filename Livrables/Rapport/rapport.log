@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.25)  31 MAY 2019 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.26)  17 JUN 2019 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.tex
-(/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.tex
+**/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.tex
+(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.tex
 LaTeX2e <2018-12-01>
 (/home/julien/texlive/2019/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
@@ -418,24 +418,24 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 File: tikzlibrarypositioning.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ) (/home/julien/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2019/05/09 v3.1.3 (3.1.3)
-) (/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.aux)
+) (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Info: Redefining \degres on input line 23.
-LaTeX Info: Redefining \dots on input line 23.
-LaTeX Info: Redefining \up on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Info: Redefining \degres on input line 27.
+LaTeX Info: Redefining \dots on input line 27.
+LaTeX Info: Redefining \up on input line 27.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -511,16 +511,16 @@ Package caption Info: End \AtBeginDocument code.
 <images/iconcassiopee.jpg, id=4, 1014.6708pt x 1013.7072pt>
 File: images/iconcassiopee.jpg Graphic file (type jpg)
 <use images/iconcassiopee.jpg>
-Package pdftex.def Info: images/iconcassiopee.jpg  used on input line 34.
+Package pdftex.def Info: images/iconcassiopee.jpg  used on input line 38.
 (pdftex.def)             Requested size: 202.93056pt x 202.73784pt.
 <images/tsp.jpeg, id=5, 250.9375pt x 250.9375pt>
 File: images/tsp.jpeg Graphic file (type jpg)
 <use images/tsp.jpeg>
-Package pdftex.def Info: images/tsp.jpeg  used on input line 35.
+Package pdftex.def Info: images/tsp.jpeg  used on input line 39.
 (pdftex.def)             Requested size: 203.25826pt x 203.25826pt.
  [1
 
-{/home/julien/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </home/julien/Dev/Cassiopee/Livrables/Rapport/images/iconcassiopee.jpg> </home/julien/Dev/Cassiopee/Livrables/Rapport/images/tsp.jpeg>] (/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.toc
+{/home/julien/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/iconcassiopee.jpg> </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/tsp.jpeg>] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -533,25 +533,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapitre 1.
-(/home/julien/Dev/Cassiopee/Livrables/Rapport/introduction.tex (/home/julien/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/introduction.tex [2
+
+] (/home/julien/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 ) (/home/julien/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-) [2
-
-]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 35.
+)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 36.
  (/home/julien/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
-) [3]
+(Font)              <6> on input line 36.
+) [3] [4]
 Chapitre 2.
-(/home/julien/Dev/Cassiopee/Livrables/Rapport/cfg.tex
-<images/graph.png, id=29, 626.34pt x 1606.0pt>
+(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/cfg.tex
+<images/graph.png, id=34, 626.34pt x 1606.0pt>
 File: images/graph.png Graphic file (type png)
 <use images/graph.png>
 Package pdftex.def Info: images/graph.png  used on input line 25.
@@ -559,49 +559,74 @@ Package pdftex.def Info: images/graph.png  used on input line 25.
 
 Overfull \vbox (7.7909pt too high) has occurred while \output is active []
 
- [4
+ [5
 
- </home/julien/Dev/Cassiopee/Livrables/Rapport/images/graph.png>] [5] [6] [7] (/home/julien/Dev/Cassiopee/Livrables/Rapport/code/code.c)
-<images/graph2.png, id=48, 458.71375pt x 1289.81876pt>
+ </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/graph.png>] [6] [7] [8] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/code/code.c)
+<images/graph2.png, id=51, 458.71375pt x 1289.81876pt>
 File: images/graph2.png Graphic file (type png)
 <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png  used on input line 145.
-(pdftex.def)             Requested size: 146.7914pt x 412.75044pt.
+Package pdftex.def Info: images/graph2.png  used on input line 148.
+(pdftex.def)             Requested size: 137.61519pt x 386.94861pt.
 
-Overfull \vbox (4.30534pt too high) has occurred while \output is active []
+Overfull \vbox (0.8648pt too high) has occurred while \output is active []
 
- [8 </home/julien/Dev/Cassiopee/Livrables/Rapport/images/graph2.png>] (/home/julien/Dev/Cassiopee/Livrables/Rapport/code/cfg_avant.c
+
+Overfull \vbox (9.78911pt too high) has occurred while \output is active []
+
+ [9 </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/graph2.png>] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/code/cfg_avant.c
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
  (/home/julien/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
-) [9]
-<images/cfg_avant.png, id=56, 1225.57875pt x 1396.21625pt>
+) [10]
+<images/cfg_avant.png, id=59, 1225.57875pt x 1396.21625pt>
 File: images/cfg_avant.png Graphic file (type png)
 <use images/cfg_avant.png>
-Package pdftex.def Info: images/cfg_avant.png  used on input line 163.
+Package pdftex.def Info: images/cfg_avant.png  used on input line 168.
 (pdftex.def)             Requested size: 392.19322pt x 446.79834pt.
-<images/cfg_apres.png, id=58, 773.89125pt x 2300.595pt>
+<images/cfg_apres.png, id=61, 773.89125pt x 2300.595pt>
 File: images/cfg_apres.png Graphic file (type png)
 <use images/cfg_apres.png>
-Package pdftex.def Info: images/cfg_apres.png  used on input line 167.
-(pdftex.def)             Requested size: 201.20697pt x 598.14061pt.
- [10 </home/julien/Dev/Cassiopee/Livrables/Rapport/images/cfg_avant.png>]
-Overfull \vbox (6.61041pt too high) has occurred while \output is active []
-
- [11 </home/julien/Dev/Cassiopee/Livrables/Rapport/images/cfg_apres.png>] (/home/julien/Dev/Cassiopee/Livrables/Rapport/code/fonction_inutile.c [12])
-<images/fonction_inutile.png, id=71, 546.04pt x 910.40125pt>
+Package pdftex.def Info: images/cfg_apres.png  used on input line 173.
+(pdftex.def)             Requested size: 185.73769pt x 552.15408pt.
+ [11 </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/cfg_avant.png>] [12 </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/cfg_apres.png>] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/code/fonction_inutile.c [13])
+<images/fonction_inutile.png, id=74, 546.04pt x 910.40125pt>
 File: images/fonction_inutile.png Graphic file (type png)
 <use images/fonction_inutile.png>
-Package pdftex.def Info: images/fonction_inutile.png  used on input line 197.
+Package pdftex.def Info: images/fonction_inutile.png  used on input line 204.
 (pdftex.def)             Requested size: 191.11685pt x 318.6452pt.
-) [13 </home/julien/Dev/Cassiopee/Livrables/Rapport/images/fonction_inutile.png>]
+) [14 </home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/images/fonction_inutile.png>] [15]
 Chapitre 3.
-(/home/julien/Dev/Cassiopee/Livrables/Rapport/dcd.tex) (/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.bbl [14
+(/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/dcd.tex [16
 
-]
+] [17] [18] [19] [20]
+Overfull \hbox (55.63422pt too wide) in paragraph at lines 223--224
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (19.64273pt too wide) in paragraph at lines 227--228
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.64699pt too wide) in paragraph at lines 230--231
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (1.64699pt too wide) in paragraph at lines 231--232
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.63705pt too wide) in paragraph at lines 237--238
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.bbl [21]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 \T1/cmtt/m/n/10 wikipedia . org / w / index . php ? title = Optimisation \ %20de \ %20code & oldid = 153609138$\T1/cmr/m/n/10 ,
  []
@@ -621,22 +646,22 @@ Underfull \hbox (badness 1308) in paragraph at lines 26--32
 []\T1/cmr/m/n/10 GCC.  Control flow graph.  $\T1/cmtt/m/n/10 https : / / gcc . gnu . org / onlinedocs / gcc-[]4 . 4 . 2 / gccint /
  []
 
-) [15
+) [22
 
-] (/home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.aux) ) 
+] (/home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 17356 strings out of 492609
- 326443 string characters out of 6128085
- 574961 words of memory out of 5000000
- 20920 multiletter control sequences out of 15000+600000
+ 17494 strings out of 492609
+ 328363 string characters out of 6128085
+ 584527 words of memory out of 5000000
+ 21058 multiletter control sequences out of 15000+600000
  19704 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,53p,875b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/home/julien/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</home/julien/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc0900.pfb>
-Output written on /home/julien/Dev/Cassiopee/Livrables/Rapport/rapport.pdf (16 pages, 3044359 bytes).
+ 55i,6n,53p,895b,1680s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/home/julien/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</home/julien/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></home/julien/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc0900.pfb>
+Output written on /home/julien/Dev/Cassiopee-Control-Flow-Graph/Livrables/Rapport/rapport.pdf (23 pages, 3114200 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 166 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

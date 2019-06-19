@@ -1,3 +1,246 @@
 \section{Introduction}
+La détection de code mort est une branche importante d'optimisation en informatique. Le code mort se définit ainsi:
+\begin{quotation}
+    Code qui n'est jamais exécuté, ou dont le résultat n'est jamais exploité par son programme.
+    \footnote{Wikitionary: \url{https://fr.wiktionary.org/wiki/code_mort}.}
+\end{quotation}
+Le code qui n'est jamais exécuté représente plusieurs inconvénients. D'abord, il prend inutilement de la place en mémoire pour des raisons évidentes. De plus, du code mort causé par une condition peut représenter un temps plus long d'exécution du programme.
+
+Voici un exemple de suppression de code mort:
+\begin{multicols}{2}
+\begin{lstlisting}[language=c]
+    int main() {
+        int a = 0;
+        int b = -150000;
+        
+        while (b < a) {
+            if(b < a) {
+                ...
+            } else {
+                :::
+            }
+            b++;
+        }
+    
+        return 0;
+    }
+\end{lstlisting}
+\columnbreak
+\begin{lstlisting}[language=c]
+    int main() {
+        int a = 0;
+        int b = -150000;
+        
+        while (b < a) {
+            ...
+            b++;
+        }
+    
+        return 0;
+    }
+\end{lstlisting}
+\end{multicols}
+\begin{center}
+    \captionof{lstlisting}{Le code a gauche contient du code mort, à droite il est optimisé}
+\end{center}
+
+On remarque que le programme de droite est non seulement plus court, mais évite également de vérifier une condition 150.000 fois. En effet, $while (b < a)$ implique que $if (b < a)$ soit toujours vrai car ni a ni b ne sont changées entre temps. 
+
+De nombreux compilateurs et analyseurs syntaxiques permettent de détecter du code mort, GCC par exemple aurait détecté le code mort précédent et aurait réarrangé le code durant la compilation pour le supprimer.
+
 \section{Nos recherches}
+\subsection{Des exemples de détection de code mort}
+A l'heure actuelle, la détection de code mort via des outils d'analyseurs syntaxique est très performante pour des cas spécifiques. En effet des cas usuels simples sont déjà traités. Par exemple prenons le code suivant:
+\begin{lstlisting}[language=c, xleftmargin=.25\textwidth, caption={Exemple de programme avec du code mort}, captionpos=b]
+    int main() {
+        int a = 0;
+        int b = -150000;
+        
+        while (b < a) {
+            if(b < a) {
+                ...
+            } else {
+                :::
+            }
+            b++;
+        }
+    
+        return 0;
+        printf("Je suis du code mort\n");
+        printf("En dessous du return.\n");
+    }
+\end{lstlisting}
+
+Les compilateurs modernes signaleront ou supprimeront le code mort situé en dessous de l'instruction return. En effet, les printf ne seront jamais exécutés puisque le return annonce la fin de la fonction.
+
+Un autre exemple est la propagation de constante \cite{compilateurs}, c'est à dire le remplacement des variables par leur valeur losqu'elles sont connues, qui permet de supprimer du code mort de façon assez importante. En effet, le compilateur effectue plusieurs passes sur le code pour remplacer les variables par leur valeur, si elle est connue. Le compilateur évalue ensuite les conditions si elles peuvent l'être.
+\newpage
+En voici un exemple en trois temps:
+\begin{multicols}{3}
+    \begin{lstlisting}[language=c]
+        int main() {
+            int a = 0;
+            int b = 1;
+            
+            if(b < a){
+                ...
+            } else {
+                :::
+            }
+        
+            return b;
+        }
+    \end{lstlisting}
+    \columnbreak
+    \begin{lstlisting}[language=c]
+        int main() {
+            
+            if(1 < 0){
+                ...
+            } else {
+                :::
+            }
+        
+            return 1;
+        }
+    \end{lstlisting}
+    \columnbreak
+    \begin{lstlisting}[language=c]
+        int main() {
+
+            :::
+        
+            return 1;
+        }
+    \end{lstlisting}
+\end{multicols}
+\begin{center}
+    \captionof{lstlisting}{De gauche à droite, propagation de constante après 0, 1, 2 passes du compilateur}
+\end{center}
+En faisant de nombreux tests de suppression de code mort grâce à GCC , et en demandant au compilateur de créer un fichier en code assembleur (optimisé le plus possible), nous nous sommes rendus compte qu'il y a une détection de code \og potentiellement mort \fg{} qui n'est pas effectué.
+
+Le code suivant, déclarant une fonction foo, n'est pas nécéssairement optimisé:
+\begin{lstlisting}[language=c, xleftmargin=.2\textwidth, caption={Exemple de programme avec du code potentiellement mort}, captionpos=b]
+    int foo(const int a, const unsigned int d) {
+        int b = a + d;
+        
+        if(b < a) {
+            ...
+        } else {
+            +++
+        }
+        return 0;
+    }
+\end{lstlisting}
+En effet dans un monde purement mathématiques, nous avons que $a + d = b > a$ car $d > 0$. Cependant en informatique les valeurs infinies n'existent pas et si un entier est supérieur à la valeur maximale, via un modulo, l'entier a une valeur inférieur à celle escomptée. Cela s'appelle \og l'arithmétique modulo\footnote{Cet article wikipédia explique très bien comment fonctionne cette arithmétique: \url{https://fr.wikipedia.org/wiki/Congruence_sur_les_entiers}.}\fg{}.
+
+Ainsi le compilateur n'a pas optimisé le code car il ne sait pas si le développeur prend en compte ou non cette notion d'arithmétique ou s'il a simplement commis une erreur de programmation, nous appelons ici celà du code \og potentiellement mort \fg{}.
+
+\subsection{La détection d'incohérence}
+
+Après avoir découvert la possibilité de détecter du code \og potentionnelement mort \fg{}, nous avons décidé d'étudier si des techniques actuelles permettraient de pouvoir effectuer une analyse du code prenant en compte cette possibilité.
+
+Nous nous sommes intéressé à un problème équivalent plutôt utilisé en test dénommé la détection d'incohérence ou "Inconsistency detection". Nous avons trouvé en particulier une thèse informatique qui traite le problème de détection d'incohérence en étudiant la possibilité d'atteindre une instruction d'un programme en fonction de conditions qui sont évaluées successivement vraies ou fausses dans des branches différentes \cite{inconsistencies}.
+
+Pour bien comprendre comment cela fonctionne, prenons un exemple avec le code suivant:
+\begin{lstlisting}[language=c, xleftmargin=.2\textwidth, caption={Programme d'exemple pour la détection d'incohérence}, captionpos=b]
+    int foo(int a, int b){
+        int mid = (a + b) / 2;
+        if(a <= b) {
+            return mid;
+        } else if(a == b) {
+            return a;
+        } else if(a > b) {
+            return b;
+        }
+    }
+\end{lstlisting}
+Il y a ici trois résultats, donc trois branches, possibles à l'évaluation d'une condition. Prenons arbitrairement la branche qui vérifie que la deuxième branche est évaluée à true. On aurait ceci:
+\begin{lstlisting}[language=c, xleftmargin=.2\textwidth, caption={Deuxième branche évaluée à true du programme}, captionpos=b]
+    int mid = (a + b) / 2;
+    assume(a > b);
+    assume(a == b);
+    return a;
+\end{lstlisting}
+On remarque que cette branche est impossible, en effet, il n'est pas possible d'avoir à la fois $a > b$ et $a == b$. La détection d'incohérences consiste donc à créer deux ou plus contextes d'évaluation à chaque fois qu'une condition est rencontrée. Ensuite chaque contexte prend en compte cette condition et vérifie si elle est en accord avec les précédentes conditions rencontées. Par exemple ce code que, comme vu précédemment, GCC n'optimise pas, contient une incohérence:
+\begin{lstlisting}[language=c, xleftmargin=.2\textwidth, caption={Exemple d'incohérence non optimisé par GCC}, captionpos=b]
+    int main(const int a, const unisgned int d) {
+        int b = a + d;
+
+        if(b > a) {
+            ...
+        } else {
+            +++
+        }
+
+        return 0;
+    }
+\end{lstlisting}
+En effet, pour la raison précédemment expliquée de façon mathématique, on a $b > a$ et donc la branche else ne peut jamais être prise.
+
+\subsection{Analyse de valeurs}
+L'analyse de valeurs, ou \og Value Analysis \fg{} consiste à associer pour chaque variable dans un programme les valeurs qu'il est possible pour elle d'atteindre à chaque point de ce programme.
+
+Nous nous sommes intéressés à cette branche de recherche, car il nous est venu à l'esprit qu'il serait possible d'améliorer la détection d'incohérence en ajoutant l'analyse de valeurs dans les contextes d'évaluation des conditions afin de détecter les incohérences dûes aux valeurs. Voici un exemple:
+\begin{lstlisting}[language=c, xleftmargin=.15\textwidth, caption={Exemple d'incohérence détectable par Value Analysis}, captionpos=b]
+    int main(const int a, const unsigned int d) {
+        int b = a + d;
+        int w = a - d
+
+        if(b < w) {
+            ...
+        } else {
+            :::
+        }
+
+        return 0;
+    }
+\end{lstlisting}
+En prenant en compte l'analyse de valeurs, on se rend compte, en ommettant l'arithmétique modulo, que $b$ est nécessairement supérieur à $w$ et donc que le contexte prenant la branche else est nécessairement faux.
+
 \section{Implémentation}
+Nous avons décidé de créer un script Python permettant de détecter les incohérences dans des contextes d'évaluation de conditions en pratiquant l'analyse de valeurs sur des programmes en language C.
+
+Afin de pouvoir développer un prototype, nous avons décidé de poser plusieurs restrictions:
+\begin{itemize}
+    \item Travailler avec uniquement des entiers
+    \item Travailler avec des additions
+    \item Les conditions sont seulement des opérations avec les opérateurs $<$ et $>$
+    \item Une variable doit seulement dépendre d'une autre variable et d'une constante. C'est à dire que si $a$ est un paramètre de fonction, elle peut valoir toutes les valeurs et $b = a + 1$ peut valoir toutes les valeurs. Par contre $b = a + d$ où $d$ est  n'importe quelle variable n'est pas une opération autorisée.
+\end{itemize}
+
+Ce script utilise la bibliothèque Pycparser\footnote{Pycparser est un parser du langage C qui permet de récupérer le graphe AST du programme parsé.}.
+\newpage
+Voici le pseudo code du script qui analyse une fonction:
+\begin{lstlisting}[numbers=left, caption={Pseudo code du script de détection d'incohérence}, captionpos=b]
+    Creer le graphe a partir d'une fonction passee en parametre
+    context = creation du contexte de base
+    Pour chaque variable en parametre de la fonction:
+        Ajouter la variable au contexte avec la valeur: [-inf, inf]
+    Pour chaque noeud du graphe
+        Pour chaque contexte:
+            Si le noeud est une declaration de variable:
+                Ajouter la variable au contexte avec la valeur d'initialisation
+            Sinon si le noeud est une assignation de variable:
+                Mettre a jour la valeur de la variable
+            Sinon si le noeud est une condition:
+                Creer deux contextes c1 et c2 heritant du contexte actuel
+                Donner l'evaluation true de la condition a c1
+                Donner l'evaluation false de la condition a c2
+                Si la condition pour c1 n'est pas possible, stopper c1
+                Si la condition pour c2 n'est pas possible, stopper c2
+                Faire parcourir la branche true a c1
+                Faire parcourir la branche false a c2
+            Fin Si
+        Fin Pour
+    Fin Pour
+    Afficher les contextes ayant ete stoppes avec le numero de ligne en cause
+\end{lstlisting}
+
+Ainsi le script issu de ce pseudo code renvoie les contextes ayant été stoppés car la condition dans un contexte d'évaluation n'a pas pu être évaluée à $False$ ou à $True$ ce qui signifie que soit la condition est toujours vraie, soit la condition est toujours fausse et donc qu'il y a du code mort ou potentiellement mort.
+
+Notre ambition aurait été de pouvoir ajouter ce script à un éditeur de code comme VS Code\footnote{Visual Studio Code est un éditeur de code facilement modulable gratuit et opensource qui a été développé par Microsoft et est cross-platform.}, afin d'aider les développeurs à analyser leur code et ainsi à repérer si des conditions sont inutiles. Ainsi si ils n'avaient pas vu qu'une condition est toujours vraie, ou s'il avaient effectué une erreur de programmation, celà aurait pu leur faire gagner du temps.
+
+Malheuresement, avec le temps du projet Cassiopée, nous n'avons pas pu terminé l'implémentation de notre algorithme qu'avec des restrictions plus importantes encore que celles fixées originellement.
+
+Cependant, nous considérons que nous avons réussi le but de ce projet, qui était d'étudier la structure du code d'un programme et trouver si des optimisations étaient possibles. Il se trouve que notre idée de script n'a pas encore été implémenté à notre connaissance. En effet, aucun des éditeurs de code que nous avons utilisé ne nous a jamais averti via des warning de ce genre d'incohérences. Nous pensons donc que c'est une piste intéressante de développement qui pourrait aider les développeur à améliorer leur processus de correction de code. En effet, même si un développeur avait pris en compte l'arithmétique modulo, nous considérons que le taux de \og false positives \fg{} générés par le script resterait bien inférieur au taux de \og true positives \fg{}.

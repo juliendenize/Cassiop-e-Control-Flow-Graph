@@ -16,11 +16,14 @@ int foo(const int a, const unsigned int d) {
 
     b = a + 6;
     if (a + 4 < b) {
-        printf("hello world");
+        w = 0;
         if (d < 10) {
             w += a;
         } else {
-            printf("yolo");
+            w = 1;
+        }
+        if(a + 7 < b) {
+            w = 3;
         }
         b = 6;
     } else if (d > 10) {
@@ -29,6 +32,7 @@ int foo(const int a, const unsigned int d) {
         w = 6;
         b = a - 10;
     }
+    b = 90;
 
     return b;
 }

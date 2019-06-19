@@ -30,4 +30,10 @@ GCC.
   2019.
 \newblock [Online; accessed 31-May-2019].
 
+\bibitem{inconsistencies}
+Aaron Tomb.
+\newblock {\em Program Inconsistency Detection: Universal Reachability Analysis
+  and Conditional Slicing}.
+\newblock 2011.
+
 \end{thebibliography}
